@@ -4,6 +4,7 @@ import "./globals.css";
 import BackgroundSystem from "@/components/BackgroundSystem";
 import NavHUD from "@/components/NavHUD";
 import { AstroProvider } from "@/context/AstroContext";
+// Triggering fresh Vercel deployment after root directory update
 
 const cinzel = Cinzel({
   variable: "--font-cinzel",
