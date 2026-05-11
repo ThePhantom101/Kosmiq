@@ -1,16 +1,16 @@
 # Graph Report - kosmiq  (2026-05-11)
 
 ## Corpus Check
-- 129 files · ~55,051 words
+- 129 files · ~55,040 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 571 nodes · 859 edges · 118 communities (109 shown, 9 thin omitted)
+- 571 nodes · 859 edges · 121 communities (112 shown, 9 thin omitted)
 - Extraction: 72% EXTRACTED · 28% INFERRED · 0% AMBIGUOUS · INFERRED: 237 edges (avg confidence: 0.59)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `7b28d81d`
+- Built from commit: `b3795e18`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -45,7 +45,7 @@
 - [[_COMMUNITY_TypeScript Env|TypeScript Env]]
 - [[_COMMUNITY_ESLint Config|ESLint Config]]
 - [[_COMMUNITY_PostCSS Config|PostCSS Config]]
-- [[_COMMUNITY_Astro Types|Astro Types]]
+- [[_COMMUNITY_Drizzle Config|Drizzle Config]]
 - [[_COMMUNITY_Web DB Schema|Web DB Schema]]
 
 ## God Nodes (most connected - your core abstractions)
@@ -72,7 +72,7 @@
 - `save_life_event()` --calls--> `LifeEvent`  [INFERRED]
   apps/astro-engine/main.py → apps/astro-engine/engine/db.py
 
-## Communities (118 total, 9 thin omitted)
+## Communities (121 total, 9 thin omitted)
 
 ### Community 0 - "Predictions Area"
 Cohesion: 0.14
@@ -99,12 +99,12 @@ Cohesion: 0.1
 Nodes (11): useChartStrengths(), addYears(), buildAntardashas(), getDashaSequenceFrom(), useDasha(), ChartHeroBanner(), MetricCards(), QuickLinks() (+3 more)
 
 ### Community 6 - "Marketing Landing"
-Cohesion: 0.11
-Nodes (5): AstrolabePage(), useAstro(), useYogas(), LaboratoryPage(), SamhitaMatches()
-
-### Community 7 - "Astro Engine"
 Cohesion: 0.14
 Nodes (8): ChroniclesPage(), NexusCard(), NexusPage(), handleEmailLogin(), handleSocialLogin(), OraclePage(), SignaturePage(), createClient()
+
+### Community 7 - "Astro Engine"
+Cohesion: 0.16
+Nodes (5): AstrolabePage(), useAstro(), useYogas(), LaboratoryPage(), SamhitaMatches()
 
 ### Community 8 - "NavHUD Component"
 Cohesion: 0.16

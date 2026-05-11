@@ -83,7 +83,8 @@ def calculate_horoscope(
     }
 
     planetary_positions = {}
-    vargas = {"D1": {}, "D9": {}, "D10": {}}
+    varga_indices = [1, 2, 3, 4, 7, 9, 10, 12, 16, 20, 24, 27, 30, 40, 45, 60]
+    vargas = {f"D{i}": {} for i in varga_indices}
     
     for name, code in planets.items():
         res, flag = swe.calc_ut(jd_ut, code, swe.FLG_SIDEREAL | swe.FLG_SPEED)
@@ -98,9 +99,8 @@ def calculate_horoscope(
         }
         
         # Calculate Vargas
-        vargas["D1"][name] = longitude
-        vargas["D9"][name] = get_varga_position(longitude, 9)
-        vargas["D10"][name] = get_varga_position(longitude, 10)
+        for v in varga_indices:
+            vargas[f"D{v}"][name] = get_varga_position(longitude, v)
     
     # Ketu
     rahu_lon = planetary_positions["Rahu"]["longitude"]
@@ -112,17 +112,16 @@ def calculate_horoscope(
         "nakshatra": get_nakshatra(ketu_lon)
     }
     
-    for v in vargas:
-        vargas[v]["Ketu"] = get_varga_position(ketu_lon, int(v[1:]) if v != "D1" else 1)
+    for v in varga_indices:
+        vargas[f"D{v}"]["Ketu"] = get_varga_position(ketu_lon, v)
 
     # Calculate Ascendant (Lagna)
     houses, ascmc = swe.houses_ex(jd_ut, lat, lon, b'W', swe.FLG_SIDEREAL)
     asc_lon = ascmc[0]
     
     # Add Ascendant to Vargas
-    vargas["D1"]["Lagna"] = asc_lon
-    vargas["D9"]["Lagna"] = get_varga_position(asc_lon, 9)
-    vargas["D10"]["Lagna"] = get_varga_position(asc_lon, 10)
+    for v in varga_indices:
+        vargas[f"D{v}"]["Lagna"] = get_varga_position(asc_lon, v)
 
     # Planetary Strengths (Simplified)
     strengths = {
