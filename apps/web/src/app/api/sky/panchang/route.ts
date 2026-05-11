@@ -8,6 +8,16 @@ export async function GET(request: NextRequest) {
   const lat = searchParams.get("lat") || "0.0";
   const lng = searchParams.get("lng") || "0.0";
 
+  const debug = searchParams.get("debug") === "true";
+
+  if (debug) {
+    return NextResponse.json({ 
+      ASTRO_ENGINE_URL,
+      env: process.env.ASTRO_ENGINE_URL ? "SET" : "NOT SET",
+      url: `${ASTRO_ENGINE_URL}/api/v1/sky/panchang`
+    });
+  }
+
   try {
     const engineUrl = `${ASTRO_ENGINE_URL}/api/v1/sky/panchang?date=${date}&lat=${lat}&lng=${lng}`;
     const response = await fetch(engineUrl);

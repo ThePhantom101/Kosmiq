@@ -1,16 +1,16 @@
 # Graph Report - kosmiq  (2026-05-11)
 
 ## Corpus Check
-- 129 files · ~55,023 words
+- 129 files · ~55,028 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 571 nodes · 859 edges · 122 communities (112 shown, 10 thin omitted)
+- 571 nodes · 859 edges · 118 communities (108 shown, 10 thin omitted)
 - Extraction: 72% EXTRACTED · 28% INFERRED · 0% AMBIGUOUS · INFERRED: 237 edges (avg confidence: 0.59)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `bef108cc`
+- Built from commit: `8cfc76a6`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -47,7 +47,7 @@
 - [[_COMMUNITY_Next.js Config|Next.js Config]]
 - [[_COMMUNITY_PostCSS Config|PostCSS Config]]
 - [[_COMMUNITY_Drizzle Config|Drizzle Config]]
-- [[_COMMUNITY_DB Connection|DB Connection]]
+- [[_COMMUNITY_Web DB Schema|Web DB Schema]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `Biodata` - 45 edges
@@ -73,7 +73,7 @@
 - `save_life_event()` --calls--> `LifeEvent`  [INFERRED]
   apps/astro-engine/main.py → apps/astro-engine/engine/db.py
 
-## Communities (122 total, 10 thin omitted)
+## Communities (118 total, 10 thin omitted)
 
 ### Community 0 - "Predictions Area"
 Cohesion: 0.14
@@ -96,12 +96,12 @@ Cohesion: 0.09
 Nodes (30): get_transit_score(), Compute a 0–100 transit favorability score for today's sky against the natal cha, _aspect_delta(), compute_transit_score(), _get_current_positions(), _house_from(), Transit score engine.  Computes a 0-100 "favorable transit score" reflecting how, Compute a 0-100 transit favorability score.      Args:         natal_planets: di (+22 more)
 
 ### Community 5 - "AI Synthesis Module"
-Cohesion: 0.1
-Nodes (11): useChartStrengths(), addYears(), buildAntardashas(), getDashaSequenceFrom(), useDasha(), ChartHeroBanner(), MetricCards(), QuickLinks() (+3 more)
+Cohesion: 0.09
+Nodes (5): AstrolabePage(), useAstro(), useYogas(), LaboratoryPage(), SamhitaMatches()
 
 ### Community 6 - "Marketing Landing"
-Cohesion: 0.16
-Nodes (5): AstrolabePage(), useAstro(), useYogas(), LaboratoryPage(), SamhitaMatches()
+Cohesion: 0.1
+Nodes (11): useChartStrengths(), addYears(), buildAntardashas(), getDashaSequenceFrom(), useDasha(), ChartHeroBanner(), MetricCards(), QuickLinks() (+3 more)
 
 ### Community 7 - "Astro Engine"
 Cohesion: 0.16
