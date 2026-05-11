@@ -108,7 +108,7 @@ def generate_monthly_narrative_ai(month: str, transit_summary: str, current_dash
         prompt = format_monthly_narrative_prompt(month, transit_summary, current_dasha)
         
         response = client.models.generate_content(
-            model="gemini-2.5-flash", 
+            model="gemini-1.5-flash", 
             contents=prompt
         )
         return response.text
@@ -126,7 +126,7 @@ def gemini_node(state: GraphState):
     
     try:
         response = client.models.generate_content(
-            model="gemini-2.5-flash",
+            model="gemini-1.5-flash",
             contents=prompt
         )
         return {"reading": response.text}
@@ -181,7 +181,7 @@ def generate_compatibility_narrative(c1_sum: str, c2_sum: str, koota: List[Dict[
         prompt = format_compatibility_prompt(c1_sum, c2_sum, koota, dosha)
         
         response = client.models.generate_content(
-            model="gemini-2.5-flash",
+            model="gemini-1.5-flash",
             contents=prompt
         )
         return response.text

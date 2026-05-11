@@ -9,7 +9,7 @@
       "source_file": "src/db/schema.ts",
       "source_location": "L1",
       "id": "src_db_schema_ts",
-      "community": 80,
+      "community": 83,
       "norm_label": "schema.ts"
     },
     {
@@ -18,7 +18,7 @@
       "source_file": "apps/astro-engine/create_tables.py",
       "source_location": "L1",
       "id": "apps_astro_engine_create_tables_py",
-      "community": 81,
+      "community": 84,
       "norm_label": "create_tables.py"
     },
     {
@@ -441,7 +441,7 @@
       "source_file": "apps/astro-engine/main.py",
       "source_location": "L357",
       "id": "astro_engine_main_generate_synthesis",
-      "community": 22,
+      "community": 24,
       "norm_label": "generate_synthesis()"
     },
     {
@@ -459,7 +459,7 @@
       "source_file": "apps/astro-engine/main.py",
       "source_location": "L409",
       "id": "astro_engine_main_compute_yogas_logic",
-      "community": 16,
+      "community": 14,
       "norm_label": "compute_yogas_logic()"
     },
     {
@@ -468,7 +468,7 @@
       "source_file": "apps/astro-engine/main.py",
       "source_location": "L457",
       "id": "astro_engine_main_compute_shadow_planets_logic",
-      "community": 14,
+      "community": 15,
       "norm_label": "compute_shadow_planets_logic()"
     },
     {
@@ -477,7 +477,7 @@
       "source_file": "apps/astro-engine/main.py",
       "source_location": "L500",
       "id": "astro_engine_main_get_yogas",
-      "community": 16,
+      "community": 14,
       "norm_label": "get_yogas()"
     },
     {
@@ -486,7 +486,7 @@
       "source_file": "apps/astro-engine/main.py",
       "source_location": "L510",
       "id": "astro_engine_main_get_shadow_planets_post",
-      "community": 14,
+      "community": 15,
       "norm_label": "get_shadow_planets_post()"
     },
     {
@@ -495,7 +495,7 @@
       "source_file": "apps/astro-engine/main.py",
       "source_location": "L525",
       "id": "astro_engine_main_get_flags",
-      "community": 2,
+      "community": 1,
       "norm_label": "get_flags()"
     },
     {
@@ -549,7 +549,7 @@
       "source_file": "apps/astro-engine/main.py",
       "source_location": "L744",
       "id": "astro_engine_main_get_shadow_planets",
-      "community": 14,
+      "community": 15,
       "norm_label": "get_shadow_planets()"
     },
     {
@@ -558,7 +558,7 @@
       "source_file": "apps/astro-engine/main.py",
       "source_location": "L763",
       "id": "astro_engine_main_get_yogas_by_chart_id",
-      "community": 16,
+      "community": 14,
       "norm_label": "get_yogas_by_chart_id()"
     },
     {
@@ -567,7 +567,7 @@
       "source_file": "apps/astro-engine/main.py",
       "source_location": "L775",
       "id": "astro_engine_main_compute_transits_logic",
-      "community": 15,
+      "community": 16,
       "norm_label": "compute_transits_logic()"
     },
     {
@@ -576,7 +576,7 @@
       "source_file": "apps/astro-engine/main.py",
       "source_location": "L856",
       "id": "astro_engine_main_get_transits_post",
-      "community": 15,
+      "community": 16,
       "norm_label": "get_transits_post()"
     },
     {
@@ -585,14 +585,14 @@
       "source_file": "apps/astro-engine/main.py",
       "source_location": "L866",
       "id": "astro_engine_main_get_current_transits",
-      "community": 15,
+      "community": 16,
       "norm_label": "get_current_transits()"
     },
     {
       "label": "get_panchang()",
       "file_type": "code",
       "source_file": "apps/astro-engine/main.py",
-      "source_location": "L882",
+      "source_location": "L887",
       "id": "astro_engine_main_get_panchang",
       "community": 0,
       "norm_label": "get_panchang()"
@@ -601,43 +601,43 @@
       "label": "get_monthly_forecast()",
       "file_type": "code",
       "source_file": "apps/astro-engine/main.py",
-      "source_location": "L955",
+      "source_location": "L960",
       "id": "astro_engine_main_get_monthly_forecast",
-      "community": 0,
+      "community": 12,
       "norm_label": "get_monthly_forecast()"
     },
     {
       "label": "get_monthly_forecast_post()",
       "file_type": "code",
       "source_file": "apps/astro-engine/main.py",
-      "source_location": "L978",
+      "source_location": "L983",
       "id": "astro_engine_main_get_monthly_forecast_post",
-      "community": 0,
+      "community": 12,
       "norm_label": "get_monthly_forecast_post()"
     },
     {
       "label": "compute_monthly_forecast_logic()",
       "file_type": "code",
       "source_file": "apps/astro-engine/main.py",
-      "source_location": "L994",
+      "source_location": "L999",
       "id": "astro_engine_main_compute_monthly_forecast_logic",
-      "community": 0,
+      "community": 12,
       "norm_label": "compute_monthly_forecast_logic()"
     },
     {
       "label": "get_monthly_narrative()",
       "file_type": "code",
       "source_file": "apps/astro-engine/main.py",
-      "source_location": "L1042",
+      "source_location": "L1047",
       "id": "astro_engine_main_get_monthly_narrative",
-      "community": 9,
+      "community": 8,
       "norm_label": "get_monthly_narrative()"
     },
     {
       "label": "calculate_compatibility()",
       "file_type": "code",
       "source_file": "apps/astro-engine/main.py",
-      "source_location": "L1052",
+      "source_location": "L1057",
       "id": "astro_engine_main_calculate_compatibility",
       "community": 17,
       "norm_label": "calculate_compatibility()"
@@ -646,16 +646,16 @@
       "label": "compatibility_narrative()",
       "file_type": "code",
       "source_file": "apps/astro-engine/main.py",
-      "source_location": "L1062",
+      "source_location": "L1067",
       "id": "astro_engine_main_compatibility_narrative",
-      "community": 9,
+      "community": 8,
       "norm_label": "compatibility_narrative()"
     },
     {
       "label": "save_biodata()",
       "file_type": "code",
       "source_file": "apps/astro-engine/main.py",
-      "source_location": "L1074",
+      "source_location": "L1079",
       "id": "astro_engine_main_save_biodata",
       "community": 0,
       "norm_label": "save_biodata()"
@@ -664,7 +664,7 @@
       "label": "save_life_event()",
       "file_type": "code",
       "source_file": "apps/astro-engine/main.py",
-      "source_location": "L1108",
+      "source_location": "L1113",
       "id": "astro_engine_main_save_life_event",
       "community": 0,
       "norm_label": "save_life_event()"
@@ -673,7 +673,7 @@
       "label": "rectify_chart()",
       "file_type": "code",
       "source_file": "apps/astro-engine/main.py",
-      "source_location": "L1133",
+      "source_location": "L1138",
       "id": "astro_engine_main_rectify_chart",
       "community": 0,
       "norm_label": "rectify_chart()"
@@ -702,7 +702,7 @@
       "source_file": "apps/astro-engine/main.py",
       "source_location": "L358",
       "id": "astro_engine_main_rationale_358",
-      "community": 22,
+      "community": 24,
       "norm_label": "runs the langgraph ai synthesis workflow to generate a premium astrological read"
     },
     {
@@ -720,7 +720,7 @@
       "source_file": "apps/astro-engine/main.py",
       "source_location": "L410",
       "id": "astro_engine_main_rationale_410",
-      "community": 16,
+      "community": 14,
       "norm_label": "core logic to detect and categorize yogas."
     },
     {
@@ -729,7 +729,7 @@
       "source_file": "apps/astro-engine/main.py",
       "source_location": "L458",
       "id": "astro_engine_main_rationale_458",
-      "community": 14,
+      "community": 15,
       "norm_label": "core logic to calculate shadow planets."
     },
     {
@@ -738,7 +738,7 @@
       "source_file": "apps/astro-engine/main.py",
       "source_location": "L501",
       "id": "astro_engine_main_rationale_501",
-      "community": 16,
+      "community": 14,
       "norm_label": "detect classical vedic yoga combinations (post variant)."
     },
     {
@@ -747,7 +747,7 @@
       "source_file": "apps/astro-engine/main.py",
       "source_location": "L511",
       "id": "astro_engine_main_rationale_511",
-      "community": 14,
+      "community": 15,
       "norm_label": "calculate shadow planets (post variant)."
     },
     {
@@ -756,7 +756,7 @@
       "source_file": "apps/astro-engine/main.py",
       "source_location": "L526",
       "id": "astro_engine_main_rationale_526",
-      "community": 2,
+      "community": 1,
       "norm_label": "compute astrological flag conditions: sade sati and mangal dosha.      sade sati"
     },
     {
@@ -810,7 +810,7 @@
       "source_file": "apps/astro-engine/main.py",
       "source_location": "L745",
       "id": "astro_engine_main_rationale_745",
-      "community": 14,
+      "community": 15,
       "norm_label": "calculate shadow planets (upagrahas) from db id."
     },
     {
@@ -819,7 +819,7 @@
       "source_file": "apps/astro-engine/main.py",
       "source_location": "L764",
       "id": "astro_engine_main_rationale_764",
-      "community": 16,
+      "community": 14,
       "norm_label": "detect yogas from db id."
     },
     {
@@ -828,7 +828,7 @@
       "source_file": "apps/astro-engine/main.py",
       "source_location": "L776",
       "id": "astro_engine_main_rationale_776",
-      "community": 15,
+      "community": 16,
       "norm_label": "core logic for transit calculations."
     },
     {
@@ -837,7 +837,7 @@
       "source_file": "apps/astro-engine/main.py",
       "source_location": "L857",
       "id": "astro_engine_main_rationale_857",
-      "community": 15,
+      "community": 16,
       "norm_label": "calculate current transits from posted chart data."
     },
     {
@@ -846,15 +846,15 @@
       "source_file": "apps/astro-engine/main.py",
       "source_location": "L867",
       "id": "astro_engine_main_rationale_867",
-      "community": 15,
+      "community": 16,
       "norm_label": "get current transits relative to a natal chart."
     },
     {
       "label": "Calculate 5 Panchang elements for a given date and location.",
       "file_type": "rationale",
       "source_file": "apps/astro-engine/main.py",
-      "source_location": "L883",
-      "id": "astro_engine_main_rationale_883",
+      "source_location": "L888",
+      "id": "astro_engine_main_rationale_888",
       "community": 0,
       "norm_label": "calculate 5 panchang elements for a given date and location."
     },
@@ -862,27 +862,27 @@
       "label": "Get transits for the entire month and score life domains (GET variant).",
       "file_type": "rationale",
       "source_file": "apps/astro-engine/main.py",
-      "source_location": "L960",
-      "id": "astro_engine_main_rationale_960",
-      "community": 0,
+      "source_location": "L965",
+      "id": "astro_engine_main_rationale_965",
+      "community": 12,
       "norm_label": "get transits for the entire month and score life domains (get variant)."
     },
     {
       "label": "Get transits for the entire month and score life domains (POST variant).",
       "file_type": "rationale",
       "source_file": "apps/astro-engine/main.py",
-      "source_location": "L982",
-      "id": "astro_engine_main_rationale_982",
-      "community": 0,
+      "source_location": "L987",
+      "id": "astro_engine_main_rationale_987",
+      "community": 12,
       "norm_label": "get transits for the entire month and score life domains (post variant)."
     },
     {
       "label": "Core logic for generating monthly life domain scores and themes.",
       "file_type": "rationale",
       "source_file": "apps/astro-engine/main.py",
-      "source_location": "L995",
-      "id": "astro_engine_main_rationale_995",
-      "community": 0,
+      "source_location": "L1000",
+      "id": "astro_engine_main_rationale_1000",
+      "community": 12,
       "norm_label": "core logic for generating monthly life domain scores and themes."
     },
     {
@@ -999,7 +999,7 @@
       "source_file": "apps/astro-engine/engine/flags.py",
       "source_location": "L1",
       "id": "apps_astro_engine_engine_flags_py",
-      "community": 2,
+      "community": 1,
       "norm_label": "flags.py"
     },
     {
@@ -1008,7 +1008,7 @@
       "source_file": "apps/astro-engine/engine/flags.py",
       "source_location": "L18",
       "id": "engine_flags_sign",
-      "community": 2,
+      "community": 1,
       "norm_label": "_sign()"
     },
     {
@@ -1017,7 +1017,7 @@
       "source_file": "apps/astro-engine/engine/flags.py",
       "source_location": "L23",
       "id": "engine_flags_house_from",
-      "community": 2,
+      "community": 1,
       "norm_label": "_house_from()"
     },
     {
@@ -1026,7 +1026,7 @@
       "source_file": "apps/astro-engine/engine/flags.py",
       "source_location": "L38",
       "id": "engine_flags_get_current_saturn_longitude",
-      "community": 2,
+      "community": 1,
       "norm_label": "_get_current_saturn_longitude()"
     },
     {
@@ -1035,7 +1035,7 @@
       "source_file": "apps/astro-engine/engine/flags.py",
       "source_location": "L47",
       "id": "engine_flags_detect_sade_sati",
-      "community": 2,
+      "community": 1,
       "norm_label": "detect_sade_sati()"
     },
     {
@@ -1044,7 +1044,7 @@
       "source_file": "apps/astro-engine/engine/flags.py",
       "source_location": "L117",
       "id": "engine_flags_detect_mangal_dosha",
-      "community": 2,
+      "community": 1,
       "norm_label": "detect_mangal_dosha()"
     },
     {
@@ -1053,7 +1053,7 @@
       "source_file": "apps/astro-engine/engine/flags.py",
       "source_location": "L190",
       "id": "engine_flags_compute_flags",
-      "community": 2,
+      "community": 1,
       "norm_label": "compute_flags()"
     },
     {
@@ -1062,7 +1062,7 @@
       "source_file": "apps/astro-engine/engine/flags.py",
       "source_location": "L1",
       "id": "engine_flags_rationale_1",
-      "community": 2,
+      "community": 1,
       "norm_label": "astrological flags engine.  detects key life-affecting conditions:   - sade sati"
     },
     {
@@ -1071,7 +1071,7 @@
       "source_file": "apps/astro-engine/engine/flags.py",
       "source_location": "L19",
       "id": "engine_flags_rationale_19",
-      "community": 2,
+      "community": 1,
       "norm_label": "return zodiac sign index 0\u201311."
     },
     {
@@ -1080,7 +1080,7 @@
       "source_file": "apps/astro-engine/engine/flags.py",
       "source_location": "L24",
       "id": "engine_flags_rationale_24",
-      "community": 2,
+      "community": 1,
       "norm_label": "return house number (1-12) of planet relative to reference."
     },
     {
@@ -1089,7 +1089,7 @@
       "source_file": "apps/astro-engine/engine/flags.py",
       "source_location": "L39",
       "id": "engine_flags_rationale_39",
-      "community": 2,
+      "community": 1,
       "norm_label": "compute saturn's current sidereal longitude using swiss ephemeris."
     },
     {
@@ -1098,7 +1098,7 @@
       "source_file": "apps/astro-engine/engine/flags.py",
       "source_location": "L48",
       "id": "engine_flags_rationale_48",
-      "community": 2,
+      "community": 1,
       "norm_label": "sade sati: saturn within 1 sign of natal moon sign.     phases:       - rising:"
     },
     {
@@ -1107,7 +1107,7 @@
       "source_file": "apps/astro-engine/engine/flags.py",
       "source_location": "L118",
       "id": "engine_flags_rationale_118",
-      "community": 2,
+      "community": 1,
       "norm_label": "mangal dosha: mars in houses 1, 2, 4, 7, 8, or 12     counted from lagna, moon,"
     },
     {
@@ -1116,7 +1116,7 @@
       "source_file": "apps/astro-engine/engine/flags.py",
       "source_location": "L194",
       "id": "engine_flags_rationale_194",
-      "community": 2,
+      "community": 1,
       "norm_label": "compute all astrological flags for a natal chart.      requires live saturn posi"
     },
     {
@@ -1215,7 +1215,7 @@
       "source_file": "apps/astro-engine/engine/yogas.py",
       "source_location": "L1",
       "id": "apps_astro_engine_engine_yogas_py",
-      "community": 1,
+      "community": 2,
       "norm_label": "yogas.py"
     },
     {
@@ -1224,7 +1224,7 @@
       "source_file": "apps/astro-engine/engine/yogas.py",
       "source_location": "L19",
       "id": "engine_yogas_sign",
-      "community": 1,
+      "community": 2,
       "norm_label": "_sign()"
     },
     {
@@ -1233,7 +1233,7 @@
       "source_file": "apps/astro-engine/engine/yogas.py",
       "source_location": "L24",
       "id": "engine_yogas_house",
-      "community": 1,
+      "community": 2,
       "norm_label": "_house()"
     },
     {
@@ -1242,7 +1242,7 @@
       "source_file": "apps/astro-engine/engine/yogas.py",
       "source_location": "L30",
       "id": "engine_yogas_same_sign",
-      "community": 1,
+      "community": 2,
       "norm_label": "_same_sign()"
     },
     {
@@ -1251,7 +1251,7 @@
       "source_file": "apps/astro-engine/engine/yogas.py",
       "source_location": "L34",
       "id": "engine_yogas_get_lon",
-      "community": 1,
+      "community": 2,
       "norm_label": "_get_lon()"
     },
     {
@@ -1260,7 +1260,7 @@
       "source_file": "apps/astro-engine/engine/yogas.py",
       "source_location": "L43",
       "id": "engine_yogas_detect_gaja_kesari",
-      "community": 1,
+      "community": 2,
       "norm_label": "detect_gaja_kesari()"
     },
     {
@@ -1269,7 +1269,7 @@
       "source_file": "apps/astro-engine/engine/yogas.py",
       "source_location": "L63",
       "id": "engine_yogas_detect_hamsa",
-      "community": 1,
+      "community": 2,
       "norm_label": "detect_hamsa()"
     },
     {
@@ -1278,7 +1278,7 @@
       "source_file": "apps/astro-engine/engine/yogas.py",
       "source_location": "L86",
       "id": "engine_yogas_detect_saraswati",
-      "community": 1,
+      "community": 2,
       "norm_label": "detect_saraswati()"
     },
     {
@@ -1287,7 +1287,7 @@
       "source_file": "apps/astro-engine/engine/yogas.py",
       "source_location": "L112",
       "id": "engine_yogas_detect_budha_aditya",
-      "community": 1,
+      "community": 2,
       "norm_label": "detect_budha_aditya()"
     },
     {
@@ -1296,7 +1296,7 @@
       "source_file": "apps/astro-engine/engine/yogas.py",
       "source_location": "L129",
       "id": "engine_yogas_detect_chandra_mangala",
-      "community": 1,
+      "community": 2,
       "norm_label": "detect_chandra_mangala()"
     },
     {
@@ -1305,7 +1305,7 @@
       "source_file": "apps/astro-engine/engine/yogas.py",
       "source_location": "L149",
       "id": "engine_yogas_detect_neecha_bhanga_raja",
-      "community": 1,
+      "community": 2,
       "norm_label": "detect_neecha_bhanga_raja()"
     },
     {
@@ -1314,7 +1314,7 @@
       "source_file": "apps/astro-engine/engine/yogas.py",
       "source_location": "L214",
       "id": "engine_yogas_detect_all_yogas",
-      "community": 1,
+      "community": 2,
       "norm_label": "detect_all_yogas()"
     },
     {
@@ -1323,7 +1323,7 @@
       "source_file": "apps/astro-engine/engine/yogas.py",
       "source_location": "L1",
       "id": "engine_yogas_rationale_1",
-      "community": 1,
+      "community": 2,
       "norm_label": "yoga detection engine.  detects classical vedic yoga combinations from a chartre"
     },
     {
@@ -1332,7 +1332,7 @@
       "source_file": "apps/astro-engine/engine/yogas.py",
       "source_location": "L20",
       "id": "engine_yogas_rationale_20",
-      "community": 1,
+      "community": 2,
       "norm_label": "return zodiac sign index (0=aries ... 11=pisces)."
     },
     {
@@ -1341,7 +1341,7 @@
       "source_file": "apps/astro-engine/engine/yogas.py",
       "source_location": "L25",
       "id": "engine_yogas_rationale_25",
-      "community": 1,
+      "community": 2,
       "norm_label": "return house number (1-12) for a planet given ascendant longitude."
     },
     {
@@ -1350,7 +1350,7 @@
       "source_file": "apps/astro-engine/engine/yogas.py",
       "source_location": "L44",
       "id": "engine_yogas_rationale_44",
-      "community": 1,
+      "community": 2,
       "norm_label": "gaja kesari yoga: jupiter in a kendra (1,4,7,10) from moon."
     },
     {
@@ -1359,7 +1359,7 @@
       "source_file": "apps/astro-engine/engine/yogas.py",
       "source_location": "L64",
       "id": "engine_yogas_rationale_64",
-      "community": 1,
+      "community": 2,
       "norm_label": "hamsa yoga (pancha mahapurusha): jupiter in own sign or exalted in a kendra."
     },
     {
@@ -1368,7 +1368,7 @@
       "source_file": "apps/astro-engine/engine/yogas.py",
       "source_location": "L87",
       "id": "engine_yogas_rationale_87",
-      "community": 1,
+      "community": 2,
       "norm_label": "saraswati yoga: jupiter, venus, mercury together or in kendras/trikonas."
     },
     {
@@ -1377,7 +1377,7 @@
       "source_file": "apps/astro-engine/engine/yogas.py",
       "source_location": "L113",
       "id": "engine_yogas_rationale_113",
-      "community": 1,
+      "community": 2,
       "norm_label": "budha-aditya yoga: sun and mercury conjunct (same sign)."
     },
     {
@@ -1386,7 +1386,7 @@
       "source_file": "apps/astro-engine/engine/yogas.py",
       "source_location": "L130",
       "id": "engine_yogas_rationale_130",
-      "community": 1,
+      "community": 2,
       "norm_label": "chandra-mangala yoga: moon and mars conjunct or mutually aspecting."
     },
     {
@@ -1395,7 +1395,7 @@
       "source_file": "apps/astro-engine/engine/yogas.py",
       "source_location": "L150",
       "id": "engine_yogas_rationale_150",
-      "community": 1,
+      "community": 2,
       "norm_label": "neecha bhanga raja yoga: a debilitated planet's lord or exaltation lord     is i"
     },
     {
@@ -1404,7 +1404,7 @@
       "source_file": "apps/astro-engine/engine/yogas.py",
       "source_location": "L215",
       "id": "engine_yogas_rationale_215",
-      "community": 1,
+      "community": 2,
       "norm_label": "run all yoga detectors and return a summary.      returns:         yogas:  list"
     },
     {
@@ -1413,7 +1413,7 @@
       "source_file": "apps/astro-engine/engine/__init__.py",
       "source_location": "L1",
       "id": "apps_astro_engine_engine_init_py",
-      "community": 82,
+      "community": 85,
       "norm_label": "__init__.py"
     },
     {
@@ -1656,7 +1656,7 @@
       "source_file": "apps/astro-engine/engine/ai_synthesis.py",
       "source_location": "L1",
       "id": "apps_astro_engine_engine_ai_synthesis_py",
-      "community": 9,
+      "community": 8,
       "norm_label": "ai_synthesis.py"
     },
     {
@@ -1665,7 +1665,7 @@
       "source_file": "apps/astro-engine/engine/ai_synthesis.py",
       "source_location": "L9",
       "id": "engine_ai_synthesis_graphstate",
-      "community": 9,
+      "community": 8,
       "norm_label": "graphstate"
     },
     {
@@ -1674,7 +1674,7 @@
       "source_file": "",
       "source_location": "",
       "id": "typeddict",
-      "community": 9,
+      "community": 8,
       "norm_label": "typeddict"
     },
     {
@@ -1683,7 +1683,7 @@
       "source_file": "apps/astro-engine/engine/ai_synthesis.py",
       "source_location": "L13",
       "id": "engine_ai_synthesis_format_prompt",
-      "community": 9,
+      "community": 8,
       "norm_label": "format_prompt()"
     },
     {
@@ -1692,7 +1692,7 @@
       "source_file": "apps/astro-engine/engine/ai_synthesis.py",
       "source_location": "L79",
       "id": "engine_ai_synthesis_format_monthly_narrative_prompt",
-      "community": 9,
+      "community": 8,
       "norm_label": "format_monthly_narrative_prompt()"
     },
     {
@@ -1701,7 +1701,7 @@
       "source_file": "apps/astro-engine/engine/ai_synthesis.py",
       "source_location": "L101",
       "id": "engine_ai_synthesis_generate_monthly_narrative_ai",
-      "community": 9,
+      "community": 8,
       "norm_label": "generate_monthly_narrative_ai()"
     },
     {
@@ -1710,7 +1710,7 @@
       "source_file": "apps/astro-engine/engine/ai_synthesis.py",
       "source_location": "L119",
       "id": "engine_ai_synthesis_gemini_node",
-      "community": 9,
+      "community": 8,
       "norm_label": "gemini_node()"
     },
     {
@@ -1719,7 +1719,7 @@
       "source_file": "apps/astro-engine/engine/ai_synthesis.py",
       "source_location": "L136",
       "id": "engine_ai_synthesis_create_workflow",
-      "community": 9,
+      "community": 8,
       "norm_label": "create_workflow()"
     },
     {
@@ -1728,7 +1728,7 @@
       "source_file": "apps/astro-engine/engine/ai_synthesis.py",
       "source_location": "L145",
       "id": "engine_ai_synthesis_format_compatibility_prompt",
-      "community": 9,
+      "community": 8,
       "norm_label": "format_compatibility_prompt()"
     },
     {
@@ -1737,7 +1737,7 @@
       "source_file": "apps/astro-engine/engine/ai_synthesis.py",
       "source_location": "L174",
       "id": "engine_ai_synthesis_generate_compatibility_narrative",
-      "community": 9,
+      "community": 8,
       "norm_label": "generate_compatibility_narrative()"
     },
     {
@@ -1746,7 +1746,7 @@
       "source_file": "apps/astro-engine/tests/__init__.py",
       "source_location": "L1",
       "id": "apps_astro_engine_tests_init_py",
-      "community": 83,
+      "community": 86,
       "norm_label": "__init__.py"
     },
     {
@@ -2160,7 +2160,7 @@
       "source_file": "apps/astro-engine/tests/test_flags.py",
       "source_location": "L1",
       "id": "apps_astro_engine_tests_test_flags_py",
-      "community": 2,
+      "community": 1,
       "norm_label": "test_flags.py"
     },
     {
@@ -2169,7 +2169,7 @@
       "source_file": "apps/astro-engine/tests/test_flags.py",
       "source_location": "L19",
       "id": "tests_test_flags_make_planet",
-      "community": 2,
+      "community": 1,
       "norm_label": "make_planet()"
     },
     {
@@ -2178,7 +2178,7 @@
       "source_file": "apps/astro-engine/tests/test_flags.py",
       "source_location": "L23",
       "id": "tests_test_flags_make_planets",
-      "community": 2,
+      "community": 1,
       "norm_label": "make_planets()"
     },
     {
@@ -2187,7 +2187,7 @@
       "source_file": "apps/astro-engine/tests/test_flags.py",
       "source_location": "L29",
       "id": "tests_test_flags_test_sign_helper",
-      "community": 2,
+      "community": 1,
       "norm_label": "test_sign_helper()"
     },
     {
@@ -2196,7 +2196,7 @@
       "source_file": "apps/astro-engine/tests/test_flags.py",
       "source_location": "L35",
       "id": "tests_test_flags_test_house_from_helper",
-      "community": 2,
+      "community": 1,
       "norm_label": "test_house_from_helper()"
     },
     {
@@ -2205,7 +2205,7 @@
       "source_file": "apps/astro-engine/tests/test_flags.py",
       "source_location": "L44",
       "id": "tests_test_flags_test_sade_sati_peak_phase",
-      "community": 2,
+      "community": 1,
       "norm_label": "test_sade_sati_peak_phase()"
     },
     {
@@ -2214,7 +2214,7 @@
       "source_file": "apps/astro-engine/tests/test_flags.py",
       "source_location": "L58",
       "id": "tests_test_flags_test_sade_sati_rising_phase",
-      "community": 2,
+      "community": 1,
       "norm_label": "test_sade_sati_rising_phase()"
     },
     {
@@ -2223,7 +2223,7 @@
       "source_file": "apps/astro-engine/tests/test_flags.py",
       "source_location": "L71",
       "id": "tests_test_flags_test_sade_sati_setting_phase",
-      "community": 2,
+      "community": 1,
       "norm_label": "test_sade_sati_setting_phase()"
     },
     {
@@ -2232,7 +2232,7 @@
       "source_file": "apps/astro-engine/tests/test_flags.py",
       "source_location": "L83",
       "id": "tests_test_flags_test_sade_sati_not_active",
-      "community": 2,
+      "community": 1,
       "norm_label": "test_sade_sati_not_active()"
     },
     {
@@ -2241,7 +2241,7 @@
       "source_file": "apps/astro-engine/tests/test_flags.py",
       "source_location": "L98",
       "id": "tests_test_flags_test_mangal_dosha_not_triggered_when_mars_in_safe_house",
-      "community": 2,
+      "community": 1,
       "norm_label": "test_mangal_dosha_not_triggered_when_mars_in_safe_house()"
     },
     {
@@ -2250,7 +2250,7 @@
       "source_file": "apps/astro-engine/tests/test_flags.py",
       "source_location": "L108",
       "id": "tests_test_flags_test_mangal_dosha_triggered_from_lagna",
-      "community": 2,
+      "community": 1,
       "norm_label": "test_mangal_dosha_triggered_from_lagna()"
     },
     {
@@ -2259,7 +2259,7 @@
       "source_file": "apps/astro-engine/tests/test_flags.py",
       "source_location": "L121",
       "id": "tests_test_flags_test_mangal_dosha_active_without_cancellation",
-      "community": 2,
+      "community": 1,
       "norm_label": "test_mangal_dosha_active_without_cancellation()"
     },
     {
@@ -2268,7 +2268,7 @@
       "source_file": "apps/astro-engine/tests/test_flags.py",
       "source_location": "L132",
       "id": "tests_test_flags_test_mangal_dosha_triggered_from_moon",
-      "community": 2,
+      "community": 1,
       "norm_label": "test_mangal_dosha_triggered_from_moon()"
     },
     {
@@ -2277,7 +2277,7 @@
       "source_file": "apps/astro-engine/tests/test_flags.py",
       "source_location": "L141",
       "id": "tests_test_flags_test_mangal_dosha_cancellation_when_mars_in_own_sign",
-      "community": 2,
+      "community": 1,
       "norm_label": "test_mangal_dosha_cancellation_when_mars_in_own_sign()"
     },
     {
@@ -2286,7 +2286,7 @@
       "source_file": "apps/astro-engine/tests/test_flags.py",
       "source_location": "L152",
       "id": "tests_test_flags_test_mangal_dosha_severity_strong",
-      "community": 2,
+      "community": 1,
       "norm_label": "test_mangal_dosha_severity_strong()"
     },
     {
@@ -2295,7 +2295,7 @@
       "source_file": "apps/astro-engine/tests/test_flags.py",
       "source_location": "L162",
       "id": "tests_test_flags_test_mangal_dosha_no_mars_data",
-      "community": 2,
+      "community": 1,
       "norm_label": "test_mangal_dosha_no_mars_data()"
     },
     {
@@ -2304,7 +2304,7 @@
       "source_file": "apps/astro-engine/tests/test_flags.py",
       "source_location": "L171",
       "id": "tests_test_flags_test_compute_flags_returns_required_structure",
-      "community": 2,
+      "community": 1,
       "norm_label": "test_compute_flags_returns_required_structure()"
     },
     {
@@ -2313,7 +2313,7 @@
       "source_file": "apps/astro-engine/tests/test_flags.py",
       "source_location": "L1",
       "id": "tests_test_flags_rationale_1",
-      "community": 2,
+      "community": 1,
       "norm_label": "tests for the flags engine (sade sati + mangal dosha). note: sade sati tests moc"
     },
     {
@@ -2322,7 +2322,7 @@
       "source_file": "apps/astro-engine/tests/test_flags.py",
       "source_location": "L45",
       "id": "tests_test_flags_rationale_45",
-      "community": 2,
+      "community": 1,
       "norm_label": "saturn in same sign as natal moon \u2192 peak phase."
     },
     {
@@ -2331,7 +2331,7 @@
       "source_file": "apps/astro-engine/tests/test_flags.py",
       "source_location": "L59",
       "id": "tests_test_flags_rationale_59",
-      "community": 2,
+      "community": 1,
       "norm_label": "saturn one sign before natal moon \u2192 rising phase."
     },
     {
@@ -2340,7 +2340,7 @@
       "source_file": "apps/astro-engine/tests/test_flags.py",
       "source_location": "L72",
       "id": "tests_test_flags_rationale_72",
-      "community": 2,
+      "community": 1,
       "norm_label": "saturn one sign after natal moon \u2192 setting phase."
     },
     {
@@ -2349,7 +2349,7 @@
       "source_file": "apps/astro-engine/tests/test_flags.py",
       "source_location": "L84",
       "id": "tests_test_flags_rationale_84",
-      "community": 2,
+      "community": 1,
       "norm_label": "saturn far from natal moon \u2192 not active."
     },
     {
@@ -2358,7 +2358,7 @@
       "source_file": "apps/astro-engine/tests/test_flags.py",
       "source_location": "L99",
       "id": "tests_test_flags_rationale_99",
-      "community": 2,
+      "community": 1,
       "norm_label": "mars in house 3 from lagna (not in dosha houses) \u2192 no dosha."
     },
     {
@@ -2367,7 +2367,7 @@
       "source_file": "apps/astro-engine/tests/test_flags.py",
       "source_location": "L109",
       "id": "tests_test_flags_rationale_109",
-      "community": 2,
+      "community": 1,
       "norm_label": "mars in house 1 from lagna \u2192 triggers mangal dosha (from lagna)."
     },
     {
@@ -2376,7 +2376,7 @@
       "source_file": "apps/astro-engine/tests/test_flags.py",
       "source_location": "L122",
       "id": "tests_test_flags_rationale_122",
-      "community": 2,
+      "community": 1,
       "norm_label": "mars in house 1 from lagna but not in own/exalted sign \u2192 active."
     },
     {
@@ -2385,7 +2385,7 @@
       "source_file": "apps/astro-engine/tests/test_flags.py",
       "source_location": "L133",
       "id": "tests_test_flags_rationale_133",
-      "community": 2,
+      "community": 1,
       "norm_label": "mars in house 7 from moon \u2192 triggers mangal dosha."
     },
     {
@@ -2394,7 +2394,7 @@
       "source_file": "apps/astro-engine/tests/test_flags.py",
       "source_location": "L142",
       "id": "tests_test_flags_rationale_142",
-      "community": 2,
+      "community": 1,
       "norm_label": "mars in aries (sign 0, own sign) \u2192 dosha cancelled."
     },
     {
@@ -2403,7 +2403,7 @@
       "source_file": "apps/astro-engine/tests/test_flags.py",
       "source_location": "L153",
       "id": "tests_test_flags_rationale_153",
-      "community": 2,
+      "community": 1,
       "norm_label": "mars in house 7 from all three reference points \u2192 strong."
     },
     {
@@ -2412,7 +2412,7 @@
       "source_file": "apps/astro-engine/tests/test_flags.py",
       "source_location": "L163",
       "id": "tests_test_flags_rationale_163",
-      "community": 2,
+      "community": 1,
       "norm_label": "missing mars planet \u2192 no dosha, not active."
     },
     {
@@ -2421,7 +2421,7 @@
       "source_file": "apps/astro-engine/tests/test_flags.py",
       "source_location": "L111",
       "id": "tests_test_flags_rationale_111",
-      "community": 2,
+      "community": 1,
       "norm_label": "# note: mars at 5\u00b0 aries is in its own sign \u2192 cancellation applies, active=false"
     },
     {
@@ -2430,7 +2430,7 @@
       "source_file": "apps/astro-engine/tests/test_yogas.py",
       "source_location": "L1",
       "id": "apps_astro_engine_tests_test_yogas_py",
-      "community": 1,
+      "community": 2,
       "norm_label": "test_yogas.py"
     },
     {
@@ -2439,7 +2439,7 @@
       "source_file": "apps/astro-engine/tests/test_yogas.py",
       "source_location": "L18",
       "id": "tests_test_yogas_make_planet",
-      "community": 1,
+      "community": 2,
       "norm_label": "make_planet()"
     },
     {
@@ -2448,7 +2448,7 @@
       "source_file": "apps/astro-engine/tests/test_yogas.py",
       "source_location": "L22",
       "id": "tests_test_yogas_make_planets",
-      "community": 1,
+      "community": 2,
       "norm_label": "make_planets()"
     },
     {
@@ -2457,7 +2457,7 @@
       "source_file": "apps/astro-engine/tests/test_yogas.py",
       "source_location": "L29",
       "id": "tests_test_yogas_test_gaja_kesari_active_when_jupiter_in_kendra_from_moon",
-      "community": 1,
+      "community": 2,
       "norm_label": "test_gaja_kesari_active_when_jupiter_in_kendra_from_moon()"
     },
     {
@@ -2466,7 +2466,7 @@
       "source_file": "apps/astro-engine/tests/test_yogas.py",
       "source_location": "L37",
       "id": "tests_test_yogas_test_gaja_kesari_active_when_jupiter_in_7th_from_moon",
-      "community": 1,
+      "community": 2,
       "norm_label": "test_gaja_kesari_active_when_jupiter_in_7th_from_moon()"
     },
     {
@@ -2475,7 +2475,7 @@
       "source_file": "apps/astro-engine/tests/test_yogas.py",
       "source_location": "L45",
       "id": "tests_test_yogas_test_gaja_kesari_not_active_when_jupiter_in_3rd_from_moon",
-      "community": 1,
+      "community": 2,
       "norm_label": "test_gaja_kesari_not_active_when_jupiter_in_3rd_from_moon()"
     },
     {
@@ -2484,7 +2484,7 @@
       "source_file": "apps/astro-engine/tests/test_yogas.py",
       "source_location": "L55",
       "id": "tests_test_yogas_test_hamsa_active_when_jupiter_exalted_in_kendra",
-      "community": 1,
+      "community": 2,
       "norm_label": "test_hamsa_active_when_jupiter_exalted_in_kendra()"
     },
     {
@@ -2493,7 +2493,7 @@
       "source_file": "apps/astro-engine/tests/test_yogas.py",
       "source_location": "L65",
       "id": "tests_test_yogas_test_hamsa_not_active_when_jupiter_in_weak_position",
-      "community": 1,
+      "community": 2,
       "norm_label": "test_hamsa_not_active_when_jupiter_in_weak_position()"
     },
     {
@@ -2502,7 +2502,7 @@
       "source_file": "apps/astro-engine/tests/test_yogas.py",
       "source_location": "L77",
       "id": "tests_test_yogas_test_budha_aditya_active_when_sun_mercury_same_sign",
-      "community": 1,
+      "community": 2,
       "norm_label": "test_budha_aditya_active_when_sun_mercury_same_sign()"
     },
     {
@@ -2511,7 +2511,7 @@
       "source_file": "apps/astro-engine/tests/test_yogas.py",
       "source_location": "L84",
       "id": "tests_test_yogas_test_budha_aditya_not_active_when_different_signs",
-      "community": 1,
+      "community": 2,
       "norm_label": "test_budha_aditya_not_active_when_different_signs()"
     },
     {
@@ -2520,7 +2520,7 @@
       "source_file": "apps/astro-engine/tests/test_yogas.py",
       "source_location": "L93",
       "id": "tests_test_yogas_test_chandra_mangala_active_when_conjunct",
-      "community": 1,
+      "community": 2,
       "norm_label": "test_chandra_mangala_active_when_conjunct()"
     },
     {
@@ -2529,7 +2529,7 @@
       "source_file": "apps/astro-engine/tests/test_yogas.py",
       "source_location": "L100",
       "id": "tests_test_yogas_test_chandra_mangala_active_when_opposing",
-      "community": 1,
+      "community": 2,
       "norm_label": "test_chandra_mangala_active_when_opposing()"
     },
     {
@@ -2538,7 +2538,7 @@
       "source_file": "apps/astro-engine/tests/test_yogas.py",
       "source_location": "L107",
       "id": "tests_test_yogas_test_chandra_mangala_not_active_when_trine",
-      "community": 1,
+      "community": 2,
       "norm_label": "test_chandra_mangala_not_active_when_trine()"
     },
     {
@@ -2547,7 +2547,7 @@
       "source_file": "apps/astro-engine/tests/test_yogas.py",
       "source_location": "L116",
       "id": "tests_test_yogas_test_detect_all_yogas_returns_required_structure",
-      "community": 1,
+      "community": 2,
       "norm_label": "test_detect_all_yogas_returns_required_structure()"
     },
     {
@@ -2556,7 +2556,7 @@
       "source_file": "apps/astro-engine/tests/test_yogas.py",
       "source_location": "L134",
       "id": "tests_test_yogas_test_detect_all_yogas_never_crashes_on_missing_planets",
-      "community": 1,
+      "community": 2,
       "norm_label": "test_detect_all_yogas_never_crashes_on_missing_planets()"
     },
     {
@@ -2565,7 +2565,7 @@
       "source_file": "apps/astro-engine/tests/test_yogas.py",
       "source_location": "L140",
       "id": "tests_test_yogas_test_detect_all_yogas_active_subset_of_all",
-      "community": 1,
+      "community": 2,
       "norm_label": "test_detect_all_yogas_active_subset_of_all()"
     },
     {
@@ -2574,7 +2574,7 @@
       "source_file": "apps/astro-engine/tests/test_yogas.py",
       "source_location": "L1",
       "id": "tests_test_yogas_rationale_1",
-      "community": 1,
+      "community": 2,
       "norm_label": "tests for the yoga detection engine. run with: python -m pytest tests/test_yogas"
     },
     {
@@ -2583,7 +2583,7 @@
       "source_file": "apps/astro-engine/tests/test_yogas.py",
       "source_location": "L23",
       "id": "tests_test_yogas_rationale_23",
-      "community": 1,
+      "community": 2,
       "norm_label": "create a planets dict from name=longitude pairs."
     },
     {
@@ -2592,7 +2592,7 @@
       "source_file": "apps/astro-engine/tests/test_yogas.py",
       "source_location": "L30",
       "id": "tests_test_yogas_rationale_30",
-      "community": 1,
+      "community": 2,
       "norm_label": "jupiter in the 1st from moon (conjunction) \u2192 active."
     },
     {
@@ -2601,7 +2601,7 @@
       "source_file": "apps/astro-engine/tests/test_yogas.py",
       "source_location": "L38",
       "id": "tests_test_yogas_rationale_38",
-      "community": 1,
+      "community": 2,
       "norm_label": "jupiter in the 7th from moon \u2192 active (kendra)."
     },
     {
@@ -2610,7 +2610,7 @@
       "source_file": "apps/astro-engine/tests/test_yogas.py",
       "source_location": "L46",
       "id": "tests_test_yogas_rationale_46",
-      "community": 1,
+      "community": 2,
       "norm_label": "jupiter in the 3rd from moon \u2192 not a kendra, not active."
     },
     {
@@ -2619,7 +2619,7 @@
       "source_file": "apps/astro-engine/tests/test_yogas.py",
       "source_location": "L56",
       "id": "tests_test_yogas_rationale_56",
-      "community": 1,
+      "community": 2,
       "norm_label": "jupiter at cancer (sign index 3 = 90-120\u00b0), ascendant at 0 \u2192 house 4 (kendra)."
     },
     {
@@ -2628,7 +2628,7 @@
       "source_file": "apps/astro-engine/tests/test_yogas.py",
       "source_location": "L66",
       "id": "tests_test_yogas_rationale_66",
-      "community": 1,
+      "community": 2,
       "norm_label": "jupiter in a non-kendra, non-own sign \u2192 not active."
     },
     {
@@ -2637,7 +2637,7 @@
       "source_file": "apps/astro-engine/tests/test_yogas.py",
       "source_location": "L135",
       "id": "tests_test_yogas_rationale_135",
-      "community": 1,
+      "community": 2,
       "norm_label": "empty planets dict should not raise \u2014 all detectors must handle missing data."
     },
     {
@@ -2646,7 +2646,7 @@
       "source_file": "apps/web/next-env.d.ts",
       "source_location": "L1",
       "id": "apps_web_next_env_d_ts",
-      "community": 84,
+      "community": 87,
       "norm_label": "next-env.d.ts"
     },
     {
@@ -2655,7 +2655,7 @@
       "source_file": "apps/web/eslint.config.mjs",
       "source_location": "L1",
       "id": "apps_web_eslint_config_mjs",
-      "community": 85,
+      "community": 88,
       "norm_label": "eslint.config.mjs"
     },
     {
@@ -2664,7 +2664,7 @@
       "source_file": "apps/web/next.config.ts",
       "source_location": "L1",
       "id": "apps_web_next_config_ts",
-      "community": 86,
+      "community": 89,
       "norm_label": "next.config.ts"
     },
     {
@@ -2673,7 +2673,7 @@
       "source_file": "apps/web/postcss.config.mjs",
       "source_location": "L1",
       "id": "apps_web_postcss_config_mjs",
-      "community": 87,
+      "community": 90,
       "norm_label": "postcss.config.mjs"
     },
     {
@@ -2682,7 +2682,7 @@
       "source_file": "apps/web/drizzle.config.ts",
       "source_location": "L1",
       "id": "apps_web_drizzle_config_ts",
-      "community": 88,
+      "community": 91,
       "norm_label": "drizzle.config.ts"
     },
     {
@@ -2691,7 +2691,7 @@
       "source_file": "apps/web/src/db/schema.ts",
       "source_location": "L1",
       "id": "apps_web_src_db_schema_ts",
-      "community": 89,
+      "community": 92,
       "norm_label": "schema.ts"
     },
     {
@@ -2700,7 +2700,7 @@
       "source_file": "apps/web/src/db/index.ts",
       "source_location": "L1",
       "id": "apps_web_src_db_index_ts",
-      "community": 90,
+      "community": 93,
       "norm_label": "index.ts"
     },
     {
@@ -2709,7 +2709,7 @@
       "source_file": "apps/web/src/components/NorthIndianChart.tsx",
       "source_location": "L1",
       "id": "apps_web_src_components_northindianchart_tsx",
-      "community": 91,
+      "community": 94,
       "norm_label": "northindianchart.tsx"
     },
     {
@@ -2718,7 +2718,7 @@
       "source_file": "apps/web/src/components/AstrolabeLoader.tsx",
       "source_location": "L1",
       "id": "apps_web_src_components_astrolabeloader_tsx",
-      "community": 92,
+      "community": 95,
       "norm_label": "astrolabeloader.tsx"
     },
     {
@@ -2727,7 +2727,7 @@
       "source_file": "apps/web/src/components/ComingSoon.tsx",
       "source_location": "L1",
       "id": "apps_web_src_components_comingsoon_tsx",
-      "community": 93,
+      "community": 96,
       "norm_label": "comingsoon.tsx"
     },
     {
@@ -2736,7 +2736,7 @@
       "source_file": "apps/web/src/components/PlanetaryTable.tsx",
       "source_location": "L1",
       "id": "apps_web_src_components_planetarytable_tsx",
-      "community": 38,
+      "community": 42,
       "norm_label": "planetarytable.tsx"
     },
     {
@@ -2745,7 +2745,7 @@
       "source_file": "apps/web/src/components/PlanetaryTable.tsx",
       "source_location": "L21",
       "id": "components_planetarytable_planetarytable",
-      "community": 38,
+      "community": 42,
       "norm_label": "planetarytable()"
     },
     {
@@ -2754,7 +2754,7 @@
       "source_file": "apps/web/src/components/ReadingDisplay.tsx",
       "source_location": "L1",
       "id": "apps_web_src_components_readingdisplay_tsx",
-      "community": 39,
+      "community": 43,
       "norm_label": "readingdisplay.tsx"
     },
     {
@@ -2763,7 +2763,7 @@
       "source_file": "apps/web/src/components/ReadingDisplay.tsx",
       "source_location": "L16",
       "id": "components_readingdisplay_readingdisplay",
-      "community": 39,
+      "community": 43,
       "norm_label": "readingdisplay()"
     },
     {
@@ -2772,7 +2772,7 @@
       "source_file": "apps/web/src/components/BackgroundSystem.tsx",
       "source_location": "L1",
       "id": "apps_web_src_components_backgroundsystem_tsx",
-      "community": 40,
+      "community": 44,
       "norm_label": "backgroundsystem.tsx"
     },
     {
@@ -2781,7 +2781,7 @@
       "source_file": "apps/web/src/components/BackgroundSystem.tsx",
       "source_location": "L5",
       "id": "components_backgroundsystem_backgroundsystem",
-      "community": 40,
+      "community": 44,
       "norm_label": "backgroundsystem()"
     },
     {
@@ -2790,7 +2790,7 @@
       "source_file": "apps/web/src/components/NavHUD.tsx",
       "source_location": "L1",
       "id": "apps_web_src_components_navhud_tsx",
-      "community": 23,
+      "community": 25,
       "norm_label": "navhud.tsx"
     },
     {
@@ -2799,7 +2799,7 @@
       "source_file": "apps/web/src/components/NavHUD.tsx",
       "source_location": "L6",
       "id": "components_navhud_navhud",
-      "community": 23,
+      "community": 25,
       "norm_label": "navhud()"
     },
     {
@@ -2808,7 +2808,7 @@
       "source_file": "apps/web/src/components/NavHUD.tsx",
       "source_location": "L29",
       "id": "components_navhud_navlink",
-      "community": 23,
+      "community": 25,
       "norm_label": "navlink()"
     },
     {
@@ -2817,7 +2817,7 @@
       "source_file": "apps/web/src/components/ChartShell.tsx",
       "source_location": "L1",
       "id": "apps_web_src_components_chartshell_tsx",
-      "community": 94,
+      "community": 97,
       "norm_label": "chartshell.tsx"
     },
     {
@@ -2826,7 +2826,7 @@
       "source_file": "apps/web/src/components/SoulSignature.tsx",
       "source_location": "L1",
       "id": "apps_web_src_components_soulsignature_tsx",
-      "community": 41,
+      "community": 45,
       "norm_label": "soulsignature.tsx"
     },
     {
@@ -2835,7 +2835,7 @@
       "source_file": "apps/web/src/components/SoulSignature.tsx",
       "source_location": "L20",
       "id": "components_soulsignature_handlemousemove",
-      "community": 41,
+      "community": 45,
       "norm_label": "handlemousemove()"
     },
     {
@@ -2844,7 +2844,7 @@
       "source_file": "apps/web/src/components/Sidebar.tsx",
       "source_location": "L1",
       "id": "apps_web_src_components_sidebar_tsx",
-      "community": 5,
+      "community": 41,
       "norm_label": "sidebar.tsx"
     },
     {
@@ -2853,7 +2853,7 @@
       "source_file": "apps/web/src/components/Sidebar.tsx",
       "source_location": "L210",
       "id": "components_sidebar_handlesignout",
-      "community": 5,
+      "community": 41,
       "norm_label": "handlesignout()"
     },
     {
@@ -2862,7 +2862,7 @@
       "source_file": "apps/web/src/components/BirthForm.tsx",
       "source_location": "L1",
       "id": "apps_web_src_components_birthform_tsx",
-      "community": 10,
+      "community": 11,
       "norm_label": "birthform.tsx"
     },
     {
@@ -2871,7 +2871,7 @@
       "source_file": "apps/web/src/components/BirthForm.tsx",
       "source_location": "L29",
       "id": "components_birthform_birthform",
-      "community": 10,
+      "community": 11,
       "norm_label": "birthform()"
     },
     {
@@ -2880,7 +2880,7 @@
       "source_file": "apps/web/src/components/ResonanceMeter.tsx",
       "source_location": "L1",
       "id": "apps_web_src_components_resonancemeter_tsx",
-      "community": 95,
+      "community": 98,
       "norm_label": "resonancemeter.tsx"
     },
     {
@@ -2889,7 +2889,7 @@
       "source_file": "apps/web/src/components/compatibility/ScoreHero.tsx",
       "source_location": "L1",
       "id": "apps_web_src_components_compatibility_scorehero_tsx",
-      "community": 42,
+      "community": 46,
       "norm_label": "scorehero.tsx"
     },
     {
@@ -2898,7 +2898,7 @@
       "source_file": "apps/web/src/components/compatibility/ScoreHero.tsx",
       "source_location": "L14",
       "id": "compatibility_scorehero_getmatchlabel",
-      "community": 42,
+      "community": 46,
       "norm_label": "getmatchlabel()"
     },
     {
@@ -2907,7 +2907,7 @@
       "source_file": "apps/web/src/components/compatibility/ChartPicker.tsx",
       "source_location": "L1",
       "id": "apps_web_src_components_compatibility_chartpicker_tsx",
-      "community": 96,
+      "community": 99,
       "norm_label": "chartpicker.tsx"
     },
     {
@@ -2916,7 +2916,7 @@
       "source_file": "apps/web/src/components/compatibility/DetailedNarrative.tsx",
       "source_location": "L1",
       "id": "apps_web_src_components_compatibility_detailednarrative_tsx",
-      "community": 97,
+      "community": 100,
       "norm_label": "detailednarrative.tsx"
     },
     {
@@ -2925,7 +2925,7 @@
       "source_file": "apps/web/src/components/compatibility/index.ts",
       "source_location": "L1",
       "id": "apps_web_src_components_compatibility_index_ts",
-      "community": 98,
+      "community": 101,
       "norm_label": "index.ts"
     },
     {
@@ -2934,7 +2934,7 @@
       "source_file": "apps/web/src/components/compatibility/KootaBreakdown.tsx",
       "source_location": "L1",
       "id": "apps_web_src_components_compatibility_kootabreakdown_tsx",
-      "community": 99,
+      "community": 102,
       "norm_label": "kootabreakdown.tsx"
     },
     {
@@ -2943,7 +2943,7 @@
       "source_file": "apps/web/src/components/compatibility/SaveShare.tsx",
       "source_location": "L1",
       "id": "apps_web_src_components_compatibility_saveshare_tsx",
-      "community": 43,
+      "community": 47,
       "norm_label": "saveshare.tsx"
     },
     {
@@ -2952,7 +2952,7 @@
       "source_file": "apps/web/src/components/compatibility/SaveShare.tsx",
       "source_location": "L11",
       "id": "compatibility_saveshare_saveshare",
-      "community": 43,
+      "community": 47,
       "norm_label": "saveshare()"
     },
     {
@@ -2961,7 +2961,7 @@
       "source_file": "apps/web/src/components/compatibility/DoshaAnalysis.tsx",
       "source_location": "L1",
       "id": "apps_web_src_components_compatibility_doshaanalysis_tsx",
-      "community": 100,
+      "community": 103,
       "norm_label": "doshaanalysis.tsx"
     },
     {
@@ -2970,7 +2970,7 @@
       "source_file": "apps/web/src/components/sky/PanchangCard.tsx",
       "source_location": "L1",
       "id": "apps_web_src_components_sky_panchangcard_tsx",
-      "community": 44,
+      "community": 48,
       "norm_label": "panchangcard.tsx"
     },
     {
@@ -2979,7 +2979,7 @@
       "source_file": "apps/web/src/components/sky/PanchangCard.tsx",
       "source_location": "L14",
       "id": "sky_panchangcard_panchangcard",
-      "community": 44,
+      "community": 48,
       "norm_label": "panchangcard()"
     },
     {
@@ -2988,7 +2988,7 @@
       "source_file": "apps/web/src/components/sky/TransitChart.tsx",
       "source_location": "L1",
       "id": "apps_web_src_components_sky_transitchart_tsx",
-      "community": 101,
+      "community": 104,
       "norm_label": "transitchart.tsx"
     },
     {
@@ -2997,7 +2997,7 @@
       "source_file": "apps/web/src/components/sky/MuhurtaFinder.tsx",
       "source_location": "L1",
       "id": "apps_web_src_components_sky_muhurtafinder_tsx",
-      "community": 48,
+      "community": 70,
       "norm_label": "muhurtafinder.tsx"
     },
     {
@@ -3006,7 +3006,7 @@
       "source_file": "apps/web/src/components/sky/MuhurtaFinder.tsx",
       "source_location": "L37",
       "id": "sky_muhurtafinder_calculatemuhurta",
-      "community": 48,
+      "community": 70,
       "norm_label": "calculatemuhurta()"
     },
     {
@@ -3015,7 +3015,7 @@
       "source_file": "apps/web/src/components/ask/chat-messages.tsx",
       "source_location": "L1",
       "id": "apps_web_src_components_ask_chat_messages_tsx",
-      "community": 6,
+      "community": 9,
       "norm_label": "chat-messages.tsx"
     },
     {
@@ -3024,7 +3024,7 @@
       "source_file": "apps/web/src/components/ask/chat-messages.tsx",
       "source_location": "L14",
       "id": "ask_chat_messages_chatmessagebubble",
-      "community": 6,
+      "community": 9,
       "norm_label": "chatmessagebubble()"
     },
     {
@@ -3078,7 +3078,7 @@
       "source_file": "apps/web/src/components/ask/chart-context-panel.tsx",
       "source_location": "L1",
       "id": "apps_web_src_components_ask_chart_context_panel_tsx",
-      "community": 24,
+      "community": 26,
       "norm_label": "chart-context-panel.tsx"
     },
     {
@@ -3087,7 +3087,7 @@
       "source_file": "apps/web/src/components/ask/chart-context-panel.tsx",
       "source_location": "L23",
       "id": "ask_chart_context_panel_contextcard",
-      "community": 24,
+      "community": 26,
       "norm_label": "contextcard()"
     },
     {
@@ -3096,7 +3096,7 @@
       "source_file": "apps/web/src/components/ask/chart-context-panel.tsx",
       "source_location": "L45",
       "id": "ask_chart_context_panel_mobilepillstrip",
-      "community": 24,
+      "community": 26,
       "norm_label": "mobilepillstrip()"
     },
     {
@@ -3105,7 +3105,7 @@
       "source_file": "apps/web/src/components/overview/QuickLinks.tsx",
       "source_location": "L1",
       "id": "apps_web_src_components_overview_quicklinks_tsx",
-      "community": 11,
+      "community": 5,
       "norm_label": "quicklinks.tsx"
     },
     {
@@ -3114,7 +3114,7 @@
       "source_file": "apps/web/src/components/overview/QuickLinks.tsx",
       "source_location": "L20",
       "id": "overview_quicklinks_quicklinks",
-      "community": 11,
+      "community": 5,
       "norm_label": "quicklinks()"
     },
     {
@@ -3123,7 +3123,7 @@
       "source_file": "apps/web/src/components/overview/ChartHeroBanner.tsx",
       "source_location": "L1",
       "id": "apps_web_src_components_overview_chartherobanner_tsx",
-      "community": 11,
+      "community": 5,
       "norm_label": "chartherobanner.tsx"
     },
     {
@@ -3132,7 +3132,7 @@
       "source_file": "apps/web/src/components/overview/ChartHeroBanner.tsx",
       "source_location": "L12",
       "id": "overview_chartherobanner_chartherobanner",
-      "community": 11,
+      "community": 5,
       "norm_label": "chartherobanner()"
     },
     {
@@ -3141,7 +3141,7 @@
       "source_file": "apps/web/src/components/overview/CurrentAlerts.tsx",
       "source_location": "L1",
       "id": "apps_web_src_components_overview_currentalerts_tsx",
-      "community": 102,
+      "community": 105,
       "norm_label": "currentalerts.tsx"
     },
     {
@@ -3150,7 +3150,7 @@
       "source_file": "apps/web/src/components/overview/PlanetPlacements.tsx",
       "source_location": "L1",
       "id": "apps_web_src_components_overview_planetplacements_tsx",
-      "community": 103,
+      "community": 106,
       "norm_label": "planetplacements.tsx"
     },
     {
@@ -3159,7 +3159,7 @@
       "source_file": "apps/web/src/components/overview/LifeAtAGlance.tsx",
       "source_location": "L1",
       "id": "apps_web_src_components_overview_lifeataglance_tsx",
-      "community": 25,
+      "community": 27,
       "norm_label": "lifeataglance.tsx"
     },
     {
@@ -3168,7 +3168,7 @@
       "source_file": "apps/web/src/components/overview/LifeAtAGlance.tsx",
       "source_location": "L20",
       "id": "overview_lifeataglance_scoretograde",
-      "community": 25,
+      "community": 27,
       "norm_label": "scoretograde()"
     },
     {
@@ -3177,7 +3177,7 @@
       "source_file": "apps/web/src/components/overview/LifeAtAGlance.tsx",
       "source_location": "L28",
       "id": "overview_lifeataglance_scoretocolor",
-      "community": 25,
+      "community": 27,
       "norm_label": "scoretocolor()"
     },
     {
@@ -3186,7 +3186,7 @@
       "source_file": "apps/web/src/components/overview/MetricCards.tsx",
       "source_location": "L1",
       "id": "apps_web_src_components_overview_metriccards_tsx",
-      "community": 11,
+      "community": 5,
       "norm_label": "metriccards.tsx"
     },
     {
@@ -3195,7 +3195,7 @@
       "source_file": "apps/web/src/components/overview/MetricCards.tsx",
       "source_location": "L21",
       "id": "overview_metriccards_metriccards",
-      "community": 11,
+      "community": 5,
       "norm_label": "metriccards()"
     },
     {
@@ -3204,7 +3204,7 @@
       "source_file": "apps/web/src/components/overview/MetricCards.tsx",
       "source_location": "L177",
       "id": "overview_metriccards_getstatus",
-      "community": 11,
+      "community": 5,
       "norm_label": "getstatus()"
     },
     {
@@ -3213,7 +3213,7 @@
       "source_file": "apps/web/src/components/predictions/SamhitaMatches.tsx",
       "source_location": "L1",
       "id": "apps_web_src_components_predictions_samhitamatches_tsx",
-      "community": 8,
+      "community": 6,
       "norm_label": "samhitamatches.tsx"
     },
     {
@@ -3222,7 +3222,7 @@
       "source_file": "apps/web/src/components/predictions/SamhitaMatches.tsx",
       "source_location": "L18",
       "id": "predictions_samhitamatches_samhitamatches",
-      "community": 8,
+      "community": 6,
       "norm_label": "samhitamatches()"
     },
     {
@@ -3231,7 +3231,7 @@
       "source_file": "apps/web/src/types/overview.ts",
       "source_location": "L1",
       "id": "apps_web_src_types_overview_ts",
-      "community": 104,
+      "community": 107,
       "norm_label": "overview.ts"
     },
     {
@@ -3240,7 +3240,7 @@
       "source_file": "apps/web/src/types/dasha.ts",
       "source_location": "L1",
       "id": "apps_web_src_types_dasha_ts",
-      "community": 105,
+      "community": 108,
       "norm_label": "dasha.ts"
     },
     {
@@ -3249,7 +3249,7 @@
       "source_file": "apps/web/src/types/ask.ts",
       "source_location": "L1",
       "id": "apps_web_src_types_ask_ts",
-      "community": 106,
+      "community": 109,
       "norm_label": "ask.ts"
     },
     {
@@ -3258,7 +3258,7 @@
       "source_file": "apps/web/src/types/astro.ts",
       "source_location": "L1",
       "id": "apps_web_src_types_astro_ts",
-      "community": 107,
+      "community": 110,
       "norm_label": "astro.ts"
     },
     {
@@ -3267,7 +3267,7 @@
       "source_file": "apps/web/src/utils/chart-strength-deriver.ts",
       "source_location": "L1",
       "id": "apps_web_src_utils_chart_strength_deriver_ts",
-      "community": 12,
+      "community": 5,
       "norm_label": "chart-strength-deriver.ts"
     },
     {
@@ -3276,7 +3276,7 @@
       "source_file": "apps/web/src/utils/chart-strength-deriver.ts",
       "source_location": "L23",
       "id": "utils_chart_strength_deriver_planethouse",
-      "community": 12,
+      "community": 5,
       "norm_label": "planethouse()"
     },
     {
@@ -3285,7 +3285,7 @@
       "source_file": "apps/web/src/utils/chart-strength-deriver.ts",
       "source_location": "L33",
       "id": "utils_chart_strength_deriver_normalizescores",
-      "community": 12,
+      "community": 5,
       "norm_label": "normalizescores()"
     },
     {
@@ -3294,7 +3294,7 @@
       "source_file": "apps/web/src/utils/chart-strength-deriver.ts",
       "source_location": "L57",
       "id": "utils_chart_strength_deriver_deriveplanetmetrics",
-      "community": 12,
+      "community": 5,
       "norm_label": "deriveplanetmetrics()"
     },
     {
@@ -3303,7 +3303,7 @@
       "source_file": "apps/web/src/utils/chart-strength-deriver.ts",
       "source_location": "L90",
       "id": "utils_chart_strength_deriver_scoretodignity",
-      "community": 12,
+      "community": 5,
       "norm_label": "scoretodignity()"
     },
     {
@@ -3312,7 +3312,7 @@
       "source_file": "apps/web/src/utils/chart-strength-deriver.ts",
       "source_location": "L104",
       "id": "utils_chart_strength_deriver_derivebesthouse",
-      "community": 12,
+      "community": 5,
       "norm_label": "derivebesthouse()"
     },
     {
@@ -3321,7 +3321,7 @@
       "source_file": "apps/web/src/utils/chart-context-builder.ts",
       "source_location": "L1",
       "id": "apps_web_src_utils_chart_context_builder_ts",
-      "community": 6,
+      "community": 9,
       "norm_label": "chart-context-builder.ts"
     },
     {
@@ -3330,7 +3330,7 @@
       "source_file": "apps/web/src/utils/chart-context-builder.ts",
       "source_location": "L16",
       "id": "utils_chart_context_builder_longitudetosign",
-      "community": 6,
+      "community": 9,
       "norm_label": "longitudetosign()"
     },
     {
@@ -3339,7 +3339,7 @@
       "source_file": "apps/web/src/utils/chart-context-builder.ts",
       "source_location": "L21",
       "id": "utils_chart_context_builder_gettopplanets",
-      "community": 6,
+      "community": 9,
       "norm_label": "gettopplanets()"
     },
     {
@@ -3348,7 +3348,7 @@
       "source_file": "apps/web/src/utils/chart-context-builder.ts",
       "source_location": "L38",
       "id": "utils_chart_context_builder_detectalerts",
-      "community": 6,
+      "community": 9,
       "norm_label": "detectalerts()"
     },
     {
@@ -3357,7 +3357,7 @@
       "source_file": "apps/web/src/utils/chart-context-builder.ts",
       "source_location": "L81",
       "id": "utils_chart_context_builder_buildchartcontext",
-      "community": 6,
+      "community": 9,
       "norm_label": "buildchartcontext()"
     },
     {
@@ -3366,7 +3366,7 @@
       "source_file": "apps/web/src/utils/gemini-prompt.ts",
       "source_location": "L1",
       "id": "apps_web_src_utils_gemini_prompt_ts",
-      "community": 21,
+      "community": 23,
       "norm_label": "gemini-prompt.ts"
     },
     {
@@ -3375,7 +3375,7 @@
       "source_file": "apps/web/src/utils/gemini-prompt.ts",
       "source_location": "L3",
       "id": "utils_gemini_prompt_buildsystemprompt",
-      "community": 21,
+      "community": 23,
       "norm_label": "buildsystemprompt()"
     },
     {
@@ -3384,7 +3384,7 @@
       "source_file": "apps/web/src/utils/overview-mock.ts",
       "source_location": "L1",
       "id": "apps_web_src_utils_overview_mock_ts",
-      "community": 108,
+      "community": 111,
       "norm_label": "overview-mock.ts"
     },
     {
@@ -3393,7 +3393,7 @@
       "source_file": "apps/web/src/utils/supabase/client.ts",
       "source_location": "L1",
       "id": "apps_web_src_utils_supabase_client_ts",
-      "community": 5,
+      "community": 10,
       "norm_label": "client.ts"
     },
     {
@@ -3402,7 +3402,7 @@
       "source_file": "apps/web/src/utils/supabase/client.ts",
       "source_location": "L3",
       "id": "supabase_client_createclient",
-      "community": 5,
+      "community": 10,
       "norm_label": "createclient()"
     },
     {
@@ -3411,7 +3411,7 @@
       "source_file": "apps/web/src/hooks/useChartStrengths.ts",
       "source_location": "L1",
       "id": "apps_web_src_hooks_usechartstrengths_ts",
-      "community": 12,
+      "community": 5,
       "norm_label": "usechartstrengths.ts"
     },
     {
@@ -3420,7 +3420,7 @@
       "source_file": "apps/web/src/hooks/useChartStrengths.ts",
       "source_location": "L24",
       "id": "hooks_usechartstrengths_usechartstrengths",
-      "community": 12,
+      "community": 5,
       "norm_label": "usechartstrengths()"
     },
     {
@@ -3429,7 +3429,7 @@
       "source_file": "apps/web/src/hooks/useYogas.ts",
       "source_location": "L1",
       "id": "apps_web_src_hooks_useyogas_ts",
-      "community": 8,
+      "community": 6,
       "norm_label": "useyogas.ts"
     },
     {
@@ -3438,7 +3438,7 @@
       "source_file": "apps/web/src/hooks/useYogas.ts",
       "source_location": "L20",
       "id": "hooks_useyogas_useyogas",
-      "community": 8,
+      "community": 6,
       "norm_label": "useyogas()"
     },
     {
@@ -3447,7 +3447,7 @@
       "source_file": "apps/web/src/hooks/useDasha.ts",
       "source_location": "L1",
       "id": "apps_web_src_hooks_usedasha_ts",
-      "community": 6,
+      "community": 5,
       "norm_label": "usedasha.ts"
     },
     {
@@ -3456,7 +3456,7 @@
       "source_file": "apps/web/src/hooks/useDasha.ts",
       "source_location": "L26",
       "id": "hooks_usedasha_getdashasequencefrom",
-      "community": 6,
+      "community": 5,
       "norm_label": "getdashasequencefrom()"
     },
     {
@@ -3465,7 +3465,7 @@
       "source_file": "apps/web/src/hooks/useDasha.ts",
       "source_location": "L32",
       "id": "hooks_usedasha_addyears",
-      "community": 6,
+      "community": 5,
       "norm_label": "addyears()"
     },
     {
@@ -3474,7 +3474,7 @@
       "source_file": "apps/web/src/hooks/useDasha.ts",
       "source_location": "L39",
       "id": "hooks_usedasha_buildantardashas",
-      "community": 6,
+      "community": 5,
       "norm_label": "buildantardashas()"
     },
     {
@@ -3483,7 +3483,7 @@
       "source_file": "apps/web/src/hooks/useDasha.ts",
       "source_location": "L59",
       "id": "hooks_usedasha_usedasha",
-      "community": 6,
+      "community": 5,
       "norm_label": "usedasha()"
     },
     {
@@ -3492,7 +3492,7 @@
       "source_file": "apps/web/src/hooks/useChat.ts",
       "source_location": "L1",
       "id": "apps_web_src_hooks_usechat_ts",
-      "community": 6,
+      "community": 9,
       "norm_label": "usechat.ts"
     },
     {
@@ -3501,7 +3501,7 @@
       "source_file": "apps/web/src/hooks/useChat.ts",
       "source_location": "L14",
       "id": "hooks_usechat_createid",
-      "community": 6,
+      "community": 9,
       "norm_label": "createid()"
     },
     {
@@ -3510,7 +3510,7 @@
       "source_file": "apps/web/src/hooks/useChat.ts",
       "source_location": "L18",
       "id": "hooks_usechat_usechat",
-      "community": 6,
+      "community": 9,
       "norm_label": "usechat()"
     },
     {
@@ -3537,7 +3537,7 @@
       "source_file": "apps/web/src/context/AstroContext.tsx",
       "source_location": "L47",
       "id": "context_astrocontext_useastro",
-      "community": 8,
+      "community": 6,
       "norm_label": "useastro()"
     },
     {
@@ -3546,7 +3546,7 @@
       "source_file": "apps/web/src/data/historicalFigures.ts",
       "source_location": "L1",
       "id": "apps_web_src_data_historicalfigures_ts",
-      "community": 109,
+      "community": 112,
       "norm_label": "historicalfigures.ts"
     },
     {
@@ -3555,7 +3555,7 @@
       "source_file": "apps/web/src/data/muhurtaRules.ts",
       "source_location": "L1",
       "id": "apps_web_src_data_muhurtarules_ts",
-      "community": 110,
+      "community": 113,
       "norm_label": "muhurtarules.ts"
     },
     {
@@ -3564,7 +3564,7 @@
       "source_file": "apps/web/src/actions/location.ts",
       "source_location": "L1",
       "id": "apps_web_src_actions_location_ts",
-      "community": 10,
+      "community": 11,
       "norm_label": "location.ts"
     },
     {
@@ -3573,7 +3573,7 @@
       "source_file": "apps/web/src/actions/location.ts",
       "source_location": "L3",
       "id": "actions_location_searchlocation",
-      "community": 10,
+      "community": 11,
       "norm_label": "searchlocation()"
     },
     {
@@ -3582,7 +3582,7 @@
       "source_file": "apps/web/src/actions/location.ts",
       "source_location": "L14",
       "id": "actions_location_gettimezone",
-      "community": 10,
+      "community": 11,
       "norm_label": "gettimezone()"
     },
     {
@@ -3591,7 +3591,7 @@
       "source_file": "apps/web/src/actions/calculate.ts",
       "source_location": "L1",
       "id": "apps_web_src_actions_calculate_ts",
-      "community": 10,
+      "community": 11,
       "norm_label": "calculate.ts"
     },
     {
@@ -3600,7 +3600,7 @@
       "source_file": "apps/web/src/actions/calculate.ts",
       "source_location": "L7",
       "id": "actions_calculate_calculatechart",
-      "community": 10,
+      "community": 11,
       "norm_label": "calculatechart()"
     },
     {
@@ -3627,7 +3627,7 @@
       "source_file": "apps/web/src/app/actions.ts",
       "source_location": "L1",
       "id": "apps_web_src_app_actions_ts",
-      "community": 52,
+      "community": 49,
       "norm_label": "actions.ts"
     },
     {
@@ -3636,7 +3636,7 @@
       "source_file": "apps/web/src/app/actions.ts",
       "source_location": "L9",
       "id": "app_actions_generatechartaction",
-      "community": 52,
+      "community": 49,
       "norm_label": "generatechartaction()"
     },
     {
@@ -3645,7 +3645,7 @@
       "source_file": "apps/web/src/app/api/user/events/route.ts",
       "source_location": "L1",
       "id": "apps_web_src_app_api_user_events_route_ts",
-      "community": 53,
+      "community": 50,
       "norm_label": "route.ts"
     },
     {
@@ -3654,7 +3654,7 @@
       "source_file": "apps/web/src/app/api/user/events/route.ts",
       "source_location": "L5",
       "id": "events_route_post",
-      "community": 53,
+      "community": 50,
       "norm_label": "post()"
     },
     {
@@ -3663,7 +3663,7 @@
       "source_file": "apps/web/src/app/api/user/biodata/route.ts",
       "source_location": "L1",
       "id": "apps_web_src_app_api_user_biodata_route_ts",
-      "community": 54,
+      "community": 51,
       "norm_label": "route.ts"
     },
     {
@@ -3672,7 +3672,7 @@
       "source_file": "apps/web/src/app/api/user/biodata/route.ts",
       "source_location": "L5",
       "id": "biodata_route_post",
-      "community": 54,
+      "community": 51,
       "norm_label": "post()"
     },
     {
@@ -3681,7 +3681,7 @@
       "source_file": "apps/web/src/app/api/compatibility/calculate/route.ts",
       "source_location": "L1",
       "id": "apps_web_src_app_api_compatibility_calculate_route_ts",
-      "community": 55,
+      "community": 52,
       "norm_label": "route.ts"
     },
     {
@@ -3690,7 +3690,7 @@
       "source_file": "apps/web/src/app/api/compatibility/calculate/route.ts",
       "source_location": "L5",
       "id": "calculate_route_post",
-      "community": 55,
+      "community": 52,
       "norm_label": "post()"
     },
     {
@@ -3699,7 +3699,7 @@
       "source_file": "apps/web/src/app/api/compatibility/narrative/route.ts",
       "source_location": "L1",
       "id": "apps_web_src_app_api_compatibility_narrative_route_ts",
-      "community": 56,
+      "community": 53,
       "norm_label": "route.ts"
     },
     {
@@ -3708,7 +3708,7 @@
       "source_file": "apps/web/src/app/api/compatibility/narrative/route.ts",
       "source_location": "L5",
       "id": "narrative_route_post",
-      "community": 56,
+      "community": 53,
       "norm_label": "post()"
     },
     {
@@ -3717,7 +3717,7 @@
       "source_file": "apps/web/src/app/api/sky/transits/route.ts",
       "source_location": "L1",
       "id": "apps_web_src_app_api_sky_transits_route_ts",
-      "community": 57,
+      "community": 54,
       "norm_label": "route.ts"
     },
     {
@@ -3726,7 +3726,7 @@
       "source_file": "apps/web/src/app/api/sky/transits/route.ts",
       "source_location": "L5",
       "id": "transits_route_get",
-      "community": 57,
+      "community": 54,
       "norm_label": "get()"
     },
     {
@@ -3735,7 +3735,7 @@
       "source_file": "apps/web/src/app/api/sky/panchang/route.ts",
       "source_location": "L1",
       "id": "apps_web_src_app_api_sky_panchang_route_ts",
-      "community": 58,
+      "community": 55,
       "norm_label": "route.ts"
     },
     {
@@ -3744,7 +3744,7 @@
       "source_file": "apps/web/src/app/api/sky/panchang/route.ts",
       "source_location": "L5",
       "id": "panchang_route_get",
-      "community": 58,
+      "community": 55,
       "norm_label": "get()"
     },
     {
@@ -3753,7 +3753,7 @@
       "source_file": "apps/web/src/app/api/chart/[id]/shadows/route.ts",
       "source_location": "L1",
       "id": "apps_web_src_app_api_chart_id_shadows_route_ts",
-      "community": 29,
+      "community": 28,
       "norm_label": "route.ts"
     },
     {
@@ -3762,7 +3762,7 @@
       "source_file": "apps/web/src/app/api/chart/[id]/shadows/route.ts",
       "source_location": "L5",
       "id": "shadows_route_get",
-      "community": 29,
+      "community": 28,
       "norm_label": "get()"
     },
     {
@@ -3771,7 +3771,7 @@
       "source_file": "apps/web/src/app/api/chart/[id]/shadows/route.ts",
       "source_location": "L32",
       "id": "shadows_route_post",
-      "community": 29,
+      "community": 28,
       "norm_label": "post()"
     },
     {
@@ -3780,7 +3780,7 @@
       "source_file": "apps/web/src/app/api/chart/[id]/dasha/route.ts",
       "source_location": "L1",
       "id": "apps_web_src_app_api_chart_id_dasha_route_ts",
-      "community": 30,
+      "community": 29,
       "norm_label": "route.ts"
     },
     {
@@ -3789,7 +3789,7 @@
       "source_file": "apps/web/src/app/api/chart/[id]/dasha/route.ts",
       "source_location": "L5",
       "id": "dasha_route_get",
-      "community": 30,
+      "community": 29,
       "norm_label": "get()"
     },
     {
@@ -3798,7 +3798,7 @@
       "source_file": "apps/web/src/app/api/chart/[id]/dasha/route.ts",
       "source_location": "L32",
       "id": "dasha_route_post",
-      "community": 30,
+      "community": 29,
       "norm_label": "post()"
     },
     {
@@ -3807,7 +3807,7 @@
       "source_file": "apps/web/src/app/api/chart/[id]/yogas/route.ts",
       "source_location": "L1",
       "id": "apps_web_src_app_api_chart_id_yogas_route_ts",
-      "community": 31,
+      "community": 30,
       "norm_label": "route.ts"
     },
     {
@@ -3816,7 +3816,7 @@
       "source_file": "apps/web/src/app/api/chart/[id]/yogas/route.ts",
       "source_location": "L5",
       "id": "yogas_route_get",
-      "community": 31,
+      "community": 30,
       "norm_label": "get()"
     },
     {
@@ -3825,7 +3825,7 @@
       "source_file": "apps/web/src/app/api/chart/[id]/yogas/route.ts",
       "source_location": "L32",
       "id": "yogas_route_post",
-      "community": 31,
+      "community": 30,
       "norm_label": "post()"
     },
     {
@@ -3834,7 +3834,7 @@
       "source_file": "apps/web/src/app/api/chart/[id]/shadbala/route.ts",
       "source_location": "L1",
       "id": "apps_web_src_app_api_chart_id_shadbala_route_ts",
-      "community": 32,
+      "community": 31,
       "norm_label": "route.ts"
     },
     {
@@ -3843,7 +3843,7 @@
       "source_file": "apps/web/src/app/api/chart/[id]/shadbala/route.ts",
       "source_location": "L4",
       "id": "shadbala_route_get",
-      "community": 32,
+      "community": 31,
       "norm_label": "get()"
     },
     {
@@ -3852,7 +3852,7 @@
       "source_file": "apps/web/src/app/api/chart/[id]/shadbala/route.ts",
       "source_location": "L33",
       "id": "shadbala_route_post",
-      "community": 32,
+      "community": 31,
       "norm_label": "post()"
     },
     {
@@ -3861,7 +3861,7 @@
       "source_file": "apps/web/src/app/api/chart/[id]/varga/route.ts",
       "source_location": "L1",
       "id": "apps_web_src_app_api_chart_id_varga_route_ts",
-      "community": 33,
+      "community": 32,
       "norm_label": "route.ts"
     },
     {
@@ -3870,7 +3870,7 @@
       "source_file": "apps/web/src/app/api/chart/[id]/varga/route.ts",
       "source_location": "L5",
       "id": "varga_route_get",
-      "community": 33,
+      "community": 32,
       "norm_label": "get()"
     },
     {
@@ -3879,7 +3879,7 @@
       "source_file": "apps/web/src/app/api/chart/[id]/varga/route.ts",
       "source_location": "L46",
       "id": "varga_route_post",
-      "community": 33,
+      "community": 32,
       "norm_label": "post()"
     },
     {
@@ -3888,7 +3888,7 @@
       "source_file": "apps/web/src/app/api/tools/rectify/route.ts",
       "source_location": "L1",
       "id": "apps_web_src_app_api_tools_rectify_route_ts",
-      "community": 59,
+      "community": 56,
       "norm_label": "route.ts"
     },
     {
@@ -3897,7 +3897,7 @@
       "source_file": "apps/web/src/app/api/tools/rectify/route.ts",
       "source_location": "L5",
       "id": "rectify_route_post",
-      "community": 59,
+      "community": 56,
       "norm_label": "post()"
     },
     {
@@ -3906,7 +3906,7 @@
       "source_file": "apps/web/src/app/api/ask/route.ts",
       "source_location": "L1",
       "id": "apps_web_src_app_api_ask_route_ts",
-      "community": 21,
+      "community": 23,
       "norm_label": "route.ts"
     },
     {
@@ -3915,7 +3915,7 @@
       "source_file": "apps/web/src/app/api/ask/route.ts",
       "source_location": "L14",
       "id": "ask_route_post",
-      "community": 21,
+      "community": 23,
       "norm_label": "post()"
     },
     {
@@ -3924,7 +3924,7 @@
       "source_file": "apps/web/src/app/api/predictions/monthly-narrative/route.ts",
       "source_location": "L1",
       "id": "apps_web_src_app_api_predictions_monthly_narrative_route_ts",
-      "community": 60,
+      "community": 57,
       "norm_label": "route.ts"
     },
     {
@@ -3933,7 +3933,7 @@
       "source_file": "apps/web/src/app/api/predictions/monthly-narrative/route.ts",
       "source_location": "L5",
       "id": "monthly_narrative_route_post",
-      "community": 60,
+      "community": 57,
       "norm_label": "post()"
     },
     {
@@ -3942,7 +3942,7 @@
       "source_file": "apps/web/src/app/api/predictions/monthly/route.ts",
       "source_location": "L1",
       "id": "apps_web_src_app_api_predictions_monthly_route_ts",
-      "community": 34,
+      "community": 33,
       "norm_label": "route.ts"
     },
     {
@@ -3951,7 +3951,7 @@
       "source_file": "apps/web/src/app/api/predictions/monthly/route.ts",
       "source_location": "L5",
       "id": "monthly_route_get",
-      "community": 34,
+      "community": 33,
       "norm_label": "get()"
     },
     {
@@ -3960,7 +3960,7 @@
       "source_file": "apps/web/src/app/api/predictions/monthly/route.ts",
       "source_location": "L35",
       "id": "monthly_route_post",
-      "community": 34,
+      "community": 33,
       "norm_label": "post()"
     },
     {
@@ -3969,7 +3969,7 @@
       "source_file": "apps/web/src/app/(marketing)/page.tsx",
       "source_location": "L1",
       "id": "apps_web_src_app_marketing_page_tsx",
-      "community": 5,
+      "community": 10,
       "norm_label": "page.tsx"
     },
     {
@@ -3996,7 +3996,7 @@
       "source_file": "apps/web/src/app/(marketing)/login/page.tsx",
       "source_location": "L1",
       "id": "apps_web_src_app_marketing_login_page_tsx",
-      "community": 5,
+      "community": 10,
       "norm_label": "page.tsx"
     },
     {
@@ -4005,7 +4005,7 @@
       "source_file": "apps/web/src/app/(marketing)/login/page.tsx",
       "source_location": "L17",
       "id": "login_page_handlesociallogin",
-      "community": 5,
+      "community": 10,
       "norm_label": "handlesociallogin()"
     },
     {
@@ -4014,7 +4014,7 @@
       "source_file": "apps/web/src/app/(marketing)/login/page.tsx",
       "source_location": "L26",
       "id": "login_page_handleemaillogin",
-      "community": 5,
+      "community": 10,
       "norm_label": "handleemaillogin()"
     },
     {
@@ -4023,7 +4023,7 @@
       "source_file": "apps/web/src/app/auth/callback/route.ts",
       "source_location": "L1",
       "id": "apps_web_src_app_auth_callback_route_ts",
-      "community": 61,
+      "community": 58,
       "norm_label": "route.ts"
     },
     {
@@ -4032,7 +4032,7 @@
       "source_file": "apps/web/src/app/auth/callback/route.ts",
       "source_location": "L5",
       "id": "callback_route_get",
-      "community": 61,
+      "community": 58,
       "norm_label": "get()"
     },
     {
@@ -4059,7 +4059,7 @@
       "source_file": "apps/web/src/app/(dashboard)/kundli/[id]/layout.tsx",
       "source_location": "L1",
       "id": "apps_web_src_app_dashboard_kundli_id_layout_tsx",
-      "community": 35,
+      "community": 34,
       "norm_label": "layout.tsx"
     },
     {
@@ -4068,7 +4068,7 @@
       "source_file": "apps/web/src/app/(dashboard)/kundli/[id]/layout.tsx",
       "source_location": "L4",
       "id": "id_layout_kundlilayout",
-      "community": 35,
+      "community": 34,
       "norm_label": "kundlilayout()"
     },
     {
@@ -4077,7 +4077,7 @@
       "source_file": "apps/web/src/app/(dashboard)/compatibility/page.tsx",
       "source_location": "L1",
       "id": "apps_web_src_app_dashboard_compatibility_page_tsx",
-      "community": 5,
+      "community": 20,
       "norm_label": "page.tsx"
     },
     {
@@ -4086,7 +4086,7 @@
       "source_file": "apps/web/src/app/(dashboard)/compatibility/page.tsx",
       "source_location": "L34",
       "id": "compatibility_page_handlecalculate",
-      "community": 5,
+      "community": 20,
       "norm_label": "handlecalculate()"
     },
     {
@@ -4095,7 +4095,7 @@
       "source_file": "apps/web/src/app/(dashboard)/compatibility/page.tsx",
       "source_location": "L63",
       "id": "compatibility_page_fetchnarrative",
-      "community": 5,
+      "community": 20,
       "norm_label": "fetchnarrative()"
     },
     {
@@ -4104,7 +4104,7 @@
       "source_file": "apps/web/src/app/(dashboard)/sky/muhurta/page.tsx",
       "source_location": "L1",
       "id": "apps_web_src_app_dashboard_sky_muhurta_page_tsx",
-      "community": 36,
+      "community": 35,
       "norm_label": "page.tsx"
     },
     {
@@ -4113,7 +4113,7 @@
       "source_file": "apps/web/src/app/(dashboard)/sky/muhurta/page.tsx",
       "source_location": "L5",
       "id": "muhurta_page_muhurtapage",
-      "community": 36,
+      "community": 35,
       "norm_label": "muhurtapage()"
     },
     {
@@ -4122,7 +4122,7 @@
       "source_file": "apps/web/src/app/(dashboard)/sky/transits/page.tsx",
       "source_location": "L1",
       "id": "apps_web_src_app_dashboard_sky_transits_page_tsx",
-      "community": 50,
+      "community": 66,
       "norm_label": "page.tsx"
     },
     {
@@ -4131,7 +4131,7 @@
       "source_file": "apps/web/src/app/(dashboard)/sky/transits/page.tsx",
       "source_location": "L17",
       "id": "transits_page_fetchtransits",
-      "community": 50,
+      "community": 66,
       "norm_label": "fetchtransits()"
     },
     {
@@ -4140,7 +4140,7 @@
       "source_file": "apps/web/src/app/(dashboard)/sky/panchang/page.tsx",
       "source_location": "L1",
       "id": "apps_web_src_app_dashboard_sky_panchang_page_tsx",
-      "community": 47,
+      "community": 68,
       "norm_label": "page.tsx"
     },
     {
@@ -4149,7 +4149,7 @@
       "source_file": "apps/web/src/app/(dashboard)/sky/panchang/page.tsx",
       "source_location": "L23",
       "id": "panchang_page_fetchpanchang",
-      "community": 47,
+      "community": 68,
       "norm_label": "fetchpanchang()"
     },
     {
@@ -4158,7 +4158,7 @@
       "source_file": "apps/web/src/app/(dashboard)/new-chart/page.tsx",
       "source_location": "L1",
       "id": "apps_web_src_app_dashboard_new_chart_page_tsx",
-      "community": 8,
+      "community": 6,
       "norm_label": "page.tsx"
     },
     {
@@ -4167,7 +4167,7 @@
       "source_file": "apps/web/src/app/(dashboard)/dashboard/page.tsx",
       "source_location": "L1",
       "id": "apps_web_src_app_dashboard_dashboard_page_tsx",
-      "community": 5,
+      "community": 21,
       "norm_label": "page.tsx"
     },
     {
@@ -4176,7 +4176,7 @@
       "source_file": "apps/web/src/app/(dashboard)/dashboard/page.tsx",
       "source_location": "L7",
       "id": "dashboard_page_dashboardpage",
-      "community": 5,
+      "community": 21,
       "norm_label": "dashboardpage()"
     },
     {
@@ -4185,7 +4185,7 @@
       "source_file": "apps/web/src/app/(dashboard)/dashboard/page.tsx",
       "source_location": "L63",
       "id": "dashboard_page_statuscard",
-      "community": 5,
+      "community": 21,
       "norm_label": "statuscard()"
     },
     {
@@ -4194,7 +4194,7 @@
       "source_file": "apps/web/src/app/(dashboard)/charts/page.tsx",
       "source_location": "L1",
       "id": "apps_web_src_app_dashboard_charts_page_tsx",
-      "community": 8,
+      "community": 6,
       "norm_label": "page.tsx"
     },
     {
@@ -4203,7 +4203,7 @@
       "source_file": "apps/web/src/app/(dashboard)/charts/new/page.tsx",
       "source_location": "L1",
       "id": "apps_web_src_app_dashboard_charts_new_page_tsx",
-      "community": 8,
+      "community": 6,
       "norm_label": "page.tsx"
     },
     {
@@ -4212,7 +4212,7 @@
       "source_file": "apps/web/src/app/(dashboard)/chart/[id]/page.tsx",
       "source_location": "L1",
       "id": "apps_web_src_app_dashboard_chart_id_page_tsx",
-      "community": 11,
+      "community": 5,
       "norm_label": "page.tsx"
     },
     {
@@ -4221,7 +4221,7 @@
       "source_file": "apps/web/src/app/(dashboard)/chart/[id]/page.tsx",
       "source_location": "L40",
       "id": "id_page_getsign",
-      "community": 11,
+      "community": 5,
       "norm_label": "getsign()"
     },
     {
@@ -4230,7 +4230,7 @@
       "source_file": "apps/web/src/app/(dashboard)/chart/[id]/layout.tsx",
       "source_location": "L1",
       "id": "apps_web_src_app_dashboard_chart_id_layout_tsx",
-      "community": 62,
+      "community": 59,
       "norm_label": "layout.tsx"
     },
     {
@@ -4239,7 +4239,7 @@
       "source_file": "apps/web/src/app/(dashboard)/chart/[id]/layout.tsx",
       "source_location": "L4",
       "id": "id_layout_charttablayout",
-      "community": 62,
+      "community": 59,
       "norm_label": "charttablayout()"
     },
     {
@@ -4248,7 +4248,7 @@
       "source_file": "apps/web/src/app/(dashboard)/chart/[id]/shadows/page.tsx",
       "source_location": "L1",
       "id": "apps_web_src_app_dashboard_chart_id_shadows_page_tsx",
-      "community": 8,
+      "community": 6,
       "norm_label": "page.tsx"
     },
     {
@@ -4257,7 +4257,7 @@
       "source_file": "apps/web/src/app/(dashboard)/chart/[id]/shadows/page.tsx",
       "source_location": "L54",
       "id": "shadows_page_getbadgecolor",
-      "community": 8,
+      "community": 6,
       "norm_label": "getbadgecolor()"
     },
     {
@@ -4266,7 +4266,7 @@
       "source_file": "apps/web/src/app/(dashboard)/chart/[id]/divisional/page.tsx",
       "source_location": "L1",
       "id": "apps_web_src_app_dashboard_chart_id_divisional_page_tsx",
-      "community": 46,
+      "community": 6,
       "norm_label": "page.tsx"
     },
     {
@@ -4275,7 +4275,7 @@
       "source_file": "apps/web/src/app/(dashboard)/chart/[id]/divisional/page.tsx",
       "source_location": "L98",
       "id": "divisional_page_getplanetinfo",
-      "community": 46,
+      "community": 6,
       "norm_label": "getplanetinfo()"
     },
     {
@@ -4284,7 +4284,7 @@
       "source_file": "apps/web/src/app/(dashboard)/chart/[id]/timeline/page.tsx",
       "source_location": "L1",
       "id": "apps_web_src_app_dashboard_chart_id_timeline_page_tsx",
-      "community": 6,
+      "community": 5,
       "norm_label": "page.tsx"
     },
     {
@@ -4293,7 +4293,7 @@
       "source_file": "apps/web/src/app/(dashboard)/chart/[id]/strengths/page.tsx",
       "source_location": "L1",
       "id": "apps_web_src_app_dashboard_chart_id_strengths_page_tsx",
-      "community": 51,
+      "community": 69,
       "norm_label": "page.tsx"
     },
     {
@@ -4302,7 +4302,7 @@
       "source_file": "apps/web/src/app/(dashboard)/chart/[id]/strengths/page.tsx",
       "source_location": "L56",
       "id": "strengths_page_getstatus",
-      "community": 51,
+      "community": 69,
       "norm_label": "getstatus()"
     },
     {
@@ -4311,7 +4311,7 @@
       "source_file": "apps/web/src/app/(dashboard)/chart/[id]/yogas/page.tsx",
       "source_location": "L1",
       "id": "apps_web_src_app_dashboard_chart_id_yogas_page_tsx",
-      "community": 45,
+      "community": 65,
       "norm_label": "page.tsx"
     },
     {
@@ -4320,7 +4320,7 @@
       "source_file": "apps/web/src/app/(dashboard)/chart/[id]/yogas/page.tsx",
       "source_location": "L56",
       "id": "yogas_page_getcategorystyles",
-      "community": 45,
+      "community": 65,
       "norm_label": "getcategorystyles()"
     },
     {
@@ -4329,7 +4329,7 @@
       "source_file": "apps/web/src/app/(dashboard)/tools/calibration/events/page.tsx",
       "source_location": "L1",
       "id": "apps_web_src_app_dashboard_tools_calibration_events_page_tsx",
-      "community": 27,
+      "community": 39,
       "norm_label": "page.tsx"
     },
     {
@@ -4338,7 +4338,7 @@
       "source_file": "apps/web/src/app/(dashboard)/tools/calibration/events/page.tsx",
       "source_location": "L63",
       "id": "events_page_handleaddevent",
-      "community": 27,
+      "community": 39,
       "norm_label": "handleaddevent()"
     },
     {
@@ -4347,7 +4347,7 @@
       "source_file": "apps/web/src/app/(dashboard)/tools/calibration/events/page.tsx",
       "source_location": "L98",
       "id": "events_page_removeevent",
-      "community": 27,
+      "community": 39,
       "norm_label": "removeevent()"
     },
     {
@@ -4356,7 +4356,7 @@
       "source_file": "apps/web/src/app/(dashboard)/tools/calibration/zodiac/page.tsx",
       "source_location": "L1",
       "id": "apps_web_src_app_dashboard_tools_calibration_zodiac_page_tsx",
-      "community": 63,
+      "community": 60,
       "norm_label": "page.tsx"
     },
     {
@@ -4365,7 +4365,7 @@
       "source_file": "apps/web/src/app/(dashboard)/tools/calibration/zodiac/page.tsx",
       "source_location": "L46",
       "id": "zodiac_page_handleanswer",
-      "community": 63,
+      "community": 60,
       "norm_label": "handleanswer()"
     },
     {
@@ -4374,7 +4374,7 @@
       "source_file": "apps/web/src/app/(dashboard)/tools/calibration/biodata/page.tsx",
       "source_location": "L1",
       "id": "apps_web_src_app_dashboard_tools_calibration_biodata_page_tsx",
-      "community": 49,
+      "community": 67,
       "norm_label": "page.tsx"
     },
     {
@@ -4383,7 +4383,7 @@
       "source_file": "apps/web/src/app/(dashboard)/tools/calibration/biodata/page.tsx",
       "source_location": "L26",
       "id": "biodata_page_handlesubmit",
-      "community": 49,
+      "community": 67,
       "norm_label": "handlesubmit()"
     },
     {
@@ -4392,7 +4392,7 @@
       "source_file": "apps/web/src/app/(dashboard)/tools/learning/page.tsx",
       "source_location": "L1",
       "id": "apps_web_src_app_dashboard_tools_learning_page_tsx",
-      "community": 111,
+      "community": 114,
       "norm_label": "page.tsx"
     },
     {
@@ -4401,7 +4401,7 @@
       "source_file": "apps/web/src/app/(dashboard)/tools/rectification/page.tsx",
       "source_location": "L1",
       "id": "apps_web_src_app_dashboard_tools_rectification_page_tsx",
-      "community": 28,
+      "community": 37,
       "norm_label": "page.tsx"
     },
     {
@@ -4410,7 +4410,7 @@
       "source_file": "apps/web/src/app/(dashboard)/tools/rectification/page.tsx",
       "source_location": "L39",
       "id": "rectification_page_handlenext",
-      "community": 28,
+      "community": 37,
       "norm_label": "handlenext()"
     },
     {
@@ -4419,7 +4419,7 @@
       "source_file": "apps/web/src/app/(dashboard)/tools/rectification/page.tsx",
       "source_location": "L47",
       "id": "rectification_page_runrectification",
-      "community": 28,
+      "community": 37,
       "norm_label": "runrectification()"
     },
     {
@@ -4428,7 +4428,7 @@
       "source_file": "apps/web/src/app/(dashboard)/tools/personalities/page.tsx",
       "source_location": "L1",
       "id": "apps_web_src_app_dashboard_tools_personalities_page_tsx",
-      "community": 112,
+      "community": 115,
       "norm_label": "page.tsx"
     },
     {
@@ -4437,7 +4437,7 @@
       "source_file": "apps/web/src/app/(dashboard)/settings/account/page.tsx",
       "source_location": "L1",
       "id": "apps_web_src_app_dashboard_settings_account_page_tsx",
-      "community": 5,
+      "community": 38,
       "norm_label": "page.tsx"
     },
     {
@@ -4446,7 +4446,7 @@
       "source_file": "apps/web/src/app/(dashboard)/settings/account/page.tsx",
       "source_location": "L7",
       "id": "account_page_accountpage",
-      "community": 5,
+      "community": 38,
       "norm_label": "accountpage()"
     },
     {
@@ -4455,7 +4455,7 @@
       "source_file": "apps/web/src/app/(dashboard)/ask/page.tsx",
       "source_location": "L1",
       "id": "apps_web_src_app_dashboard_ask_page_tsx",
-      "community": 6,
+      "community": 9,
       "norm_label": "page.tsx"
     },
     {
@@ -4464,7 +4464,7 @@
       "source_file": "apps/web/src/app/(dashboard)/ask/page.tsx",
       "source_location": "L39",
       "id": "ask_page_handlepromptclick",
-      "community": 6,
+      "community": 9,
       "norm_label": "handlepromptclick()"
     },
     {
@@ -4473,7 +4473,7 @@
       "source_file": "apps/web/src/app/(dashboard)/predictions/samhita/page.tsx",
       "source_location": "L1",
       "id": "apps_web_src_app_dashboard_predictions_samhita_page_tsx",
-      "community": 37,
+      "community": 36,
       "norm_label": "page.tsx"
     },
     {
@@ -4482,7 +4482,7 @@
       "source_file": "apps/web/src/app/(dashboard)/predictions/samhita/page.tsx",
       "source_location": "L5",
       "id": "samhita_page_samhitapage",
-      "community": 37,
+      "community": 36,
       "norm_label": "samhitapage()"
     },
     {
@@ -4491,7 +4491,7 @@
       "source_file": "apps/web/src/app/(dashboard)/predictions/monthly/page.tsx",
       "source_location": "L1",
       "id": "apps_web_src_app_dashboard_predictions_monthly_page_tsx",
-      "community": 26,
+      "community": 40,
       "norm_label": "page.tsx"
     },
     {
@@ -4500,7 +4500,7 @@
       "source_file": "apps/web/src/app/(dashboard)/predictions/monthly/page.tsx",
       "source_location": "L40",
       "id": "monthly_page_monthlyforecastskeleton",
-      "community": 26,
+      "community": 40,
       "norm_label": "monthlyforecastskeleton()"
     },
     {
@@ -4509,7 +4509,7 @@
       "source_file": "apps/web/src/app/(dashboard)/predictions/monthly/page.tsx",
       "source_location": "L126",
       "id": "monthly_page_handlemonthchange",
-      "community": 26,
+      "community": 40,
       "norm_label": "handlemonthchange()"
     },
     {
@@ -4518,7 +4518,7 @@
       "source_file": "scratch/test_bridge.py",
       "source_location": "L1",
       "id": "scratch_test_bridge_py",
-      "community": 64,
+      "community": 61,
       "norm_label": "test_bridge.py"
     },
     {
@@ -4527,7 +4527,7 @@
       "source_file": "scratch/test_bridge.py",
       "source_location": "L4",
       "id": "scratch_test_bridge_run",
-      "community": 64,
+      "community": 61,
       "norm_label": "run()"
     },
     {
@@ -4536,7 +4536,7 @@
       "source_file": "scratch/test_bridge.ts",
       "source_location": "L1",
       "id": "scratch_test_bridge_ts",
-      "community": 65,
+      "community": 62,
       "norm_label": "test_bridge.ts"
     },
     {
@@ -4545,7 +4545,7 @@
       "source_file": "scratch/test_bridge.ts",
       "source_location": "L3",
       "id": "scratch_test_bridge_testconnection",
-      "community": 65,
+      "community": 62,
       "norm_label": "testconnection()"
     },
     {
@@ -4554,7 +4554,7 @@
       "source_file": "scratch/test_bridge_9223.ts",
       "source_location": "L1",
       "id": "scratch_test_bridge_9223_ts",
-      "community": 66,
+      "community": 63,
       "norm_label": "test_bridge_9223.ts"
     },
     {
@@ -4563,7 +4563,7 @@
       "source_file": "scratch/test_bridge_9223.ts",
       "source_location": "L3",
       "id": "scratch_test_bridge_9223_testconnection",
-      "community": 66,
+      "community": 63,
       "norm_label": "testconnection()"
     },
     {
@@ -4572,7 +4572,7 @@
       "source_file": "scratch/test_bridge_9223.py",
       "source_location": "L1",
       "id": "scratch_test_bridge_9223_py",
-      "community": 67,
+      "community": 64,
       "norm_label": "test_bridge_9223.py"
     },
     {
@@ -4581,15 +4581,51 @@
       "source_file": "scratch/test_bridge_9223.py",
       "source_location": "L4",
       "id": "scratch_test_bridge_9223_run",
-      "community": 67,
+      "community": 64,
       "norm_label": "run()"
+    },
+    {
+      "label": "Calculate 5 Panchang elements for a given date and location.",
+      "file_type": "rationale",
+      "source_file": "apps/astro-engine/main.py",
+      "source_location": "L883",
+      "community": 0,
+      "norm_label": "calculate 5 panchang elements for a given date and location.",
+      "id": "astro_engine_main_rationale_883"
+    },
+    {
+      "label": "Get transits for the entire month and score life domains (GET variant).",
+      "file_type": "rationale",
+      "source_file": "apps/astro-engine/main.py",
+      "source_location": "L960",
+      "community": 12,
+      "norm_label": "get transits for the entire month and score life domains (get variant).",
+      "id": "astro_engine_main_rationale_960"
+    },
+    {
+      "label": "Get transits for the entire month and score life domains (POST variant).",
+      "file_type": "rationale",
+      "source_file": "apps/astro-engine/main.py",
+      "source_location": "L982",
+      "community": 12,
+      "norm_label": "get transits for the entire month and score life domains (post variant).",
+      "id": "astro_engine_main_rationale_982"
+    },
+    {
+      "label": "Core logic for generating monthly life domain scores and themes.",
+      "file_type": "rationale",
+      "source_file": "apps/astro-engine/main.py",
+      "source_location": "L995",
+      "community": 12,
+      "norm_label": "core logic for generating monthly life domain scores and themes.",
+      "id": "astro_engine_main_rationale_995"
     },
     {
       "label": "Runs the LangGraph AI synthesis workflow to generate a premium astrological read",
       "file_type": "rationale",
       "source_file": "apps/astro-engine/main.py",
       "source_location": "L80",
-      "community": 22,
+      "community": 24,
       "norm_label": "runs the langgraph ai synthesis workflow to generate a premium astrological read",
       "id": "astro_engine_main_rationale_80"
     },
@@ -4598,7 +4634,7 @@
       "file_type": "code",
       "source_file": "apps/web/types/astro.ts",
       "source_location": "L1",
-      "community": 113,
+      "community": 116,
       "norm_label": "astro.ts",
       "id": "apps_web_types_astro_ts"
     },
@@ -4607,7 +4643,7 @@
       "file_type": "code",
       "source_file": "apps/web/src/app/(dashboard)/laboratory/page.tsx",
       "source_location": "L1",
-      "community": 8,
+      "community": 6,
       "norm_label": "page.tsx",
       "id": "apps_web_src_app_dashboard_laboratory_page_tsx"
     },
@@ -4616,7 +4652,7 @@
       "file_type": "code",
       "source_file": "apps/web/src/app/(dashboard)/laboratory/page.tsx",
       "source_location": "L10",
-      "community": 8,
+      "community": 6,
       "norm_label": "laboratorypage()",
       "id": "laboratory_page_laboratorypage"
     },
@@ -4625,7 +4661,7 @@
       "file_type": "code",
       "source_file": "app/(dashboard)/compatibility/page.tsx",
       "source_location": "L4",
-      "community": 5,
+      "community": 20,
       "norm_label": "compatibilitypage()",
       "id": "compatibility_page_compatibilitypage"
     },
@@ -4634,7 +4670,7 @@
       "file_type": "code",
       "source_file": "apps/web/src/app/(dashboard)/dashboard/page.tsx",
       "source_location": "L7",
-      "community": 5,
+      "community": 21,
       "norm_label": "nexuspage()",
       "id": "dashboard_page_nexuspage"
     },
@@ -4643,7 +4679,7 @@
       "file_type": "code",
       "source_file": "apps/web/src/app/(dashboard)/dashboard/page.tsx",
       "source_location": "L67",
-      "community": 5,
+      "community": 21,
       "norm_label": "nexuscard()",
       "id": "dashboard_page_nexuscard"
     },
@@ -4652,7 +4688,7 @@
       "file_type": "code",
       "source_file": "apps/web/src/app/(dashboard)/oracle/page.tsx",
       "source_location": "L1",
-      "community": 5,
+      "community": 10,
       "norm_label": "page.tsx",
       "id": "apps_web_src_app_dashboard_oracle_page_tsx"
     },
@@ -4661,7 +4697,7 @@
       "file_type": "code",
       "source_file": "apps/web/src/app/(dashboard)/oracle/page.tsx",
       "source_location": "L3",
-      "community": 5,
+      "community": 10,
       "norm_label": "oraclepage()",
       "id": "oracle_page_oraclepage"
     },
@@ -4670,7 +4706,7 @@
       "file_type": "code",
       "source_file": "apps/web/src/app/(dashboard)/astrolabe/page.tsx",
       "source_location": "L1",
-      "community": 8,
+      "community": 6,
       "norm_label": "page.tsx",
       "id": "apps_web_src_app_dashboard_astrolabe_page_tsx"
     },
@@ -4679,7 +4715,7 @@
       "file_type": "code",
       "source_file": "apps/web/src/app/(dashboard)/astrolabe/page.tsx",
       "source_location": "L12",
-      "community": 8,
+      "community": 6,
       "norm_label": "astrolabepage()",
       "id": "astrolabe_page_astrolabepage"
     },
@@ -4688,7 +4724,7 @@
       "file_type": "code",
       "source_file": "apps/web/src/app/(dashboard)/chronicles/page.tsx",
       "source_location": "L1",
-      "community": 5,
+      "community": 10,
       "norm_label": "page.tsx",
       "id": "apps_web_src_app_dashboard_chronicles_page_tsx"
     },
@@ -4697,7 +4733,7 @@
       "file_type": "code",
       "source_file": "apps/web/src/app/(dashboard)/chronicles/page.tsx",
       "source_location": "L3",
-      "community": 5,
+      "community": 10,
       "norm_label": "chroniclespage()",
       "id": "chronicles_page_chroniclespage"
     },
@@ -4706,7 +4742,7 @@
       "file_type": "code",
       "source_file": "apps/web/src/app/(dashboard)/signature/page.tsx",
       "source_location": "L1",
-      "community": 5,
+      "community": 10,
       "norm_label": "page.tsx",
       "id": "apps_web_src_app_dashboard_signature_page_tsx"
     },
@@ -4715,7 +4751,7 @@
       "file_type": "code",
       "source_file": "apps/web/src/app/(dashboard)/signature/page.tsx",
       "source_location": "L3",
-      "community": 5,
+      "community": 10,
       "norm_label": "signaturepage()",
       "id": "signature_page_signaturepage"
     },
@@ -4724,7 +4760,7 @@
       "file_type": "code",
       "source_file": "apps/web/actions/location.ts",
       "source_location": "L1",
-      "community": 10,
+      "community": 11,
       "norm_label": "location.ts",
       "id": "apps_web_actions_location_ts"
     },
@@ -4733,7 +4769,7 @@
       "file_type": "code",
       "source_file": "apps/web/actions/calculate.ts",
       "source_location": "L1",
-      "community": 10,
+      "community": 11,
       "norm_label": "calculate.ts",
       "id": "apps_web_actions_calculate_ts"
     },
@@ -4741,7 +4777,7 @@
       "label": "Kosmiq Web App",
       "type": "application",
       "description": "Next.js frontend and main application logic",
-      "community": 20,
+      "community": 22,
       "norm_label": "kosmiq web app",
       "id": "kosmiq-web"
     },
@@ -4749,7 +4785,7 @@
       "label": "Astro Engine",
       "type": "service",
       "description": "FastAPI service for high-precision astrological calculations",
-      "community": 20,
+      "community": 22,
       "norm_label": "astro engine",
       "id": "astro-engine"
     },
@@ -4757,7 +4793,7 @@
       "label": "Supabase",
       "type": "infrastructure",
       "description": "Backend services for authentication and data storage",
-      "community": 20,
+      "community": 22,
       "norm_label": "supabase",
       "id": "supabase"
     },
@@ -4765,7 +4801,7 @@
       "label": "Docker",
       "type": "infrastructure",
       "description": "Containerization platform for the project",
-      "community": 20,
+      "community": 22,
       "norm_label": "docker",
       "id": "docker"
     },
@@ -4773,7 +4809,7 @@
       "label": "Vedic Intelligence",
       "type": "domain",
       "description": "The core domain knowledge and logic for the application",
-      "community": 20,
+      "community": 22,
       "norm_label": "vedic intelligence",
       "id": "vedic-intelligence"
     },
@@ -4782,7 +4818,7 @@
       "file_type": "code",
       "source_file": "components/ComingSoon.tsx",
       "source_location": "L1",
-      "community": 114,
+      "community": 117,
       "norm_label": "comingsoon.tsx",
       "id": "components_comingsoon_tsx"
     },
@@ -4791,7 +4827,7 @@
       "file_type": "code",
       "source_file": "components/ChartShell.tsx",
       "source_location": "L1",
-      "community": 115,
+      "community": 118,
       "norm_label": "chartshell.tsx",
       "id": "components_chartshell_tsx"
     },
@@ -4800,7 +4836,7 @@
       "file_type": "code",
       "source_file": "components/Sidebar.tsx",
       "source_location": "L1",
-      "community": 5,
+      "community": 41,
       "norm_label": "sidebar.tsx",
       "id": "components_sidebar_tsx"
     },
@@ -4809,7 +4845,7 @@
       "file_type": "code",
       "source_file": "components/BirthForm.tsx",
       "source_location": "L1",
-      "community": 10,
+      "community": 11,
       "norm_label": "birthform.tsx",
       "id": "components_birthform_tsx"
     },
@@ -4818,7 +4854,7 @@
       "file_type": "code",
       "source_file": "app/(dashboard)/kundli/[id]/layout.tsx",
       "source_location": "L1",
-      "community": 35,
+      "community": 34,
       "norm_label": "layout.tsx",
       "id": "app_dashboard_kundli_id_layout_tsx"
     },
@@ -4827,7 +4863,7 @@
       "file_type": "code",
       "source_file": "app/(dashboard)/kundli/[id]/ashtakavarga/page.tsx",
       "source_location": "L1",
-      "community": 68,
+      "community": 71,
       "norm_label": "page.tsx",
       "id": "app_dashboard_kundli_id_ashtakavarga_page_tsx"
     },
@@ -4836,7 +4872,7 @@
       "file_type": "code",
       "source_file": "app/(dashboard)/kundli/[id]/ashtakavarga/page.tsx",
       "source_location": "L6",
-      "community": 68,
+      "community": 71,
       "norm_label": "ashtakavargapage()",
       "id": "ashtakavarga_page_ashtakavargapage"
     },
@@ -4845,7 +4881,7 @@
       "file_type": "code",
       "source_file": "app/(dashboard)/kundli/[id]/upagrahas/page.tsx",
       "source_location": "L1",
-      "community": 69,
+      "community": 72,
       "norm_label": "page.tsx",
       "id": "app_dashboard_kundli_id_upagrahas_page_tsx"
     },
@@ -4854,7 +4890,7 @@
       "file_type": "code",
       "source_file": "app/(dashboard)/kundli/[id]/upagrahas/page.tsx",
       "source_location": "L6",
-      "community": 69,
+      "community": 72,
       "norm_label": "upagrahaspage()",
       "id": "upagrahas_page_upagrahaspage"
     },
@@ -4863,7 +4899,7 @@
       "file_type": "code",
       "source_file": "app/(dashboard)/kundli/[id]/dasha/page.tsx",
       "source_location": "L1",
-      "community": 70,
+      "community": 73,
       "norm_label": "page.tsx",
       "id": "app_dashboard_kundli_id_dasha_page_tsx"
     },
@@ -4872,7 +4908,7 @@
       "file_type": "code",
       "source_file": "app/(dashboard)/kundli/[id]/dasha/page.tsx",
       "source_location": "L6",
-      "community": 70,
+      "community": 73,
       "norm_label": "dashapage()",
       "id": "dasha_page_dashapage"
     },
@@ -4881,7 +4917,7 @@
       "file_type": "code",
       "source_file": "app/(dashboard)/kundli/[id]/shadbala/page.tsx",
       "source_location": "L1",
-      "community": 71,
+      "community": 74,
       "norm_label": "page.tsx",
       "id": "app_dashboard_kundli_id_shadbala_page_tsx"
     },
@@ -4890,7 +4926,7 @@
       "file_type": "code",
       "source_file": "app/(dashboard)/kundli/[id]/shadbala/page.tsx",
       "source_location": "L6",
-      "community": 71,
+      "community": 74,
       "norm_label": "shadbalapage()",
       "id": "shadbala_page_shadbalapage"
     },
@@ -4899,7 +4935,7 @@
       "file_type": "code",
       "source_file": "app/(dashboard)/kundli/[id]/varga/page.tsx",
       "source_location": "L1",
-      "community": 72,
+      "community": 75,
       "norm_label": "page.tsx",
       "id": "app_dashboard_kundli_id_varga_page_tsx"
     },
@@ -4908,7 +4944,7 @@
       "file_type": "code",
       "source_file": "app/(dashboard)/kundli/[id]/varga/page.tsx",
       "source_location": "L26",
-      "community": 72,
+      "community": 75,
       "norm_label": "vargapage()",
       "id": "varga_page_vargapage"
     },
@@ -4917,7 +4953,7 @@
       "file_type": "code",
       "source_file": "app/(dashboard)/compatibility/page.tsx",
       "source_location": "L1",
-      "community": 5,
+      "community": 20,
       "norm_label": "page.tsx",
       "id": "app_dashboard_compatibility_page_tsx"
     },
@@ -4926,7 +4962,7 @@
       "file_type": "code",
       "source_file": "app/(dashboard)/sky/muhurta/page.tsx",
       "source_location": "L1",
-      "community": 36,
+      "community": 35,
       "norm_label": "page.tsx",
       "id": "app_dashboard_sky_muhurta_page_tsx"
     },
@@ -4935,7 +4971,7 @@
       "file_type": "code",
       "source_file": "app/(dashboard)/sky/transits/page.tsx",
       "source_location": "L1",
-      "community": 73,
+      "community": 76,
       "norm_label": "page.tsx",
       "id": "app_dashboard_sky_transits_page_tsx"
     },
@@ -4944,7 +4980,7 @@
       "file_type": "code",
       "source_file": "app/(dashboard)/sky/transits/page.tsx",
       "source_location": "L4",
-      "community": 73,
+      "community": 76,
       "norm_label": "transitspage()",
       "id": "transits_page_transitspage"
     },
@@ -4953,7 +4989,7 @@
       "file_type": "code",
       "source_file": "app/(dashboard)/sky/panchang/page.tsx",
       "source_location": "L1",
-      "community": 74,
+      "community": 77,
       "norm_label": "page.tsx",
       "id": "app_dashboard_sky_panchang_page_tsx"
     },
@@ -4962,7 +4998,7 @@
       "file_type": "code",
       "source_file": "app/(dashboard)/sky/panchang/page.tsx",
       "source_location": "L4",
-      "community": 74,
+      "community": 77,
       "norm_label": "panchangpage()",
       "id": "panchang_page_panchangpage"
     },
@@ -4971,7 +5007,7 @@
       "file_type": "code",
       "source_file": "app/(dashboard)/charts/page.tsx",
       "source_location": "L1",
-      "community": 116,
+      "community": 119,
       "norm_label": "page.tsx",
       "id": "app_dashboard_charts_page_tsx"
     },
@@ -4980,7 +5016,7 @@
       "file_type": "code",
       "source_file": "app/(dashboard)/charts/new/page.tsx",
       "source_location": "L1",
-      "community": 117,
+      "community": 120,
       "norm_label": "page.tsx",
       "id": "app_dashboard_charts_new_page_tsx"
     },
@@ -4989,7 +5025,7 @@
       "file_type": "code",
       "source_file": "app/(dashboard)/tools/calibration/events/page.tsx",
       "source_location": "L1",
-      "community": 75,
+      "community": 78,
       "norm_label": "page.tsx",
       "id": "app_dashboard_tools_calibration_events_page_tsx"
     },
@@ -4998,7 +5034,7 @@
       "file_type": "code",
       "source_file": "app/(dashboard)/tools/calibration/events/page.tsx",
       "source_location": "L4",
-      "community": 75,
+      "community": 78,
       "norm_label": "importantdatespage()",
       "id": "events_page_importantdatespage"
     },
@@ -5007,7 +5043,7 @@
       "file_type": "code",
       "source_file": "app/(dashboard)/tools/calibration/zodiac/page.tsx",
       "source_location": "L1",
-      "community": 76,
+      "community": 79,
       "norm_label": "page.tsx",
       "id": "app_dashboard_tools_calibration_zodiac_page_tsx"
     },
@@ -5016,7 +5052,7 @@
       "file_type": "code",
       "source_file": "app/(dashboard)/tools/calibration/zodiac/page.tsx",
       "source_location": "L4",
-      "community": 76,
+      "community": 79,
       "norm_label": "zodiaccheckpage()",
       "id": "zodiac_page_zodiaccheckpage"
     },
@@ -5025,7 +5061,7 @@
       "file_type": "code",
       "source_file": "app/(dashboard)/tools/calibration/biodata/page.tsx",
       "source_location": "L1",
-      "community": 77,
+      "community": 80,
       "norm_label": "page.tsx",
       "id": "app_dashboard_tools_calibration_biodata_page_tsx"
     },
@@ -5034,7 +5070,7 @@
       "file_type": "code",
       "source_file": "app/(dashboard)/tools/calibration/biodata/page.tsx",
       "source_location": "L4",
-      "community": 77,
+      "community": 80,
       "norm_label": "personaldetailspage()",
       "id": "biodata_page_personaldetailspage"
     },
@@ -5043,7 +5079,7 @@
       "file_type": "code",
       "source_file": "app/(dashboard)/tools/rectification/page.tsx",
       "source_location": "L1",
-      "community": 78,
+      "community": 81,
       "norm_label": "page.tsx",
       "id": "app_dashboard_tools_rectification_page_tsx"
     },
@@ -5052,7 +5088,7 @@
       "file_type": "code",
       "source_file": "app/(dashboard)/tools/rectification/page.tsx",
       "source_location": "L4",
-      "community": 78,
+      "community": 81,
       "norm_label": "rectificationpage()",
       "id": "rectification_page_rectificationpage"
     },
@@ -5061,7 +5097,7 @@
       "file_type": "code",
       "source_file": "app/(dashboard)/settings/account/page.tsx",
       "source_location": "L1",
-      "community": 5,
+      "community": 38,
       "norm_label": "page.tsx",
       "id": "app_dashboard_settings_account_page_tsx"
     },
@@ -5070,7 +5106,7 @@
       "file_type": "code",
       "source_file": "app/(dashboard)/ask/page.tsx",
       "source_location": "L1",
-      "community": 118,
+      "community": 121,
       "norm_label": "page.tsx",
       "id": "app_dashboard_ask_page_tsx"
     },
@@ -5079,7 +5115,7 @@
       "file_type": "code",
       "source_file": "app/(dashboard)/predictions/samhita/page.tsx",
       "source_location": "L1",
-      "community": 37,
+      "community": 36,
       "norm_label": "page.tsx",
       "id": "app_dashboard_predictions_samhita_page_tsx"
     },
@@ -5088,7 +5124,7 @@
       "file_type": "code",
       "source_file": "app/(dashboard)/predictions/monthly/page.tsx",
       "source_location": "L1",
-      "community": 79,
+      "community": 82,
       "norm_label": "page.tsx",
       "id": "app_dashboard_predictions_monthly_page_tsx"
     },
@@ -5097,7 +5133,7 @@
       "file_type": "code",
       "source_file": "app/(dashboard)/predictions/monthly/page.tsx",
       "source_location": "L4",
-      "community": 79,
+      "community": 82,
       "norm_label": "monthlyforecastpage()",
       "id": "monthly_page_monthlyforecastpage"
     }
@@ -8338,6 +8374,16 @@
       "relation": "rationale_for",
       "confidence": "EXTRACTED",
       "source_file": "apps/astro-engine/main.py",
+      "source_location": "L888",
+      "weight": 1.0,
+      "source": "astro_engine_main_rationale_888",
+      "target": "astro_engine_main_get_panchang",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/astro-engine/main.py",
       "source_location": "L883",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -8354,6 +8400,16 @@
       "confidence_score": 1.0,
       "source": "astro_engine_main_get_monthly_forecast",
       "target": "astro_engine_main_compute_monthly_forecast_logic"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/astro-engine/main.py",
+      "source_location": "L965",
+      "weight": 1.0,
+      "source": "astro_engine_main_rationale_965",
+      "target": "astro_engine_main_get_monthly_forecast",
+      "confidence_score": 1.0
     },
     {
       "relation": "rationale_for",
@@ -8380,6 +8436,16 @@
       "relation": "rationale_for",
       "confidence": "EXTRACTED",
       "source_file": "apps/astro-engine/main.py",
+      "source_location": "L987",
+      "weight": 1.0,
+      "source": "astro_engine_main_rationale_987",
+      "target": "astro_engine_main_get_monthly_forecast_post",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/astro-engine/main.py",
       "source_location": "L982",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -8390,11 +8456,11 @@
       "relation": "rationale_for",
       "confidence": "EXTRACTED",
       "source_file": "apps/astro-engine/main.py",
-      "source_location": "L995",
+      "source_location": "L1000",
       "weight": 1.0,
-      "confidence_score": 1.0,
-      "source": "astro_engine_main_rationale_995",
-      "target": "astro_engine_main_compute_monthly_forecast_logic"
+      "source": "astro_engine_main_rationale_1000",
+      "target": "astro_engine_main_compute_monthly_forecast_logic",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -8406,6 +8472,16 @@
       "weight": 1.0,
       "source": "astro_engine_main_compute_monthly_forecast_logic",
       "target": "engine_dasha_calculate_vimshottari"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "apps/astro-engine/main.py",
+      "source_location": "L995",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "astro_engine_main_rationale_995",
+      "target": "astro_engine_main_compute_monthly_forecast_logic"
     },
     {
       "relation": "calls",
@@ -13854,5 +13930,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "8d4152589b6e4141417f465591a2c6ff25b48428"
+  "built_at_commit": "bef108cce83ef91c31ac8a556311a52986054128"
 }

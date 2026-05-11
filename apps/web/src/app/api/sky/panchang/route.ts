@@ -23,8 +23,8 @@ export async function GET(request: NextRequest) {
 
     const data = await response.json();
     return NextResponse.json(data);
-  } catch (error) {
+  } catch (error: any) {
     console.error("Panchang proxy error:", error);
-    return NextResponse.json({ error: "Internal server error" }, { status: 500 });
+    return NextResponse.json({ error: "Internal server error", message: error.message, stack: error.stack }, { status: 500 });
   }
 }
