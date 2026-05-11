@@ -1,16 +1,16 @@
 # Graph Report - kosmiq  (2026-05-11)
 
 ## Corpus Check
-- 129 files · ~55,028 words
+- 129 files · ~55,051 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 571 nodes · 859 edges · 118 communities (108 shown, 10 thin omitted)
+- 571 nodes · 859 edges · 118 communities (109 shown, 9 thin omitted)
 - Extraction: 72% EXTRACTED · 28% INFERRED · 0% AMBIGUOUS · INFERRED: 237 edges (avg confidence: 0.59)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `8cfc76a6`
+- Built from commit: `7b28d81d`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -39,14 +39,13 @@
 - [[_COMMUNITY_Chart Rectification Tool|Chart Rectification Tool]]
 - [[_COMMUNITY_Monthly Predictions|Monthly Predictions]]
 - [[_COMMUNITY_Samhita Matches|Samhita Matches]]
-- [[_COMMUNITY_Relationship Compatibility|Relationship Compatibility]]
+- [[_COMMUNITY_Database Schema|Database Schema]]
 - [[_COMMUNITY_Engine Package|Engine Package]]
 - [[_COMMUNITY_Tests Package|Tests Package]]
 - [[_COMMUNITY_TypeScript Env|TypeScript Env]]
 - [[_COMMUNITY_ESLint Config|ESLint Config]]
-- [[_COMMUNITY_Next.js Config|Next.js Config]]
 - [[_COMMUNITY_PostCSS Config|PostCSS Config]]
-- [[_COMMUNITY_Drizzle Config|Drizzle Config]]
+- [[_COMMUNITY_Astro Types|Astro Types]]
 - [[_COMMUNITY_Web DB Schema|Web DB Schema]]
 
 ## God Nodes (most connected - your core abstractions)
@@ -73,7 +72,7 @@
 - `save_life_event()` --calls--> `LifeEvent`  [INFERRED]
   apps/astro-engine/main.py → apps/astro-engine/engine/db.py
 
-## Communities (118 total, 10 thin omitted)
+## Communities (118 total, 9 thin omitted)
 
 ### Community 0 - "Predictions Area"
 Cohesion: 0.14
@@ -96,28 +95,28 @@ Cohesion: 0.09
 Nodes (30): get_transit_score(), Compute a 0–100 transit favorability score for today's sky against the natal cha, _aspect_delta(), compute_transit_score(), _get_current_positions(), _house_from(), Transit score engine.  Computes a 0-100 "favorable transit score" reflecting how, Compute a 0-100 transit favorability score.      Args:         natal_planets: di (+22 more)
 
 ### Community 5 - "AI Synthesis Module"
-Cohesion: 0.09
-Nodes (5): AstrolabePage(), useAstro(), useYogas(), LaboratoryPage(), SamhitaMatches()
-
-### Community 6 - "Marketing Landing"
 Cohesion: 0.1
 Nodes (11): useChartStrengths(), addYears(), buildAntardashas(), getDashaSequenceFrom(), useDasha(), ChartHeroBanner(), MetricCards(), QuickLinks() (+3 more)
 
+### Community 6 - "Marketing Landing"
+Cohesion: 0.11
+Nodes (5): AstrolabePage(), useAstro(), useYogas(), LaboratoryPage(), SamhitaMatches()
+
 ### Community 7 - "Astro Engine"
+Cohesion: 0.14
+Nodes (8): ChroniclesPage(), NexusCard(), NexusPage(), handleEmailLogin(), handleSocialLogin(), OraclePage(), SignaturePage(), createClient()
+
+### Community 8 - "NavHUD Component"
 Cohesion: 0.16
 Nodes (12): get_chart(), get_varga(), get_varga_by_chart(), Calculate a specific divisional chart (Varga) for all planets., Calculate a specific divisional chart from a stored chart.      Resolves chart f, calculate_horoscope(), get_nakshatra(), get_varga_position() (+4 more)
 
-### Community 8 - "NavHUD Component"
+### Community 9 - "Planetary Data UI"
 Cohesion: 0.21
 Nodes (10): compatibility_narrative(), get_monthly_narrative(), format_compatibility_prompt(), format_monthly_narrative_prompt(), format_prompt(), gemini_node(), generate_compatibility_narrative(), generate_monthly_narrative_ai() (+2 more)
 
-### Community 9 - "Planetary Data UI"
+### Community 10 - "Reading Display"
 Cohesion: 0.21
 Nodes (6): ChatMessageBubble(), useChat(), buildChartContext(), detectAlerts(), getTopPlanets(), longitudeToSign()
-
-### Community 10 - "Reading Display"
-Cohesion: 0.2
-Nodes (6): ChroniclesPage(), handleEmailLogin(), handleSocialLogin(), OraclePage(), SignaturePage(), createClient()
 
 ### Community 11 - "Background System"
 Cohesion: 0.31
@@ -159,18 +158,18 @@ Nodes (3): handleKeyDown(), handleSubmit(), resetHeight()
 Cohesion: 0.5
 Nodes (3): CompatibilityPage(), fetchNarrative(), handleCalculate()
 
-### Community 22 - "Monthly Predictions"
+### Community 21 - "Chart Rectification Tool"
 Cohesion: 0.5
 Nodes (5): Astro Engine, Docker, Kosmiq Web App, Supabase, Vedic Intelligence
 
-### Community 24 - "Relationship Compatibility"
+### Community 23 - "Samhita Matches"
 Cohesion: 0.67
 Nodes (3): generate_synthesis(), Runs the LangGraph AI synthesis workflow to generate a premium astrological read, Runs the LangGraph AI synthesis workflow to generate a premium astrological read
 
 ## Knowledge Gaps
 - **96 isolated node(s):** `Accepts the already-computed ChartResponse so the caller does not need     to re`, `Returns a map of planet names to their longitudes in the varga chart.`, `Runs the LangGraph AI synthesis workflow to generate a premium astrological read`, `Calculate Vimshottari Dasha from the Moon's natal nakshatra.      Accepts the fu`, `Core logic to detect and categorize yogas.` (+91 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **10 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **9 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_

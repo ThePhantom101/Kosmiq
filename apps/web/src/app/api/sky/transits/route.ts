@@ -1,6 +1,8 @@
 import { NextRequest, NextResponse } from "next/server";
 
-const ASTRO_ENGINE_URL = process.env.ASTRO_ENGINE_URL || "https://astro-engine-809930924347.asia-south1.run.app";
+const ASTRO_ENGINE_URL = (process.env.ASTRO_ENGINE_URL && !process.env.ASTRO_ENGINE_URL.includes("localhost")) 
+  ? process.env.ASTRO_ENGINE_URL 
+  : "https://astro-engine-809930924347.asia-south1.run.app";
 
 export async function GET(request: NextRequest) {
   const { searchParams } = new URL(request.url);
