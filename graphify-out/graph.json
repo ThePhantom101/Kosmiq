@@ -2997,7 +2997,7 @@
       "source_file": "apps/web/src/components/sky/MuhurtaFinder.tsx",
       "source_location": "L1",
       "id": "apps_web_src_components_sky_muhurtafinder_tsx",
-      "community": 8,
+      "community": 50,
       "norm_label": "muhurtafinder.tsx"
     },
     {
@@ -3006,7 +3006,7 @@
       "source_file": "apps/web/src/components/sky/MuhurtaFinder.tsx",
       "source_location": "L37",
       "id": "sky_muhurtafinder_calculatemuhurta",
-      "community": 8,
+      "community": 50,
       "norm_label": "calculatemuhurta()"
     },
     {
@@ -4122,7 +4122,7 @@
       "source_file": "apps/web/src/app/(dashboard)/sky/transits/page.tsx",
       "source_location": "L1",
       "id": "apps_web_src_app_dashboard_sky_transits_page_tsx",
-      "community": 49,
+      "community": 45,
       "norm_label": "page.tsx"
     },
     {
@@ -4131,7 +4131,7 @@
       "source_file": "apps/web/src/app/(dashboard)/sky/transits/page.tsx",
       "source_location": "L17",
       "id": "transits_page_fetchtransits",
-      "community": 49,
+      "community": 45,
       "norm_label": "fetchtransits()"
     },
     {
@@ -4140,7 +4140,7 @@
       "source_file": "apps/web/src/app/(dashboard)/sky/panchang/page.tsx",
       "source_location": "L1",
       "id": "apps_web_src_app_dashboard_sky_panchang_page_tsx",
-      "community": 48,
+      "community": 8,
       "norm_label": "page.tsx"
     },
     {
@@ -4149,7 +4149,7 @@
       "source_file": "apps/web/src/app/(dashboard)/sky/panchang/page.tsx",
       "source_location": "L23",
       "id": "panchang_page_fetchpanchang",
-      "community": 48,
+      "community": 8,
       "norm_label": "fetchpanchang()"
     },
     {
@@ -4248,7 +4248,7 @@
       "source_file": "apps/web/src/app/(dashboard)/chart/[id]/shadows/page.tsx",
       "source_location": "L1",
       "id": "apps_web_src_app_dashboard_chart_id_shadows_page_tsx",
-      "community": 46,
+      "community": 47,
       "norm_label": "page.tsx"
     },
     {
@@ -4257,7 +4257,7 @@
       "source_file": "apps/web/src/app/(dashboard)/chart/[id]/shadows/page.tsx",
       "source_location": "L54",
       "id": "shadows_page_getbadgecolor",
-      "community": 46,
+      "community": 47,
       "norm_label": "getbadgecolor()"
     },
     {
@@ -4266,7 +4266,7 @@
       "source_file": "apps/web/src/app/(dashboard)/chart/[id]/divisional/page.tsx",
       "source_location": "L1",
       "id": "apps_web_src_app_dashboard_chart_id_divisional_page_tsx",
-      "community": 47,
+      "community": 46,
       "norm_label": "page.tsx"
     },
     {
@@ -4275,7 +4275,7 @@
       "source_file": "apps/web/src/app/(dashboard)/chart/[id]/divisional/page.tsx",
       "source_location": "L98",
       "id": "divisional_page_getplanetinfo",
-      "community": 47,
+      "community": 46,
       "norm_label": "getplanetinfo()"
     },
     {
@@ -4293,7 +4293,7 @@
       "source_file": "apps/web/src/app/(dashboard)/chart/[id]/strengths/page.tsx",
       "source_location": "L1",
       "id": "apps_web_src_app_dashboard_chart_id_strengths_page_tsx",
-      "community": 50,
+      "community": 49,
       "norm_label": "page.tsx"
     },
     {
@@ -4302,7 +4302,7 @@
       "source_file": "apps/web/src/app/(dashboard)/chart/[id]/strengths/page.tsx",
       "source_location": "L56",
       "id": "strengths_page_getstatus",
-      "community": 50,
+      "community": 49,
       "norm_label": "getstatus()"
     },
     {
@@ -4311,7 +4311,7 @@
       "source_file": "apps/web/src/app/(dashboard)/chart/[id]/yogas/page.tsx",
       "source_location": "L1",
       "id": "apps_web_src_app_dashboard_chart_id_yogas_page_tsx",
-      "community": 45,
+      "community": 48,
       "norm_label": "page.tsx"
     },
     {
@@ -4320,7 +4320,7 @@
       "source_file": "apps/web/src/app/(dashboard)/chart/[id]/yogas/page.tsx",
       "source_location": "L56",
       "id": "yogas_page_getcategorystyles",
-      "community": 45,
+      "community": 48,
       "norm_label": "getcategorystyles()"
     },
     {
@@ -4401,7 +4401,7 @@
       "source_file": "apps/web/src/app/(dashboard)/tools/rectification/page.tsx",
       "source_location": "L1",
       "id": "apps_web_src_app_dashboard_tools_rectification_page_tsx",
-      "community": 27,
+      "community": 26,
       "norm_label": "page.tsx"
     },
     {
@@ -4410,7 +4410,7 @@
       "source_file": "apps/web/src/app/(dashboard)/tools/rectification/page.tsx",
       "source_location": "L39",
       "id": "rectification_page_handlenext",
-      "community": 27,
+      "community": 26,
       "norm_label": "handlenext()"
     },
     {
@@ -4419,7 +4419,7 @@
       "source_file": "apps/web/src/app/(dashboard)/tools/rectification/page.tsx",
       "source_location": "L47",
       "id": "rectification_page_runrectification",
-      "community": 27,
+      "community": 26,
       "norm_label": "runrectification()"
     },
     {
@@ -4491,7 +4491,7 @@
       "source_file": "apps/web/src/app/(dashboard)/predictions/monthly/page.tsx",
       "source_location": "L1",
       "id": "apps_web_src_app_dashboard_predictions_monthly_page_tsx",
-      "community": 26,
+      "community": 27,
       "norm_label": "page.tsx"
     },
     {
@@ -4500,7 +4500,7 @@
       "source_file": "apps/web/src/app/(dashboard)/predictions/monthly/page.tsx",
       "source_location": "L40",
       "id": "monthly_page_monthlyforecastskeleton",
-      "community": 26,
+      "community": 27,
       "norm_label": "monthlyforecastskeleton()"
     },
     {
@@ -4509,7 +4509,7 @@
       "source_file": "apps/web/src/app/(dashboard)/predictions/monthly/page.tsx",
       "source_location": "L126",
       "id": "monthly_page_handlemonthchange",
-      "community": 26,
+      "community": 27,
       "norm_label": "handlemonthchange()"
     },
     {
@@ -13854,5 +13854,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "5857e47fefb1798a1f49295ae9f9bae945dc3325"
+  "built_at_commit": "65003dbe09be3b878d5973132ff6ba878a4b5b8f"
 }

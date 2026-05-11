@@ -2,9 +2,11 @@
 
 import { ChartRequest, ChartResponse, CombinedChartResponse, SynthesisResponse } from "@/types/astro";
 
+const ASTRO_ENGINE_URL = process.env.ASTRO_ENGINE_URL || "http://localhost:8000";
+
 export async function calculateChart(data: ChartRequest): Promise<CombinedChartResponse> {
   // 1. Calculate the mathematical chart
-  const chartResponse = await fetch("http://localhost:8000/api/v1/calculate/chart", {
+  const chartResponse = await fetch(`${ASTRO_ENGINE_URL}/api/v1/calculate/chart`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -20,7 +22,7 @@ export async function calculateChart(data: ChartRequest): Promise<CombinedChartR
   const chartData: ChartResponse = await chartResponse.json();
 
   // 2. Generate the AI synthesis reading
-  const synthesisResponse = await fetch("http://localhost:8000/api/v1/synthesis/generate", {
+  const synthesisResponse = await fetch(`${ASTRO_ENGINE_URL}/api/v1/synthesis/generate`, {
     method: "POST",
     headers: {
       "Content-Type": "application/json",

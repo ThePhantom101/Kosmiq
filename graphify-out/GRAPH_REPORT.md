@@ -10,7 +10,7 @@
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `5857e47f`
+- Built from commit: `65003dbe`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -38,7 +38,7 @@
 - [[_COMMUNITY_Calibration - Biodata|Calibration - Biodata]]
 - [[_COMMUNITY_Chart Rectification Tool|Chart Rectification Tool]]
 - [[_COMMUNITY_Monthly Predictions|Monthly Predictions]]
-- [[_COMMUNITY_Muhurta Tool|Muhurta Tool]]
+- [[_COMMUNITY_Panchang Module|Panchang Module]]
 - [[_COMMUNITY_Tests Package|Tests Package]]
 - [[_COMMUNITY_TypeScript Env|TypeScript Env]]
 - [[_COMMUNITY_ESLint Config|ESLint Config]]
