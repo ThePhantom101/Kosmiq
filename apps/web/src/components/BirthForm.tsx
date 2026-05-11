@@ -54,8 +54,10 @@ export default function BirthForm({ onResult, isLoading, setIsLoading }: BirthFo
   };
 
   const handleTimeChange = (e: React.ChangeEvent<HTMLInputElement>) => {
-    let value = e.target.value.replace(/[^0-9:]/g, "");
-    if (value.length === 2 && !value.includes(":")) value += ":";
+    let value = e.target.value.replace(/[^0-9]/g, "");
+    if (value.length > 2) {
+      value = value.slice(0, 2) + ":" + value.slice(2);
+    }
     setFormData({ ...formData, time: value.slice(0, 5) });
   };
 
@@ -101,6 +103,20 @@ export default function BirthForm({ onResult, isLoading, setIsLoading }: BirthFo
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+    
+    // Basic validation
+    const dateRegex = /^\d{4}-\d{2}-\d{2}$/;
+    const timeRegex = /^\d{2}:\d{2}$/;
+    
+    if (!dateRegex.test(formData.date)) {
+      alert("Please enter a valid date (YYYY-MM-DD)");
+      return;
+    }
+    if (!timeRegex.test(formData.time)) {
+      alert("Please enter a valid time (HH:MM)");
+      return;
+    }
+
     setIsLoading(true);
     try {
       const result = await calculateChart({

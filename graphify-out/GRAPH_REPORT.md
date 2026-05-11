@@ -1,16 +1,16 @@
 # Graph Report - kosmiq  (2026-05-11)
 
 ## Corpus Check
-- 129 files · ~54,958 words
+- 129 files · ~54,964 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 567 nodes · 855 edges · 118 communities (111 shown, 7 thin omitted)
+- 567 nodes · 855 edges · 119 communities (112 shown, 7 thin omitted)
 - Extraction: 72% EXTRACTED · 28% INFERRED · 0% AMBIGUOUS · INFERRED: 237 edges (avg confidence: 0.59)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `65003dbe`
+- Built from commit: `8d415258`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -38,7 +38,7 @@
 - [[_COMMUNITY_Calibration - Biodata|Calibration - Biodata]]
 - [[_COMMUNITY_Chart Rectification Tool|Chart Rectification Tool]]
 - [[_COMMUNITY_Monthly Predictions|Monthly Predictions]]
-- [[_COMMUNITY_Panchang Module|Panchang Module]]
+- [[_COMMUNITY_Account Settings|Account Settings]]
 - [[_COMMUNITY_Tests Package|Tests Package]]
 - [[_COMMUNITY_TypeScript Env|TypeScript Env]]
 - [[_COMMUNITY_ESLint Config|ESLint Config]]
@@ -69,7 +69,7 @@
 - `save_life_event()` --calls--> `LifeEvent`  [INFERRED]
   apps/astro-engine/main.py → apps/astro-engine/engine/db.py
 
-## Communities (118 total, 7 thin omitted)
+## Communities (119 total, 7 thin omitted)
 
 ### Community 0 - "Predictions Area"
 Cohesion: 0.13
@@ -104,20 +104,20 @@ Cohesion: 0.16
 Nodes (12): get_chart(), get_varga(), get_varga_by_chart(), Calculate a specific divisional chart (Varga) for all planets., Calculate a specific divisional chart from a stored chart.      Resolves chart f, calculate_horoscope(), get_nakshatra(), get_varga_position() (+4 more)
 
 ### Community 8 - "NavHUD Component"
-Cohesion: 0.18
-Nodes (4): AstrolabePage(), useAstro(), LaboratoryPage(), SamhitaMatches()
+Cohesion: 0.19
+Nodes (5): AstrolabePage(), useAstro(), useYogas(), LaboratoryPage(), SamhitaMatches()
 
 ### Community 9 - "Planetary Data UI"
 Cohesion: 0.21
 Nodes (10): compatibility_narrative(), get_monthly_narrative(), format_compatibility_prompt(), format_monthly_narrative_prompt(), format_prompt(), gemini_node(), generate_compatibility_narrative(), generate_monthly_narrative_ai() (+2 more)
 
 ### Community 10 - "Reading Display"
-Cohesion: 0.18
-Nodes (4): useYogas(), ChartHeroBanner(), MetricCards(), QuickLinks()
-
-### Community 11 - "Background System"
 Cohesion: 0.31
 Nodes (4): calculateChart(), getTimezone(), searchLocation(), BirthForm()
+
+### Community 11 - "Background System"
+Cohesion: 0.22
+Nodes (3): ChartHeroBanner(), MetricCards(), QuickLinks()
 
 ### Community 12 - "Soul Signature UI"
 Cohesion: 0.32

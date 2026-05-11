@@ -2,7 +2,7 @@
 
 import { ChartRequest, ChartResponse, CombinedChartResponse, SynthesisResponse } from "@/types/astro";
 
-const ASTRO_ENGINE_URL = process.env.ASTRO_ENGINE_URL || "http://localhost:8000";
+const ASTRO_ENGINE_URL = process.env.ASTRO_ENGINE_URL || "https://astro-engine-809930924347.asia-south1.run.app";
 
 export async function calculateChart(data: ChartRequest): Promise<CombinedChartResponse> {
   // 1. Calculate the mathematical chart

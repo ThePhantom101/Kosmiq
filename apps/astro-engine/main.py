@@ -867,9 +867,14 @@ async def get_current_transits(chart_id: str, db: Session = Depends(get_db)):
     """
     Get current transits relative to a natal chart.
     """
-    chart = db.query(Chart).filter(Chart.id == chart_id).first()
+    if chart_id == "me":
+        # Fallback: get the latest chart from DB
+        chart = db.query(Chart).order_by(Chart.created_at.desc()).first()
+    else:
+        chart = db.query(Chart).filter(Chart.id == chart_id).first()
+
     if not chart:
-        raise HTTPException(status_code=404, detail="Chart not found")
+        raise HTTPException(status_code=404, detail="Chart not found. Please create a chart first.")
 
     shodash = chart.shodashvarga or {}
     d1 = shodash.get("D1", {})
