@@ -4,6 +4,7 @@ import "./globals.css";
 import BackgroundSystem from "@/components/BackgroundSystem";
 import NavHUD from "@/components/NavHUD";
 import { AstroProvider } from "@/context/AstroContext";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 // Triggering fresh Vercel deployment after root directory update
 
 const cinzel = Cinzel({
@@ -42,6 +43,7 @@ export default function RootLayout({
         <AstroProvider>
           {children}
         </AstroProvider>
+        <SpeedInsights />
       </body>
     </html>
   );
