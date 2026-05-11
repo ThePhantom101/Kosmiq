@@ -1,0 +1,636 @@
+{
+  "directed": true,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "label": "main.py",
+      "file_type": "code",
+      "source_file": "main.py",
+      "source_location": "L1",
+      "community": 2,
+      "norm_label": "main.py",
+      "id": "main_py"
+    },
+    {
+      "label": "ChartRequest",
+      "file_type": "code",
+      "source_file": "main.py",
+      "source_location": "L11",
+      "community": 3,
+      "norm_label": "chartrequest",
+      "id": "astro_engine_main_chartrequest"
+    },
+    {
+      "label": "BaseModel",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "community": 3,
+      "norm_label": "basemodel",
+      "id": "basemodel"
+    },
+    {
+      "label": "Nakshatra",
+      "file_type": "code",
+      "source_file": "main.py",
+      "source_location": "L18",
+      "community": 3,
+      "norm_label": "nakshatra",
+      "id": "astro_engine_main_nakshatra"
+    },
+    {
+      "label": "PlanetaryPosition",
+      "file_type": "code",
+      "source_file": "main.py",
+      "source_location": "L23",
+      "community": 2,
+      "norm_label": "planetaryposition",
+      "id": "astro_engine_main_planetaryposition"
+    },
+    {
+      "label": "ChartResponse",
+      "file_type": "code",
+      "source_file": "main.py",
+      "source_location": "L29",
+      "community": 3,
+      "norm_label": "chartresponse",
+      "id": "astro_engine_main_chartresponse"
+    },
+    {
+      "label": "SynthesisRequest",
+      "file_type": "code",
+      "source_file": "main.py",
+      "source_location": "L39",
+      "community": 3,
+      "norm_label": "synthesisrequest",
+      "id": "astro_engine_main_synthesisrequest"
+    },
+    {
+      "label": "SynthesisResponse",
+      "file_type": "code",
+      "source_file": "main.py",
+      "source_location": "L42",
+      "community": 2,
+      "norm_label": "synthesisresponse",
+      "id": "astro_engine_main_synthesisresponse"
+    },
+    {
+      "label": "health_check()",
+      "file_type": "code",
+      "source_file": "main.py",
+      "source_location": "L46",
+      "community": 2,
+      "norm_label": "health_check()",
+      "id": "astro_engine_main_health_check"
+    },
+    {
+      "label": "get_chart()",
+      "file_type": "code",
+      "source_file": "main.py",
+      "source_location": "L50",
+      "community": 2,
+      "norm_label": "get_chart()",
+      "id": "astro_engine_main_get_chart"
+    },
+    {
+      "label": "generate_synthesis()",
+      "file_type": "code",
+      "source_file": "main.py",
+      "source_location": "L79",
+      "community": 5,
+      "norm_label": "generate_synthesis()",
+      "id": "astro_engine_main_generate_synthesis"
+    },
+    {
+      "label": "Runs the LangGraph AI synthesis workflow to generate a premium astrological read",
+      "file_type": "rationale",
+      "source_file": "main.py",
+      "source_location": "L80",
+      "community": 5,
+      "norm_label": "runs the langgraph ai synthesis workflow to generate a premium astrological read",
+      "id": "astro_engine_main_rationale_80"
+    },
+    {
+      "label": "calculator.py",
+      "file_type": "code",
+      "source_file": "engine/calculator.py",
+      "source_location": "L1",
+      "community": 0,
+      "norm_label": "calculator.py",
+      "id": "engine_calculator_py"
+    },
+    {
+      "label": "get_varga_position()",
+      "file_type": "code",
+      "source_file": "engine/calculator.py",
+      "source_location": "L8",
+      "community": 0,
+      "norm_label": "get_varga_position()",
+      "id": "engine_calculator_get_varga_position"
+    },
+    {
+      "label": "get_nakshatra()",
+      "file_type": "code",
+      "source_file": "engine/calculator.py",
+      "source_location": "L32",
+      "community": 0,
+      "norm_label": "get_nakshatra()",
+      "id": "engine_calculator_get_nakshatra"
+    },
+    {
+      "label": "calculate_horoscope()",
+      "file_type": "code",
+      "source_file": "engine/calculator.py",
+      "source_location": "L56",
+      "community": 0,
+      "norm_label": "calculate_horoscope()",
+      "id": "engine_calculator_calculate_horoscope"
+    },
+    {
+      "label": "Calculates the longitude in a specific divisional chart (Varga).     Formula: (L",
+      "file_type": "rationale",
+      "source_file": "engine/calculator.py",
+      "source_location": "L9",
+      "community": 0,
+      "norm_label": "calculates the longitude in a specific divisional chart (varga).     formula: (l",
+      "id": "engine_calculator_rationale_9"
+    },
+    {
+      "label": "Calculates Nakshatra and Pada from longitude.",
+      "file_type": "rationale",
+      "source_file": "engine/calculator.py",
+      "source_location": "L33",
+      "community": 0,
+      "norm_label": "calculates nakshatra and pada from longitude.",
+      "id": "engine_calculator_rationale_33"
+    },
+    {
+      "label": "Calculates planetary positions and vargas using Lahiri Ayanamsa.",
+      "file_type": "rationale",
+      "source_file": "engine/calculator.py",
+      "source_location": "L61",
+      "community": 0,
+      "norm_label": "calculates planetary positions and vargas using lahiri ayanamsa.",
+      "id": "engine_calculator_rationale_61"
+    },
+    {
+      "label": "ai_synthesis.py",
+      "file_type": "code",
+      "source_file": "engine/ai_synthesis.py",
+      "source_location": "L1",
+      "community": 1,
+      "norm_label": "ai_synthesis.py",
+      "id": "engine_ai_synthesis_py"
+    },
+    {
+      "label": "GraphState",
+      "file_type": "code",
+      "source_file": "engine/ai_synthesis.py",
+      "source_location": "L9",
+      "community": 1,
+      "norm_label": "graphstate",
+      "id": "engine_ai_synthesis_graphstate"
+    },
+    {
+      "label": "TypedDict",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "community": 1,
+      "norm_label": "typeddict",
+      "id": "typeddict"
+    },
+    {
+      "label": "format_prompt()",
+      "file_type": "code",
+      "source_file": "engine/ai_synthesis.py",
+      "source_location": "L13",
+      "community": 1,
+      "norm_label": "format_prompt()",
+      "id": "engine_ai_synthesis_format_prompt"
+    },
+    {
+      "label": "gemini_node()",
+      "file_type": "code",
+      "source_file": "engine/ai_synthesis.py",
+      "source_location": "L79",
+      "community": 1,
+      "norm_label": "gemini_node()",
+      "id": "engine_ai_synthesis_gemini_node"
+    },
+    {
+      "label": "create_workflow()",
+      "file_type": "code",
+      "source_file": "engine/ai_synthesis.py",
+      "source_location": "L96",
+      "community": 1,
+      "norm_label": "create_workflow()",
+      "id": "engine_ai_synthesis_create_workflow"
+    },
+    {
+      "label": "__init__.py",
+      "file_type": "code",
+      "source_file": "tests/__init__.py",
+      "source_location": "L1",
+      "community": 6,
+      "norm_label": "__init__.py",
+      "id": "tests_init_py"
+    },
+    {
+      "label": "test_calculator.py",
+      "file_type": "code",
+      "source_file": "tests/test_calculator.py",
+      "source_location": "L1",
+      "community": 0,
+      "norm_label": "test_calculator.py",
+      "id": "tests_test_calculator_py"
+    },
+    {
+      "label": "test_calculation()",
+      "file_type": "code",
+      "source_file": "tests/test_calculator.py",
+      "source_location": "L4",
+      "community": 0,
+      "norm_label": "test_calculation()",
+      "id": "tests_test_calculator_test_calculation"
+    },
+    {
+      "label": "FastAPI API",
+      "type": "service",
+      "description": "Main API entry point",
+      "community": 4,
+      "norm_label": "fastapi api",
+      "id": "fastapi-api"
+    },
+    {
+      "label": "Swiss Ephemeris",
+      "type": "library",
+      "description": "High-precision planetary position library",
+      "community": 4,
+      "norm_label": "swiss ephemeris",
+      "id": "swiss-ephemeris"
+    },
+    {
+      "label": "Astro Logic",
+      "type": "domain",
+      "description": "Vedic calculation logic",
+      "community": 4,
+      "norm_label": "astro logic",
+      "id": "astro-logic"
+    }
+  ],
+  "links": [
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "main.py",
+      "source_location": "L11",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "main_py",
+      "target": "astro_engine_main_chartrequest"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "main.py",
+      "source_location": "L18",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "main_py",
+      "target": "astro_engine_main_nakshatra"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "main.py",
+      "source_location": "L23",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "main_py",
+      "target": "astro_engine_main_planetaryposition"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "main.py",
+      "source_location": "L29",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "main_py",
+      "target": "astro_engine_main_chartresponse"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "main.py",
+      "source_location": "L39",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "main_py",
+      "target": "astro_engine_main_synthesisrequest"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "main.py",
+      "source_location": "L42",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "main_py",
+      "target": "astro_engine_main_synthesisresponse"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "main.py",
+      "source_location": "L46",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "main_py",
+      "target": "astro_engine_main_health_check"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "main.py",
+      "source_location": "L50",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "main_py",
+      "target": "astro_engine_main_get_chart"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "main.py",
+      "source_location": "L79",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "main_py",
+      "target": "astro_engine_main_generate_synthesis"
+    },
+    {
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "main.py",
+      "source_location": "L11",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "astro_engine_main_chartrequest",
+      "target": "basemodel"
+    },
+    {
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "main.py",
+      "source_location": "L18",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "astro_engine_main_nakshatra",
+      "target": "basemodel"
+    },
+    {
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "main.py",
+      "source_location": "L23",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "astro_engine_main_planetaryposition",
+      "target": "basemodel"
+    },
+    {
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "main.py",
+      "source_location": "L29",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "astro_engine_main_chartresponse",
+      "target": "basemodel"
+    },
+    {
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "main.py",
+      "source_location": "L39",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "astro_engine_main_synthesisrequest",
+      "target": "basemodel"
+    },
+    {
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "main.py",
+      "source_location": "L42",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "astro_engine_main_synthesisresponse",
+      "target": "basemodel"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "main.py",
+      "source_location": "L63",
+      "weight": 1.0,
+      "source": "astro_engine_main_get_chart",
+      "target": "engine_calculator_calculate_horoscope"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "main.py",
+      "source_location": "L80",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "astro_engine_main_rationale_80",
+      "target": "astro_engine_main_generate_synthesis"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "engine/calculator.py",
+      "source_location": "L8",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "engine_calculator_py",
+      "target": "engine_calculator_get_varga_position"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "engine/calculator.py",
+      "source_location": "L32",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "engine_calculator_py",
+      "target": "engine_calculator_get_nakshatra"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "engine/calculator.py",
+      "source_location": "L56",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "engine_calculator_py",
+      "target": "engine_calculator_calculate_horoscope"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "engine/calculator.py",
+      "source_location": "L97",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "engine_calculator_calculate_horoscope",
+      "target": "engine_calculator_get_nakshatra"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "engine/calculator.py",
+      "source_location": "L102",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "engine_calculator_calculate_horoscope",
+      "target": "engine_calculator_get_varga_position"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "engine/calculator.py",
+      "source_location": "L9",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "engine_calculator_rationale_9",
+      "target": "engine_calculator_get_varga_position"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "engine/calculator.py",
+      "source_location": "L33",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "engine_calculator_rationale_33",
+      "target": "engine_calculator_get_nakshatra"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "engine/calculator.py",
+      "source_location": "L61",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "engine_calculator_rationale_61",
+      "target": "engine_calculator_calculate_horoscope"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "engine/ai_synthesis.py",
+      "source_location": "L9",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "engine_ai_synthesis_py",
+      "target": "engine_ai_synthesis_graphstate"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "engine/ai_synthesis.py",
+      "source_location": "L13",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "engine_ai_synthesis_py",
+      "target": "engine_ai_synthesis_format_prompt"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "engine/ai_synthesis.py",
+      "source_location": "L79",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "engine_ai_synthesis_py",
+      "target": "engine_ai_synthesis_gemini_node"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "engine/ai_synthesis.py",
+      "source_location": "L96",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "engine_ai_synthesis_py",
+      "target": "engine_ai_synthesis_create_workflow"
+    },
+    {
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "engine/ai_synthesis.py",
+      "source_location": "L9",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "engine_ai_synthesis_graphstate",
+      "target": "typeddict"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "engine/ai_synthesis.py",
+      "source_location": "L85",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "engine_ai_synthesis_gemini_node",
+      "target": "engine_ai_synthesis_format_prompt"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tests/test_calculator.py",
+      "source_location": "L4",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "tests_test_calculator_py",
+      "target": "tests_test_calculator_test_calculation"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "tests/test_calculator.py",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "tests_test_calculator_test_calculation",
+      "target": "engine_calculator_calculate_horoscope"
+    },
+    {
+      "label": "uses",
+      "type": "dependency",
+      "confidence_score": 1.0,
+      "source": "fastapi-api",
+      "target": "astro-logic"
+    },
+    {
+      "label": "calls",
+      "type": "library_call",
+      "confidence_score": 1.0,
+      "source": "astro-logic",
+      "target": "swiss-ephemeris"
+    }
+  ],
+  "hyperedges": [],
+  "built_at_commit": "4961c5e3f5d808133a66533f0e17440e90fe3c36"
+}

@@ -83,7 +83,7 @@ export default function LoginPage() {
             </div>
             <h1 className="text-5xl font-serif text-white tracking-tight">
               Begin Your <br />
-              <span className="text-gold">Eternal Chronicle</span>
+              <span className="text-gold">Cosmic Journey</span>
             </h1>
             <p className="text-gray-500 font-sans leading-relaxed">
               Sign in to persist your cosmic readings, track planetary transits, and unlock deep architectural insights into your soul's journey.
@@ -112,7 +112,7 @@ export default function LoginPage() {
                 <div className="w-full border-t border-gold/10" />
               </div>
               <div className="relative flex justify-center text-[10px] uppercase tracking-[0.3em]">
-                <span className="bg-black px-4 text-gold/40">Technical Access</span>
+                <span className="bg-black px-4 text-gold/40">Secure Access</span>
               </div>
             </div>
 
@@ -149,7 +149,7 @@ export default function LoginPage() {
                       <div className="w-5 h-5 border-2 border-gold/30 border-t-gold rounded-full animate-spin" />
                     ) : (
                       <>
-                        <span className="uppercase tracking-[0.2em] text-xs font-bold">Transmit Magic Link</span>
+                        <span className="uppercase tracking-[0.2em] text-xs font-bold">Send Magic Link</span>
                         <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                       </>
                     )}
@@ -172,7 +172,7 @@ export default function LoginPage() {
                     <CheckCircle2 className="w-10 h-10 text-gold" />
                   </div>
                   <div className="space-y-2">
-                    <h3 className="text-gold font-serif text-lg tracking-tight">Chronicle Access Transmitted</h3>
+                    <h3 className="text-gold font-serif text-lg tracking-tight">Access Link Sent</h3>
                     <p className="text-gray-400 text-xs font-sans leading-relaxed">
                       We've sent a magic link to <span className="text-white">{email}</span>. <br />
                       Check your frequency (inbox) to proceed.
@@ -191,8 +191,8 @@ export default function LoginPage() {
 
           <div className="pt-8 border-t border-gold/10">
             <p className="text-[10px] text-gray-500 font-mono leading-relaxed text-center">
-              BY ACCESSING THE KOSMIQ LABORATORY, YOU AGREE TO OUR <br />
-              <span className="text-gold/40 cursor-pointer hover:text-gold">TERMS OF TRANSMISSION</span> & <span className="text-gold/40 cursor-pointer hover:text-gold">PRIVACY PROTOCOLS</span>.
+              BY ACCESSING KOSMIQ, YOU AGREE TO OUR <br />
+              <span className="text-gold/40 cursor-pointer hover:text-gold">TERMS OF SERVICE</span> & <span className="text-gold/40 cursor-pointer hover:text-gold">PRIVACY POLICY</span>.
             </p>
           </div>
         </motion.div>

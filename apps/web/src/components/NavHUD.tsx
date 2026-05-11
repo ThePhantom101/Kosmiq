@@ -12,9 +12,9 @@ export default function NavHUD() {
       </Link>
 
       <div className="flex items-center space-x-10">
-        <NavLink href="/features">Features</NavLink>
-        <NavLink href="/methodology">Methodology</NavLink>
-        <NavLink href="/pricing">Pricing</NavLink>
+        <NavLink href="/features">Your Kundali</NavLink>
+        <NavLink href="/methodology">Predictions</NavLink>
+        <NavLink href="/pricing">Today's Sky</NavLink>
         <Link 
           href="/login" 
           className="px-6 py-2 border border-gold/40 hover:border-gold hover:bg-gold/5 transition-all rounded-sm text-xs uppercase tracking-widest text-gold"

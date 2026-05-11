@@ -4,7 +4,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { Sparkles, ArrowUpRight, Zap, Database, History } from "lucide-react";
 
-export default function NexusPage() {
+export default function DashboardPage() {
   return (
     <div className="space-y-12">
       {/* Header Section */}
@@ -13,29 +13,25 @@ export default function NexusPage() {
           <span className="overline-label">Celestial Status: Active</span>
           <div className="h-[1px] w-8 bg-gold/30" />
         </div>
-        <h1 className="text-5xl font-serif text-white tracking-tight">
-          Welcome to the <span className="text-gold">Nexus</span>
-        </h1>
-        <p className="text-gray-400 font-sans max-w-2xl leading-relaxed">
-          The central hub of your cosmic intelligence. Monitor your planetary transits, explore your stored chronicles, and access deep architectural insights.
-        </p>
+          Welcome to your <span className="text-gold">Sanctuary</span>
+          The central hub of your cosmic intelligence. Monitor your planetary transits, explore your saved charts, and access deep astrological insights.
       </div>
 
       {/* Stats / Overview Grid */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-        <NexusCard 
+        <StatusCard 
           title="Current Transit" 
           value="Sun in Aries" 
           icon={Zap}
           description="High energy for new initiations and architectural breakthroughs."
         />
-        <NexusCard 
-          title="Stored Chronicles" 
+        <StatusCard 
+          title="Saved Charts" 
           value="12 Readings" 
           icon={History}
-          description="Your personal history of cosmic transmissions and AI synthesis."
+          description="Your personal history of cosmic readings and AI synthesis."
         />
-        <NexusCard 
+        <StatusCard 
           title="Calculation Health" 
           value="Sub-Arc Second" 
           icon={Database}
@@ -52,10 +48,10 @@ export default function NexusPage() {
           </div>
           <h2 className="text-2xl font-serif text-white">Initialize Your Soul Signature</h2>
           <p className="text-gray-500 max-w-md mx-auto text-sm">
-            Begin a new calculation or load an existing chronicle to populate the laboratory with active planetary data.
+            Begin a new calculation or load an existing chart to populate your sanctuary with active planetary data.
           </p>
           <button className="px-8 py-4 bg-gold text-black font-bold rounded-sm uppercase tracking-widest text-xs hover:bg-gold/90 transition-all flex items-center space-x-2 mx-auto">
-            <span>Open Laboratory</span>
+            <span>New Chart</span>
             <ArrowUpRight className="w-4 h-4" />
           </button>
         </div>
@@ -64,7 +60,7 @@ export default function NexusPage() {
   );
 }
 
-function NexusCard({ title, value, icon: Icon, description }: { 
+function StatusCard({ title, value, icon: Icon, description }: { 
   title: string; 
   value: string; 
   icon: any; 

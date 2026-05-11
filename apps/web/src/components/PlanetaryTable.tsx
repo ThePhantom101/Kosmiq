@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import { PlanetaryPosition, Nakshatra } from "../../types/astro";
+import { PlanetaryPosition, Nakshatra } from "@/types/astro";
 
 interface PlanetaryTableProps {
   planets: Record<string, PlanetaryPosition>;

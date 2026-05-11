@@ -34,8 +34,9 @@ export default function RootLayout({
     <html
       lang="en"
       className={`${cinzel.variable} ${inter.variable} ${geistMono.variable} h-full antialiased`}
+      suppressHydrationWarning
     >
-      <body className="min-h-full flex flex-col bg-black text-foreground relative">
+      <body className="min-h-full flex flex-col bg-black text-foreground relative antigravity-scroll-lock" suppressHydrationWarning>
         <BackgroundSystem />
         <AstroProvider>
           {children}

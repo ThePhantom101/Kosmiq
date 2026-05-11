@@ -5,9 +5,20 @@ import { motion } from "framer-motion";
 import { Calendar, Clock, Sparkles, Globe, Navigation, Cpu } from "lucide-react";
 import { useRouter } from "next/navigation";
 
-import { calculateChart } from "../../actions/calculate";
-import { searchLocation, getTimezone } from "../../actions/location";
-import { CombinedChartResponse } from "../../types/astro";
+import { calculateChart } from "@/actions/calculate";
+import { searchLocation, getTimezone } from "@/actions/location";
+import { CombinedChartResponse } from "@/types/astro";
+
+interface LocationFeature {
+  geometry: {
+    coordinates: [number, number];
+  };
+  properties: {
+    name: string;
+    city?: string;
+    country?: string;
+  };
+}
 
 interface BirthFormProps {
   onResult?: (result: CombinedChartResponse) => void;
@@ -27,7 +38,7 @@ export default function BirthForm({ onResult, isLoading, setIsLoading }: BirthFo
   });
 
   const [locationSearch, setLocationSearch] = useState("");
-  const [suggestions, setSuggestions] = useState<any[]>([]);
+  const [suggestions, setSuggestions] = useState<LocationFeature[]>([]);
   const [isSearching, setIsSearching] = useState(false);
   const [showSuggestions, setShowSuggestions] = useState(false);
 
@@ -67,7 +78,7 @@ export default function BirthForm({ onResult, isLoading, setIsLoading }: BirthFo
     }
   };
 
-  const selectLocation = async (feature: any) => {
+  const selectLocation = async (feature: LocationFeature) => {
     const [lon, lat] = feature.geometry.coordinates;
     const name = feature.properties.name + (feature.properties.city ? `, ${feature.properties.city}` : "") + (feature.properties.country ? `, ${feature.properties.country}` : "");
     
@@ -104,7 +115,7 @@ export default function BirthForm({ onResult, isLoading, setIsLoading }: BirthFo
         onResult(result);
       }
       // Auto-redirect to astrolabe
-      router.push("/astrolabe");
+      router.push("/chart/me/divisional");
     } catch (error) {
       const message = error instanceof Error ? error.message : "An unknown error occurred";
       alert("Submission failed: " + message);
@@ -133,20 +144,20 @@ export default function BirthForm({ onResult, isLoading, setIsLoading }: BirthFo
 
         <form onSubmit={handleSubmit} className="space-y-8 relative z-10">
           <div className="space-y-2 text-center">
-            <span className="overline-label">Initial Data Input</span>
-            <h2 className="text-4xl font-serif text-white tracking-tight">The Altar of Data</h2>
-            <p className="text-gray-500 text-sm font-sans italic">"Where your unique karmic frequency is calculated with precision."</p>
+            <span className="overline-label">Birth Details</span>
+            <h2 className="text-4xl font-serif text-white tracking-tight">Your Kundli</h2>
+            <p className="text-gray-500 text-sm font-sans italic">Enter your birth details to generate your precise Vedic chart.</p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-6">
             {/* Name */}
             <div className="col-span-full space-y-1">
               <label className="text-[10px] uppercase tracking-[0.2em] text-gold/60 font-semibold block ml-1">
-                Full Name / Subject ID
+                Your Name
               </label>
               <input
                 type="text"
-                placeholder="Subject Name"
+                placeholder="Your Name"
                 className="w-full bg-black/60 border border-gold/20 rounded-sm px-4 py-3 focus:outline-none focus:border-gold/50 transition-all placeholder:text-gray-700 text-white font-mono text-sm"
                 value={formData.name}
                 onChange={(e) => setFormData({ ...formData, name: e.target.value })}
@@ -310,7 +321,7 @@ export default function BirthForm({ onResult, isLoading, setIsLoading }: BirthFo
             ) : (
               <>
                 <Sparkles className="w-5 h-5" />
-                <span className="uppercase tracking-[0.3em] text-sm">Generate Reading</span>
+                <span className="uppercase tracking-[0.3em] text-sm">Generate Kundli</span>
               </>
             )}
           </motion.button>

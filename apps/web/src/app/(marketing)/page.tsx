@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import BirthForm from "@/components/BirthForm";
-import { CombinedChartResponse } from "../../types/astro";
+import { CombinedChartResponse } from "@/types/astro";
 import { ArrowRight, ShieldCheck, Database, Zap } from "lucide-react";
 
 export default function Home() {
@@ -28,7 +28,7 @@ export default function Home() {
       y: 0, 
       transition: { 
         duration: 0.8, 
-        ease: [0.22, 1, 0.36, 1] 
+        ease: [0.22, 1, 0.36, 1] as const
       } 
     },
   };

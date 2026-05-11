@@ -1,4 +1,4 @@
-from typing import TypedDict, Dict, Any
+from typing import TypedDict, Dict, Any, List
 from langgraph.graph import StateGraph, END
 from google import genai
 import os
@@ -76,6 +76,46 @@ def format_prompt(chart_data: Dict[str, Any]) -> str:
     """
     return prompt
 
+def format_monthly_narrative_prompt(month: str, transit_summary: str, current_dasha: str) -> str:
+    prompt = f"""
+    You are the 'Kosmiq Oracle', an Elite Vedic Astrologer. 
+    Generate a personalized monthly forecast for the month of {month}.
+    
+    CONTEXT:
+    - Current Dasha Period: {current_dasha}
+    - Key Transit Influences this month: {transit_summary}
+
+    STRUCTURE YOUR RESPONSE IN EXACTLY 3 PARAGRAPHS:
+    Para 1: Overall month energy based on the Dasha and major transits. Tone: Mystical but practical.
+    Para 2: Key opportunities, favorable windows for action, and where the luck is flowing.
+    Para 3: Potential challenges, areas for caution, and simple Vedic remedies (like meditation, colors, or specific activities).
+
+    TONE & STYLE:
+    - Authoritative, premium, and insightful.
+    - No generic sun-sign fluff.
+    - Use evocative language.
+    - 250-300 words total.
+    """
+    return prompt
+
+def generate_monthly_narrative_ai(month: str, transit_summary: str, current_dasha: str) -> str:
+    api_key = os.environ.get("GEMINI_API_KEY")
+    if not api_key:
+        return "The stars are veiled. (API Key missing)"
+    
+    try:
+        client = genai.Client(api_key=api_key)
+        prompt = format_monthly_narrative_prompt(month, transit_summary, current_dasha)
+        
+        response = client.models.generate_content(
+            model="gemini-2.5-flash", 
+            contents=prompt
+        )
+        return response.text
+    except Exception as e:
+        print(f"Gemini Error: {e}")
+        return "The celestial currents are turbulent. Please try again later."
+
 def gemini_node(state: GraphState):
     api_key = os.environ.get("GEMINI_API_KEY")
     if not api_key:
@@ -101,6 +141,53 @@ def create_workflow():
     workflow.add_edge("generate_reading", END)
     
     return workflow.compile()
+
+def format_compatibility_prompt(c1_sum: str, c2_sum: str, koota: List[Dict[str, Any]], dosha: List[Dict[str, Any]]) -> str:
+    koota_str = "\n".join([f"- {k['category']} ({k['sanskrit']}): {k['score']}/{k['max']} - {k['explanation']}" for k in koota])
+    dosha_str = "\n".join([f"- {d['name']}: {d['status']} ({d['reason']})" for d in dosha])
+    
+    prompt = f"""
+    You are the 'Raj Jyotishi', the Royal Vedic Astrologer. 
+    Analyze the compatibility between two individuals based on their Ashta Koota (Gun Milan) scores and Dosha analysis.
+    
+    PERSON 1 SUMMARY: {c1_sum}
+    PERSON 2 SUMMARY: {c2_sum}
+    
+    GUN MILAN SCORES:
+    {koota_str}
+    
+    DOSHA ANALYSIS:
+    {dosha_str}
+
+    STRUCTURE YOUR RESPONSE IN EXACTLY 3 PARAGRAPHS:
+    Para 1: Overall relationship dynamic and soul-level resonance. Tone: Authoritative, mystical, and deep.
+    Para 2: The primary strengths of this match—where do they naturally align?
+    Para 3: The key challenges and karmic hurdles, with specific advice on how to navigate them using Vedic wisdom.
+
+    TONE & STYLE:
+    - Avoid cliches. Use profound, high-end copywriting.
+    - Focus on the spiritual and psychological interplay.
+    - 300-350 words total.
+    """
+    return prompt
+
+def generate_compatibility_narrative(c1_sum: str, c2_sum: str, koota: List[Dict[str, Any]], dosha: List[Dict[str, Any]]) -> str:
+    api_key = os.environ.get("GEMINI_API_KEY")
+    if not api_key:
+        return "The stars are silent. (API Key missing)"
+    
+    try:
+        client = genai.Client(api_key=api_key)
+        prompt = format_compatibility_prompt(c1_sum, c2_sum, koota, dosha)
+        
+        response = client.models.generate_content(
+            model="gemini-2.5-flash",
+            contents=prompt
+        )
+        return response.text
+    except Exception as e:
+        print(f"Gemini Compatibility Error: {e}")
+        return "The celestial currents are too complex to synthesize right now."
 
 # Global engine instance
 astro_ai_engine = create_workflow()

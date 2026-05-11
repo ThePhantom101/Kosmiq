@@ -1,0 +1,886 @@
+{
+  "directed": true,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "label": "next-env.d.ts",
+      "file_type": "code",
+      "source_file": "next-env.d.ts",
+      "source_location": "L1",
+      "community": 10,
+      "norm_label": "next-env.d.ts",
+      "id": "next_env_d_ts"
+    },
+    {
+      "label": "eslint.config.mjs",
+      "file_type": "code",
+      "source_file": "eslint.config.mjs",
+      "source_location": "L1",
+      "community": 11,
+      "norm_label": "eslint.config.mjs",
+      "id": "eslint_config_mjs"
+    },
+    {
+      "label": "next.config.ts",
+      "file_type": "code",
+      "source_file": "next.config.ts",
+      "source_location": "L1",
+      "community": 12,
+      "norm_label": "next.config.ts",
+      "id": "next_config_ts"
+    },
+    {
+      "label": "postcss.config.mjs",
+      "file_type": "code",
+      "source_file": "postcss.config.mjs",
+      "source_location": "L1",
+      "community": 13,
+      "norm_label": "postcss.config.mjs",
+      "id": "postcss_config_mjs"
+    },
+    {
+      "label": "drizzle.config.ts",
+      "file_type": "code",
+      "source_file": "drizzle.config.ts",
+      "source_location": "L1",
+      "community": 14,
+      "norm_label": "drizzle.config.ts",
+      "id": "drizzle_config_ts"
+    },
+    {
+      "label": "astro.ts",
+      "file_type": "code",
+      "source_file": "types/astro.ts",
+      "source_location": "L1",
+      "community": 15,
+      "norm_label": "astro.ts",
+      "id": "types_astro_ts"
+    },
+    {
+      "label": "schema.ts",
+      "file_type": "code",
+      "source_file": "src/db/schema.ts",
+      "source_location": "L1",
+      "community": 16,
+      "norm_label": "schema.ts",
+      "id": "src_db_schema_ts"
+    },
+    {
+      "label": "index.ts",
+      "file_type": "code",
+      "source_file": "src/db/index.ts",
+      "source_location": "L1",
+      "community": 17,
+      "norm_label": "index.ts",
+      "id": "src_db_index_ts"
+    },
+    {
+      "label": "NorthIndianChart.tsx",
+      "file_type": "code",
+      "source_file": "src/components/NorthIndianChart.tsx",
+      "source_location": "L1",
+      "community": 18,
+      "norm_label": "northindianchart.tsx",
+      "id": "src_components_northindianchart_tsx"
+    },
+    {
+      "label": "AstrolabeLoader.tsx",
+      "file_type": "code",
+      "source_file": "src/components/AstrolabeLoader.tsx",
+      "source_location": "L1",
+      "community": 19,
+      "norm_label": "astrolabeloader.tsx",
+      "id": "src_components_astrolabeloader_tsx"
+    },
+    {
+      "label": "PlanetaryTable.tsx",
+      "file_type": "code",
+      "source_file": "src/components/PlanetaryTable.tsx",
+      "source_location": "L1",
+      "community": 20,
+      "norm_label": "planetarytable.tsx",
+      "id": "src_components_planetarytable_tsx"
+    },
+    {
+      "label": "ReadingDisplay.tsx",
+      "file_type": "code",
+      "source_file": "src/components/ReadingDisplay.tsx",
+      "source_location": "L1",
+      "community": 5,
+      "norm_label": "readingdisplay.tsx",
+      "id": "src_components_readingdisplay_tsx"
+    },
+    {
+      "label": "ReadingDisplay()",
+      "file_type": "code",
+      "source_file": "src/components/ReadingDisplay.tsx",
+      "source_location": "L16",
+      "community": 5,
+      "norm_label": "readingdisplay()",
+      "id": "components_readingdisplay_readingdisplay"
+    },
+    {
+      "label": "BackgroundSystem.tsx",
+      "file_type": "code",
+      "source_file": "src/components/BackgroundSystem.tsx",
+      "source_location": "L1",
+      "community": 6,
+      "norm_label": "backgroundsystem.tsx",
+      "id": "src_components_backgroundsystem_tsx"
+    },
+    {
+      "label": "BackgroundSystem()",
+      "file_type": "code",
+      "source_file": "src/components/BackgroundSystem.tsx",
+      "source_location": "L5",
+      "community": 6,
+      "norm_label": "backgroundsystem()",
+      "id": "components_backgroundsystem_backgroundsystem"
+    },
+    {
+      "label": "NavHUD.tsx",
+      "file_type": "code",
+      "source_file": "src/components/NavHUD.tsx",
+      "source_location": "L1",
+      "community": 4,
+      "norm_label": "navhud.tsx",
+      "id": "src_components_navhud_tsx"
+    },
+    {
+      "label": "NavHUD()",
+      "file_type": "code",
+      "source_file": "src/components/NavHUD.tsx",
+      "source_location": "L6",
+      "community": 4,
+      "norm_label": "navhud()",
+      "id": "components_navhud_navhud"
+    },
+    {
+      "label": "NavLink()",
+      "file_type": "code",
+      "source_file": "src/components/NavHUD.tsx",
+      "source_location": "L29",
+      "community": 4,
+      "norm_label": "navlink()",
+      "id": "components_navhud_navlink"
+    },
+    {
+      "label": "SoulSignature.tsx",
+      "file_type": "code",
+      "source_file": "src/components/SoulSignature.tsx",
+      "source_location": "L1",
+      "community": 7,
+      "norm_label": "soulsignature.tsx",
+      "id": "src_components_soulsignature_tsx"
+    },
+    {
+      "label": "handleMouseMove()",
+      "file_type": "code",
+      "source_file": "src/components/SoulSignature.tsx",
+      "source_location": "L20",
+      "community": 7,
+      "norm_label": "handlemousemove()",
+      "id": "components_soulsignature_handlemousemove"
+    },
+    {
+      "label": "Sidebar.tsx",
+      "file_type": "code",
+      "source_file": "src/components/Sidebar.tsx",
+      "source_location": "L1",
+      "community": 3,
+      "norm_label": "sidebar.tsx",
+      "id": "src_components_sidebar_tsx"
+    },
+    {
+      "label": "handleSignOut()",
+      "file_type": "code",
+      "source_file": "src/components/Sidebar.tsx",
+      "source_location": "L33",
+      "community": 3,
+      "norm_label": "handlesignout()",
+      "id": "components_sidebar_handlesignout"
+    },
+    {
+      "label": "ResonanceMeter.tsx",
+      "file_type": "code",
+      "source_file": "src/components/ResonanceMeter.tsx",
+      "source_location": "L1",
+      "community": 21,
+      "norm_label": "resonancemeter.tsx",
+      "id": "src_components_resonancemeter_tsx"
+    },
+    {
+      "label": "client.ts",
+      "file_type": "code",
+      "source_file": "src/utils/supabase/client.ts",
+      "source_location": "L1",
+      "community": 3,
+      "norm_label": "client.ts",
+      "id": "src_utils_supabase_client_ts"
+    },
+    {
+      "label": "createClient()",
+      "file_type": "code",
+      "source_file": "src/utils/supabase/client.ts",
+      "source_location": "L3",
+      "community": 3,
+      "norm_label": "createclient()",
+      "id": "supabase_client_createclient"
+    },
+    {
+      "label": "AstroContext.tsx",
+      "file_type": "code",
+      "source_file": "src/context/AstroContext.tsx",
+      "source_location": "L1",
+      "community": 2,
+      "norm_label": "astrocontext.tsx",
+      "id": "src_context_astrocontext_tsx"
+    },
+    {
+      "label": "AstroProvider()",
+      "file_type": "code",
+      "source_file": "src/context/AstroContext.tsx",
+      "source_location": "L15",
+      "community": 2,
+      "norm_label": "astroprovider()",
+      "id": "context_astrocontext_astroprovider"
+    },
+    {
+      "label": "useAstro()",
+      "file_type": "code",
+      "source_file": "src/context/AstroContext.tsx",
+      "source_location": "L47",
+      "community": 0,
+      "norm_label": "useastro()",
+      "id": "context_astrocontext_useastro"
+    },
+    {
+      "label": "layout.tsx",
+      "file_type": "code",
+      "source_file": "src/app/layout.tsx",
+      "source_location": "L1",
+      "community": 2,
+      "norm_label": "layout.tsx",
+      "id": "src_app_layout_tsx"
+    },
+    {
+      "label": "RootLayout()",
+      "file_type": "code",
+      "source_file": "src/app/layout.tsx",
+      "source_location": "L28",
+      "community": 2,
+      "norm_label": "rootlayout()",
+      "id": "app_layout_rootlayout"
+    },
+    {
+      "label": "actions.ts",
+      "file_type": "code",
+      "source_file": "src/app/actions.ts",
+      "source_location": "L1",
+      "community": 8,
+      "norm_label": "actions.ts",
+      "id": "src_app_actions_ts"
+    },
+    {
+      "label": "generateChartAction()",
+      "file_type": "code",
+      "source_file": "src/app/actions.ts",
+      "source_location": "L9",
+      "community": 8,
+      "norm_label": "generatechartaction()",
+      "id": "app_actions_generatechartaction"
+    },
+    {
+      "label": "page.tsx",
+      "file_type": "code",
+      "source_file": "src/app/(marketing)/page.tsx",
+      "source_location": "L1",
+      "community": 0,
+      "norm_label": "page.tsx",
+      "id": "src_app_marketing_page_tsx"
+    },
+    {
+      "label": "MarketingLayout()",
+      "file_type": "code",
+      "source_file": "src/app/(marketing)/layout.tsx",
+      "source_location": "L3",
+      "community": 2,
+      "norm_label": "marketinglayout()",
+      "id": "marketing_layout_marketinglayout"
+    },
+    {
+      "label": "handleSocialLogin()",
+      "file_type": "code",
+      "source_file": "src/app/(marketing)/login/page.tsx",
+      "source_location": "L17",
+      "community": 0,
+      "norm_label": "handlesociallogin()",
+      "id": "login_page_handlesociallogin"
+    },
+    {
+      "label": "handleEmailLogin()",
+      "file_type": "code",
+      "source_file": "src/app/(marketing)/login/page.tsx",
+      "source_location": "L26",
+      "community": 0,
+      "norm_label": "handleemaillogin()",
+      "id": "login_page_handleemaillogin"
+    },
+    {
+      "label": "route.ts",
+      "file_type": "code",
+      "source_file": "src/app/auth/callback/route.ts",
+      "source_location": "L1",
+      "community": 9,
+      "norm_label": "route.ts",
+      "id": "src_app_auth_callback_route_ts"
+    },
+    {
+      "label": "GET()",
+      "file_type": "code",
+      "source_file": "src/app/auth/callback/route.ts",
+      "source_location": "L5",
+      "community": 9,
+      "norm_label": "get()",
+      "id": "callback_route_get"
+    },
+    {
+      "label": "DashboardLayout()",
+      "file_type": "code",
+      "source_file": "src/app/(dashboard)/layout.tsx",
+      "source_location": "L3",
+      "community": 2,
+      "norm_label": "dashboardlayout()",
+      "id": "dashboard_layout_dashboardlayout"
+    },
+    {
+      "label": "LaboratoryPage()",
+      "file_type": "code",
+      "source_file": "src/app/(dashboard)/laboratory/page.tsx",
+      "source_location": "L10",
+      "community": 0,
+      "norm_label": "laboratorypage()",
+      "id": "laboratory_page_laboratorypage"
+    },
+    {
+      "label": "CompatibilityPage()",
+      "file_type": "code",
+      "source_file": "src/app/(dashboard)/compatibility/page.tsx",
+      "source_location": "L3",
+      "community": 0,
+      "norm_label": "compatibilitypage()",
+      "id": "compatibility_page_compatibilitypage"
+    },
+    {
+      "label": "NexusPage()",
+      "file_type": "code",
+      "source_file": "src/app/(dashboard)/dashboard/page.tsx",
+      "source_location": "L7",
+      "community": 0,
+      "norm_label": "nexuspage()",
+      "id": "dashboard_page_nexuspage"
+    },
+    {
+      "label": "NexusCard()",
+      "file_type": "code",
+      "source_file": "src/app/(dashboard)/dashboard/page.tsx",
+      "source_location": "L67",
+      "community": 0,
+      "norm_label": "nexuscard()",
+      "id": "dashboard_page_nexuscard"
+    },
+    {
+      "label": "OraclePage()",
+      "file_type": "code",
+      "source_file": "src/app/(dashboard)/oracle/page.tsx",
+      "source_location": "L3",
+      "community": 0,
+      "norm_label": "oraclepage()",
+      "id": "oracle_page_oraclepage"
+    },
+    {
+      "label": "AstrolabePage()",
+      "file_type": "code",
+      "source_file": "src/app/(dashboard)/astrolabe/page.tsx",
+      "source_location": "L12",
+      "community": 0,
+      "norm_label": "astrolabepage()",
+      "id": "astrolabe_page_astrolabepage"
+    },
+    {
+      "label": "ChroniclesPage()",
+      "file_type": "code",
+      "source_file": "src/app/(dashboard)/chronicles/page.tsx",
+      "source_location": "L3",
+      "community": 0,
+      "norm_label": "chroniclespage()",
+      "id": "chronicles_page_chroniclespage"
+    },
+    {
+      "label": "SignaturePage()",
+      "file_type": "code",
+      "source_file": "src/app/(dashboard)/signature/page.tsx",
+      "source_location": "L3",
+      "community": 0,
+      "norm_label": "signaturepage()",
+      "id": "signature_page_signaturepage"
+    },
+    {
+      "label": "location.ts",
+      "file_type": "code",
+      "source_file": "actions/location.ts",
+      "source_location": "L1",
+      "community": 1,
+      "norm_label": "location.ts",
+      "id": "actions_location_ts"
+    },
+    {
+      "label": "searchLocation()",
+      "file_type": "code",
+      "source_file": "actions/location.ts",
+      "source_location": "L3",
+      "community": 1,
+      "norm_label": "searchlocation()",
+      "id": "actions_location_searchlocation"
+    },
+    {
+      "label": "getTimezone()",
+      "file_type": "code",
+      "source_file": "actions/location.ts",
+      "source_location": "L14",
+      "community": 1,
+      "norm_label": "gettimezone()",
+      "id": "actions_location_gettimezone"
+    },
+    {
+      "label": "calculate.ts",
+      "file_type": "code",
+      "source_file": "actions/calculate.ts",
+      "source_location": "L1",
+      "community": 1,
+      "norm_label": "calculate.ts",
+      "id": "actions_calculate_ts"
+    },
+    {
+      "label": "calculateChart()",
+      "file_type": "code",
+      "source_file": "actions/calculate.ts",
+      "source_location": "L5",
+      "community": 1,
+      "norm_label": "calculatechart()",
+      "id": "actions_calculate_calculatechart"
+    },
+    {
+      "label": "Next.js Frontend",
+      "type": "application",
+      "description": "Main React UI",
+      "community": 1,
+      "norm_label": "next.js frontend",
+      "id": "nextjs-web"
+    },
+    {
+      "label": "Astro Context",
+      "type": "logic",
+      "description": "Global state for planetary data",
+      "community": 1,
+      "norm_label": "astro context",
+      "id": "astro-context"
+    },
+    {
+      "label": "Birth Form",
+      "type": "component",
+      "description": "Main user data entry form",
+      "community": 1,
+      "norm_label": "birth form",
+      "id": "birth-form"
+    }
+  ],
+  "links": [
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ReadingDisplay.tsx",
+      "source_location": "L16",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_components_readingdisplay_tsx",
+      "target": "components_readingdisplay_readingdisplay"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/BackgroundSystem.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_components_backgroundsystem_tsx",
+      "target": "components_backgroundsystem_backgroundsystem"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/NavHUD.tsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_components_navhud_tsx",
+      "target": "components_navhud_navhud"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/NavHUD.tsx",
+      "source_location": "L29",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_components_navhud_tsx",
+      "target": "components_navhud_navlink"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/SoulSignature.tsx",
+      "source_location": "L20",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_components_soulsignature_tsx",
+      "target": "components_soulsignature_handlemousemove"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/Sidebar.tsx",
+      "source_location": "L17",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_components_sidebar_tsx",
+      "target": "supabase_client_createclient"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/Sidebar.tsx",
+      "source_location": "L33",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_components_sidebar_tsx",
+      "target": "components_sidebar_handlesignout"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/utils/supabase/client.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_utils_supabase_client_ts",
+      "target": "supabase_client_createclient"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/context/AstroContext.tsx",
+      "source_location": "L15",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_context_astrocontext_tsx",
+      "target": "context_astrocontext_astroprovider"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/context/AstroContext.tsx",
+      "source_location": "L47",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_context_astrocontext_tsx",
+      "target": "context_astrocontext_useastro"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/layout.tsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_app_layout_tsx",
+      "target": "context_astrocontext_astroprovider"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/layout.tsx",
+      "source_location": "L28",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_app_layout_tsx",
+      "target": "app_layout_rootlayout"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/(marketing)/layout.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_app_layout_tsx",
+      "target": "marketing_layout_marketinglayout"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/(dashboard)/layout.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_app_layout_tsx",
+      "target": "dashboard_layout_dashboardlayout"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/actions.ts",
+      "source_location": "L9",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_app_actions_ts",
+      "target": "app_actions_generatechartaction"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/(marketing)/login/page.tsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_app_marketing_page_tsx",
+      "target": "supabase_client_createclient"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/(marketing)/login/page.tsx",
+      "source_location": "L17",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_app_marketing_page_tsx",
+      "target": "login_page_handlesociallogin"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/(marketing)/login/page.tsx",
+      "source_location": "L26",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_app_marketing_page_tsx",
+      "target": "login_page_handleemaillogin"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/(dashboard)/astrolabe/page.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_app_marketing_page_tsx",
+      "target": "context_astrocontext_useastro"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/(dashboard)/laboratory/page.tsx",
+      "source_location": "L10",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_app_marketing_page_tsx",
+      "target": "laboratory_page_laboratorypage"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/(dashboard)/compatibility/page.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_app_marketing_page_tsx",
+      "target": "compatibility_page_compatibilitypage"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/(dashboard)/dashboard/page.tsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_app_marketing_page_tsx",
+      "target": "dashboard_page_nexuspage"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/(dashboard)/dashboard/page.tsx",
+      "source_location": "L67",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_app_marketing_page_tsx",
+      "target": "dashboard_page_nexuscard"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/(dashboard)/oracle/page.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_app_marketing_page_tsx",
+      "target": "oracle_page_oraclepage"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/(dashboard)/astrolabe/page.tsx",
+      "source_location": "L12",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_app_marketing_page_tsx",
+      "target": "astrolabe_page_astrolabepage"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/(dashboard)/chronicles/page.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_app_marketing_page_tsx",
+      "target": "chronicles_page_chroniclespage"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/(dashboard)/signature/page.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_app_marketing_page_tsx",
+      "target": "signature_page_signaturepage"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/app/auth/callback/route.ts",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "src_app_auth_callback_route_ts",
+      "target": "callback_route_get"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/app/(dashboard)/laboratory/page.tsx",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "laboratory_page_laboratorypage",
+      "target": "context_astrocontext_useastro"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "src/app/(dashboard)/astrolabe/page.tsx",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "astrolabe_page_astrolabepage",
+      "target": "context_astrocontext_useastro"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "actions/location.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "actions_location_ts",
+      "target": "actions_location_searchlocation"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "actions/location.ts",
+      "source_location": "L14",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "actions_location_ts",
+      "target": "actions_location_gettimezone"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "actions/calculate.ts",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "actions_calculate_ts",
+      "target": "actions_calculate_calculatechart"
+    },
+    {
+      "label": "consumes",
+      "type": "react_context",
+      "confidence_score": 1.0,
+      "source": "nextjs-web",
+      "target": "astro-context"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/BirthForm.tsx",
+      "source_location": "L8",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "birth-form",
+      "target": "actions_calculate_calculatechart"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/BirthForm.tsx",
+      "source_location": "L9",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "birth-form",
+      "target": "actions_location_searchlocation"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/BirthForm.tsx",
+      "source_location": "L9",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "birth-form",
+      "target": "actions_location_gettimezone"
+    },
+    {
+      "label": "updates",
+      "type": "state_update",
+      "confidence_score": 1.0,
+      "source": "birth-form",
+      "target": "astro-context"
+    }
+  ],
+  "hyperedges": [],
+  "built_at_commit": "4961c5e3f5d808133a66533f0e17440e90fe3c36"
+}

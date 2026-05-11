@@ -1,0 +1,2334 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "label": "design_system.py",
+      "file_type": "code",
+      "source_file": "ui-ux-pro/scripts/design_system.py",
+      "source_location": "L1",
+      "id": "ui_ux_pro_scripts_design_system_py",
+      "community": 5,
+      "norm_label": "design_system.py"
+    },
+    {
+      "label": "DesignSystemGenerator",
+      "file_type": "code",
+      "source_file": "ui-ux-pro/scripts/design_system.py",
+      "source_location": "L31",
+      "id": "scripts_design_system_designsystemgenerator",
+      "community": 6,
+      "norm_label": "designsystemgenerator"
+    },
+    {
+      "label": ".__init__()",
+      "file_type": "code",
+      "source_file": "ui-ux-pro/scripts/design_system.py",
+      "source_location": "L34",
+      "id": "scripts_design_system_designsystemgenerator_init",
+      "community": 6,
+      "norm_label": ".__init__()"
+    },
+    {
+      "label": "._load_reasoning()",
+      "file_type": "code",
+      "source_file": "ui-ux-pro/scripts/design_system.py",
+      "source_location": "L37",
+      "id": "scripts_design_system_designsystemgenerator_load_reasoning",
+      "community": 6,
+      "norm_label": "._load_reasoning()"
+    },
+    {
+      "label": "._multi_domain_search()",
+      "file_type": "code",
+      "source_file": "ui-ux-pro/scripts/design_system.py",
+      "source_location": "L45",
+      "id": "scripts_design_system_designsystemgenerator_multi_domain_search",
+      "community": 4,
+      "norm_label": "._multi_domain_search()"
+    },
+    {
+      "label": "._find_reasoning_rule()",
+      "file_type": "code",
+      "source_file": "ui-ux-pro/scripts/design_system.py",
+      "source_location": "L58",
+      "id": "scripts_design_system_designsystemgenerator_find_reasoning_rule",
+      "community": 7,
+      "norm_label": "._find_reasoning_rule()"
+    },
+    {
+      "label": "._apply_reasoning()",
+      "file_type": "code",
+      "source_file": "ui-ux-pro/scripts/design_system.py",
+      "source_location": "L82",
+      "id": "scripts_design_system_designsystemgenerator_apply_reasoning",
+      "community": 7,
+      "norm_label": "._apply_reasoning()"
+    },
+    {
+      "label": "._select_best_match()",
+      "file_type": "code",
+      "source_file": "ui-ux-pro/scripts/design_system.py",
+      "source_location": "L116",
+      "id": "scripts_design_system_designsystemgenerator_select_best_match",
+      "community": 4,
+      "norm_label": "._select_best_match()"
+    },
+    {
+      "label": "._extract_results()",
+      "file_type": "code",
+      "source_file": "ui-ux-pro/scripts/design_system.py",
+      "source_location": "L153",
+      "id": "scripts_design_system_designsystemgenerator_extract_results",
+      "community": 4,
+      "norm_label": "._extract_results()"
+    },
+    {
+      "label": ".generate()",
+      "file_type": "code",
+      "source_file": "ui-ux-pro/scripts/design_system.py",
+      "source_location": "L157",
+      "id": "scripts_design_system_designsystemgenerator_generate",
+      "community": 4,
+      "norm_label": ".generate()"
+    },
+    {
+      "label": "format_ascii_box()",
+      "file_type": "code",
+      "source_file": "ui-ux-pro/scripts/design_system.py",
+      "source_location": "L236",
+      "id": "scripts_design_system_format_ascii_box",
+      "community": 5,
+      "norm_label": "format_ascii_box()"
+    },
+    {
+      "label": "format_markdown()",
+      "file_type": "code",
+      "source_file": "ui-ux-pro/scripts/design_system.py",
+      "source_location": "L361",
+      "id": "scripts_design_system_format_markdown",
+      "community": 5,
+      "norm_label": "format_markdown()"
+    },
+    {
+      "label": "generate_design_system()",
+      "file_type": "code",
+      "source_file": "ui-ux-pro/scripts/design_system.py",
+      "source_location": "L455",
+      "id": "scripts_design_system_generate_design_system",
+      "community": 5,
+      "norm_label": "generate_design_system()"
+    },
+    {
+      "label": "Generates design system recommendations from aggregated searches.",
+      "file_type": "rationale",
+      "source_file": "ui-ux-pro/scripts/design_system.py",
+      "source_location": "L32",
+      "id": "scripts_design_system_rationale_32",
+      "community": 6,
+      "norm_label": "generates design system recommendations from aggregated searches."
+    },
+    {
+      "label": "Load reasoning rules from CSV.",
+      "file_type": "rationale",
+      "source_file": "ui-ux-pro/scripts/design_system.py",
+      "source_location": "L38",
+      "id": "scripts_design_system_rationale_38",
+      "community": 6,
+      "norm_label": "load reasoning rules from csv."
+    },
+    {
+      "label": "Execute searches across multiple domains.",
+      "file_type": "rationale",
+      "source_file": "ui-ux-pro/scripts/design_system.py",
+      "source_location": "L46",
+      "id": "scripts_design_system_rationale_46",
+      "community": 4,
+      "norm_label": "execute searches across multiple domains."
+    },
+    {
+      "label": "Find matching reasoning rule for a category.",
+      "file_type": "rationale",
+      "source_file": "ui-ux-pro/scripts/design_system.py",
+      "source_location": "L59",
+      "id": "scripts_design_system_rationale_59",
+      "community": 7,
+      "norm_label": "find matching reasoning rule for a category."
+    },
+    {
+      "label": "Apply reasoning rules to search results.",
+      "file_type": "rationale",
+      "source_file": "ui-ux-pro/scripts/design_system.py",
+      "source_location": "L83",
+      "id": "scripts_design_system_rationale_83",
+      "community": 7,
+      "norm_label": "apply reasoning rules to search results."
+    },
+    {
+      "label": "Select best matching result based on priority keywords.",
+      "file_type": "rationale",
+      "source_file": "ui-ux-pro/scripts/design_system.py",
+      "source_location": "L117",
+      "id": "scripts_design_system_rationale_117",
+      "community": 4,
+      "norm_label": "select best matching result based on priority keywords."
+    },
+    {
+      "label": "Extract results list from search result dict.",
+      "file_type": "rationale",
+      "source_file": "ui-ux-pro/scripts/design_system.py",
+      "source_location": "L154",
+      "id": "scripts_design_system_rationale_154",
+      "community": 4,
+      "norm_label": "extract results list from search result dict."
+    },
+    {
+      "label": "Generate complete design system recommendation.",
+      "file_type": "rationale",
+      "source_file": "ui-ux-pro/scripts/design_system.py",
+      "source_location": "L158",
+      "id": "scripts_design_system_rationale_158",
+      "community": 4,
+      "norm_label": "generate complete design system recommendation."
+    },
+    {
+      "label": "Format design system as ASCII box with emojis (MCP-style).",
+      "file_type": "rationale",
+      "source_file": "ui-ux-pro/scripts/design_system.py",
+      "source_location": "L237",
+      "id": "scripts_design_system_rationale_237",
+      "community": 5,
+      "norm_label": "format design system as ascii box with emojis (mcp-style)."
+    },
+    {
+      "label": "Format design system as markdown.",
+      "file_type": "rationale",
+      "source_file": "ui-ux-pro/scripts/design_system.py",
+      "source_location": "L362",
+      "id": "scripts_design_system_rationale_362",
+      "community": 5,
+      "norm_label": "format design system as markdown."
+    },
+    {
+      "label": "Main entry point for design system generation.      Args:         query: Search",
+      "file_type": "rationale",
+      "source_file": "ui-ux-pro/scripts/design_system.py",
+      "source_location": "L456",
+      "id": "scripts_design_system_rationale_456",
+      "community": 5,
+      "norm_label": "main entry point for design system generation.      args:         query: search"
+    },
+    {
+      "label": "core.py",
+      "file_type": "code",
+      "source_file": "ui-ux-pro/scripts/core.py",
+      "source_location": "L1",
+      "id": "ui_ux_pro_scripts_core_py",
+      "community": 1,
+      "norm_label": "core.py"
+    },
+    {
+      "label": "BM25",
+      "file_type": "code",
+      "source_file": "ui-ux-pro/scripts/core.py",
+      "source_location": "L99",
+      "id": "scripts_core_bm25",
+      "community": 1,
+      "norm_label": "bm25"
+    },
+    {
+      "label": ".__init__()",
+      "file_type": "code",
+      "source_file": "ui-ux-pro/scripts/core.py",
+      "source_location": "L102",
+      "id": "scripts_core_bm25_init",
+      "community": 1,
+      "norm_label": ".__init__()"
+    },
+    {
+      "label": ".tokenize()",
+      "file_type": "code",
+      "source_file": "ui-ux-pro/scripts/core.py",
+      "source_location": "L112",
+      "id": "scripts_core_bm25_tokenize",
+      "community": 1,
+      "norm_label": ".tokenize()"
+    },
+    {
+      "label": ".fit()",
+      "file_type": "code",
+      "source_file": "ui-ux-pro/scripts/core.py",
+      "source_location": "L117",
+      "id": "scripts_core_bm25_fit",
+      "community": 1,
+      "norm_label": ".fit()"
+    },
+    {
+      "label": ".score()",
+      "file_type": "code",
+      "source_file": "ui-ux-pro/scripts/core.py",
+      "source_location": "L136",
+      "id": "scripts_core_bm25_score",
+      "community": 1,
+      "norm_label": ".score()"
+    },
+    {
+      "label": "_load_csv()",
+      "file_type": "code",
+      "source_file": "ui-ux-pro/scripts/core.py",
+      "source_location": "L162",
+      "id": "scripts_core_load_csv",
+      "community": 1,
+      "norm_label": "_load_csv()"
+    },
+    {
+      "label": "_search_csv()",
+      "file_type": "code",
+      "source_file": "ui-ux-pro/scripts/core.py",
+      "source_location": "L168",
+      "id": "scripts_core_search_csv",
+      "community": 1,
+      "norm_label": "_search_csv()"
+    },
+    {
+      "label": "detect_domain()",
+      "file_type": "code",
+      "source_file": "ui-ux-pro/scripts/core.py",
+      "source_location": "L193",
+      "id": "scripts_core_detect_domain",
+      "community": 1,
+      "norm_label": "detect_domain()"
+    },
+    {
+      "label": "search()",
+      "file_type": "code",
+      "source_file": "ui-ux-pro/scripts/core.py",
+      "source_location": "L216",
+      "id": "scripts_core_search",
+      "community": 1,
+      "norm_label": "search()"
+    },
+    {
+      "label": "search_stack()",
+      "file_type": "code",
+      "source_file": "ui-ux-pro/scripts/core.py",
+      "source_location": "L238",
+      "id": "scripts_core_search_stack",
+      "community": 1,
+      "norm_label": "search_stack()"
+    },
+    {
+      "label": "BM25 ranking algorithm for text search",
+      "file_type": "rationale",
+      "source_file": "ui-ux-pro/scripts/core.py",
+      "source_location": "L100",
+      "id": "scripts_core_rationale_100",
+      "community": 1,
+      "norm_label": "bm25 ranking algorithm for text search"
+    },
+    {
+      "label": "Lowercase, split, remove punctuation, filter short words",
+      "file_type": "rationale",
+      "source_file": "ui-ux-pro/scripts/core.py",
+      "source_location": "L113",
+      "id": "scripts_core_rationale_113",
+      "community": 1,
+      "norm_label": "lowercase, split, remove punctuation, filter short words"
+    },
+    {
+      "label": "Build BM25 index from documents",
+      "file_type": "rationale",
+      "source_file": "ui-ux-pro/scripts/core.py",
+      "source_location": "L118",
+      "id": "scripts_core_rationale_118",
+      "community": 1,
+      "norm_label": "build bm25 index from documents"
+    },
+    {
+      "label": "Score all documents against query",
+      "file_type": "rationale",
+      "source_file": "ui-ux-pro/scripts/core.py",
+      "source_location": "L137",
+      "id": "scripts_core_rationale_137",
+      "community": 1,
+      "norm_label": "score all documents against query"
+    },
+    {
+      "label": "Load CSV and return list of dicts",
+      "file_type": "rationale",
+      "source_file": "ui-ux-pro/scripts/core.py",
+      "source_location": "L163",
+      "id": "scripts_core_rationale_163",
+      "community": 1,
+      "norm_label": "load csv and return list of dicts"
+    },
+    {
+      "label": "Core search function using BM25",
+      "file_type": "rationale",
+      "source_file": "ui-ux-pro/scripts/core.py",
+      "source_location": "L169",
+      "id": "scripts_core_rationale_169",
+      "community": 1,
+      "norm_label": "core search function using bm25"
+    },
+    {
+      "label": "Auto-detect the most relevant domain from query",
+      "file_type": "rationale",
+      "source_file": "ui-ux-pro/scripts/core.py",
+      "source_location": "L194",
+      "id": "scripts_core_rationale_194",
+      "community": 1,
+      "norm_label": "auto-detect the most relevant domain from query"
+    },
+    {
+      "label": "Main search function with auto-domain detection",
+      "file_type": "rationale",
+      "source_file": "ui-ux-pro/scripts/core.py",
+      "source_location": "L217",
+      "id": "scripts_core_rationale_217",
+      "community": 1,
+      "norm_label": "main search function with auto-domain detection"
+    },
+    {
+      "label": "Search stack-specific guidelines",
+      "file_type": "rationale",
+      "source_file": "ui-ux-pro/scripts/core.py",
+      "source_location": "L239",
+      "id": "scripts_core_rationale_239",
+      "community": 1,
+      "norm_label": "search stack-specific guidelines"
+    },
+    {
+      "label": "search.py",
+      "file_type": "code",
+      "source_file": "ui-ux-pro/scripts/search.py",
+      "source_location": "L1",
+      "id": "ui_ux_pro_scripts_search_py",
+      "community": 2,
+      "norm_label": "search.py"
+    },
+    {
+      "label": "format_output()",
+      "file_type": "code",
+      "source_file": "ui-ux-pro/scripts/search.py",
+      "source_location": "L17",
+      "id": "scripts_search_format_output",
+      "community": 2,
+      "norm_label": "format_output()"
+    },
+    {
+      "label": "Format results for Claude consumption (token-optimized)",
+      "file_type": "rationale",
+      "source_file": "ui-ux-pro/scripts/search.py",
+      "source_location": "L18",
+      "id": "scripts_search_rationale_18",
+      "community": 2,
+      "norm_label": "format results for claude consumption (token-optimized)"
+    },
+    {
+      "label": "i18n_checker.py",
+      "file_type": "code",
+      "source_file": "i18n-localization/scripts/i18n_checker.py",
+      "source_location": "L1",
+      "id": "i18n_localization_scripts_i18n_checker_py",
+      "community": 3,
+      "norm_label": "i18n_checker.py"
+    },
+    {
+      "label": "find_locale_files()",
+      "file_type": "code",
+      "source_file": "i18n-localization/scripts/i18n_checker.py",
+      "source_location": "L53",
+      "id": "scripts_i18n_checker_find_locale_files",
+      "community": 3,
+      "norm_label": "find_locale_files()"
+    },
+    {
+      "label": "check_locale_completeness()",
+      "file_type": "code",
+      "source_file": "i18n-localization/scripts/i18n_checker.py",
+      "source_location": "L70",
+      "id": "scripts_i18n_checker_check_locale_completeness",
+      "community": 3,
+      "norm_label": "check_locale_completeness()"
+    },
+    {
+      "label": "flatten_keys()",
+      "file_type": "code",
+      "source_file": "i18n-localization/scripts/i18n_checker.py",
+      "source_location": "L120",
+      "id": "scripts_i18n_checker_flatten_keys",
+      "community": 3,
+      "norm_label": "flatten_keys()"
+    },
+    {
+      "label": "check_hardcoded_strings()",
+      "file_type": "code",
+      "source_file": "i18n-localization/scripts/i18n_checker.py",
+      "source_location": "L131",
+      "id": "scripts_i18n_checker_check_hardcoded_strings",
+      "community": 3,
+      "norm_label": "check_hardcoded_strings()"
+    },
+    {
+      "label": "main()",
+      "file_type": "code",
+      "source_file": "i18n-localization/scripts/i18n_checker.py",
+      "source_location": "L199",
+      "id": "scripts_i18n_checker_main",
+      "community": 3,
+      "norm_label": "main()"
+    },
+    {
+      "label": "Find translation/locale files.",
+      "file_type": "rationale",
+      "source_file": "i18n-localization/scripts/i18n_checker.py",
+      "source_location": "L54",
+      "id": "scripts_i18n_checker_rationale_54",
+      "community": 3,
+      "norm_label": "find translation/locale files."
+    },
+    {
+      "label": "Check if all locales have the same keys.",
+      "file_type": "rationale",
+      "source_file": "i18n-localization/scripts/i18n_checker.py",
+      "source_location": "L71",
+      "id": "scripts_i18n_checker_rationale_71",
+      "community": 3,
+      "norm_label": "check if all locales have the same keys."
+    },
+    {
+      "label": "Flatten nested dict keys.",
+      "file_type": "rationale",
+      "source_file": "i18n-localization/scripts/i18n_checker.py",
+      "source_location": "L121",
+      "id": "scripts_i18n_checker_rationale_121",
+      "community": 3,
+      "norm_label": "flatten nested dict keys."
+    },
+    {
+      "label": "Check for hardcoded strings in code files.",
+      "file_type": "rationale",
+      "source_file": "i18n-localization/scripts/i18n_checker.py",
+      "source_location": "L132",
+      "id": "scripts_i18n_checker_rationale_132",
+      "community": 3,
+      "norm_label": "check for hardcoded strings in code files."
+    },
+    {
+      "label": "lint_runner.py",
+      "file_type": "code",
+      "source_file": "lint-and-validate/scripts/lint_runner.py",
+      "source_location": "L1",
+      "id": "lint_and_validate_scripts_lint_runner_py",
+      "community": 2,
+      "norm_label": "lint_runner.py"
+    },
+    {
+      "label": "detect_project_type()",
+      "file_type": "code",
+      "source_file": "lint-and-validate/scripts/lint_runner.py",
+      "source_location": "L27",
+      "id": "scripts_lint_runner_detect_project_type",
+      "community": 2,
+      "norm_label": "detect_project_type()"
+    },
+    {
+      "label": "run_linter()",
+      "file_type": "code",
+      "source_file": "lint-and-validate/scripts/lint_runner.py",
+      "source_location": "L70",
+      "id": "scripts_lint_runner_run_linter",
+      "community": 2,
+      "norm_label": "run_linter()"
+    },
+    {
+      "label": "main()",
+      "file_type": "code",
+      "source_file": "lint-and-validate/scripts/lint_runner.py",
+      "source_location": "L104",
+      "id": "scripts_lint_runner_main",
+      "community": 2,
+      "norm_label": "main()"
+    },
+    {
+      "label": "Detect project type and available linters.",
+      "file_type": "rationale",
+      "source_file": "lint-and-validate/scripts/lint_runner.py",
+      "source_location": "L28",
+      "id": "scripts_lint_runner_rationale_28",
+      "community": 2,
+      "norm_label": "detect project type and available linters."
+    },
+    {
+      "label": "Run a single linter and return results.",
+      "file_type": "rationale",
+      "source_file": "lint-and-validate/scripts/lint_runner.py",
+      "source_location": "L71",
+      "id": "scripts_lint_runner_rationale_71",
+      "community": 2,
+      "norm_label": "run a single linter and return results."
+    },
+    {
+      "label": "type_coverage.py",
+      "file_type": "code",
+      "source_file": "lint-and-validate/scripts/type_coverage.py",
+      "source_location": "L1",
+      "id": "lint_and_validate_scripts_type_coverage_py",
+      "community": 2,
+      "norm_label": "type_coverage.py"
+    },
+    {
+      "label": "check_typescript_coverage()",
+      "file_type": "code",
+      "source_file": "lint-and-validate/scripts/type_coverage.py",
+      "source_location": "L18",
+      "id": "scripts_type_coverage_check_typescript_coverage",
+      "community": 2,
+      "norm_label": "check_typescript_coverage()"
+    },
+    {
+      "label": "check_python_coverage()",
+      "file_type": "code",
+      "source_file": "lint-and-validate/scripts/type_coverage.py",
+      "source_location": "L74",
+      "id": "scripts_type_coverage_check_python_coverage",
+      "community": 2,
+      "norm_label": "check_python_coverage()"
+    },
+    {
+      "label": "main()",
+      "file_type": "code",
+      "source_file": "lint-and-validate/scripts/type_coverage.py",
+      "source_location": "L128",
+      "id": "scripts_type_coverage_main",
+      "community": 2,
+      "norm_label": "main()"
+    },
+    {
+      "label": "Check TypeScript type coverage.",
+      "file_type": "rationale",
+      "source_file": "lint-and-validate/scripts/type_coverage.py",
+      "source_location": "L19",
+      "id": "scripts_type_coverage_rationale_19",
+      "community": 2,
+      "norm_label": "check typescript type coverage."
+    },
+    {
+      "label": "Check Python type hints coverage.",
+      "file_type": "rationale",
+      "source_file": "lint-and-validate/scripts/type_coverage.py",
+      "source_location": "L75",
+      "id": "scripts_type_coverage_rationale_75",
+      "community": 2,
+      "norm_label": "check python type hints coverage."
+    },
+    {
+      "label": "rest-api-template.py",
+      "file_type": "code",
+      "source_file": "rest-api-design/assets/rest-api-template.py",
+      "source_location": "L1",
+      "id": "rest_api_design_assets_rest_api_template_py",
+      "community": 0,
+      "norm_label": "rest-api-template.py"
+    },
+    {
+      "label": "UserStatus",
+      "file_type": "code",
+      "source_file": "rest-api-design/assets/rest-api-template.py",
+      "source_location": "L38",
+      "id": "assets_rest_api_template_userstatus",
+      "community": 0,
+      "norm_label": "userstatus"
+    },
+    {
+      "label": "str",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "id": "str",
+      "community": 2,
+      "norm_label": "str"
+    },
+    {
+      "label": "Enum",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "id": "enum",
+      "community": 0,
+      "norm_label": "enum"
+    },
+    {
+      "label": "UserBase",
+      "file_type": "code",
+      "source_file": "rest-api-design/assets/rest-api-template.py",
+      "source_location": "L43",
+      "id": "assets_rest_api_template_userbase",
+      "community": 0,
+      "norm_label": "userbase"
+    },
+    {
+      "label": "BaseModel",
+      "file_type": "code",
+      "source_file": "",
+      "source_location": "",
+      "id": "basemodel",
+      "community": 0,
+      "norm_label": "basemodel"
+    },
+    {
+      "label": "UserCreate",
+      "file_type": "code",
+      "source_file": "rest-api-design/assets/rest-api-template.py",
+      "source_location": "L48",
+      "id": "assets_rest_api_template_usercreate",
+      "community": 0,
+      "norm_label": "usercreate"
+    },
+    {
+      "label": "UserUpdate",
+      "file_type": "code",
+      "source_file": "rest-api-design/assets/rest-api-template.py",
+      "source_location": "L51",
+      "id": "assets_rest_api_template_userupdate",
+      "community": 0,
+      "norm_label": "userupdate"
+    },
+    {
+      "label": "User",
+      "file_type": "code",
+      "source_file": "rest-api-design/assets/rest-api-template.py",
+      "source_location": "L56",
+      "id": "assets_rest_api_template_user",
+      "community": 0,
+      "norm_label": "user"
+    },
+    {
+      "label": "PaginationParams",
+      "file_type": "code",
+      "source_file": "rest-api-design/assets/rest-api-template.py",
+      "source_location": "L64",
+      "id": "assets_rest_api_template_paginationparams",
+      "community": 0,
+      "norm_label": "paginationparams"
+    },
+    {
+      "label": "PaginatedResponse",
+      "file_type": "code",
+      "source_file": "rest-api-design/assets/rest-api-template.py",
+      "source_location": "L68",
+      "id": "assets_rest_api_template_paginatedresponse",
+      "community": 0,
+      "norm_label": "paginatedresponse"
+    },
+    {
+      "label": "ErrorDetail",
+      "file_type": "code",
+      "source_file": "rest-api-design/assets/rest-api-template.py",
+      "source_location": "L76",
+      "id": "assets_rest_api_template_errordetail",
+      "community": 0,
+      "norm_label": "errordetail"
+    },
+    {
+      "label": "ErrorResponse",
+      "file_type": "code",
+      "source_file": "rest-api-design/assets/rest-api-template.py",
+      "source_location": "L81",
+      "id": "assets_rest_api_template_errorresponse",
+      "community": 0,
+      "norm_label": "errorresponse"
+    },
+    {
+      "label": "http_exception_handler()",
+      "file_type": "code",
+      "source_file": "rest-api-design/assets/rest-api-template.py",
+      "source_location": "L87",
+      "id": "assets_rest_api_template_http_exception_handler",
+      "community": 0,
+      "norm_label": "http_exception_handler()"
+    },
+    {
+      "label": "list_users()",
+      "file_type": "code",
+      "source_file": "rest-api-design/assets/rest-api-template.py",
+      "source_location": "L99",
+      "id": "assets_rest_api_template_list_users",
+      "community": 0,
+      "norm_label": "list_users()"
+    },
+    {
+      "label": "create_user()",
+      "file_type": "code",
+      "source_file": "rest-api-design/assets/rest-api-template.py",
+      "source_location": "L129",
+      "id": "assets_rest_api_template_create_user",
+      "community": 0,
+      "norm_label": "create_user()"
+    },
+    {
+      "label": "get_user()",
+      "file_type": "code",
+      "source_file": "rest-api-design/assets/rest-api-template.py",
+      "source_location": "L142",
+      "id": "assets_rest_api_template_get_user",
+      "community": 0,
+      "norm_label": "get_user()"
+    },
+    {
+      "label": "update_user()",
+      "file_type": "code",
+      "source_file": "rest-api-design/assets/rest-api-template.py",
+      "source_location": "L161",
+      "id": "assets_rest_api_template_update_user",
+      "community": 0,
+      "norm_label": "update_user()"
+    },
+    {
+      "label": "delete_user()",
+      "file_type": "code",
+      "source_file": "rest-api-design/assets/rest-api-template.py",
+      "source_location": "L175",
+      "id": "assets_rest_api_template_delete_user",
+      "community": 0,
+      "norm_label": "delete_user()"
+    },
+    {
+      "label": "Production-ready REST API template using FastAPI. Includes pagination, filtering",
+      "file_type": "rationale",
+      "source_file": "rest-api-design/assets/rest-api-template.py",
+      "source_location": "L1",
+      "id": "assets_rest_api_template_rationale_1",
+      "community": 0,
+      "norm_label": "production-ready rest api template using fastapi. includes pagination, filtering"
+    },
+    {
+      "label": "List users with pagination and filtering.",
+      "file_type": "rationale",
+      "source_file": "rest-api-design/assets/rest-api-template.py",
+      "source_location": "L105",
+      "id": "assets_rest_api_template_rationale_105",
+      "community": 0,
+      "norm_label": "list users with pagination and filtering."
+    },
+    {
+      "label": "Partially update user.",
+      "file_type": "rationale",
+      "source_file": "rest-api-design/assets/rest-api-template.py",
+      "source_location": "L162",
+      "id": "assets_rest_api_template_rationale_162",
+      "community": 0,
+      "norm_label": "partially update user."
+    },
+    {
+      "label": "condition-based-waiting-example.ts",
+      "file_type": "code",
+      "source_file": "systematic-debugging/condition-based-waiting-example.ts",
+      "source_location": "L1",
+      "id": "systematic_debugging_condition_based_waiting_example_ts",
+      "community": 8,
+      "norm_label": "condition-based-waiting-example.ts"
+    },
+    {
+      "label": "waitForEvent()",
+      "file_type": "code",
+      "source_file": "systematic-debugging/condition-based-waiting-example.ts",
+      "source_location": "L20",
+      "id": "systematic_debugging_condition_based_waiting_example_waitforevent",
+      "community": 8,
+      "norm_label": "waitforevent()"
+    },
+    {
+      "label": "waitForEventCount()",
+      "file_type": "code",
+      "source_file": "systematic-debugging/condition-based-waiting-example.ts",
+      "source_location": "L60",
+      "id": "systematic_debugging_condition_based_waiting_example_waitforeventcount",
+      "community": 8,
+      "norm_label": "waitforeventcount()"
+    },
+    {
+      "label": "waitForEventMatch()",
+      "file_type": "code",
+      "source_file": "systematic-debugging/condition-based-waiting-example.ts",
+      "source_location": "L111",
+      "id": "systematic_debugging_condition_based_waiting_example_waitforeventmatch",
+      "community": 8,
+      "norm_label": "waitforeventmatch()"
+    }
+  ],
+  "links": [
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ui-ux-pro/scripts/design_system.py",
+      "source_location": "L31",
+      "weight": 1.0,
+      "source": "ui_ux_pro_scripts_design_system_py",
+      "target": "scripts_design_system_designsystemgenerator",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ui-ux-pro/scripts/design_system.py",
+      "source_location": "L236",
+      "weight": 1.0,
+      "source": "ui_ux_pro_scripts_design_system_py",
+      "target": "scripts_design_system_format_ascii_box",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ui-ux-pro/scripts/design_system.py",
+      "source_location": "L361",
+      "weight": 1.0,
+      "source": "ui_ux_pro_scripts_design_system_py",
+      "target": "scripts_design_system_format_markdown",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ui-ux-pro/scripts/design_system.py",
+      "source_location": "L455",
+      "weight": 1.0,
+      "source": "ui_ux_pro_scripts_design_system_py",
+      "target": "scripts_design_system_generate_design_system",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "ui-ux-pro/scripts/design_system.py",
+      "source_location": "L34",
+      "weight": 1.0,
+      "source": "scripts_design_system_designsystemgenerator",
+      "target": "scripts_design_system_designsystemgenerator_init",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "ui-ux-pro/scripts/design_system.py",
+      "source_location": "L37",
+      "weight": 1.0,
+      "source": "scripts_design_system_designsystemgenerator",
+      "target": "scripts_design_system_designsystemgenerator_load_reasoning",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "ui-ux-pro/scripts/design_system.py",
+      "source_location": "L45",
+      "weight": 1.0,
+      "source": "scripts_design_system_designsystemgenerator",
+      "target": "scripts_design_system_designsystemgenerator_multi_domain_search",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "ui-ux-pro/scripts/design_system.py",
+      "source_location": "L58",
+      "weight": 1.0,
+      "source": "scripts_design_system_designsystemgenerator",
+      "target": "scripts_design_system_designsystemgenerator_find_reasoning_rule",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "ui-ux-pro/scripts/design_system.py",
+      "source_location": "L82",
+      "weight": 1.0,
+      "source": "scripts_design_system_designsystemgenerator",
+      "target": "scripts_design_system_designsystemgenerator_apply_reasoning",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "ui-ux-pro/scripts/design_system.py",
+      "source_location": "L116",
+      "weight": 1.0,
+      "source": "scripts_design_system_designsystemgenerator",
+      "target": "scripts_design_system_designsystemgenerator_select_best_match",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "ui-ux-pro/scripts/design_system.py",
+      "source_location": "L153",
+      "weight": 1.0,
+      "source": "scripts_design_system_designsystemgenerator",
+      "target": "scripts_design_system_designsystemgenerator_extract_results",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "ui-ux-pro/scripts/design_system.py",
+      "source_location": "L157",
+      "weight": 1.0,
+      "source": "scripts_design_system_designsystemgenerator",
+      "target": "scripts_design_system_designsystemgenerator_generate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "ui-ux-pro/scripts/design_system.py",
+      "source_location": "L467",
+      "weight": 1.0,
+      "source": "scripts_design_system_generate_design_system",
+      "target": "scripts_design_system_designsystemgenerator",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "ui-ux-pro/scripts/design_system.py",
+      "source_location": "L32",
+      "weight": 1.0,
+      "source": "scripts_design_system_rationale_32",
+      "target": "scripts_design_system_designsystemgenerator",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "ui-ux-pro/scripts/design_system.py",
+      "source_location": "L35",
+      "weight": 1.0,
+      "source": "scripts_design_system_designsystemgenerator_init",
+      "target": "scripts_design_system_designsystemgenerator_load_reasoning",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "ui-ux-pro/scripts/design_system.py",
+      "source_location": "L38",
+      "weight": 1.0,
+      "source": "scripts_design_system_rationale_38",
+      "target": "scripts_design_system_designsystemgenerator_load_reasoning",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "ui-ux-pro/scripts/design_system.py",
+      "source_location": "L171",
+      "weight": 1.0,
+      "source": "scripts_design_system_designsystemgenerator_generate",
+      "target": "scripts_design_system_designsystemgenerator_multi_domain_search",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "ui-ux-pro/scripts/design_system.py",
+      "source_location": "L46",
+      "weight": 1.0,
+      "source": "scripts_design_system_rationale_46",
+      "target": "scripts_design_system_designsystemgenerator_multi_domain_search",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "ui-ux-pro/scripts/design_system.py",
+      "source_location": "L53",
+      "weight": 1.0,
+      "source": "scripts_design_system_designsystemgenerator_multi_domain_search",
+      "target": "scripts_core_search"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "ui-ux-pro/scripts/design_system.py",
+      "source_location": "L84",
+      "weight": 1.0,
+      "source": "scripts_design_system_designsystemgenerator_apply_reasoning",
+      "target": "scripts_design_system_designsystemgenerator_find_reasoning_rule",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "ui-ux-pro/scripts/design_system.py",
+      "source_location": "L59",
+      "weight": 1.0,
+      "source": "scripts_design_system_rationale_59",
+      "target": "scripts_design_system_designsystemgenerator_find_reasoning_rule",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "ui-ux-pro/scripts/design_system.py",
+      "source_location": "L167",
+      "weight": 1.0,
+      "source": "scripts_design_system_designsystemgenerator_generate",
+      "target": "scripts_design_system_designsystemgenerator_apply_reasoning",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "ui-ux-pro/scripts/design_system.py",
+      "source_location": "L83",
+      "weight": 1.0,
+      "source": "scripts_design_system_rationale_83",
+      "target": "scripts_design_system_designsystemgenerator_apply_reasoning",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "ui-ux-pro/scripts/design_system.py",
+      "source_location": "L180",
+      "weight": 1.0,
+      "source": "scripts_design_system_designsystemgenerator_generate",
+      "target": "scripts_design_system_designsystemgenerator_select_best_match",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "ui-ux-pro/scripts/design_system.py",
+      "source_location": "L117",
+      "weight": 1.0,
+      "source": "scripts_design_system_rationale_117",
+      "target": "scripts_design_system_designsystemgenerator_select_best_match",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "ui-ux-pro/scripts/design_system.py",
+      "source_location": "L135",
+      "weight": 1.0,
+      "source": "scripts_design_system_designsystemgenerator_select_best_match",
+      "target": "str"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "ui-ux-pro/scripts/design_system.py",
+      "source_location": "L175",
+      "weight": 1.0,
+      "source": "scripts_design_system_designsystemgenerator_generate",
+      "target": "scripts_design_system_designsystemgenerator_extract_results",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "ui-ux-pro/scripts/design_system.py",
+      "source_location": "L154",
+      "weight": 1.0,
+      "source": "scripts_design_system_rationale_154",
+      "target": "scripts_design_system_designsystemgenerator_extract_results",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "ui-ux-pro/scripts/design_system.py",
+      "source_location": "L468",
+      "weight": 1.0,
+      "source": "scripts_design_system_generate_design_system",
+      "target": "scripts_design_system_designsystemgenerator_generate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "ui-ux-pro/scripts/design_system.py",
+      "source_location": "L158",
+      "weight": 1.0,
+      "source": "scripts_design_system_rationale_158",
+      "target": "scripts_design_system_designsystemgenerator_generate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "ui-ux-pro/scripts/design_system.py",
+      "source_location": "L160",
+      "weight": 1.0,
+      "source": "scripts_design_system_designsystemgenerator_generate",
+      "target": "scripts_core_search"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "ui-ux-pro/scripts/design_system.py",
+      "source_location": "L472",
+      "weight": 1.0,
+      "source": "scripts_design_system_generate_design_system",
+      "target": "scripts_design_system_format_ascii_box",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "ui-ux-pro/scripts/design_system.py",
+      "source_location": "L237",
+      "weight": 1.0,
+      "source": "scripts_design_system_rationale_237",
+      "target": "scripts_design_system_format_ascii_box",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "ui-ux-pro/scripts/design_system.py",
+      "source_location": "L471",
+      "weight": 1.0,
+      "source": "scripts_design_system_generate_design_system",
+      "target": "scripts_design_system_format_markdown",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "ui-ux-pro/scripts/design_system.py",
+      "source_location": "L362",
+      "weight": 1.0,
+      "source": "scripts_design_system_rationale_362",
+      "target": "scripts_design_system_format_markdown",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "ui-ux-pro/scripts/design_system.py",
+      "source_location": "L456",
+      "weight": 1.0,
+      "source": "scripts_design_system_rationale_456",
+      "target": "scripts_design_system_generate_design_system",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ui-ux-pro/scripts/core.py",
+      "source_location": "L99",
+      "weight": 1.0,
+      "source": "ui_ux_pro_scripts_core_py",
+      "target": "scripts_core_bm25",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ui-ux-pro/scripts/core.py",
+      "source_location": "L162",
+      "weight": 1.0,
+      "source": "ui_ux_pro_scripts_core_py",
+      "target": "scripts_core_load_csv",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ui-ux-pro/scripts/core.py",
+      "source_location": "L168",
+      "weight": 1.0,
+      "source": "ui_ux_pro_scripts_core_py",
+      "target": "scripts_core_search_csv",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ui-ux-pro/scripts/core.py",
+      "source_location": "L193",
+      "weight": 1.0,
+      "source": "ui_ux_pro_scripts_core_py",
+      "target": "scripts_core_detect_domain",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ui-ux-pro/scripts/core.py",
+      "source_location": "L216",
+      "weight": 1.0,
+      "source": "ui_ux_pro_scripts_core_py",
+      "target": "scripts_core_search",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ui-ux-pro/scripts/core.py",
+      "source_location": "L238",
+      "weight": 1.0,
+      "source": "ui_ux_pro_scripts_core_py",
+      "target": "scripts_core_search_stack",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "ui-ux-pro/scripts/core.py",
+      "source_location": "L102",
+      "weight": 1.0,
+      "source": "scripts_core_bm25",
+      "target": "scripts_core_bm25_init",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "ui-ux-pro/scripts/core.py",
+      "source_location": "L112",
+      "weight": 1.0,
+      "source": "scripts_core_bm25",
+      "target": "scripts_core_bm25_tokenize",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "ui-ux-pro/scripts/core.py",
+      "source_location": "L117",
+      "weight": 1.0,
+      "source": "scripts_core_bm25",
+      "target": "scripts_core_bm25_fit",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "ui-ux-pro/scripts/core.py",
+      "source_location": "L136",
+      "weight": 1.0,
+      "source": "scripts_core_bm25",
+      "target": "scripts_core_bm25_score",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "ui-ux-pro/scripts/core.py",
+      "source_location": "L179",
+      "weight": 1.0,
+      "source": "scripts_core_search_csv",
+      "target": "scripts_core_bm25",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "ui-ux-pro/scripts/core.py",
+      "source_location": "L100",
+      "weight": 1.0,
+      "source": "scripts_core_rationale_100",
+      "target": "scripts_core_bm25",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "ui-ux-pro/scripts/core.py",
+      "source_location": "L119",
+      "weight": 1.0,
+      "source": "scripts_core_bm25_fit",
+      "target": "scripts_core_bm25_tokenize",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "ui-ux-pro/scripts/core.py",
+      "source_location": "L138",
+      "weight": 1.0,
+      "source": "scripts_core_bm25_score",
+      "target": "scripts_core_bm25_tokenize",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "ui-ux-pro/scripts/core.py",
+      "source_location": "L113",
+      "weight": 1.0,
+      "source": "scripts_core_rationale_113",
+      "target": "scripts_core_bm25_tokenize",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "ui-ux-pro/scripts/core.py",
+      "source_location": "L114",
+      "weight": 1.0,
+      "source": "scripts_core_bm25_tokenize",
+      "target": "str"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "ui-ux-pro/scripts/core.py",
+      "source_location": "L180",
+      "weight": 1.0,
+      "source": "scripts_core_search_csv",
+      "target": "scripts_core_bm25_fit",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "ui-ux-pro/scripts/core.py",
+      "source_location": "L118",
+      "weight": 1.0,
+      "source": "scripts_core_rationale_118",
+      "target": "scripts_core_bm25_fit",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "ui-ux-pro/scripts/core.py",
+      "source_location": "L181",
+      "weight": 1.0,
+      "source": "scripts_core_search_csv",
+      "target": "scripts_core_bm25_score",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "ui-ux-pro/scripts/core.py",
+      "source_location": "L137",
+      "weight": 1.0,
+      "source": "scripts_core_rationale_137",
+      "target": "scripts_core_bm25_score",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "ui-ux-pro/scripts/core.py",
+      "source_location": "L173",
+      "weight": 1.0,
+      "source": "scripts_core_search_csv",
+      "target": "scripts_core_load_csv",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "ui-ux-pro/scripts/core.py",
+      "source_location": "L163",
+      "weight": 1.0,
+      "source": "scripts_core_rationale_163",
+      "target": "scripts_core_load_csv",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "ui-ux-pro/scripts/core.py",
+      "source_location": "L227",
+      "weight": 1.0,
+      "source": "scripts_core_search",
+      "target": "scripts_core_search_csv",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "ui-ux-pro/scripts/core.py",
+      "source_location": "L248",
+      "weight": 1.0,
+      "source": "scripts_core_search_stack",
+      "target": "scripts_core_search_csv",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "ui-ux-pro/scripts/core.py",
+      "source_location": "L169",
+      "weight": 1.0,
+      "source": "scripts_core_rationale_169",
+      "target": "scripts_core_search_csv",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "ui-ux-pro/scripts/core.py",
+      "source_location": "L176",
+      "weight": 1.0,
+      "source": "scripts_core_search_csv",
+      "target": "str"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "ui-ux-pro/scripts/core.py",
+      "source_location": "L219",
+      "weight": 1.0,
+      "source": "scripts_core_search",
+      "target": "scripts_core_detect_domain",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "ui-ux-pro/scripts/core.py",
+      "source_location": "L194",
+      "weight": 1.0,
+      "source": "scripts_core_rationale_194",
+      "target": "scripts_core_detect_domain",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "ui-ux-pro/scripts/core.py",
+      "source_location": "L217",
+      "weight": 1.0,
+      "source": "scripts_core_rationale_217",
+      "target": "scripts_core_search",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "ui-ux-pro/scripts/core.py",
+      "source_location": "L239",
+      "weight": 1.0,
+      "source": "scripts_core_rationale_239",
+      "target": "scripts_core_search_stack",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ui-ux-pro/scripts/search.py",
+      "source_location": "L17",
+      "weight": 1.0,
+      "source": "ui_ux_pro_scripts_search_py",
+      "target": "scripts_search_format_output",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "ui-ux-pro/scripts/search.py",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "scripts_search_rationale_18",
+      "target": "scripts_search_format_output",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "ui-ux-pro/scripts/search.py",
+      "source_location": "L34",
+      "weight": 1.0,
+      "source": "scripts_search_format_output",
+      "target": "str"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "i18n-localization/scripts/i18n_checker.py",
+      "source_location": "L53",
+      "weight": 1.0,
+      "source": "i18n_localization_scripts_i18n_checker_py",
+      "target": "scripts_i18n_checker_find_locale_files",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "i18n-localization/scripts/i18n_checker.py",
+      "source_location": "L70",
+      "weight": 1.0,
+      "source": "i18n_localization_scripts_i18n_checker_py",
+      "target": "scripts_i18n_checker_check_locale_completeness",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "i18n-localization/scripts/i18n_checker.py",
+      "source_location": "L120",
+      "weight": 1.0,
+      "source": "i18n_localization_scripts_i18n_checker_py",
+      "target": "scripts_i18n_checker_flatten_keys",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "i18n-localization/scripts/i18n_checker.py",
+      "source_location": "L131",
+      "weight": 1.0,
+      "source": "i18n_localization_scripts_i18n_checker_py",
+      "target": "scripts_i18n_checker_check_hardcoded_strings",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "i18n-localization/scripts/i18n_checker.py",
+      "source_location": "L199",
+      "weight": 1.0,
+      "source": "i18n_localization_scripts_i18n_checker_py",
+      "target": "scripts_i18n_checker_main",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "i18n-localization/scripts/i18n_checker.py",
+      "source_location": "L208",
+      "weight": 1.0,
+      "source": "scripts_i18n_checker_main",
+      "target": "scripts_i18n_checker_find_locale_files",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "i18n-localization/scripts/i18n_checker.py",
+      "source_location": "L54",
+      "weight": 1.0,
+      "source": "scripts_i18n_checker_rationale_54",
+      "target": "scripts_i18n_checker_find_locale_files",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "i18n-localization/scripts/i18n_checker.py",
+      "source_location": "L68",
+      "weight": 1.0,
+      "source": "scripts_i18n_checker_find_locale_files",
+      "target": "str"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "i18n-localization/scripts/i18n_checker.py",
+      "source_location": "L87",
+      "weight": 1.0,
+      "source": "scripts_i18n_checker_check_locale_completeness",
+      "target": "scripts_i18n_checker_flatten_keys",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "i18n-localization/scripts/i18n_checker.py",
+      "source_location": "L209",
+      "weight": 1.0,
+      "source": "scripts_i18n_checker_main",
+      "target": "scripts_i18n_checker_check_locale_completeness",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "i18n-localization/scripts/i18n_checker.py",
+      "source_location": "L71",
+      "weight": 1.0,
+      "source": "scripts_i18n_checker_rationale_71",
+      "target": "scripts_i18n_checker_check_locale_completeness",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "i18n-localization/scripts/i18n_checker.py",
+      "source_location": "L121",
+      "weight": 1.0,
+      "source": "scripts_i18n_checker_rationale_121",
+      "target": "scripts_i18n_checker_flatten_keys",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "i18n-localization/scripts/i18n_checker.py",
+      "source_location": "L212",
+      "weight": 1.0,
+      "source": "scripts_i18n_checker_main",
+      "target": "scripts_i18n_checker_check_hardcoded_strings",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "i18n-localization/scripts/i18n_checker.py",
+      "source_location": "L132",
+      "weight": 1.0,
+      "source": "scripts_i18n_checker_rationale_132",
+      "target": "scripts_i18n_checker_check_hardcoded_strings",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "i18n-localization/scripts/i18n_checker.py",
+      "source_location": "L147",
+      "weight": 1.0,
+      "source": "scripts_i18n_checker_check_hardcoded_strings",
+      "target": "str"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "lint-and-validate/scripts/lint_runner.py",
+      "source_location": "L27",
+      "weight": 1.0,
+      "source": "lint_and_validate_scripts_lint_runner_py",
+      "target": "scripts_lint_runner_detect_project_type",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "lint-and-validate/scripts/lint_runner.py",
+      "source_location": "L70",
+      "weight": 1.0,
+      "source": "lint_and_validate_scripts_lint_runner_py",
+      "target": "scripts_lint_runner_run_linter",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "lint-and-validate/scripts/lint_runner.py",
+      "source_location": "L104",
+      "weight": 1.0,
+      "source": "lint_and_validate_scripts_lint_runner_py",
+      "target": "scripts_lint_runner_main",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "lint-and-validate/scripts/lint_runner.py",
+      "source_location": "L114",
+      "weight": 1.0,
+      "source": "scripts_lint_runner_main",
+      "target": "scripts_lint_runner_detect_project_type",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "lint-and-validate/scripts/lint_runner.py",
+      "source_location": "L28",
+      "weight": 1.0,
+      "source": "scripts_lint_runner_rationale_28",
+      "target": "scripts_lint_runner_detect_project_type",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "lint-and-validate/scripts/lint_runner.py",
+      "source_location": "L138",
+      "weight": 1.0,
+      "source": "scripts_lint_runner_main",
+      "target": "scripts_lint_runner_run_linter",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "lint-and-validate/scripts/lint_runner.py",
+      "source_location": "L71",
+      "weight": 1.0,
+      "source": "scripts_lint_runner_rationale_71",
+      "target": "scripts_lint_runner_run_linter",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "lint-and-validate/scripts/lint_runner.py",
+      "source_location": "L82",
+      "weight": 1.0,
+      "source": "scripts_lint_runner_run_linter",
+      "target": "str"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "lint-and-validate/scripts/lint_runner.py",
+      "source_location": "L123",
+      "weight": 1.0,
+      "source": "scripts_lint_runner_main",
+      "target": "str"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "lint-and-validate/scripts/type_coverage.py",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "lint_and_validate_scripts_type_coverage_py",
+      "target": "scripts_type_coverage_check_typescript_coverage",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "lint-and-validate/scripts/type_coverage.py",
+      "source_location": "L74",
+      "weight": 1.0,
+      "source": "lint_and_validate_scripts_type_coverage_py",
+      "target": "scripts_type_coverage_check_python_coverage",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "lint-and-validate/scripts/type_coverage.py",
+      "source_location": "L128",
+      "weight": 1.0,
+      "source": "lint_and_validate_scripts_type_coverage_py",
+      "target": "scripts_type_coverage_main",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "lint-and-validate/scripts/type_coverage.py",
+      "source_location": "L139",
+      "weight": 1.0,
+      "source": "scripts_type_coverage_main",
+      "target": "scripts_type_coverage_check_typescript_coverage",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "lint-and-validate/scripts/type_coverage.py",
+      "source_location": "L19",
+      "weight": 1.0,
+      "source": "scripts_type_coverage_rationale_19",
+      "target": "scripts_type_coverage_check_typescript_coverage",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "lint-and-validate/scripts/type_coverage.py",
+      "source_location": "L25",
+      "weight": 1.0,
+      "source": "scripts_type_coverage_check_typescript_coverage",
+      "target": "str"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "lint-and-validate/scripts/type_coverage.py",
+      "source_location": "L144",
+      "weight": 1.0,
+      "source": "scripts_type_coverage_main",
+      "target": "scripts_type_coverage_check_python_coverage",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "lint-and-validate/scripts/type_coverage.py",
+      "source_location": "L75",
+      "weight": 1.0,
+      "source": "scripts_type_coverage_rationale_75",
+      "target": "scripts_type_coverage_check_python_coverage",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "lint-and-validate/scripts/type_coverage.py",
+      "source_location": "L81",
+      "weight": 1.0,
+      "source": "scripts_type_coverage_check_python_coverage",
+      "target": "str"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "rest-api-design/assets/rest-api-template.py",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "rest_api_design_assets_rest_api_template_py",
+      "target": "enum",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "rest-api-design/assets/rest-api-template.py",
+      "source_location": "L38",
+      "weight": 1.0,
+      "source": "rest_api_design_assets_rest_api_template_py",
+      "target": "assets_rest_api_template_userstatus",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "rest-api-design/assets/rest-api-template.py",
+      "source_location": "L43",
+      "weight": 1.0,
+      "source": "rest_api_design_assets_rest_api_template_py",
+      "target": "assets_rest_api_template_userbase",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "rest-api-design/assets/rest-api-template.py",
+      "source_location": "L48",
+      "weight": 1.0,
+      "source": "rest_api_design_assets_rest_api_template_py",
+      "target": "assets_rest_api_template_usercreate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "rest-api-design/assets/rest-api-template.py",
+      "source_location": "L51",
+      "weight": 1.0,
+      "source": "rest_api_design_assets_rest_api_template_py",
+      "target": "assets_rest_api_template_userupdate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "rest-api-design/assets/rest-api-template.py",
+      "source_location": "L56",
+      "weight": 1.0,
+      "source": "rest_api_design_assets_rest_api_template_py",
+      "target": "assets_rest_api_template_user",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "rest-api-design/assets/rest-api-template.py",
+      "source_location": "L64",
+      "weight": 1.0,
+      "source": "rest_api_design_assets_rest_api_template_py",
+      "target": "assets_rest_api_template_paginationparams",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "rest-api-design/assets/rest-api-template.py",
+      "source_location": "L68",
+      "weight": 1.0,
+      "source": "rest_api_design_assets_rest_api_template_py",
+      "target": "assets_rest_api_template_paginatedresponse",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "rest-api-design/assets/rest-api-template.py",
+      "source_location": "L76",
+      "weight": 1.0,
+      "source": "rest_api_design_assets_rest_api_template_py",
+      "target": "assets_rest_api_template_errordetail",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "rest-api-design/assets/rest-api-template.py",
+      "source_location": "L81",
+      "weight": 1.0,
+      "source": "rest_api_design_assets_rest_api_template_py",
+      "target": "assets_rest_api_template_errorresponse",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "rest-api-design/assets/rest-api-template.py",
+      "source_location": "L87",
+      "weight": 1.0,
+      "source": "rest_api_design_assets_rest_api_template_py",
+      "target": "assets_rest_api_template_http_exception_handler",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "rest-api-design/assets/rest-api-template.py",
+      "source_location": "L99",
+      "weight": 1.0,
+      "source": "rest_api_design_assets_rest_api_template_py",
+      "target": "assets_rest_api_template_list_users",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "rest-api-design/assets/rest-api-template.py",
+      "source_location": "L129",
+      "weight": 1.0,
+      "source": "rest_api_design_assets_rest_api_template_py",
+      "target": "assets_rest_api_template_create_user",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "rest-api-design/assets/rest-api-template.py",
+      "source_location": "L142",
+      "weight": 1.0,
+      "source": "rest_api_design_assets_rest_api_template_py",
+      "target": "assets_rest_api_template_get_user",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "rest-api-design/assets/rest-api-template.py",
+      "source_location": "L161",
+      "weight": 1.0,
+      "source": "rest_api_design_assets_rest_api_template_py",
+      "target": "assets_rest_api_template_update_user",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "rest-api-design/assets/rest-api-template.py",
+      "source_location": "L175",
+      "weight": 1.0,
+      "source": "rest_api_design_assets_rest_api_template_py",
+      "target": "assets_rest_api_template_delete_user",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "rest-api-design/assets/rest-api-template.py",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "assets_rest_api_template_rationale_1",
+      "target": "rest_api_design_assets_rest_api_template_py",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "rest-api-design/assets/rest-api-template.py",
+      "source_location": "L38",
+      "weight": 1.0,
+      "source": "assets_rest_api_template_userstatus",
+      "target": "str",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "rest-api-design/assets/rest-api-template.py",
+      "source_location": "L38",
+      "weight": 1.0,
+      "source": "assets_rest_api_template_userstatus",
+      "target": "enum",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "rest-api-design/assets/rest-api-template.py",
+      "source_location": "L110",
+      "weight": 1.0,
+      "source": "assets_rest_api_template_list_users",
+      "target": "str",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "rest-api-design/assets/rest-api-template.py",
+      "source_location": "L43",
+      "weight": 1.0,
+      "source": "assets_rest_api_template_userbase",
+      "target": "basemodel",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "rest-api-design/assets/rest-api-template.py",
+      "source_location": "L48",
+      "weight": 1.0,
+      "source": "assets_rest_api_template_usercreate",
+      "target": "assets_rest_api_template_userbase",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "rest-api-design/assets/rest-api-template.py",
+      "source_location": "L56",
+      "weight": 1.0,
+      "source": "assets_rest_api_template_user",
+      "target": "assets_rest_api_template_userbase",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "rest-api-design/assets/rest-api-template.py",
+      "source_location": "L51",
+      "weight": 1.0,
+      "source": "assets_rest_api_template_userupdate",
+      "target": "basemodel",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "rest-api-design/assets/rest-api-template.py",
+      "source_location": "L64",
+      "weight": 1.0,
+      "source": "assets_rest_api_template_paginationparams",
+      "target": "basemodel",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "rest-api-design/assets/rest-api-template.py",
+      "source_location": "L68",
+      "weight": 1.0,
+      "source": "assets_rest_api_template_paginatedresponse",
+      "target": "basemodel",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "rest-api-design/assets/rest-api-template.py",
+      "source_location": "L76",
+      "weight": 1.0,
+      "source": "assets_rest_api_template_errordetail",
+      "target": "basemodel",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "inherits",
+      "confidence": "EXTRACTED",
+      "source_file": "rest-api-design/assets/rest-api-template.py",
+      "source_location": "L81",
+      "weight": 1.0,
+      "source": "assets_rest_api_template_errorresponse",
+      "target": "basemodel",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "rest-api-design/assets/rest-api-template.py",
+      "source_location": "L109",
+      "weight": 1.0,
+      "source": "assets_rest_api_template_list_users",
+      "target": "assets_rest_api_template_user",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "rest-api-design/assets/rest-api-template.py",
+      "source_location": "L132",
+      "weight": 1.0,
+      "source": "assets_rest_api_template_create_user",
+      "target": "assets_rest_api_template_user",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "rest-api-design/assets/rest-api-template.py",
+      "source_location": "L151",
+      "weight": 1.0,
+      "source": "assets_rest_api_template_get_user",
+      "target": "assets_rest_api_template_user",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "rest-api-design/assets/rest-api-template.py",
+      "source_location": "L120",
+      "weight": 1.0,
+      "source": "assets_rest_api_template_list_users",
+      "target": "assets_rest_api_template_paginatedresponse",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "rest-api-design/assets/rest-api-template.py",
+      "source_location": "L90",
+      "weight": 1.0,
+      "source": "assets_rest_api_template_http_exception_handler",
+      "target": "assets_rest_api_template_errorresponse",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "rest-api-design/assets/rest-api-template.py",
+      "source_location": "L105",
+      "weight": 1.0,
+      "source": "assets_rest_api_template_rationale_105",
+      "target": "assets_rest_api_template_list_users",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "rest-api-design/assets/rest-api-template.py",
+      "source_location": "L164",
+      "weight": 1.0,
+      "source": "assets_rest_api_template_update_user",
+      "target": "assets_rest_api_template_get_user",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "rest-api-design/assets/rest-api-template.py",
+      "source_location": "L177",
+      "weight": 1.0,
+      "source": "assets_rest_api_template_delete_user",
+      "target": "assets_rest_api_template_get_user",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "rest-api-design/assets/rest-api-template.py",
+      "source_location": "L162",
+      "weight": 1.0,
+      "source": "assets_rest_api_template_rationale_162",
+      "target": "assets_rest_api_template_update_user",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "systematic-debugging/condition-based-waiting-example.ts",
+      "source_location": "L20",
+      "weight": 1.0,
+      "source": "systematic_debugging_condition_based_waiting_example_ts",
+      "target": "systematic_debugging_condition_based_waiting_example_waitforevent",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "systematic-debugging/condition-based-waiting-example.ts",
+      "source_location": "L60",
+      "weight": 1.0,
+      "source": "systematic_debugging_condition_based_waiting_example_ts",
+      "target": "systematic_debugging_condition_based_waiting_example_waitforeventcount",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "systematic-debugging/condition-based-waiting-example.ts",
+      "source_location": "L111",
+      "weight": 1.0,
+      "source": "systematic_debugging_condition_based_waiting_example_ts",
+      "target": "systematic_debugging_condition_based_waiting_example_waitforeventmatch",
+      "confidence_score": 1.0
+    }
+  ],
+  "hyperedges": [],
+  "built_at_commit": "4961c5e3f5d808133a66533f0e17440e90fe3c36"
+}

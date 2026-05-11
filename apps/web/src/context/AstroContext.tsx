@@ -1,7 +1,7 @@
 "use client";
 
 import React, { createContext, useContext, useState, useEffect } from "react";
-import { CombinedChartResponse } from "../../types/astro";
+import { CombinedChartResponse } from "@/types/astro";
 
 interface AstroContextType {
   data: CombinedChartResponse | null;
