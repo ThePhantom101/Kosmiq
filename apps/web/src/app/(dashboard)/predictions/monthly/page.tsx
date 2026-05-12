@@ -22,7 +22,9 @@ import {
   AlertCircle
 } from "lucide-react";
 import Link from "next/link";
+import { IntelligenceCard } from "@/components/dashboard/IntelligenceCard";
 import { useAstro } from "@/context/AstroContext";
+import type { LucideIcon } from "lucide-react";
 import { 
   MonthlyForecastResponse 
 } from "@/types/astro";
@@ -102,7 +104,6 @@ function MonthlyForecastContent() {
       const data = await response.json();
       setForecast(data);
       
-      // After forecast loads, fetch narrative (only for present/past months)
       const isFutureMonth = parseISO(`${month}-01`) > startOfMonth(new Date());
       if (!isFutureMonth) {
         fetchNarrative(month, data);
@@ -118,10 +119,7 @@ function MonthlyForecastContent() {
   }, [id, natalData, fetchNarrative]);
 
   useEffect(() => {
-    const timer = setTimeout(() => {
-      fetchForecast(currentMonth);
-    }, 0);
-    return () => clearTimeout(timer);
+    fetchForecast(currentMonth);
   }, [currentMonth, fetchForecast]);
 
   const handleMonthChange = (direction: "prev" | "next" | "current") => {
@@ -154,14 +152,14 @@ function MonthlyForecastContent() {
           <h2 className="text-2xl font-serif text-gold uppercase tracking-tight">
             Fate Awaits Initialization
           </h2>
-          <p className="text-sm text-gray-500 leading-relaxed">
-            Monthly forecasts require your birth blueprint to calculate transit influences. Initialize your chart to unlock your cosmic roadmap.
+          <p className="text-sm text-gray-500 leading-relaxed uppercase tracking-widest font-bold opacity-50">
+            Monthly forecasts require your birth blueprint to calculate transit influences.
           </p>
         </div>
 
         <Link
           href="/new-chart"
-          className="px-8 py-3 bg-gold text-black text-[10px] font-bold uppercase tracking-[0.2em] hover:bg-white transition-all rounded-sm shadow-lg shadow-gold/10"
+          className="hud-button px-10 py-4 bg-gold text-black text-[10px] font-black uppercase tracking-[0.2em]"
         >
           Generate Your Chart
         </Link>
@@ -173,241 +171,270 @@ function MonthlyForecastContent() {
   const isFuture = parseISO(`${currentMonth}-01`) > startOfMonth(new Date());
 
   return (
-    <div className="max-w-7xl mx-auto space-y-12 pb-20">
-      {/* SECTION 1: MONTH HERO */}
-      <section className="relative overflow-hidden rounded-3xl border border-gold/10 bg-black/40 backdrop-blur-md p-8 md:p-12">
-        <div className="absolute top-0 right-0 p-4 opacity-10 pointer-events-none">
-          <Sparkles className="w-32 h-32 text-gold" />
-        </div>
-        
-        <div className="flex flex-col md:flex-row items-center gap-12">
-          {/* Progress Ring */}
-          <div className="relative w-48 h-48 shrink-0">
-            <svg className="w-full h-full transform -rotate-90">
-              <circle
-                cx="96"
-                cy="96"
-                r="88"
-                stroke="currentColor"
-                strokeWidth="8"
-                fill="transparent"
-                className="text-gold/5"
-              />
-              <motion.circle
-                cx="96"
-                cy="96"
-                r="88"
-                stroke="currentColor"
-                strokeWidth="8"
-                fill="transparent"
-                strokeDasharray={552.92}
-                initial={{ strokeDashoffset: 552.92 }}
-                animate={{ strokeDashoffset: 552.92 - (552.92 * (forecast?.overall_score || 0)) / 100 }}
-                transition={{ duration: 1.5, ease: "easeOut" }}
-                className="text-gold"
-                strokeLinecap="round"
-              />
-            </svg>
-            <div className="absolute inset-0 flex flex-col items-center justify-center">
-              <span className="text-5xl font-light text-gold leading-none">{forecast?.overall_score}</span>
-              <span className="text-[10px] uppercase tracking-[0.2em] text-gray-500 mt-1">Monthly Score</span>
-            </div>
+    <div className="max-w-6xl mx-auto space-y-24 pb-32 pt-8 px-4 sm:px-8">
+      {/* HEADER: CELESTIAL ALIGNMENT */}
+      <section className="relative flex flex-col lg:flex-row items-center gap-16 pb-16 border-b border-white/5">
+        <div className="relative w-64 h-64 shrink-0">
+          {/* Outer Ring */}
+          <div className="absolute inset-0 rounded-full border border-gold/10 scale-110" />
+          <div className="absolute inset-0 rounded-full border border-white/5 scale-125" />
+          
+          <svg className="w-full h-full transform -rotate-90">
+            <circle
+              cx="128"
+              cy="128"
+              r="120"
+              stroke="rgba(197, 160, 89, 0.05)"
+              strokeWidth="4"
+              fill="transparent"
+            />
+            <motion.circle
+              cx="128"
+              cy="128"
+              r="120"
+              stroke="var(--gold)"
+              strokeWidth="4"
+              fill="transparent"
+              strokeDasharray={2 * Math.PI * 120}
+              initial={{ strokeDashoffset: 2 * Math.PI * 120 }}
+              animate={{ strokeDashoffset: 2 * Math.PI * 120 * (1 - (forecast?.overall_score || 0) / 100) }}
+              transition={{ duration: 2, ease: "easeOut" }}
+              strokeLinecap="round"
+              className="drop-shadow-[0_0_10px_rgba(197,160,89,0.3)]"
+            />
+          </svg>
+          
+          <div className="absolute inset-0 flex flex-col items-center justify-center text-center">
+            <span className="text-sm font-mono text-zinc-500 uppercase tracking-widest mb-1">Resonance</span>
+            <span className="text-7xl font-serif text-gold leading-none">{forecast?.overall_score}</span>
+            <span className="text-[10px] uppercase tracking-[0.3em] text-zinc-600 mt-4 font-black">Score Index</span>
           </div>
-
-          <div className="flex-1 text-center md:text-left space-y-6">
-            <div className="space-y-1">
-              <h1 className="text-4xl md:text-6xl font-light tracking-tight text-white">{monthName}</h1>
-              <p className="text-gold/60 text-sm tracking-wide uppercase">
-                Personalized for {natalData?.chart.shodashvarga?.D1?.Lagna ? "You" : "User"} · Moon in {natalData?.chart.planets?.Moon?.nakshatra?.name || "Transit"}
-              </p>
-            </div>
-
-            <div className="flex flex-wrap justify-center md:justify-start gap-3">
-              {forecast?.themes.map((theme, i) => (
-                <span key={i} className="px-4 py-1.5 rounded-full border border-gold/20 bg-gold/5 text-gold text-xs font-medium tracking-wider uppercase">
-                  {theme}
-                </span>
-              ))}
-            </div>
-
-            <div className="p-4 rounded-xl border border-gold/10 bg-white/5 flex items-start gap-4">
-              <ShieldCheck className="w-5 h-5 text-gold shrink-0 mt-0.5" />
-              <div>
-                <p className="text-xs text-gray-400 uppercase tracking-widest font-bold mb-1">Dasha Context</p>
-                <p className="text-sm text-gray-200 leading-relaxed">{forecast?.dasha_context}</p>
+          
+          {/* Decorative Markers */}
+          {[0, 90, 180, 270].map(deg => (
+            <div key={deg} className="absolute inset-0 flex items-center justify-center pointer-events-none" style={{ transform: `rotate(${deg}deg)` }}>
+              <div className="w-full flex justify-between px-2">
+                 <div className="w-1 h-[1px] bg-gold/40" />
+                 <div className="w-1 h-[1px] bg-gold/40" />
               </div>
             </div>
+          ))}
+        </div>
+
+        <div className="flex-1 space-y-8 text-center lg:text-left">
+          <div className="space-y-4">
+            <div className="flex items-center justify-center lg:justify-start gap-3">
+               <span className="overline-label text-gold/60">{monthName} Roadmap</span>
+               <div className="h-[1px] w-12 bg-gold/20" />
+            </div>
+            <h1 className="text-6xl md:text-8xl font-serif text-white tracking-tighter uppercase leading-[0.9]">
+              The <span className="text-gold">Monthly</span> <br />Transmission
+            </h1>
+            <p className="text-zinc-500 max-w-xl text-xs font-bold leading-relaxed uppercase tracking-[0.2em] opacity-80">
+              Personalized cosmic velocity for your unique natal blueprint. <br /> 
+              Current Dasha: <span className="text-white">{forecast?.dasha_context}</span>
+            </p>
+          </div>
+
+          <div className="flex flex-wrap justify-center lg:justify-start gap-4">
+            {forecast?.themes.map((theme, i) => (
+              <div key={i} className="px-5 py-2 border border-white/10 bg-white/[0.02] text-zinc-400 text-[10px] font-black uppercase tracking-widest rounded-sm hover:border-gold/30 transition-colors">
+                {theme}
+              </div>
+            ))}
           </div>
         </div>
       </section>
 
-      {/* SECTION 2: LIFE DOMAIN SCORES */}
-      <section className="space-y-6">
-        <div className="flex items-end justify-between">
-          <h2 className="text-xl font-light tracking-widest uppercase text-gold">Life Domains</h2>
-          <span className="text-[10px] uppercase tracking-[0.2em] text-gray-500">How energy flows this month</span>
+      {/* DOMAIN DIAGNOSTICS */}
+      <section className="space-y-12">
+        <div className="flex flex-col md:flex-row md:items-end justify-between gap-6">
+           <div className="space-y-2">
+              <h2 className="text-2xl font-serif text-white uppercase tracking-tight">Domain Resonance</h2>
+              <p className="text-[10px] text-zinc-600 uppercase font-black tracking-widest">Energy distribution across life sectors</p>
+           </div>
+           <div className="flex gap-8">
+              <div className="flex items-center gap-2">
+                 <div className="w-2 h-2 rounded-full bg-gold" />
+                 <span className="text-[9px] font-black text-zinc-500 uppercase">Growth</span>
+              </div>
+              <div className="flex items-center gap-2">
+                 <div className="w-2 h-2 rounded-full bg-zinc-800" />
+                 <span className="text-[9px] font-black text-zinc-500 uppercase">Maintenance</span>
+              </div>
+           </div>
         </div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {forecast?.domain_scores.map((domain, i) => {
-            const Icon = domainIcons[domain.name] || Sparkles;
+            const Icon = (domainIcons[domain.name] || Sparkles) as LucideIcon;
             const isHigh = domain.score >= 70;
             const isLow = domain.score < 40;
             
             return (
-              <motion.div
+              <IntelligenceCard
                 key={domain.name}
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: i * 0.1 }}
-                className={`p-6 rounded-2xl border transition-all duration-300 ${
-                  isHigh ? "border-gold/30 bg-gold/5 shadow-[0_0_20px_rgba(201,168,76,0.05)]" : 
-                  isLow ? "border-red-900/30 bg-red-900/5" : 
-                  "border-white/10 bg-white/5"
-                }`}
+                title={domain.name}
+                subtitle="Sectoral Analysis"
+                status={isHigh ? "Opportunity" : isLow ? "Caution" : "Neutral"}
+                icon={Icon}
               >
-                <div className="flex items-start justify-between mb-6">
-                  <div className={`p-2.5 rounded-lg ${isHigh ? "bg-gold/10 text-gold" : "bg-white/5 text-gray-400"}`}>
-                    <Icon className="w-5 h-5" />
+                <div className="space-y-6">
+                  <div className="flex items-end justify-between">
+                     <div className="text-4xl font-serif text-white">{domain.score}</div>
+                     <div className="flex flex-col items-end">
+                        <div className="flex items-center gap-1.5 mb-1">
+                           {domain.trend === "up" && <ArrowUpRight className="w-3 h-3 text-gold" />}
+                           {domain.trend === "stable" && <ArrowRight className="w-3 h-3 text-zinc-500" />}
+                           {domain.trend === "down" && <ArrowDownRight className="w-3 h-3 text-red-500" />}
+                           <span className={`text-[8px] font-black uppercase tracking-widest ${
+                             domain.trend === "up" ? "text-gold" : 
+                             domain.trend === "stable" ? "text-zinc-500" : "text-red-500"
+                           }`}>
+                             {domain.trend}
+                           </span>
+                        </div>
+                        <span className="text-[8px] text-zinc-600 uppercase font-bold tracking-tighter">Current Momentum</span>
+                     </div>
                   </div>
-                  <div className="flex items-center gap-1.5">
-                    {domain.trend === "up" && <ArrowUpRight className="w-4 h-4 text-green-500" />}
-                    {domain.trend === "stable" && <ArrowRight className="w-4 h-4 text-gray-500" />}
-                    {domain.trend === "down" && <ArrowDownRight className="w-4 h-4 text-red-500" />}
-                    <span className={`text-xs uppercase tracking-tighter ${
-                      domain.trend === "up" ? "text-green-500" : 
-                      domain.trend === "stable" ? "text-gray-500" : "text-red-500"
-                    }`}>
-                      {domain.trend}
-                    </span>
-                  </div>
-                </div>
 
-                <div className="space-y-4">
-                  <div>
-                    <h3 className="text-sm font-medium text-white mb-2">{domain.name}</h3>
-                    <div className="h-1.5 w-full bg-white/5 rounded-full overflow-hidden">
-                      <motion.div
-                        initial={{ width: 0 }}
-                        animate={{ width: `${domain.score}%` }}
-                        transition={{ duration: 1, delay: 0.5 + i * 0.1 }}
-                        className={`h-full rounded-full ${isHigh ? "bg-gold" : isLow ? "bg-red-800" : "bg-gray-600"}`}
-                      />
-                    </div>
+                  <div className="h-0.5 w-full bg-white/5 overflow-hidden">
+                     <motion.div
+                       initial={{ width: 0 }}
+                       animate={{ width: `${domain.score}%` }}
+                       className={`h-full ${isHigh ? 'bg-gold' : isLow ? 'bg-red-900' : 'bg-white/40'}`}
+                     />
                   </div>
-                  <p className="text-xs text-gray-400 leading-relaxed line-clamp-2">
+
+                  <p className="text-xs text-zinc-400 leading-relaxed min-h-[3em]">
                     {domain.insight}
                   </p>
                 </div>
-              </motion.div>
+              </IntelligenceCard>
             );
           })}
         </div>
       </section>
 
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-        {/* SECTION 3: KEY DATES */}
-        <section className="space-y-6">
-          <div className="flex items-end justify-between">
-            <h2 className="text-xl font-light tracking-widest uppercase text-gold">Auspicious Windows</h2>
-            <Calendar className="w-5 h-5 text-gold/40" />
-          </div>
-          <div className="space-y-4">
-            {forecast?.key_dates.map((item, i) => (
-              <motion.div
-                key={i}
-                initial={{ opacity: 0, x: -20 }}
-                animate={{ opacity: 1, x: 0 }}
-                transition={{ delay: 0.4 + i * 0.1 }}
-                className="group flex gap-6 p-4 rounded-xl border border-white/5 bg-white/5 hover:bg-white/[0.08] transition-colors"
-              >
-                <div className="flex flex-col items-center justify-center min-w-[60px] border-r border-white/10 pr-4">
-                  <span className="text-lg font-light text-gold">{item.date.split("-")[2]}</span>
-                  <span className="text-[10px] uppercase text-gray-500">Day</span>
-                </div>
-                <div className="flex-1 space-y-1">
-                  <div className="flex items-center justify-between">
-                    <h4 className="text-sm font-medium text-white">{item.event}</h4>
-                    <span className={`text-[10px] uppercase font-bold px-2 py-0.5 rounded-full ${
-                      item.impact === "Favorable" ? "bg-green-500/10 text-green-500" :
-                      item.impact === "Neutral" ? "bg-gray-500/10 text-gray-500" :
-                      "bg-red-500/10 text-red-500"
-                    }`}>
-                      {item.impact}
-                    </span>
-                  </div>
-                  <p className="text-xs text-gray-400 leading-relaxed">{item.description}</p>
-                </div>
-              </motion.div>
-            ))}
-          </div>
-        </section>
+      {/* NARRATIVE & DATES */}
+      <div className="grid grid-cols-1 lg:grid-cols-5 gap-16">
+        
+        <div className="lg:col-span-3 space-y-8">
+           <div className="flex items-center gap-4">
+              <h2 className="text-2xl font-serif text-white uppercase tracking-tight">The Synthesis</h2>
+              <div className="h-[1px] flex-1 bg-white/5" />
+              <Sparkles className="w-5 h-5 text-gold/40" />
+           </div>
 
-        {/* SECTION 4: MONTHLY NARRATIVE */}
-        <section className="space-y-6">
-          <div className="flex items-end justify-between">
-            <h2 className="text-xl font-light tracking-widest uppercase text-gold">The Narrative</h2>
-            <Sparkles className="w-5 h-5 text-gold/40" />
-          </div>
-          <div className="relative min-h-[400px] p-8 rounded-3xl border border-gold/10 bg-white/5">
-            {narrativeLoading ? (
-              <div className="absolute inset-0 flex flex-col items-center justify-center gap-4">
-                <Loader2 className="w-6 h-6 text-gold animate-spin" />
-                <span className="text-[10px] uppercase tracking-[0.2em] text-gray-500">Synthesizing Insight...</span>
-              </div>
-            ) : (
-              <motion.div 
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                className="prose prose-invert prose-sm max-w-none"
-              >
-                {narrative?.split("\n\n").map((para, i) => (
-                  <p key={i} className="text-gray-300 leading-relaxed text-base font-light mb-6 last:mb-0">
-                    {para}
-                  </p>
-                ))}
-              </motion.div>
-            )}
-            
-            {isFuture && !narrativeLoading && (
-              <div className="mt-8 pt-6 border-t border-white/10 flex items-start gap-3">
-                <AlertCircle className="w-4 h-4 text-gold/60 shrink-0 mt-0.5" />
-                <p className="text-[10px] text-gray-500 uppercase tracking-wider leading-relaxed">
-                  Future forecasts focus on macro transit energy. Detailed personal AI narratives are finalized as the month approaches.
-                </p>
-              </div>
-            )}
-          </div>
-        </section>
+           <div className="hud-module p-12 bg-black/40 border border-white/5 relative overflow-hidden">
+              {/* Decorative Corner */}
+              <div className="absolute top-0 left-0 w-8 h-8 border-t border-l border-gold/20" />
+              
+              {narrativeLoading ? (
+                <div className="flex flex-col items-center justify-center py-20 gap-6">
+                  <div className="relative">
+                    <Loader2 className="w-8 h-8 text-gold animate-spin" />
+                    <div className="absolute inset-0 blur-xl bg-gold/20" />
+                  </div>
+                  <span className="text-[10px] uppercase tracking-[0.4em] text-gold/60 font-black animate-pulse">Encoding Cosmic Stream...</span>
+                </div>
+              ) : (
+                <motion.div 
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  className="space-y-8"
+                >
+                  {narrative?.split("\n\n").map((para, i) => (
+                    <p key={i} className="text-zinc-300 leading-relaxed text-lg font-light first-letter:text-4xl first-letter:font-serif first-letter:text-gold first-letter:mr-1 first-letter:float-left">
+                      {para}
+                    </p>
+                  ))}
+                  
+                  {isFuture && (
+                    <div className="pt-8 border-t border-white/5 flex items-start gap-4">
+                       <AlertCircle className="w-4 h-4 text-gold/40 mt-1" />
+                       <p className="text-[10px] text-zinc-500 uppercase font-bold tracking-widest leading-loose">
+                         Future-dated forecasts utilize macro-transit vectors. Final precision narratives are synthesized 48 hours prior to the month's commencement.
+                       </p>
+                    </div>
+                  )}
+                </motion.div>
+              )}
+           </div>
+        </div>
+
+        <div className="lg:col-span-2 space-y-8">
+           <div className="flex items-center gap-4">
+              <Calendar className="w-5 h-5 text-gold/40" />
+              <h2 className="text-2xl font-serif text-white uppercase tracking-tight">Auspicious Gates</h2>
+              <div className="h-[1px] flex-1 bg-white/5" />
+           </div>
+
+           <div className="space-y-4">
+             {forecast?.key_dates.map((item, i) => (
+               <motion.div
+                 key={i}
+                 initial={{ opacity: 0, x: 20 }}
+                 animate={{ opacity: 1, x: 0 }}
+                 transition={{ delay: 0.1 * i }}
+                 className="hud-module p-6 border border-white/5 bg-white/[0.01] group hover:border-gold/20 transition-all"
+               >
+                 <div className="flex gap-6 items-start">
+                    <div className="text-center min-w-[40px]">
+                       <span className="text-3xl font-serif text-gold block leading-none">{item.date.split("-")[2]}</span>
+                       <span className="text-[9px] text-zinc-600 font-black uppercase tracking-tighter">Day</span>
+                    </div>
+                    <div className="flex-1 space-y-2">
+                       <div className="flex items-center justify-between">
+                          <h4 className="text-sm font-bold text-white uppercase tracking-wider">{item.event}</h4>
+                          <span className={`text-[8px] font-black uppercase px-2 py-0.5 rounded-full border ${
+                            item.impact === "Favorable" ? "border-gold/30 bg-gold/5 text-gold" :
+                            item.impact === "Neutral" ? "border-zinc-800 bg-zinc-900 text-zinc-500" :
+                            "border-red-900/30 bg-red-950/10 text-red-500"
+                          }`}>
+                            {item.impact}
+                          </span>
+                       </div>
+                       <p className="text-xs text-zinc-500 leading-relaxed line-clamp-2 italic">
+                         {item.description}
+                       </p>
+                    </div>
+                 </div>
+               </motion.div>
+             ))}
+           </div>
+        </div>
       </div>
 
-      {/* SECTION 5: MONTH NAVIGATION */}
-      <section className="pt-12 border-t border-white/5 flex items-center justify-between">
+      {/* NAVIGATION: TEMPORAL SHIFT */}
+      <section className="pt-16 border-t border-white/5 flex flex-col sm:flex-row items-center justify-between gap-8">
         <button 
           onClick={() => handleMonthChange("prev")}
-          className="flex items-center gap-2 px-6 py-3 rounded-full border border-white/10 hover:border-gold/30 hover:bg-gold/5 transition-all group"
+          className="group flex items-center gap-4 px-8 py-4 border border-white/5 hover:border-gold/30 transition-all rounded-sm"
         >
-          <ChevronLeft className="w-4 h-4 text-gray-400 group-hover:text-gold" />
-          <span className="text-xs uppercase tracking-widest font-bold text-gray-500 group-hover:text-gold">Previous</span>
+          <ChevronLeft className="w-4 h-4 text-zinc-600 group-hover:text-gold transition-colors" />
+          <span className="text-[10px] font-black uppercase tracking-[0.3em] text-zinc-500 group-hover:text-white">Previous Orbit</span>
         </button>
 
         <button 
           onClick={() => handleMonthChange("current")}
-          className="px-8 py-3 rounded-full bg-gold text-black text-xs uppercase tracking-[0.2em] font-bold hover:scale-105 active:scale-95 transition-all"
+          className="hud-button bg-gold text-black px-12 py-4 text-[10px] font-black uppercase tracking-[0.4em]"
         >
-          Current Month
+          Reset To Current
         </button>
 
         <button 
           onClick={() => handleMonthChange("next")}
-          className="flex items-center gap-2 px-6 py-3 rounded-full border border-white/10 hover:border-gold/30 hover:bg-gold/5 transition-all group"
+          className="group flex items-center gap-4 px-8 py-4 border border-white/5 hover:border-gold/30 transition-all rounded-sm"
         >
-          <span className="text-xs uppercase tracking-widest font-bold text-gray-500 group-hover:text-gold">Next</span>
-          <ChevronRight className="w-4 h-4 text-gray-400 group-hover:text-gold" />
+          <span className="text-[10px] font-black uppercase tracking-[0.3em] text-zinc-500 group-hover:text-white">Next Orbit</span>
+          <ChevronRight className="w-4 h-4 text-zinc-600 group-hover:text-gold transition-colors" />
         </button>
       </section>
     </div>
   );
 }
+
 
 export default function MonthlyForecastPage() {
   return (

@@ -22,7 +22,7 @@ export default function ChartsPage() {
             <div className="h-px w-8 bg-gold/30" />
           </div>
           <h1 className="text-5xl font-serif text-white tracking-tight uppercase">
-            Your <span className="text-gold">Kundlis</span>
+            Your <span className="text-gold">Library</span>
           </h1>
         </div>
 
@@ -81,7 +81,7 @@ export default function ChartsPage() {
                   {data.chart.metadata.ayanamsa_name}
                 </span>
                 <span className="text-gold/60 group-hover:text-gold transition-colors flex items-center gap-1">
-                  View Kundli <ArrowRight className="w-3 h-3" />
+                  View Analysis <ArrowRight className="w-3 h-3" />
                 </span>
               </div>
             </Link>
@@ -114,7 +114,7 @@ export default function ChartsPage() {
           <div className="space-y-2">
             <h2 className="text-2xl font-serif text-white">No Charts Yet</h2>
             <p className="text-gray-500 max-w-sm mx-auto text-sm">
-              Generate your first Kundli by entering your birth details.
+              Generate your first birth chart by entering your details.
             </p>
           </div>
           <Link

@@ -86,77 +86,95 @@ export default function CompatibilityPage() {
   };
 
   return (
-    <div className="container max-w-5xl mx-auto py-8 px-4 space-y-12">
-      {/* Header */}
-      <div className="space-y-2 text-center">
-        <h1 className="text-4xl md:text-5xl font-bold bg-gradient-to-b from-[#C9A84C] to-[#8A6D2B] bg-clip-text text-transparent">
-          Compatibility (Gun Milan)
-        </h1>
-        <p className="text-zinc-400 max-w-2xl mx-auto">
-          Discover the cosmic alignment between two souls using the ancient Ashta Koota system of Vedic matching.
-        </p>
-      </div>
+    <div className="max-w-6xl mx-auto space-y-24 pb-32 pt-12 px-4 sm:px-8">
+      {/* HEADER: HARMONIC INTERSECTION */}
+      <section className="text-center space-y-8">
+        <div className="flex flex-col items-center space-y-4">
+           <div className="flex items-center gap-4">
+              <div className="h-[1px] w-12 bg-gold/20" />
+              <span className="overline-label text-gold/60 tracking-[0.4em]">Synastry Analysis</span>
+              <div className="h-[1px] w-12 bg-gold/20" />
+           </div>
+           <h1 className="text-6xl md:text-8xl font-serif text-white tracking-tighter uppercase leading-[0.8]">
+             Karmic <br /> <span className="text-gold">Intersection</span>
+           </h1>
+           <p className="text-zinc-500 max-w-2xl mx-auto text-xs font-bold leading-relaxed uppercase tracking-[0.2em] opacity-80 pt-4">
+             Synthesizing the Ashta Koota variables and Guna distribution to map the resonance between two unique natal signatures.
+           </p>
+        </div>
+      </section>
 
-      {/* SECTION 1: CHART PICKER */}
-      <div className="grid md:grid-cols-2 gap-6 items-start">
-        <ChartPicker
-          label="Person 1"
-          selectedChart={person1}
-          onSelect={setPerson1}
-          isMe={true}
-        />
-        <ChartPicker
-          label="Person 2"
-          selectedChart={person2}
-          onSelect={setPerson2}
-        />
-      </div>
+      {/* SECTION 1: CHART SELECTION */}
+      <section className="space-y-12">
+        <div className="grid md:grid-cols-2 gap-12 relative">
+           {/* Connection Line Decor */}
+           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 hidden md:block z-0">
+              <div className="w-24 h-[1px] bg-white/5 relative">
+                 <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-2 h-2 rotate-45 border border-gold/40 bg-black" />
+              </div>
+           </div>
 
-      <div className="flex justify-center">
-        <button
-          onClick={handleCalculate}
-          disabled={!person1 || !person2 || isLoading}
-          className="w-full md:w-96 h-16 text-xs uppercase tracking-[0.3em] font-black bg-gold hover:bg-gold/90 text-black rounded-sm shadow-[0_0_30px_rgba(197,160,89,0.3)] transition-all disabled:opacity-50 disabled:grayscale flex items-center justify-center"
-        >
-          {isLoading ? (
-            <Loader2 className="w-5 h-5 animate-spin mr-3" />
-          ) : (
-            <Sparkles className="w-5 h-5 mr-3" />
-          )}
-          Check Compatibility
-        </button>
-      </div>
+          <ChartPicker
+            label="Prime Subject"
+            selectedChart={person1}
+            onSelect={setPerson1}
+            isMe={true}
+          />
+          <ChartPicker
+            label="Secondary Subject"
+            selectedChart={person2}
+            onSelect={setPerson2}
+          />
+        </div>
+
+        <div className="flex justify-center pt-8">
+          <button
+            onClick={handleCalculate}
+            disabled={!person1 || !person2 || isLoading}
+            className="hud-button bg-gold text-black px-16 py-6 text-[10px] font-black uppercase tracking-[0.4em] disabled:opacity-30 flex items-center gap-4 group"
+          >
+            {isLoading ? (
+              <Loader2 className="w-4 h-4 animate-spin" />
+            ) : (
+              <Sparkles className="w-4 h-4 group-hover:rotate-12 transition-transform" />
+            )}
+            Initiate Synthesis
+          </button>
+        </div>
+      </section>
 
       <AnimatePresence>
         {result && (
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
+            initial={{ opacity: 0, y: 40 }}
             animate={{ opacity: 1, y: 0 }}
-            className="space-y-16 pt-8 border-t border-zinc-800"
+            className="space-y-32"
           >
-            {/* SECTION 2: OVERALL SCORE HERO */}
+            {/* OVERALL SCORE HERO */}
             <ScoreHero 
               score={result.total_score} 
-              names={[person1?.metadata.name || "Person 1", person2?.metadata.name || "Person 2"]} 
+              names={[person1?.metadata.name || "Subject A", person2?.metadata.name || "Subject B"]} 
             />
 
-            {/* SECTION 3: ASHTA KOOTA BREAKDOWN */}
+            {/* ASHTA KOOTA BREAKDOWN */}
             <KootaBreakdown scores={result.koota_scores} />
 
-            {/* SECTION 4: DOSHA ANALYSIS */}
+            {/* DOSHA ANALYSIS */}
             <DoshaAnalysis doshas={result.dosha_analysis} />
 
-            {/* SECTION 5: DETAILED NARRATIVE */}
+            {/* DETAILED NARRATIVE */}
             <DetailedNarrative narrative={narrative} isLoading={isNarrativeLoading} />
 
-            {/* SECTION 6: SAVE & SHARE */}
-            <SaveShare result={result} />
+            {/* SAVE & SHARE */}
+            <section className="flex justify-center pb-24">
+               <SaveShare result={result} />
+            </section>
           </motion.div>
         )}
       </AnimatePresence>
 
       {error && (
-        <div className="p-4 bg-red-950/30 border border-red-500/50 rounded-xl text-red-200 text-center">
+        <div className="p-8 hud-module bg-red-950/10 border border-red-500/20 text-red-500 text-center text-xs font-bold uppercase tracking-widest">
           {error}
         </div>
       )}

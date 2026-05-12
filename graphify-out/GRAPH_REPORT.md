@@ -1,16 +1,16 @@
 # Graph Report - kosmiq  (2026-05-12)
 
 ## Corpus Check
-- 134 files · ~56,765 words
+- 135 files · ~56,947 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 587 nodes · 888 edges · 117 communities (111 shown, 6 thin omitted)
+- 591 nodes · 893 edges · 119 communities (112 shown, 7 thin omitted)
 - Extraction: 73% EXTRACTED · 27% INFERRED · 0% AMBIGUOUS · INFERRED: 240 edges (avg confidence: 0.59)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `a813a93a`
+- Built from commit: `2b940025`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -40,11 +40,12 @@
 - [[_COMMUNITY_Monthly Predictions|Monthly Predictions]]
 - [[_COMMUNITY_Samhita Matches|Samhita Matches]]
 - [[_COMMUNITY_Relationship Compatibility|Relationship Compatibility]]
-- [[_COMMUNITY_Tests Package|Tests Package]]
+- [[_COMMUNITY_Transits View|Transits View]]
 - [[_COMMUNITY_TypeScript Env|TypeScript Env]]
 - [[_COMMUNITY_ESLint Config|ESLint Config]]
 - [[_COMMUNITY_Next.js Config|Next.js Config]]
 - [[_COMMUNITY_PostCSS Config|PostCSS Config]]
+- [[_COMMUNITY_Drizzle Config|Drizzle Config]]
 
 ## God Nodes (most connected - your core abstractions)
 1. `Biodata` - 45 edges
@@ -70,7 +71,7 @@
 - `save_life_event()` --calls--> `LifeEvent`  [INFERRED]
   apps/astro-engine/main.py → apps/astro-engine/engine/db.py
 
-## Communities (117 total, 6 thin omitted)
+## Communities (119 total, 7 thin omitted)
 
 ### Community 0 - "Predictions Area"
 Cohesion: 0.14
@@ -101,58 +102,54 @@ Cohesion: 0.13
 Nodes (8): calculateChart(), getTimezone(), searchLocation(), BirthForm(), AstroProvider(), DashboardLayout(), MarketingLayout(), PostHogProvider()
 
 ### Community 7 - "Astro Engine"
-Cohesion: 0.12
-Nodes (4): AstrolabePage(), useAstro(), LaboratoryPage(), SamhitaMatches()
+Cohesion: 0.14
+Nodes (10): ChatMessageBubble(), useChat(), addYears(), buildAntardashas(), getDashaSequenceFrom(), useDasha(), buildChartContext(), detectAlerts() (+2 more)
 
 ### Community 8 - "NavHUD Component"
+Cohesion: 0.14
+Nodes (4): AstrolabePage(), useAstro(), LaboratoryPage(), SamhitaMatches()
+
+### Community 9 - "Planetary Data UI"
 Cohesion: 0.16
 Nodes (12): get_chart(), get_varga(), get_varga_by_chart(), Calculate a specific divisional chart (Varga) for all planets., Calculate a specific divisional chart from a stored chart.      Resolves chart f, calculate_horoscope(), get_nakshatra(), get_varga_position() (+4 more)
 
-### Community 9 - "Planetary Data UI"
+### Community 10 - "Reading Display"
 Cohesion: 0.21
 Nodes (10): compatibility_narrative(), get_monthly_narrative(), format_compatibility_prompt(), format_monthly_narrative_prompt(), format_prompt(), gemini_node(), generate_compatibility_narrative(), generate_monthly_narrative_ai() (+2 more)
 
-### Community 10 - "Reading Display"
-Cohesion: 0.21
-Nodes (6): ChatMessageBubble(), useChat(), buildChartContext(), detectAlerts(), getTopPlanets(), longitudeToSign()
-
 ### Community 11 - "Background System"
-Cohesion: 0.22
-Nodes (5): addYears(), buildAntardashas(), getDashaSequenceFrom(), useDasha(), useYogas()
-
-### Community 12 - "Soul Signature UI"
 Cohesion: 0.2
 Nodes (4): ChartHeroBanner(), MetricCards(), MetricCardsSkeleton(), QuickLinks()
 
-### Community 13 - "Chart Generation API"
+### Community 12 - "Soul Signature UI"
 Cohesion: 0.22
 Nodes (9): compute_monthly_forecast_logic(), get_monthly_forecast(), get_monthly_forecast_post(), Core logic for generating monthly life domain scores and themes., Get transits for the entire month and score life domains (GET variant)., Get transits for the entire month and score life domains (GET variant)., Get transits for the entire month and score life domains (POST variant)., Get transits for the entire month and score life domains (POST variant). (+1 more)
 
-### Community 14 - "Auth Callback"
+### Community 13 - "Chart Generation API"
 Cohesion: 0.32
 Nodes (4): useChartStrengths(), deriveBestHouse(), derivePlanetMetrics(), normalizeScores()
 
-### Community 15 - "Marketing Layout"
+### Community 14 - "Auth Callback"
 Cohesion: 0.33
 Nodes (6): compute_yogas_logic(), get_yogas(), get_yogas_by_chart_id(), Core logic to detect and categorize yogas., Detect classical Vedic yoga combinations (POST variant)., Detect yogas from DB ID.
 
-### Community 16 - "Login Page"
+### Community 15 - "Marketing Layout"
 Cohesion: 0.33
 Nodes (6): compute_shadow_planets_logic(), get_shadow_planets(), get_shadow_planets_post(), Core logic to calculate shadow planets., Calculate shadow planets (POST variant)., Calculate Shadow Planets (Upagrahas) from DB ID.
 
-### Community 17 - "Dashboard View"
+### Community 16 - "Login Page"
 Cohesion: 0.33
 Nodes (6): compute_transits_logic(), get_current_transits(), get_transits_post(), Core logic for transit calculations., Calculate current transits from POSTed chart data., Get current transits relative to a natal chart.
 
-### Community 18 - "Calibration - Events"
+### Community 17 - "Dashboard View"
 Cohesion: 0.47
 Nodes (5): calculate_compatibility(), calculate_compatibility_logic(), calculate_koota(), check_mangal_dosha(), n1, n2: Nakshatra indices (1-27)     s1, s2: Sign indices (0-11)
 
-### Community 19 - "Calibration - Zodiac"
+### Community 18 - "Calibration - Events"
 Cohesion: 0.4
 Nodes (4): get_shadbala(), Calculate 6-component Shadbala for a stored chart., calculate_shadbala_for_chart(), Calculates 6 Shadbala components for Sun, Moon, Mars, Mercury, Jupiter, Venus, S
 
-### Community 20 - "Calibration - Biodata"
+### Community 19 - "Calibration - Zodiac"
 Cohesion: 0.6
 Nodes (3): handleKeyDown(), handleSubmit(), resetHeight()
 
@@ -165,23 +162,27 @@ Cohesion: 0.83
 Nodes (3): handleAddEvent(), removeEvent(), saveEvents()
 
 ### Community 24 - "Relationship Compatibility"
+Cohesion: 0.83
+Nodes (3): GET(), POST(), proxyRequest()
+
+### Community 25 - "Transits View"
 Cohesion: 0.67
 Nodes (3): generate_synthesis(), Runs the LangGraph AI synthesis workflow to generate a premium astrological read, Runs the LangGraph AI synthesis workflow to generate a premium astrological read
 
 ## Knowledge Gaps
 - **96 isolated node(s):** `Accepts the already-computed ChartResponse so the caller does not need     to re`, `Returns a map of planet names to their longitudes in the varga chart.`, `Runs the LangGraph AI synthesis workflow to generate a premium astrological read`, `Calculate Vimshottari Dasha from the Moon's natal nakshatra.      Accepts the fu`, `Core logic to detect and categorize yogas.` (+91 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **6 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **7 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `compute_yogas_logic()` connect `Marketing Layout` to `Predictions Area`, `Astro Engine Service`?**
-  _High betweenness centrality (0.068) - this node is a cross-community bridge._
-- **Why does `detect_all_yogas()` connect `Astro Engine Service` to `Marketing Layout`?**
-  _High betweenness centrality (0.066) - this node is a cross-community bridge._
-- **Why does `get_flags()` connect `Celestial Calculations` to `Predictions Area`?**
+- **Why does `compute_yogas_logic()` connect `Auth Callback` to `Predictions Area`, `Astro Engine Service`?**
+  _High betweenness centrality (0.067) - this node is a cross-community bridge._
+- **Why does `detect_all_yogas()` connect `Astro Engine Service` to `Auth Callback`?**
   _High betweenness centrality (0.065) - this node is a cross-community bridge._
+- **Why does `get_flags()` connect `Celestial Calculations` to `Predictions Area`?**
+  _High betweenness centrality (0.064) - this node is a cross-community bridge._
 - **Are the 43 inferred relationships involving `Biodata` (e.g. with `ShadowPlanet` and `ShadowPlanetsResponse`) actually correct?**
   _`Biodata` has 43 INFERRED edges - model-reasoned connections that need verification._
 - **Are the 43 inferred relationships involving `LifeEvent` (e.g. with `ShadowPlanet` and `ShadowPlanetsResponse`) actually correct?**

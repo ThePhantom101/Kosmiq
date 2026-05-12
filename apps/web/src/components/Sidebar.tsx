@@ -51,44 +51,44 @@ const PLACEHOLDER_CHART_ID = "me";
 
 const mainItems: NavItem[] = [
   { name: "Dashboard", icon: LayoutDashboard, href: "/dashboard" },
-  { name: "My Charts", icon: BookOpen, href: "/charts" },
+  { name: "My Library", icon: BookOpen, href: "/charts" },
+  { name: "Ask AI", icon: Sparkles, href: "/ask" },
 ];
 
-const kundaliItems: NavItem[] = [
-  { name: "Overview", icon: LayoutDashboard, href: `/chart/${PLACEHOLDER_CHART_ID}` },
-  { name: "Divisional Charts (Shodashvarga)", icon: Grid3x3, href: `/chart/${PLACEHOLDER_CHART_ID}/divisional` },
-  { name: "Dasha Timeline (Vimshottari)", icon: GitBranch, href: `/chart/${PLACEHOLDER_CHART_ID}/timeline` },
-  { name: "Strengths (Shadbala + AV)", icon: BarChart3, href: `/chart/${PLACEHOLDER_CHART_ID}/strengths` },
-  { name: "Shadow Planets (Upagrahas)", icon: Moon, href: `/chart/${PLACEHOLDER_CHART_ID}/shadows` },
-  { name: "Yogas", icon: Zap, href: `/chart/${PLACEHOLDER_CHART_ID}/yogas` },
+const activeChartItems: NavItem[] = [
+  { name: "Chart Overview", icon: LayoutDashboard, href: `/chart/${PLACEHOLDER_CHART_ID}` },
+  { name: "16 Divisional Charts", icon: Grid3x3, href: `/chart/${PLACEHOLDER_CHART_ID}/divisional` },
+  { name: "Vimshottari Dasha", icon: GitBranch, href: `/chart/${PLACEHOLDER_CHART_ID}/timeline` },
+  { name: "Shadbala Energy", icon: Zap, href: `/chart/${PLACEHOLDER_CHART_ID}/strengths` },
+  { name: "Ashtakvarga Strength", icon: BarChart3, href: `/chart/${PLACEHOLDER_CHART_ID}/ashtakvarga` },
+  { name: "Shadow Planets", icon: Moon, href: `/chart/${PLACEHOLDER_CHART_ID}/shadows` },
 ];
 
 const predictionItems: NavItem[] = [
-  { name: "Monthly Forecast", icon: CalendarDays, href: "/predictions/monthly" },
-  { name: "Historical Matches", icon: History, href: "/predictions/samhita" },
-  { name: "Personalities Archive", icon: Users, href: "/tools/personalities" },
-  { name: "Compatibility (Gun Milan)", icon: HeartPulse, href: "/compatibility" },
+  { name: "Monthly Predictions", icon: CalendarDays, href: "/predictions/monthly" },
+  { name: "Relationship Matching", icon: HeartPulse, href: "/compatibility" },
+  { name: "Historical Comparisons", icon: History, href: "/predictions/samhita" },
 ];
 
 const skyItems: NavItem[] = [
   { name: "Current Transits", icon: Globe, href: "/sky/transits" },
-  { name: "Panchang", icon: Sun, href: "/sky/panchang" },
-  { name: "Auspicious Times", icon: Clock, href: "/sky/muhurta" },
-  { name: "Learning Center", icon: BookOpen, href: "/tools/learning" },
+  { name: "Daily Almanac", icon: Sun, href: "/sky/panchang" },
+  { name: "Auspicious Windows", icon: Clock, href: "/sky/muhurta" },
 ];
 
 const refineItems: NavItem[] = [
-  { name: "Chart Rectification", icon: Crosshair, href: "/tools/rectification" },
-  { name: "Important Dates", icon: CalendarCheck, href: "/tools/calibration/events" },
-  { name: "Zodiac Check", icon: CircleDot, href: "/tools/calibration/zodiac" },
-  { name: "Personal Details", icon: User, href: "/tools/calibration/biodata" },
+  { name: "Time Correction", icon: Crosshair, href: "/tools/rectification" },
+  { name: "Event Sync", icon: CalendarCheck, href: "/tools/calibration/events" },
+  { name: "Identity Check", icon: CircleDot, href: "/tools/calibration/zodiac" },
+  { name: "Profile Settings", icon: User, href: "/tools/calibration/biodata" },
 ];
 
 const sections: NavSection[] = [
-  { title: "Your Kundali", items: kundaliItems },
+  { title: "Main", items: mainItems },
+  { title: "Active Chart", items: activeChartItems },
   { title: "Predictions", items: predictionItems },
   { title: "Today's Sky", items: skyItems },
-  { title: "Refine Your Chart", items: refineItems, isLockedForGuest: true },
+  { title: "Refine", items: refineItems, isLockedForGuest: true },
 ];
 
 function NavLink({
@@ -158,9 +158,9 @@ function CollapsibleSection({
   hasChart: boolean;
   isGuest: boolean;
 }) {
-  const isKundali = section.title === "Your Kundali";
+  const isActiveChart = section.title === "Active Chart";
   const hasActiveChild = section.items.some((i) => pathname.startsWith(i.href));
-  const [open, setOpen] = useState(hasActiveChild || !isKundali);
+  const [open, setOpen] = useState(hasActiveChild || section.title === "Main");
 
   return (
     <div className="space-y-0.5">
@@ -187,13 +187,13 @@ function CollapsibleSection({
             transition={{ duration: 0.2 }}
             className="overflow-hidden space-y-0.5"
           >
-            {isKundali && !hasChart ? (
+            {isActiveChart && !hasChart ? (
               <div className="px-3 py-2">
                 <p className="text-[9px] text-zinc-600 uppercase tracking-widest leading-relaxed">
-                  Generate a chart to unlock Kundali views
+                  Generate a chart to unlock analysis
                 </p>
                 <Link
-                  href="/new-chart"
+                  href="/charts"
                   className="mt-2 inline-flex text-[9px] uppercase tracking-widest text-gold/60 hover:text-gold transition-colors"
                 >
                   + New Chart →
@@ -223,7 +223,6 @@ export function Sidebar() {
   const { isAuthenticated, loading: authLoading } = useSession();
   const { data } = useAstro();
   const hasChart = data !== null;
-  const [lang, setLang] = useState<"EN" | "HI">("EN");
   const [mounted, setMounted] = useState(false);
 
   React.useEffect(() => {
@@ -258,20 +257,6 @@ export function Sidebar() {
 
       {/* Scrollable Nav */}
       <nav className="flex-grow px-3 pb-4 space-y-1 overflow-y-auto scrollbar-none">
-        {/* Main items */}
-        {mainItems.map((item) => (
-          <NavLink
-            key={item.href}
-            item={item}
-            isActive={pathname === item.href}
-            isLocked={!isAuthenticated && item.name === "My Charts"}
-          />
-        ))}
-
-        <div className="py-2">
-          <div className="h-px bg-gold/10" />
-        </div>
-
         {/* Grouped sections */}
         {sections.map((section) => (
           <CollapsibleSection
@@ -282,35 +267,10 @@ export function Sidebar() {
             isGuest={!isAuthenticated}
           />
         ))}
-
-        <div className="py-2">
-          <div className="h-px bg-gold/10" />
-        </div>
-
-        {/* Ask AI */}
-        <NavLink
-          item={{ name: "Ask (Raj Jyotishi)", icon: Sparkles, href: "/ask" }}
-          isActive={pathname === "/ask"}
-        />
       </nav>
 
       {/* Footer */}
       <div className="shrink-0 p-3 border-t border-gold/10 space-y-2">
-        {/* Language Toggle */}
-        <div className="flex items-center justify-between px-3 py-1 bg-white/5 rounded-full border border-white/5">
-           <button 
-             onClick={() => setLang("EN")}
-             className={`flex-1 text-[8px] font-black uppercase tracking-widest py-1.5 rounded-full transition-all ${lang === "EN" ? "bg-gold text-black shadow-lg" : "text-zinc-500 hover:text-zinc-300"}`}
-           >
-             {mounted ? "English" : "EN"}
-           </button>
-           <button 
-             onClick={() => setLang("HI")}
-             className={`flex-1 text-[8px] font-black uppercase tracking-widest py-1.5 rounded-full transition-all ${lang === "HI" ? "bg-gold text-black shadow-lg" : "text-zinc-500 hover:text-zinc-300"}`}
-           >
-             {mounted ? "हिन्दी" : "HI"}
-           </button>
-        </div>
 
         <div className="space-y-1">
           <NavLink

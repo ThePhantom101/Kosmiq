@@ -8,54 +8,54 @@ interface DoshaAnalysisProps {
   doshas: DoshaAnalysisItem[];
 }
 
+import { IntelligenceCard } from "@/components/dashboard/IntelligenceCard";
+
 export function DoshaAnalysis({ doshas }: DoshaAnalysisProps) {
   return (
-    <div className="space-y-8">
-      <div className="border-b border-gold/10 pb-6">
-        <span className="overline-label">Dosha Analysis</span>
-        <h3 className="text-3xl font-serif text-white uppercase tracking-tight mt-2">Karmic Barriers</h3>
+    <div className="space-y-12">
+      <div className="flex items-center gap-4 border-b border-white/5 pb-8">
+        <div className="space-y-2">
+          <div className="flex items-center gap-3">
+             <ShieldAlert className="w-4 h-4 text-gold/60" />
+             <span className="overline-label text-gold/60">Karmic Assessment</span>
+          </div>
+          <h3 className="text-4xl font-serif text-white uppercase tracking-tight">Karmic Obstacles</h3>
+        </div>
       </div>
 
-      <div className="grid md:grid-cols-2 gap-6">
+      <div className="grid md:grid-cols-2 gap-8">
         {doshas.map((d) => {
           const isWarning = d.status === "Present";
           const isSafe = d.status === "Absent" || d.status === "Cancelled";
           
           return (
-            <div 
+            <IntelligenceCard
               key={d.name}
-              className={`p-6 hud-module flex flex-col justify-between transition-all group hover:border-gold/30 ${
-                isWarning ? "border-red-900/30 bg-red-950/5 shadow-[inset_0_0_20px_rgba(239,68,68,0.05)]" : "border-gold/10"
-              }`}
+              title={d.name}
+              subtitle={`Impacts: ${d.affects}`}
+              status={isWarning ? "Caution" : isSafe ? "Opportunity" : "Neutral"}
+              icon={isWarning ? ShieldAlert : ShieldCheck}
             >
-              <div className="flex items-start justify-between mb-6">
-                <div className="space-y-1">
-                  <h4 className="font-serif text-xl text-white group-hover:text-gold transition-colors uppercase tracking-tight">
-                    {d.name}
-                  </h4>
-                  <p className="text-[9px] text-gray-600 uppercase tracking-[0.2em] font-black">
-                    Domain: {d.affects}
-                  </p>
+              <div className="space-y-6">
+                <div className="flex items-center justify-between">
+                   <div className={`px-3 py-1 rounded-sm text-[9px] font-black uppercase tracking-widest border ${
+                     isWarning ? "border-red-900/30 bg-red-950/10 text-red-500" : 
+                     d.status === 'Cancelled' ? "border-gold/30 bg-gold/5 text-gold" :
+                     "border-zinc-800 bg-zinc-900 text-zinc-500"
+                   }`}>
+                     {d.status} Status
+                   </div>
+                   <div className="text-[10px] text-zinc-600 font-mono uppercase tracking-tighter">Diagnostic Ref: {d.name.slice(0, 3)}</div>
                 </div>
-                {isSafe ? (
-                  <ShieldCheck className="w-6 h-6 text-emerald-500/50 group-hover:text-emerald-500 transition-colors" />
-                ) : (
-                  <ShieldAlert className="w-6 h-6 text-red-500/50 group-hover:text-red-500 transition-colors" />
-                )}
-              </div>
 
-              <div className="space-y-4">
-                <div className={`inline-flex px-2 py-0.5 rounded-sm text-[9px] font-black uppercase tracking-widest ${
-                  isWarning ? "bg-red-500/10 text-red-400 border border-red-500/20" : "bg-emerald-500/10 text-emerald-400 border border-emerald-500/20"
-                }`}>
-                  {d.status}
-                </div>
-                <div className="flex gap-3 text-[11px] text-gray-500 leading-relaxed italic border-t border-gold/5 pt-4">
-                  <Info className="w-3.5 h-3.5 mt-0.5 shrink-0 text-gray-700" />
-                  <span>{d.reason}</span>
+                <div className="flex gap-4 p-4 bg-white/[0.02] border border-white/5 rounded-sm">
+                   <Info className="w-4 h-4 text-zinc-700 shrink-0 mt-0.5" />
+                   <p className="text-xs text-zinc-400 leading-relaxed italic">
+                     {d.reason}
+                   </p>
                 </div>
               </div>
-            </div>
+            </IntelligenceCard>
           );
         })}
       </div>

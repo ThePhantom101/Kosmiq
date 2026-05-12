@@ -76,16 +76,16 @@
     "hash": "cfbd9283f5a9a63b9e8b0f42f1340794"
   },
   "/home/shan/projects/kosmiq/apps/web/next-env.d.ts": {
-    "mtime": 1778491020.6128607,
-    "hash": "2a74d3909800ca5467fa83b0ab4a4890"
+    "mtime": 1778580594.8248508,
+    "hash": "d0f8375ae1199dc7acd3977fc33b78b8"
   },
   "/home/shan/projects/kosmiq/apps/web/eslint.config.mjs": {
     "mtime": 1777826125.452262,
     "hash": "dfa1f5f6a7037bf39dc510f30b180002"
   },
   "/home/shan/projects/kosmiq/apps/web/next.config.ts": {
-    "mtime": 1778579383.7959707,
-    "hash": "62bb31fcfc288cfdd62ed5b2092c8ef2"
+    "mtime": 1778581372.9459531,
+    "hash": "fd8354dfb78d3ddd965ab7506dd8f89d"
   },
   "/home/shan/projects/kosmiq/apps/web/postcss.config.mjs": {
     "mtime": 1777826125.452262,
@@ -316,8 +316,8 @@
     "hash": "ec017d93baea03900cd1e6c4ef5db1c4"
   },
   "/home/shan/projects/kosmiq/apps/web/src/providers/posthog-provider.tsx": {
-    "mtime": 1778579810.1238601,
-    "hash": "b9d4bdd52c3af5b625f3a2c7ba149093"
+    "mtime": 1778582173.21396,
+    "hash": "6b22678beee2645ea17a82d9afcdaa3d"
   },
   "/home/shan/projects/kosmiq/apps/web/src/app/layout.tsx": {
     "mtime": 1778579431.0358574,
@@ -402,6 +402,10 @@
   "/home/shan/projects/kosmiq/apps/web/src/app/auth/callback/route.ts": {
     "mtime": 1777874137.7658112,
     "hash": "03cc8b95524517300bd649caabfd5a2d"
+  },
+  "/home/shan/projects/kosmiq/apps/web/src/app/ingest/[...path]/route.ts": {
+    "mtime": 1778582163.4801717,
+    "hash": "5b82466636b00a507bac53f30354bc5a"
   },
   "/home/shan/projects/kosmiq/apps/web/src/app/(dashboard)/layout.tsx": {
     "mtime": 1777874094.1537926,

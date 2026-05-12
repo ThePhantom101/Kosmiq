@@ -6,7 +6,8 @@ import { ShodashvargaChart } from "@/types/astro";
 
 interface NorthIndianChartProps {
   data: ShodashvargaChart;
-  title: string;
+  title?: string;
+  hideTitle?: boolean;
   retrogradePlanets?: string[]; // New optional prop
 }
 
@@ -23,7 +24,12 @@ const PLANET_GLYPHS: Record<string, string> = {
   Lagna: "As",
 };
 
-export default function NorthIndianChart({ data, title, retrogradePlanets = [] }: NorthIndianChartProps) {
+export default function NorthIndianChart({ 
+  data, 
+  title, 
+  hideTitle = false, 
+  retrogradePlanets = [] 
+}: NorthIndianChartProps) {
   // 1. Determine Lagna Sign (1-12)
   const lagnaSign = Math.floor(data.Lagna / 30) + 1;
 
@@ -74,7 +80,7 @@ export default function NorthIndianChart({ data, title, retrogradePlanets = [] }
 
   return (
     <div className="flex flex-col items-center space-y-4 w-full">
-      {title && (
+      {title && !hideTitle && (
         <h3 className="font-mono text-[10px] uppercase tracking-[0.3em] text-gold/60 font-bold">
           {title}
         </h3>

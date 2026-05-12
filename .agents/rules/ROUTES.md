@@ -11,54 +11,62 @@
 
 ---
 
+# KOSMIQ — Master Route Contract
+
+## Agent Rules
+
+- Never create a route not listed here.
+- Never rename a component without updating this file.
+- All sidebar nav labels must match exactly the "Kosmiq Label" column below.
+- Active chart ID uses placeholder `"me"` (localStorage) until Supabase `charts` table is implemented.
+
+---
+
 ## Route Map
 
 ### 🏠 Main
 | Kosmiq Route | Kosmiq Label | Component | Priority |
 |---|---|---|---|
 | /dashboard | Dashboard | Dashboard.tsx | P0 |
-| /charts | My Charts | ChartsList.tsx | P0 |
-| /ask | Ask (Raj Jyotishi) | AskAI.tsx | P0 |
+| /charts | My Library | ChartsList.tsx | P0 |
+| /ask | Ask AI | AskAI.tsx | P0 |
 
-### 📊 Your Kundali (scoped to active chart — `/kundli/:id`)
+### 📊 Active Chart (scoped to `/chart/:id`)
 | Kosmiq Route | Kosmiq Label | Component | Priority |
 |---|---|---|---|
-| /chart/:id/divisional | Divisional Charts (Shodashvarga) | ShodashVarga.tsx | P0 |
-| /chart/:id/timeline | Dasha Timeline (Vimshottari) | DashaTimeline.tsx | P0 |
-| /chart/:id/strengths | Strengths (Shadbala + AV) | StrengthsPage.tsx | P1 |
-| /kundli/:id/upagrahas | Shadow Planets (Upagrahas) | Upagrahas.tsx | P1 |
+| /chart/:id | Chart Overview | ChartOverview.tsx | P0 |
+| /chart/:id/divisional | 16 Divisional Charts | ShodashVarga.tsx | P0 |
+| /chart/:id/timeline | Vimshottari Dasha | DashaTimeline.tsx | P0 |
+| /chart/:id/strengths | Shadbala Energy | StrengthsPage.tsx | P1 |
+| /chart/:id/ashtakvarga | Ashtakvarga Strength | Ashtakvarga.tsx | P1 |
+| /chart/:id/shadows | Shadow Planets | Upagrahas.tsx | P1 |
 
 ### 🔮 Predictions
 | Kosmiq Route | Kosmiq Label | Component | Priority |
 |---|---|---|---|
-| /predictions/monthly | Monthly Forecast | MonthlyForecast.tsx | P1 |
-| /predictions/samhita | Historical Matches (Samhita) | Samhita.tsx | P2 |
-| /compatibility | Compatibility (Gun Milan) | GunMilan.tsx | P1 |
+| /predictions/monthly | Monthly Predictions | MonthlyForecast.tsx | P1 |
+| /compatibility | Relationship Matching | GunMilan.tsx | P1 |
+| /predictions/samhita | Historical Comparisons | Samhita.tsx | P2 |
 
-### 🌤️ Today's Sky (global — no chart context needed)
+### 🌤️ Today's Sky
 | Kosmiq Route | Kosmiq Label | Component | Priority |
 |---|---|---|---|
-| /sky/transits | Current Transits (Gochar) | Transits.tsx | P1 |
-| /sky/panchang | Panchang | Panchang.tsx | P1 |
-| /sky/muhurta | Auspicious Times (Muhurta) | Muhurta.tsx | P2 |
+| /sky/transits | Current Transits | Transits.tsx | P1 |
+| /sky/panchang | Daily Almanac | Panchang.tsx | P1 |
+| /sky/muhurta | Auspicious Windows | Muhurta.tsx | P2 |
 
-### 🔧 Refine Your Chart
+### 🔧 Refine
 | Kosmiq Route | Kosmiq Label | Component | Priority |
 |---|---|---|---|
-| /tools/rectification | Chart Rectification | Rectification.tsx | P2 |
-| /tools/calibration/events | Important Dates | ImportantDates.tsx | P2 |
-| /tools/calibration/zodiac | Zodiac Check | ZodiacCheck.tsx | P2 |
-| /tools/calibration/biodata | Personal Details | PersonalDetails.tsx | P1 |
+| /tools/rectification | Time Correction | Rectification.tsx | P2 |
+| /tools/calibration/events | Event Sync | ImportantDates.tsx | P2 |
+| /tools/calibration/zodiac | Identity Check | ZodiacCheck.tsx | P2 |
+| /tools/calibration/biodata | Profile Settings | PersonalDetails.tsx | P1 |
 
 ### ⚙️ Settings
 | Kosmiq Route | Kosmiq Label | Component | Priority |
 |---|---|---|---|
 | /settings/account | Account | Account.tsx | P0 |
-
-### 🔗 Social / Public
-| Kosmiq Route | Kosmiq Label | Component | Priority |
-|---|---|---|---|
-| /share/:id | Public Chart Card | ShareCard.tsx | P1 |
 
 ---
 
@@ -66,32 +74,35 @@
 
 ```
 KOSMIQ
-├── Dashboard                         /dashboard
-├── My Charts                         /charts
+├── MAIN
+│   ├── Dashboard                         /dashboard
+│   ├── My Library                        /charts
+│   └── Ask AI                            /ask
 │
-├── YOUR KUNDALI
-│   ├── Divisional Charts (Shodashvarga)   /chart/:id/divisional
-│   ├── Dasha Timeline (Vimshottari)  /chart/:id/timeline
-│   ├── Strengths (Shadbala + AV)      /chart/:id/strengths
-│   └── Shadow Planets (Upagrahas)   /kundli/:id/upagrahas
+├── ACTIVE CHART (Conditional)
+│   ├── Chart Overview                    /chart/:id
+│   ├── 16 Divisional Charts              /chart/:id/divisional
+│   ├── Vimshottari Dasha                 /chart/:id/timeline
+│   ├── Shadbala Energy                   /chart/:id/strengths
+│   ├── Ashtakvarga Strength              /chart/:id/ashtakvarga
+│   └── Shadow Planets                    /chart/:id/shadows
 │
 ├── PREDICTIONS
-│   ├── Monthly Forecast              /predictions/monthly
-│   ├── Historical Matches (Samhita)  /predictions/samhita
-│   └── Compatibility (Gun Milan)     /compatibility
+│   ├── Monthly Predictions               /predictions/monthly
+│   ├── Relationship Matching             /compatibility
+│   └── Historical Comparisons            /predictions/samhita
 │
 ├── TODAY'S SKY
-│   ├── Current Transits (Gochar)     /sky/transits
-│   ├── Panchang                      /sky/panchang
-│   └── Auspicious Times (Muhurta)   /sky/muhurta
+│   ├── Current Transits                  /sky/transits
+│   ├── Daily Almanac                     /sky/panchang
+│   └── Auspicious Windows                /sky/muhurta
 │
-├── REFINE YOUR CHART
-│   ├── Chart Rectification           /tools/rectification
-│   ├── Important Dates               /tools/calibration/events
-│   ├── Zodiac Check                  /tools/calibration/zodiac
-│   └── Personal Details             /tools/calibration/biodata
+├── REFINE
+│   ├── Time Correction                   /tools/rectification
+│   ├── Event Sync                        /tools/calibration/events
+│   ├── Identity Check                    /tools/calibration/zodiac
+│   └── Profile Settings                  /tools/calibration/biodata
 │
-├── Ask (Raj Jyotishi)               /ask
-│
-└── Account                          /settings/account
+└── Account                               /settings/account
 ```
+
