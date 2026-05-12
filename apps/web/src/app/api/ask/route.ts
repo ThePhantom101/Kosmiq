@@ -3,7 +3,7 @@ import { buildSystemPrompt } from "@/utils/gemini-prompt";
 import type { AskRequest, ChatMessage } from "@/types/ask";
 
 const GEMINI_API_KEY = process.env.GEMINI_API_KEY;
-const GEMINI_MODEL = "gemini-2.5-flash";
+const GEMINI_MODEL = "gemini-1.5-flash";
 const MAX_HISTORY = 10;
 
 interface GeminiContent {

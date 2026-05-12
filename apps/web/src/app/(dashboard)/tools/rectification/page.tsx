@@ -16,6 +16,7 @@ import {
   Timer
 } from "lucide-react";
 import { useAstro } from "@/context/AstroContext";
+import { AuthGate } from "@/components/auth/AuthGate";
 
 const STEPS = ["Time Range", "Life Events", "Method", "Results"];
 
@@ -72,7 +73,8 @@ export default function RectificationPage() {
   };
 
   return (
-    <div className="space-y-8 pb-20">
+    <AuthGate mode="redirect">
+      <div className="space-y-8 pb-20">
       <div className="flex flex-col space-y-2">
         <span className="overline-label text-gold/60">Advanced Tool</span>
         <div className="flex items-baseline space-x-4">
@@ -316,5 +318,6 @@ export default function RectificationPage() {
         )}
       </div>
     </div>
+    </AuthGate>
   );
 }

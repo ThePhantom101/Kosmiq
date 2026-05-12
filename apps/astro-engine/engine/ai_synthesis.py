@@ -107,13 +107,23 @@ def generate_monthly_narrative_ai(month: str, transit_summary: str, current_dash
         client = genai.Client(api_key=api_key)
         prompt = format_monthly_narrative_prompt(month, transit_summary, current_dasha)
         
-        response = client.models.generate_content(
-            model="gemini-1.5-flash", 
-            contents=prompt
-        )
-        return response.text
-    except Exception as e:
-        print(f"Gemini Error: {e}")
+        # Use a list of models to try in case one is not available
+        models_to_try = ["gemini-1.5-flash", "gemini-1.5-pro"]
+        last_error = None
+        
+        for model_name in models_to_try:
+            try:
+                response = client.models.generate_content(
+                    model=model_name, 
+                    contents=prompt
+                )
+                return response.text
+            except Exception as e:
+                last_error = e
+                if "404" not in str(e):
+                    break
+        
+        print(f"Gemini Error: {last_error}")
         return "The celestial currents are turbulent. Please try again later."
 
 def gemini_node(state: GraphState):
@@ -124,14 +134,24 @@ def gemini_node(state: GraphState):
     client = genai.Client(api_key=api_key)
     prompt = format_prompt(state["chart_data"])
     
-    try:
-        response = client.models.generate_content(
-            model="gemini-1.5-flash",
-            contents=prompt
-        )
-        return {"reading": response.text}
-    except Exception as e:
-        return {"reading": f"Error during AI synthesis: {str(e)}"}
+    # Use a list of models to try in case one is not available
+    models_to_try = ["gemini-1.5-flash", "gemini-1.5-pro"]
+    last_error = None
+    
+    for model_name in models_to_try:
+        try:
+            response = client.models.generate_content(
+                model=model_name,
+                contents=prompt
+            )
+            return {"reading": response.text}
+        except Exception as e:
+            last_error = e
+            if "404" not in str(e):
+                # If it's not a 404, it might be an auth or quota issue, so don't bother trying other models
+                break
+    
+    return {"reading": f"Error during AI synthesis: {str(last_error)}"}
 
 def create_workflow():
     workflow = StateGraph(GraphState)
@@ -180,13 +200,23 @@ def generate_compatibility_narrative(c1_sum: str, c2_sum: str, koota: List[Dict[
         client = genai.Client(api_key=api_key)
         prompt = format_compatibility_prompt(c1_sum, c2_sum, koota, dosha)
         
-        response = client.models.generate_content(
-            model="gemini-1.5-flash",
-            contents=prompt
-        )
-        return response.text
-    except Exception as e:
-        print(f"Gemini Compatibility Error: {e}")
+        # Use a list of models to try in case one is not available
+        models_to_try = ["gemini-1.5-flash", "gemini-1.5-pro"]
+        last_error = None
+        
+        for model_name in models_to_try:
+            try:
+                response = client.models.generate_content(
+                    model=model_name,
+                    contents=prompt
+                )
+                return response.text
+            except Exception as e:
+                last_error = e
+                if "404" not in str(e):
+                    break
+        
+        print(f"Gemini Compatibility Error: {last_error}")
         return "The celestial currents are too complex to synthesize right now."
 
 # Global engine instance

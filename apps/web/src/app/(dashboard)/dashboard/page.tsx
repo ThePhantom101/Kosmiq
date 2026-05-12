@@ -2,19 +2,39 @@
 
 import React from "react";
 import { motion } from "framer-motion";
-import { Sparkles, ArrowUpRight, Zap, Database, History } from "lucide-react";
+import { Sparkles, ArrowUpRight, Zap, Database, History, Plus } from "lucide-react";
+import { useSession } from "@/hooks/useSession";
+import Link from "next/link";
 
 export default function DashboardPage() {
+  const { isAuthenticated } = useSession();
+
   return (
     <div className="space-y-12">
       {/* Header Section */}
-      <div className="space-y-4">
-        <div className="flex items-center space-x-2">
-          <span className="overline-label">Celestial Status: Active</span>
-          <div className="h-[1px] w-8 bg-gold/30" />
+      <div className="flex flex-col md:flex-row md:items-end justify-between gap-8">
+        <div className="space-y-4">
+          <div className="flex items-center space-x-2">
+            <span className="overline-label">Celestial Status: Active</span>
+            <div className="h-[1px] w-8 bg-gold/30" />
+          </div>
+          <h1 className="text-5xl font-serif text-white tracking-tight uppercase">
+            Your <span className="text-gold">Sanctuary</span>
+          </h1>
+          <p className="text-gray-400 max-w-xl text-sm leading-relaxed">
+            The central hub of your cosmic intelligence. Monitor your planetary transits, explore your saved charts, and access deep astrological insights.
+          </p>
         </div>
-          Welcome to your <span className="text-gold">Sanctuary</span>
-          The central hub of your cosmic intelligence. Monitor your planetary transits, explore your saved charts, and access deep astrological insights.
+
+        {!isAuthenticated && (
+          <Link
+            href="/login?next=/dashboard"
+            className="flex items-center gap-2 px-8 py-4 bg-gold text-black font-bold rounded-sm uppercase tracking-widest text-[10px] hover:bg-gold/90 transition-all shadow-[0_0_30px_rgba(197,160,89,0.2)] shrink-0"
+          >
+            <Plus className="w-4 h-4" />
+            <span>Save to Chronicles</span>
+          </Link>
+        )}
       </div>
 
       {/* Stats / Overview Grid */}

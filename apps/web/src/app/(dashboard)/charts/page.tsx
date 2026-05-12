@@ -6,11 +6,14 @@ import { useAstro } from "@/context/AstroContext";
 import { BookOpen, Plus, ArrowRight, User, Calendar, MapPin } from "lucide-react";
 import Link from "next/link";
 
+import { AuthGate } from "@/components/auth/AuthGate";
+
 export default function ChartsPage() {
   const { data } = useAstro();
 
   return (
-    <div className="space-y-10">
+    <AuthGate mode="redirect">
+      <div className="space-y-10">
       {/* Header */}
       <div className="flex flex-col md:flex-row md:items-end justify-between gap-6">
         <div className="space-y-3">
@@ -123,6 +126,7 @@ export default function ChartsPage() {
           </Link>
         </div>
       )}
-    </div>
+      </div>
+    </AuthGate>
   );
 }

@@ -27,9 +27,13 @@ import {
   UserCircle,
   LogOut,
   ChevronDown,
+  Lock,
+  LogIn,
 } from "lucide-react";
 import { createClient } from "@/utils/supabase/client";
 import { useAstro } from "@/context/AstroContext";
+import { useSession } from "@/hooks/useSession";
+import { useRouter } from "next/navigation";
 
 interface NavItem {
   name: string;
@@ -40,6 +44,7 @@ interface NavItem {
 interface NavSection {
   title: string;
   items: NavItem[];
+  isLockedForGuest?: boolean;
 }
 
 const PLACEHOLDER_CHART_ID = "me";
@@ -83,10 +88,18 @@ const sections: NavSection[] = [
   { title: "Your Kundali", items: kundaliItems },
   { title: "Predictions", items: predictionItems },
   { title: "Today's Sky", items: skyItems },
-  { title: "Refine Your Chart", items: refineItems },
+  { title: "Refine Your Chart", items: refineItems, isLockedForGuest: true },
 ];
 
-function NavLink({ item, isActive }: { item: NavItem; isActive: boolean }) {
+function NavLink({
+  item,
+  isActive,
+  isLocked,
+}: {
+  item: NavItem;
+  isActive: boolean;
+  isLocked?: boolean;
+}) {
   return (
     <Link
       href={item.href}
@@ -107,16 +120,21 @@ function NavLink({ item, isActive }: { item: NavItem; isActive: boolean }) {
 
       <item.icon
         className={`w-4 h-4 shrink-0 transition-all duration-300 ${
-          isActive ? "text-gold drop-shadow-[0_0_8px_rgba(197,160,89,0.5)]" : "group-hover:text-gold/60"
+          isActive
+            ? "text-gold drop-shadow-[0_0_8px_rgba(197,160,89,0.5)]"
+            : isLocked
+            ? "text-zinc-700"
+            : "group-hover:text-gold/60"
         }`}
       />
 
       <span
-        className={`text-[10px] uppercase tracking-[0.15em] font-bold leading-tight transition-all duration-300 ${
-          isActive ? "text-white" : "group-hover:translate-x-0.5"
+        className={`text-[10px] uppercase tracking-[0.15em] font-bold leading-tight transition-all duration-300 flex items-center gap-2 ${
+          isActive ? "text-white" : isLocked ? "text-zinc-700" : "group-hover:translate-x-0.5"
         }`}
       >
         {item.name}
+        {isLocked && <Lock className="w-2.5 h-2.5 opacity-50" />}
       </span>
 
       {isActive && (
@@ -133,10 +151,12 @@ function CollapsibleSection({
   section,
   pathname,
   hasChart,
+  isGuest,
 }: {
   section: NavSection;
   pathname: string;
   hasChart: boolean;
+  isGuest: boolean;
 }) {
   const isKundali = section.title === "Your Kundali";
   const hasActiveChild = section.items.some((i) => pathname.startsWith(i.href));
@@ -185,6 +205,7 @@ function CollapsibleSection({
                   key={item.href}
                   item={item}
                   isActive={pathname.startsWith(item.href)}
+                  isLocked={isGuest && section.isLockedForGuest}
                 />
               ))
             )}
@@ -197,7 +218,9 @@ function CollapsibleSection({
 
 export function Sidebar() {
   const pathname = usePathname();
+  const router = useRouter();
   const supabase = createClient();
+  const { isAuthenticated, loading: authLoading } = useSession();
   const { data } = useAstro();
   const hasChart = data !== null;
   const [lang, setLang] = useState<"EN" | "HI">("EN");
@@ -207,9 +230,13 @@ export function Sidebar() {
     setMounted(true);
   }, []);
 
-  const handleSignOut = async () => {
-    await supabase.auth.signOut();
-    window.location.href = "/";
+  const handleAuthAction = async () => {
+    if (isAuthenticated) {
+      await supabase.auth.signOut();
+      window.location.href = "/";
+    } else {
+      router.push(`/login?next=${encodeURIComponent(pathname)}`);
+    }
   };
 
   return (
@@ -237,6 +264,7 @@ export function Sidebar() {
             key={item.href}
             item={item}
             isActive={pathname === item.href}
+            isLocked={!isAuthenticated && item.name === "My Charts"}
           />
         ))}
 
@@ -251,6 +279,7 @@ export function Sidebar() {
             section={section}
             pathname={pathname}
             hasChart={hasChart}
+            isGuest={!isAuthenticated}
           />
         ))}
 
@@ -287,14 +316,27 @@ export function Sidebar() {
           <NavLink
             item={{ name: "Account", icon: UserCircle, href: "/settings/account" }}
             isActive={pathname === "/settings/account"}
+            isLocked={!isAuthenticated}
           />
           <button
-            onClick={handleSignOut}
-            className="w-full group flex items-center gap-3 px-3 py-2.5 text-zinc-600 hover:text-red-400 transition-all rounded-sm border border-transparent hover:border-red-400/20 hover:bg-red-400/5"
+            onClick={handleAuthAction}
+            className={`w-full group flex items-center gap-3 px-3 py-2.5 transition-all rounded-sm border border-transparent ${
+              isAuthenticated
+                ? "text-zinc-600 hover:text-red-400 hover:border-red-400/20 hover:bg-red-400/5"
+                : "text-gold/60 hover:text-gold hover:border-gold/20 hover:bg-gold/5"
+            }`}
           >
-            <LogOut className="w-4 h-4 shrink-0 transition-transform group-hover:-translate-x-0.5" />
+            {isAuthenticated ? (
+              <LogOut className="w-4 h-4 shrink-0 transition-transform group-hover:-translate-x-0.5" />
+            ) : (
+              <LogIn className="w-4 h-4 shrink-0 transition-transform group-hover:translate-x-0.5" />
+            )}
             <span className="text-[10px] uppercase tracking-[0.15em] font-bold">
-              {mounted ? "Sign Out" : "Logout"}
+              {mounted
+                ? isAuthenticated
+                  ? "Sign Out"
+                  : "Sign In"
+                : "..."}
             </span>
           </button>
         </div>

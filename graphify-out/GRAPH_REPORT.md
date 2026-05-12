@@ -1,16 +1,16 @@
 # Graph Report - kosmiq  (2026-05-11)
 
 ## Corpus Check
-- 129 files · ~55,040 words
+- 129 files · ~55,046 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 571 nodes · 859 edges · 121 communities (112 shown, 9 thin omitted)
+- 571 nodes · 859 edges · 119 communities (110 shown, 9 thin omitted)
 - Extraction: 72% EXTRACTED · 28% INFERRED · 0% AMBIGUOUS · INFERRED: 237 edges (avg confidence: 0.59)
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `b3795e18`
+- Built from commit: `bccab469`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -39,13 +39,13 @@
 - [[_COMMUNITY_Chart Rectification Tool|Chart Rectification Tool]]
 - [[_COMMUNITY_Monthly Predictions|Monthly Predictions]]
 - [[_COMMUNITY_Samhita Matches|Samhita Matches]]
-- [[_COMMUNITY_Database Schema|Database Schema]]
+- [[_COMMUNITY_Relationship Compatibility|Relationship Compatibility]]
 - [[_COMMUNITY_Engine Package|Engine Package]]
 - [[_COMMUNITY_Tests Package|Tests Package]]
 - [[_COMMUNITY_TypeScript Env|TypeScript Env]]
 - [[_COMMUNITY_ESLint Config|ESLint Config]]
+- [[_COMMUNITY_Next.js Config|Next.js Config]]
 - [[_COMMUNITY_PostCSS Config|PostCSS Config]]
-- [[_COMMUNITY_Drizzle Config|Drizzle Config]]
 - [[_COMMUNITY_Web DB Schema|Web DB Schema]]
 
 ## God Nodes (most connected - your core abstractions)
@@ -72,7 +72,7 @@
 - `save_life_event()` --calls--> `LifeEvent`  [INFERRED]
   apps/astro-engine/main.py → apps/astro-engine/engine/db.py
 
-## Communities (121 total, 9 thin omitted)
+## Communities (119 total, 9 thin omitted)
 
 ### Community 0 - "Predictions Area"
 Cohesion: 0.14
@@ -99,12 +99,12 @@ Cohesion: 0.1
 Nodes (11): useChartStrengths(), addYears(), buildAntardashas(), getDashaSequenceFrom(), useDasha(), ChartHeroBanner(), MetricCards(), QuickLinks() (+3 more)
 
 ### Community 6 - "Marketing Landing"
-Cohesion: 0.14
-Nodes (8): ChroniclesPage(), NexusCard(), NexusPage(), handleEmailLogin(), handleSocialLogin(), OraclePage(), SignaturePage(), createClient()
+Cohesion: 0.12
+Nodes (5): AstrolabePage(), useAstro(), useYogas(), LaboratoryPage(), SamhitaMatches()
 
 ### Community 7 - "Astro Engine"
-Cohesion: 0.16
-Nodes (5): AstrolabePage(), useAstro(), useYogas(), LaboratoryPage(), SamhitaMatches()
+Cohesion: 0.15
+Nodes (7): AccountPage(), ChroniclesPage(), handleEmailLogin(), handleSocialLogin(), OraclePage(), SignaturePage(), createClient()
 
 ### Community 8 - "NavHUD Component"
 Cohesion: 0.16
@@ -154,15 +154,15 @@ Nodes (4): get_shadbala(), Calculate 6-component Shadbala for a stored chart., c
 Cohesion: 0.6
 Nodes (3): handleKeyDown(), handleSubmit(), resetHeight()
 
-### Community 20 - "Calibration - Biodata"
+### Community 21 - "Chart Rectification Tool"
 Cohesion: 0.5
 Nodes (3): CompatibilityPage(), fetchNarrative(), handleCalculate()
 
-### Community 21 - "Chart Rectification Tool"
+### Community 22 - "Monthly Predictions"
 Cohesion: 0.5
 Nodes (5): Astro Engine, Docker, Kosmiq Web App, Supabase, Vedic Intelligence
 
-### Community 23 - "Samhita Matches"
+### Community 24 - "Relationship Compatibility"
 Cohesion: 0.67
 Nodes (3): generate_synthesis(), Runs the LangGraph AI synthesis workflow to generate a premium astrological read, Runs the LangGraph AI synthesis workflow to generate a premium astrological read
 

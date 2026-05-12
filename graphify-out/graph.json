@@ -9,7 +9,7 @@
       "source_file": "src/db/schema.ts",
       "source_location": "L1",
       "id": "src_db_schema_ts",
-      "community": 82,
+      "community": 80,
       "norm_label": "schema.ts"
     },
     {
@@ -18,7 +18,7 @@
       "source_file": "apps/astro-engine/create_tables.py",
       "source_location": "L1",
       "id": "apps_astro_engine_create_tables_py",
-      "community": 83,
+      "community": 81,
       "norm_label": "create_tables.py"
     },
     {
@@ -441,7 +441,7 @@
       "source_file": "apps/astro-engine/main.py",
       "source_location": "L357",
       "id": "astro_engine_main_generate_synthesis",
-      "community": 23,
+      "community": 24,
       "norm_label": "generate_synthesis()"
     },
     {
@@ -702,7 +702,7 @@
       "source_file": "apps/astro-engine/main.py",
       "source_location": "L358",
       "id": "astro_engine_main_rationale_358",
-      "community": 23,
+      "community": 24,
       "norm_label": "runs the langgraph ai synthesis workflow to generate a premium astrological read"
     },
     {
@@ -1413,7 +1413,7 @@
       "source_file": "apps/astro-engine/engine/__init__.py",
       "source_location": "L1",
       "id": "apps_astro_engine_engine_init_py",
-      "community": 84,
+      "community": 82,
       "norm_label": "__init__.py"
     },
     {
@@ -1746,7 +1746,7 @@
       "source_file": "apps/astro-engine/tests/__init__.py",
       "source_location": "L1",
       "id": "apps_astro_engine_tests_init_py",
-      "community": 85,
+      "community": 83,
       "norm_label": "__init__.py"
     },
     {
@@ -2646,7 +2646,7 @@
       "source_file": "apps/web/next-env.d.ts",
       "source_location": "L1",
       "id": "apps_web_next_env_d_ts",
-      "community": 86,
+      "community": 84,
       "norm_label": "next-env.d.ts"
     },
     {
@@ -2655,7 +2655,7 @@
       "source_file": "apps/web/eslint.config.mjs",
       "source_location": "L1",
       "id": "apps_web_eslint_config_mjs",
-      "community": 87,
+      "community": 85,
       "norm_label": "eslint.config.mjs"
     },
     {
@@ -2664,7 +2664,7 @@
       "source_file": "apps/web/next.config.ts",
       "source_location": "L1",
       "id": "apps_web_next_config_ts",
-      "community": 88,
+      "community": 86,
       "norm_label": "next.config.ts"
     },
     {
@@ -2673,7 +2673,7 @@
       "source_file": "apps/web/postcss.config.mjs",
       "source_location": "L1",
       "id": "apps_web_postcss_config_mjs",
-      "community": 89,
+      "community": 87,
       "norm_label": "postcss.config.mjs"
     },
     {
@@ -2682,7 +2682,7 @@
       "source_file": "apps/web/drizzle.config.ts",
       "source_location": "L1",
       "id": "apps_web_drizzle_config_ts",
-      "community": 90,
+      "community": 88,
       "norm_label": "drizzle.config.ts"
     },
     {
@@ -2691,7 +2691,7 @@
       "source_file": "apps/web/src/db/schema.ts",
       "source_location": "L1",
       "id": "apps_web_src_db_schema_ts",
-      "community": 91,
+      "community": 89,
       "norm_label": "schema.ts"
     },
     {
@@ -2700,7 +2700,7 @@
       "source_file": "apps/web/src/db/index.ts",
       "source_location": "L1",
       "id": "apps_web_src_db_index_ts",
-      "community": 92,
+      "community": 90,
       "norm_label": "index.ts"
     },
     {
@@ -2709,7 +2709,7 @@
       "source_file": "apps/web/src/components/NorthIndianChart.tsx",
       "source_location": "L1",
       "id": "apps_web_src_components_northindianchart_tsx",
-      "community": 93,
+      "community": 91,
       "norm_label": "northindianchart.tsx"
     },
     {
@@ -2718,7 +2718,7 @@
       "source_file": "apps/web/src/components/AstrolabeLoader.tsx",
       "source_location": "L1",
       "id": "apps_web_src_components_astrolabeloader_tsx",
-      "community": 94,
+      "community": 92,
       "norm_label": "astrolabeloader.tsx"
     },
     {
@@ -2727,7 +2727,7 @@
       "source_file": "apps/web/src/components/ComingSoon.tsx",
       "source_location": "L1",
       "id": "apps_web_src_components_comingsoon_tsx",
-      "community": 95,
+      "community": 93,
       "norm_label": "comingsoon.tsx"
     },
     {
@@ -2790,7 +2790,7 @@
       "source_file": "apps/web/src/components/NavHUD.tsx",
       "source_location": "L1",
       "id": "apps_web_src_components_navhud_tsx",
-      "community": 24,
+      "community": 25,
       "norm_label": "navhud.tsx"
     },
     {
@@ -2799,7 +2799,7 @@
       "source_file": "apps/web/src/components/NavHUD.tsx",
       "source_location": "L6",
       "id": "components_navhud_navhud",
-      "community": 24,
+      "community": 25,
       "norm_label": "navhud()"
     },
     {
@@ -2808,7 +2808,7 @@
       "source_file": "apps/web/src/components/NavHUD.tsx",
       "source_location": "L29",
       "id": "components_navhud_navlink",
-      "community": 24,
+      "community": 25,
       "norm_label": "navlink()"
     },
     {
@@ -2817,7 +2817,7 @@
       "source_file": "apps/web/src/components/ChartShell.tsx",
       "source_location": "L1",
       "id": "apps_web_src_components_chartshell_tsx",
-      "community": 96,
+      "community": 94,
       "norm_label": "chartshell.tsx"
     },
     {
@@ -2844,7 +2844,7 @@
       "source_file": "apps/web/src/components/Sidebar.tsx",
       "source_location": "L1",
       "id": "apps_web_src_components_sidebar_tsx",
-      "community": 37,
+      "community": 40,
       "norm_label": "sidebar.tsx"
     },
     {
@@ -2853,7 +2853,7 @@
       "source_file": "apps/web/src/components/Sidebar.tsx",
       "source_location": "L210",
       "id": "components_sidebar_handlesignout",
-      "community": 37,
+      "community": 40,
       "norm_label": "handlesignout()"
     },
     {
@@ -2880,7 +2880,7 @@
       "source_file": "apps/web/src/components/ResonanceMeter.tsx",
       "source_location": "L1",
       "id": "apps_web_src_components_resonancemeter_tsx",
-      "community": 97,
+      "community": 95,
       "norm_label": "resonancemeter.tsx"
     },
     {
@@ -2907,7 +2907,7 @@
       "source_file": "apps/web/src/components/compatibility/ChartPicker.tsx",
       "source_location": "L1",
       "id": "apps_web_src_components_compatibility_chartpicker_tsx",
-      "community": 98,
+      "community": 96,
       "norm_label": "chartpicker.tsx"
     },
     {
@@ -2916,7 +2916,7 @@
       "source_file": "apps/web/src/components/compatibility/DetailedNarrative.tsx",
       "source_location": "L1",
       "id": "apps_web_src_components_compatibility_detailednarrative_tsx",
-      "community": 99,
+      "community": 97,
       "norm_label": "detailednarrative.tsx"
     },
     {
@@ -2925,7 +2925,7 @@
       "source_file": "apps/web/src/components/compatibility/index.ts",
       "source_location": "L1",
       "id": "apps_web_src_components_compatibility_index_ts",
-      "community": 100,
+      "community": 98,
       "norm_label": "index.ts"
     },
     {
@@ -2934,7 +2934,7 @@
       "source_file": "apps/web/src/components/compatibility/KootaBreakdown.tsx",
       "source_location": "L1",
       "id": "apps_web_src_components_compatibility_kootabreakdown_tsx",
-      "community": 101,
+      "community": 99,
       "norm_label": "kootabreakdown.tsx"
     },
     {
@@ -2961,7 +2961,7 @@
       "source_file": "apps/web/src/components/compatibility/DoshaAnalysis.tsx",
       "source_location": "L1",
       "id": "apps_web_src_components_compatibility_doshaanalysis_tsx",
-      "community": 102,
+      "community": 100,
       "norm_label": "doshaanalysis.tsx"
     },
     {
@@ -2988,7 +2988,7 @@
       "source_file": "apps/web/src/components/sky/TransitChart.tsx",
       "source_location": "L1",
       "id": "apps_web_src_components_sky_transitchart_tsx",
-      "community": 103,
+      "community": 101,
       "norm_label": "transitchart.tsx"
     },
     {
@@ -2997,7 +2997,7 @@
       "source_file": "apps/web/src/components/sky/MuhurtaFinder.tsx",
       "source_location": "L1",
       "id": "apps_web_src_components_sky_muhurtafinder_tsx",
-      "community": 7,
+      "community": 64,
       "norm_label": "muhurtafinder.tsx"
     },
     {
@@ -3006,7 +3006,7 @@
       "source_file": "apps/web/src/components/sky/MuhurtaFinder.tsx",
       "source_location": "L37",
       "id": "sky_muhurtafinder_calculatemuhurta",
-      "community": 7,
+      "community": 64,
       "norm_label": "calculatemuhurta()"
     },
     {
@@ -3078,7 +3078,7 @@
       "source_file": "apps/web/src/components/ask/chart-context-panel.tsx",
       "source_location": "L1",
       "id": "apps_web_src_components_ask_chart_context_panel_tsx",
-      "community": 25,
+      "community": 26,
       "norm_label": "chart-context-panel.tsx"
     },
     {
@@ -3087,7 +3087,7 @@
       "source_file": "apps/web/src/components/ask/chart-context-panel.tsx",
       "source_location": "L23",
       "id": "ask_chart_context_panel_contextcard",
-      "community": 25,
+      "community": 26,
       "norm_label": "contextcard()"
     },
     {
@@ -3096,7 +3096,7 @@
       "source_file": "apps/web/src/components/ask/chart-context-panel.tsx",
       "source_location": "L45",
       "id": "ask_chart_context_panel_mobilepillstrip",
-      "community": 25,
+      "community": 26,
       "norm_label": "mobilepillstrip()"
     },
     {
@@ -3141,7 +3141,7 @@
       "source_file": "apps/web/src/components/overview/CurrentAlerts.tsx",
       "source_location": "L1",
       "id": "apps_web_src_components_overview_currentalerts_tsx",
-      "community": 104,
+      "community": 102,
       "norm_label": "currentalerts.tsx"
     },
     {
@@ -3150,7 +3150,7 @@
       "source_file": "apps/web/src/components/overview/PlanetPlacements.tsx",
       "source_location": "L1",
       "id": "apps_web_src_components_overview_planetplacements_tsx",
-      "community": 105,
+      "community": 103,
       "norm_label": "planetplacements.tsx"
     },
     {
@@ -3159,7 +3159,7 @@
       "source_file": "apps/web/src/components/overview/LifeAtAGlance.tsx",
       "source_location": "L1",
       "id": "apps_web_src_components_overview_lifeataglance_tsx",
-      "community": 26,
+      "community": 27,
       "norm_label": "lifeataglance.tsx"
     },
     {
@@ -3168,7 +3168,7 @@
       "source_file": "apps/web/src/components/overview/LifeAtAGlance.tsx",
       "source_location": "L20",
       "id": "overview_lifeataglance_scoretograde",
-      "community": 26,
+      "community": 27,
       "norm_label": "scoretograde()"
     },
     {
@@ -3177,7 +3177,7 @@
       "source_file": "apps/web/src/components/overview/LifeAtAGlance.tsx",
       "source_location": "L28",
       "id": "overview_lifeataglance_scoretocolor",
-      "community": 26,
+      "community": 27,
       "norm_label": "scoretocolor()"
     },
     {
@@ -3213,7 +3213,7 @@
       "source_file": "apps/web/src/components/predictions/SamhitaMatches.tsx",
       "source_location": "L1",
       "id": "apps_web_src_components_predictions_samhitamatches_tsx",
-      "community": 7,
+      "community": 6,
       "norm_label": "samhitamatches.tsx"
     },
     {
@@ -3222,7 +3222,7 @@
       "source_file": "apps/web/src/components/predictions/SamhitaMatches.tsx",
       "source_location": "L18",
       "id": "predictions_samhitamatches_samhitamatches",
-      "community": 7,
+      "community": 6,
       "norm_label": "samhitamatches()"
     },
     {
@@ -3231,7 +3231,7 @@
       "source_file": "apps/web/src/types/overview.ts",
       "source_location": "L1",
       "id": "apps_web_src_types_overview_ts",
-      "community": 106,
+      "community": 104,
       "norm_label": "overview.ts"
     },
     {
@@ -3240,7 +3240,7 @@
       "source_file": "apps/web/src/types/dasha.ts",
       "source_location": "L1",
       "id": "apps_web_src_types_dasha_ts",
-      "community": 107,
+      "community": 105,
       "norm_label": "dasha.ts"
     },
     {
@@ -3249,7 +3249,7 @@
       "source_file": "apps/web/src/types/ask.ts",
       "source_location": "L1",
       "id": "apps_web_src_types_ask_ts",
-      "community": 108,
+      "community": 106,
       "norm_label": "ask.ts"
     },
     {
@@ -3258,7 +3258,7 @@
       "source_file": "apps/web/src/types/astro.ts",
       "source_location": "L1",
       "id": "apps_web_src_types_astro_ts",
-      "community": 109,
+      "community": 107,
       "norm_label": "astro.ts"
     },
     {
@@ -3366,7 +3366,7 @@
       "source_file": "apps/web/src/utils/gemini-prompt.ts",
       "source_location": "L1",
       "id": "apps_web_src_utils_gemini_prompt_ts",
-      "community": 22,
+      "community": 23,
       "norm_label": "gemini-prompt.ts"
     },
     {
@@ -3375,7 +3375,7 @@
       "source_file": "apps/web/src/utils/gemini-prompt.ts",
       "source_location": "L3",
       "id": "utils_gemini_prompt_buildsystemprompt",
-      "community": 22,
+      "community": 23,
       "norm_label": "buildsystemprompt()"
     },
     {
@@ -3384,7 +3384,7 @@
       "source_file": "apps/web/src/utils/overview-mock.ts",
       "source_location": "L1",
       "id": "apps_web_src_utils_overview_mock_ts",
-      "community": 110,
+      "community": 108,
       "norm_label": "overview-mock.ts"
     },
     {
@@ -3393,7 +3393,7 @@
       "source_file": "apps/web/src/utils/supabase/client.ts",
       "source_location": "L1",
       "id": "apps_web_src_utils_supabase_client_ts",
-      "community": 6,
+      "community": 7,
       "norm_label": "client.ts"
     },
     {
@@ -3402,7 +3402,7 @@
       "source_file": "apps/web/src/utils/supabase/client.ts",
       "source_location": "L3",
       "id": "supabase_client_createclient",
-      "community": 6,
+      "community": 7,
       "norm_label": "createclient()"
     },
     {
@@ -3429,7 +3429,7 @@
       "source_file": "apps/web/src/hooks/useYogas.ts",
       "source_location": "L1",
       "id": "apps_web_src_hooks_useyogas_ts",
-      "community": 7,
+      "community": 6,
       "norm_label": "useyogas.ts"
     },
     {
@@ -3438,7 +3438,7 @@
       "source_file": "apps/web/src/hooks/useYogas.ts",
       "source_location": "L20",
       "id": "hooks_useyogas_useyogas",
-      "community": 7,
+      "community": 6,
       "norm_label": "useyogas()"
     },
     {
@@ -3537,7 +3537,7 @@
       "source_file": "apps/web/src/context/AstroContext.tsx",
       "source_location": "L47",
       "id": "context_astrocontext_useastro",
-      "community": 7,
+      "community": 6,
       "norm_label": "useastro()"
     },
     {
@@ -3546,7 +3546,7 @@
       "source_file": "apps/web/src/data/historicalFigures.ts",
       "source_location": "L1",
       "id": "apps_web_src_data_historicalfigures_ts",
-      "community": 111,
+      "community": 109,
       "norm_label": "historicalfigures.ts"
     },
     {
@@ -3555,7 +3555,7 @@
       "source_file": "apps/web/src/data/muhurtaRules.ts",
       "source_location": "L1",
       "id": "apps_web_src_data_muhurtarules_ts",
-      "community": 112,
+      "community": 110,
       "norm_label": "muhurtarules.ts"
     },
     {
@@ -3753,7 +3753,7 @@
       "source_file": "apps/web/src/app/api/chart/[id]/shadows/route.ts",
       "source_location": "L1",
       "id": "apps_web_src_app_api_chart_id_shadows_route_ts",
-      "community": 27,
+      "community": 28,
       "norm_label": "route.ts"
     },
     {
@@ -3762,7 +3762,7 @@
       "source_file": "apps/web/src/app/api/chart/[id]/shadows/route.ts",
       "source_location": "L5",
       "id": "shadows_route_get",
-      "community": 27,
+      "community": 28,
       "norm_label": "get()"
     },
     {
@@ -3771,7 +3771,7 @@
       "source_file": "apps/web/src/app/api/chart/[id]/shadows/route.ts",
       "source_location": "L32",
       "id": "shadows_route_post",
-      "community": 27,
+      "community": 28,
       "norm_label": "post()"
     },
     {
@@ -3780,7 +3780,7 @@
       "source_file": "apps/web/src/app/api/chart/[id]/dasha/route.ts",
       "source_location": "L1",
       "id": "apps_web_src_app_api_chart_id_dasha_route_ts",
-      "community": 28,
+      "community": 29,
       "norm_label": "route.ts"
     },
     {
@@ -3789,7 +3789,7 @@
       "source_file": "apps/web/src/app/api/chart/[id]/dasha/route.ts",
       "source_location": "L5",
       "id": "dasha_route_get",
-      "community": 28,
+      "community": 29,
       "norm_label": "get()"
     },
     {
@@ -3798,7 +3798,7 @@
       "source_file": "apps/web/src/app/api/chart/[id]/dasha/route.ts",
       "source_location": "L32",
       "id": "dasha_route_post",
-      "community": 28,
+      "community": 29,
       "norm_label": "post()"
     },
     {
@@ -3807,7 +3807,7 @@
       "source_file": "apps/web/src/app/api/chart/[id]/yogas/route.ts",
       "source_location": "L1",
       "id": "apps_web_src_app_api_chart_id_yogas_route_ts",
-      "community": 29,
+      "community": 30,
       "norm_label": "route.ts"
     },
     {
@@ -3816,7 +3816,7 @@
       "source_file": "apps/web/src/app/api/chart/[id]/yogas/route.ts",
       "source_location": "L5",
       "id": "yogas_route_get",
-      "community": 29,
+      "community": 30,
       "norm_label": "get()"
     },
     {
@@ -3825,7 +3825,7 @@
       "source_file": "apps/web/src/app/api/chart/[id]/yogas/route.ts",
       "source_location": "L32",
       "id": "yogas_route_post",
-      "community": 29,
+      "community": 30,
       "norm_label": "post()"
     },
     {
@@ -3834,7 +3834,7 @@
       "source_file": "apps/web/src/app/api/chart/[id]/shadbala/route.ts",
       "source_location": "L1",
       "id": "apps_web_src_app_api_chart_id_shadbala_route_ts",
-      "community": 30,
+      "community": 31,
       "norm_label": "route.ts"
     },
     {
@@ -3843,7 +3843,7 @@
       "source_file": "apps/web/src/app/api/chart/[id]/shadbala/route.ts",
       "source_location": "L4",
       "id": "shadbala_route_get",
-      "community": 30,
+      "community": 31,
       "norm_label": "get()"
     },
     {
@@ -3852,7 +3852,7 @@
       "source_file": "apps/web/src/app/api/chart/[id]/shadbala/route.ts",
       "source_location": "L33",
       "id": "shadbala_route_post",
-      "community": 30,
+      "community": 31,
       "norm_label": "post()"
     },
     {
@@ -3861,7 +3861,7 @@
       "source_file": "apps/web/src/app/api/chart/[id]/varga/route.ts",
       "source_location": "L1",
       "id": "apps_web_src_app_api_chart_id_varga_route_ts",
-      "community": 31,
+      "community": 32,
       "norm_label": "route.ts"
     },
     {
@@ -3870,7 +3870,7 @@
       "source_file": "apps/web/src/app/api/chart/[id]/varga/route.ts",
       "source_location": "L5",
       "id": "varga_route_get",
-      "community": 31,
+      "community": 32,
       "norm_label": "get()"
     },
     {
@@ -3879,7 +3879,7 @@
       "source_file": "apps/web/src/app/api/chart/[id]/varga/route.ts",
       "source_location": "L46",
       "id": "varga_route_post",
-      "community": 31,
+      "community": 32,
       "norm_label": "post()"
     },
     {
@@ -3906,7 +3906,7 @@
       "source_file": "apps/web/src/app/api/ask/route.ts",
       "source_location": "L1",
       "id": "apps_web_src_app_api_ask_route_ts",
-      "community": 22,
+      "community": 23,
       "norm_label": "route.ts"
     },
     {
@@ -3915,7 +3915,7 @@
       "source_file": "apps/web/src/app/api/ask/route.ts",
       "source_location": "L14",
       "id": "ask_route_post",
-      "community": 22,
+      "community": 23,
       "norm_label": "post()"
     },
     {
@@ -3942,7 +3942,7 @@
       "source_file": "apps/web/src/app/api/predictions/monthly/route.ts",
       "source_location": "L1",
       "id": "apps_web_src_app_api_predictions_monthly_route_ts",
-      "community": 32,
+      "community": 33,
       "norm_label": "route.ts"
     },
     {
@@ -3951,7 +3951,7 @@
       "source_file": "apps/web/src/app/api/predictions/monthly/route.ts",
       "source_location": "L5",
       "id": "monthly_route_get",
-      "community": 32,
+      "community": 33,
       "norm_label": "get()"
     },
     {
@@ -3960,7 +3960,7 @@
       "source_file": "apps/web/src/app/api/predictions/monthly/route.ts",
       "source_location": "L35",
       "id": "monthly_route_post",
-      "community": 32,
+      "community": 33,
       "norm_label": "post()"
     },
     {
@@ -3969,7 +3969,7 @@
       "source_file": "apps/web/src/app/(marketing)/page.tsx",
       "source_location": "L1",
       "id": "apps_web_src_app_marketing_page_tsx",
-      "community": 6,
+      "community": 7,
       "norm_label": "page.tsx"
     },
     {
@@ -3996,7 +3996,7 @@
       "source_file": "apps/web/src/app/(marketing)/login/page.tsx",
       "source_location": "L1",
       "id": "apps_web_src_app_marketing_login_page_tsx",
-      "community": 6,
+      "community": 7,
       "norm_label": "page.tsx"
     },
     {
@@ -4005,7 +4005,7 @@
       "source_file": "apps/web/src/app/(marketing)/login/page.tsx",
       "source_location": "L17",
       "id": "login_page_handlesociallogin",
-      "community": 6,
+      "community": 7,
       "norm_label": "handlesociallogin()"
     },
     {
@@ -4014,7 +4014,7 @@
       "source_file": "apps/web/src/app/(marketing)/login/page.tsx",
       "source_location": "L26",
       "id": "login_page_handleemaillogin",
-      "community": 6,
+      "community": 7,
       "norm_label": "handleemaillogin()"
     },
     {
@@ -4059,7 +4059,7 @@
       "source_file": "apps/web/src/app/(dashboard)/kundli/[id]/layout.tsx",
       "source_location": "L1",
       "id": "apps_web_src_app_dashboard_kundli_id_layout_tsx",
-      "community": 33,
+      "community": 34,
       "norm_label": "layout.tsx"
     },
     {
@@ -4068,7 +4068,7 @@
       "source_file": "apps/web/src/app/(dashboard)/kundli/[id]/layout.tsx",
       "source_location": "L4",
       "id": "id_layout_kundlilayout",
-      "community": 33,
+      "community": 34,
       "norm_label": "kundlilayout()"
     },
     {
@@ -4077,7 +4077,7 @@
       "source_file": "apps/web/src/app/(dashboard)/compatibility/page.tsx",
       "source_location": "L1",
       "id": "apps_web_src_app_dashboard_compatibility_page_tsx",
-      "community": 20,
+      "community": 21,
       "norm_label": "page.tsx"
     },
     {
@@ -4086,7 +4086,7 @@
       "source_file": "apps/web/src/app/(dashboard)/compatibility/page.tsx",
       "source_location": "L34",
       "id": "compatibility_page_handlecalculate",
-      "community": 20,
+      "community": 21,
       "norm_label": "handlecalculate()"
     },
     {
@@ -4095,7 +4095,7 @@
       "source_file": "apps/web/src/app/(dashboard)/compatibility/page.tsx",
       "source_location": "L63",
       "id": "compatibility_page_fetchnarrative",
-      "community": 20,
+      "community": 21,
       "norm_label": "fetchnarrative()"
     },
     {
@@ -4104,7 +4104,7 @@
       "source_file": "apps/web/src/app/(dashboard)/sky/muhurta/page.tsx",
       "source_location": "L1",
       "id": "apps_web_src_app_dashboard_sky_muhurta_page_tsx",
-      "community": 34,
+      "community": 35,
       "norm_label": "page.tsx"
     },
     {
@@ -4113,7 +4113,7 @@
       "source_file": "apps/web/src/app/(dashboard)/sky/muhurta/page.tsx",
       "source_location": "L5",
       "id": "muhurta_page_muhurtapage",
-      "community": 34,
+      "community": 35,
       "norm_label": "muhurtapage()"
     },
     {
@@ -4122,7 +4122,7 @@
       "source_file": "apps/web/src/app/(dashboard)/sky/transits/page.tsx",
       "source_location": "L1",
       "id": "apps_web_src_app_dashboard_sky_transits_page_tsx",
-      "community": 66,
+      "community": 67,
       "norm_label": "page.tsx"
     },
     {
@@ -4131,7 +4131,7 @@
       "source_file": "apps/web/src/app/(dashboard)/sky/transits/page.tsx",
       "source_location": "L17",
       "id": "transits_page_fetchtransits",
-      "community": 66,
+      "community": 67,
       "norm_label": "fetchtransits()"
     },
     {
@@ -4140,7 +4140,7 @@
       "source_file": "apps/web/src/app/(dashboard)/sky/panchang/page.tsx",
       "source_location": "L1",
       "id": "apps_web_src_app_dashboard_sky_panchang_page_tsx",
-      "community": 68,
+      "community": 65,
       "norm_label": "page.tsx"
     },
     {
@@ -4149,7 +4149,7 @@
       "source_file": "apps/web/src/app/(dashboard)/sky/panchang/page.tsx",
       "source_location": "L23",
       "id": "panchang_page_fetchpanchang",
-      "community": 68,
+      "community": 65,
       "norm_label": "fetchpanchang()"
     },
     {
@@ -4158,7 +4158,7 @@
       "source_file": "apps/web/src/app/(dashboard)/new-chart/page.tsx",
       "source_location": "L1",
       "id": "apps_web_src_app_dashboard_new_chart_page_tsx",
-      "community": 7,
+      "community": 6,
       "norm_label": "page.tsx"
     },
     {
@@ -4167,7 +4167,7 @@
       "source_file": "apps/web/src/app/(dashboard)/dashboard/page.tsx",
       "source_location": "L1",
       "id": "apps_web_src_app_dashboard_dashboard_page_tsx",
-      "community": 6,
+      "community": 20,
       "norm_label": "page.tsx"
     },
     {
@@ -4176,7 +4176,7 @@
       "source_file": "apps/web/src/app/(dashboard)/dashboard/page.tsx",
       "source_location": "L7",
       "id": "dashboard_page_dashboardpage",
-      "community": 6,
+      "community": 20,
       "norm_label": "dashboardpage()"
     },
     {
@@ -4185,7 +4185,7 @@
       "source_file": "apps/web/src/app/(dashboard)/dashboard/page.tsx",
       "source_location": "L63",
       "id": "dashboard_page_statuscard",
-      "community": 6,
+      "community": 20,
       "norm_label": "statuscard()"
     },
     {
@@ -4194,7 +4194,7 @@
       "source_file": "apps/web/src/app/(dashboard)/charts/page.tsx",
       "source_location": "L1",
       "id": "apps_web_src_app_dashboard_charts_page_tsx",
-      "community": 7,
+      "community": 6,
       "norm_label": "page.tsx"
     },
     {
@@ -4203,7 +4203,7 @@
       "source_file": "apps/web/src/app/(dashboard)/charts/new/page.tsx",
       "source_location": "L1",
       "id": "apps_web_src_app_dashboard_charts_new_page_tsx",
-      "community": 7,
+      "community": 6,
       "norm_label": "page.tsx"
     },
     {
@@ -4248,7 +4248,7 @@
       "source_file": "apps/web/src/app/(dashboard)/chart/[id]/shadows/page.tsx",
       "source_location": "L1",
       "id": "apps_web_src_app_dashboard_chart_id_shadows_page_tsx",
-      "community": 67,
+      "community": 6,
       "norm_label": "page.tsx"
     },
     {
@@ -4257,7 +4257,7 @@
       "source_file": "apps/web/src/app/(dashboard)/chart/[id]/shadows/page.tsx",
       "source_location": "L54",
       "id": "shadows_page_getbadgecolor",
-      "community": 67,
+      "community": 6,
       "norm_label": "getbadgecolor()"
     },
     {
@@ -4266,7 +4266,7 @@
       "source_file": "apps/web/src/app/(dashboard)/chart/[id]/divisional/page.tsx",
       "source_location": "L1",
       "id": "apps_web_src_app_dashboard_chart_id_divisional_page_tsx",
-      "community": 65,
+      "community": 66,
       "norm_label": "page.tsx"
     },
     {
@@ -4275,7 +4275,7 @@
       "source_file": "apps/web/src/app/(dashboard)/chart/[id]/divisional/page.tsx",
       "source_location": "L98",
       "id": "divisional_page_getplanetinfo",
-      "community": 65,
+      "community": 66,
       "norm_label": "getplanetinfo()"
     },
     {
@@ -4293,7 +4293,7 @@
       "source_file": "apps/web/src/app/(dashboard)/chart/[id]/strengths/page.tsx",
       "source_location": "L1",
       "id": "apps_web_src_app_dashboard_chart_id_strengths_page_tsx",
-      "community": 69,
+      "community": 6,
       "norm_label": "page.tsx"
     },
     {
@@ -4302,7 +4302,7 @@
       "source_file": "apps/web/src/app/(dashboard)/chart/[id]/strengths/page.tsx",
       "source_location": "L56",
       "id": "strengths_page_getstatus",
-      "community": 69,
+      "community": 6,
       "norm_label": "getstatus()"
     },
     {
@@ -4311,7 +4311,7 @@
       "source_file": "apps/web/src/app/(dashboard)/chart/[id]/yogas/page.tsx",
       "source_location": "L1",
       "id": "apps_web_src_app_dashboard_chart_id_yogas_page_tsx",
-      "community": 64,
+      "community": 6,
       "norm_label": "page.tsx"
     },
     {
@@ -4320,7 +4320,7 @@
       "source_file": "apps/web/src/app/(dashboard)/chart/[id]/yogas/page.tsx",
       "source_location": "L56",
       "id": "yogas_page_getcategorystyles",
-      "community": 64,
+      "community": 6,
       "norm_label": "getcategorystyles()"
     },
     {
@@ -4329,7 +4329,7 @@
       "source_file": "apps/web/src/app/(dashboard)/tools/calibration/events/page.tsx",
       "source_location": "L1",
       "id": "apps_web_src_app_dashboard_tools_calibration_events_page_tsx",
-      "community": 36,
+      "community": 38,
       "norm_label": "page.tsx"
     },
     {
@@ -4338,7 +4338,7 @@
       "source_file": "apps/web/src/app/(dashboard)/tools/calibration/events/page.tsx",
       "source_location": "L63",
       "id": "events_page_handleaddevent",
-      "community": 36,
+      "community": 38,
       "norm_label": "handleaddevent()"
     },
     {
@@ -4347,7 +4347,7 @@
       "source_file": "apps/web/src/app/(dashboard)/tools/calibration/events/page.tsx",
       "source_location": "L98",
       "id": "events_page_removeevent",
-      "community": 36,
+      "community": 38,
       "norm_label": "removeevent()"
     },
     {
@@ -4374,7 +4374,7 @@
       "source_file": "apps/web/src/app/(dashboard)/tools/calibration/biodata/page.tsx",
       "source_location": "L1",
       "id": "apps_web_src_app_dashboard_tools_calibration_biodata_page_tsx",
-      "community": 7,
+      "community": 6,
       "norm_label": "page.tsx"
     },
     {
@@ -4383,7 +4383,7 @@
       "source_file": "apps/web/src/app/(dashboard)/tools/calibration/biodata/page.tsx",
       "source_location": "L26",
       "id": "biodata_page_handlesubmit",
-      "community": 7,
+      "community": 6,
       "norm_label": "handlesubmit()"
     },
     {
@@ -4392,7 +4392,7 @@
       "source_file": "apps/web/src/app/(dashboard)/tools/learning/page.tsx",
       "source_location": "L1",
       "id": "apps_web_src_app_dashboard_tools_learning_page_tsx",
-      "community": 113,
+      "community": 111,
       "norm_label": "page.tsx"
     },
     {
@@ -4401,7 +4401,7 @@
       "source_file": "apps/web/src/app/(dashboard)/tools/rectification/page.tsx",
       "source_location": "L1",
       "id": "apps_web_src_app_dashboard_tools_rectification_page_tsx",
-      "community": 38,
+      "community": 37,
       "norm_label": "page.tsx"
     },
     {
@@ -4410,7 +4410,7 @@
       "source_file": "apps/web/src/app/(dashboard)/tools/rectification/page.tsx",
       "source_location": "L39",
       "id": "rectification_page_handlenext",
-      "community": 38,
+      "community": 37,
       "norm_label": "handlenext()"
     },
     {
@@ -4419,7 +4419,7 @@
       "source_file": "apps/web/src/app/(dashboard)/tools/rectification/page.tsx",
       "source_location": "L47",
       "id": "rectification_page_runrectification",
-      "community": 38,
+      "community": 37,
       "norm_label": "runrectification()"
     },
     {
@@ -4428,7 +4428,7 @@
       "source_file": "apps/web/src/app/(dashboard)/tools/personalities/page.tsx",
       "source_location": "L1",
       "id": "apps_web_src_app_dashboard_tools_personalities_page_tsx",
-      "community": 114,
+      "community": 112,
       "norm_label": "page.tsx"
     },
     {
@@ -4437,7 +4437,7 @@
       "source_file": "apps/web/src/app/(dashboard)/settings/account/page.tsx",
       "source_location": "L1",
       "id": "apps_web_src_app_dashboard_settings_account_page_tsx",
-      "community": 40,
+      "community": 7,
       "norm_label": "page.tsx"
     },
     {
@@ -4446,7 +4446,7 @@
       "source_file": "apps/web/src/app/(dashboard)/settings/account/page.tsx",
       "source_location": "L7",
       "id": "account_page_accountpage",
-      "community": 40,
+      "community": 7,
       "norm_label": "accountpage()"
     },
     {
@@ -4473,7 +4473,7 @@
       "source_file": "apps/web/src/app/(dashboard)/predictions/samhita/page.tsx",
       "source_location": "L1",
       "id": "apps_web_src_app_dashboard_predictions_samhita_page_tsx",
-      "community": 35,
+      "community": 36,
       "norm_label": "page.tsx"
     },
     {
@@ -4482,7 +4482,7 @@
       "source_file": "apps/web/src/app/(dashboard)/predictions/samhita/page.tsx",
       "source_location": "L5",
       "id": "samhita_page_samhitapage",
-      "community": 35,
+      "community": 36,
       "norm_label": "samhitapage()"
     },
     {
@@ -4625,7 +4625,7 @@
       "file_type": "rationale",
       "source_file": "apps/astro-engine/main.py",
       "source_location": "L80",
-      "community": 23,
+      "community": 24,
       "norm_label": "runs the langgraph ai synthesis workflow to generate a premium astrological read",
       "id": "astro_engine_main_rationale_80"
     },
@@ -4634,7 +4634,7 @@
       "file_type": "code",
       "source_file": "apps/web/types/astro.ts",
       "source_location": "L1",
-      "community": 115,
+      "community": 113,
       "norm_label": "astro.ts",
       "id": "apps_web_types_astro_ts"
     },
@@ -4643,7 +4643,7 @@
       "file_type": "code",
       "source_file": "apps/web/src/app/(dashboard)/laboratory/page.tsx",
       "source_location": "L1",
-      "community": 7,
+      "community": 6,
       "norm_label": "page.tsx",
       "id": "apps_web_src_app_dashboard_laboratory_page_tsx"
     },
@@ -4652,7 +4652,7 @@
       "file_type": "code",
       "source_file": "apps/web/src/app/(dashboard)/laboratory/page.tsx",
       "source_location": "L10",
-      "community": 7,
+      "community": 6,
       "norm_label": "laboratorypage()",
       "id": "laboratory_page_laboratorypage"
     },
@@ -4661,7 +4661,7 @@
       "file_type": "code",
       "source_file": "app/(dashboard)/compatibility/page.tsx",
       "source_location": "L4",
-      "community": 20,
+      "community": 21,
       "norm_label": "compatibilitypage()",
       "id": "compatibility_page_compatibilitypage"
     },
@@ -4670,7 +4670,7 @@
       "file_type": "code",
       "source_file": "apps/web/src/app/(dashboard)/dashboard/page.tsx",
       "source_location": "L7",
-      "community": 6,
+      "community": 20,
       "norm_label": "nexuspage()",
       "id": "dashboard_page_nexuspage"
     },
@@ -4679,7 +4679,7 @@
       "file_type": "code",
       "source_file": "apps/web/src/app/(dashboard)/dashboard/page.tsx",
       "source_location": "L67",
-      "community": 6,
+      "community": 20,
       "norm_label": "nexuscard()",
       "id": "dashboard_page_nexuscard"
     },
@@ -4688,7 +4688,7 @@
       "file_type": "code",
       "source_file": "apps/web/src/app/(dashboard)/oracle/page.tsx",
       "source_location": "L1",
-      "community": 6,
+      "community": 7,
       "norm_label": "page.tsx",
       "id": "apps_web_src_app_dashboard_oracle_page_tsx"
     },
@@ -4697,7 +4697,7 @@
       "file_type": "code",
       "source_file": "apps/web/src/app/(dashboard)/oracle/page.tsx",
       "source_location": "L3",
-      "community": 6,
+      "community": 7,
       "norm_label": "oraclepage()",
       "id": "oracle_page_oraclepage"
     },
@@ -4706,7 +4706,7 @@
       "file_type": "code",
       "source_file": "apps/web/src/app/(dashboard)/astrolabe/page.tsx",
       "source_location": "L1",
-      "community": 7,
+      "community": 6,
       "norm_label": "page.tsx",
       "id": "apps_web_src_app_dashboard_astrolabe_page_tsx"
     },
@@ -4715,7 +4715,7 @@
       "file_type": "code",
       "source_file": "apps/web/src/app/(dashboard)/astrolabe/page.tsx",
       "source_location": "L12",
-      "community": 7,
+      "community": 6,
       "norm_label": "astrolabepage()",
       "id": "astrolabe_page_astrolabepage"
     },
@@ -4724,7 +4724,7 @@
       "file_type": "code",
       "source_file": "apps/web/src/app/(dashboard)/chronicles/page.tsx",
       "source_location": "L1",
-      "community": 6,
+      "community": 7,
       "norm_label": "page.tsx",
       "id": "apps_web_src_app_dashboard_chronicles_page_tsx"
     },
@@ -4733,7 +4733,7 @@
       "file_type": "code",
       "source_file": "apps/web/src/app/(dashboard)/chronicles/page.tsx",
       "source_location": "L3",
-      "community": 6,
+      "community": 7,
       "norm_label": "chroniclespage()",
       "id": "chronicles_page_chroniclespage"
     },
@@ -4742,7 +4742,7 @@
       "file_type": "code",
       "source_file": "apps/web/src/app/(dashboard)/signature/page.tsx",
       "source_location": "L1",
-      "community": 6,
+      "community": 7,
       "norm_label": "page.tsx",
       "id": "apps_web_src_app_dashboard_signature_page_tsx"
     },
@@ -4751,7 +4751,7 @@
       "file_type": "code",
       "source_file": "apps/web/src/app/(dashboard)/signature/page.tsx",
       "source_location": "L3",
-      "community": 6,
+      "community": 7,
       "norm_label": "signaturepage()",
       "id": "signature_page_signaturepage"
     },
@@ -4777,7 +4777,7 @@
       "label": "Kosmiq Web App",
       "type": "application",
       "description": "Next.js frontend and main application logic",
-      "community": 21,
+      "community": 22,
       "norm_label": "kosmiq web app",
       "id": "kosmiq-web"
     },
@@ -4785,7 +4785,7 @@
       "label": "Astro Engine",
       "type": "service",
       "description": "FastAPI service for high-precision astrological calculations",
-      "community": 21,
+      "community": 22,
       "norm_label": "astro engine",
       "id": "astro-engine"
     },
@@ -4793,7 +4793,7 @@
       "label": "Supabase",
       "type": "infrastructure",
       "description": "Backend services for authentication and data storage",
-      "community": 21,
+      "community": 22,
       "norm_label": "supabase",
       "id": "supabase"
     },
@@ -4801,7 +4801,7 @@
       "label": "Docker",
       "type": "infrastructure",
       "description": "Containerization platform for the project",
-      "community": 21,
+      "community": 22,
       "norm_label": "docker",
       "id": "docker"
     },
@@ -4809,7 +4809,7 @@
       "label": "Vedic Intelligence",
       "type": "domain",
       "description": "The core domain knowledge and logic for the application",
-      "community": 21,
+      "community": 22,
       "norm_label": "vedic intelligence",
       "id": "vedic-intelligence"
     },
@@ -4818,7 +4818,7 @@
       "file_type": "code",
       "source_file": "components/ComingSoon.tsx",
       "source_location": "L1",
-      "community": 116,
+      "community": 114,
       "norm_label": "comingsoon.tsx",
       "id": "components_comingsoon_tsx"
     },
@@ -4827,7 +4827,7 @@
       "file_type": "code",
       "source_file": "components/ChartShell.tsx",
       "source_location": "L1",
-      "community": 117,
+      "community": 115,
       "norm_label": "chartshell.tsx",
       "id": "components_chartshell_tsx"
     },
@@ -4836,7 +4836,7 @@
       "file_type": "code",
       "source_file": "components/Sidebar.tsx",
       "source_location": "L1",
-      "community": 37,
+      "community": 40,
       "norm_label": "sidebar.tsx",
       "id": "components_sidebar_tsx"
     },
@@ -4854,7 +4854,7 @@
       "file_type": "code",
       "source_file": "app/(dashboard)/kundli/[id]/layout.tsx",
       "source_location": "L1",
-      "community": 33,
+      "community": 34,
       "norm_label": "layout.tsx",
       "id": "app_dashboard_kundli_id_layout_tsx"
     },
@@ -4863,7 +4863,7 @@
       "file_type": "code",
       "source_file": "app/(dashboard)/kundli/[id]/ashtakavarga/page.tsx",
       "source_location": "L1",
-      "community": 70,
+      "community": 68,
       "norm_label": "page.tsx",
       "id": "app_dashboard_kundli_id_ashtakavarga_page_tsx"
     },
@@ -4872,7 +4872,7 @@
       "file_type": "code",
       "source_file": "app/(dashboard)/kundli/[id]/ashtakavarga/page.tsx",
       "source_location": "L6",
-      "community": 70,
+      "community": 68,
       "norm_label": "ashtakavargapage()",
       "id": "ashtakavarga_page_ashtakavargapage"
     },
@@ -4881,7 +4881,7 @@
       "file_type": "code",
       "source_file": "app/(dashboard)/kundli/[id]/upagrahas/page.tsx",
       "source_location": "L1",
-      "community": 71,
+      "community": 69,
       "norm_label": "page.tsx",
       "id": "app_dashboard_kundli_id_upagrahas_page_tsx"
     },
@@ -4890,7 +4890,7 @@
       "file_type": "code",
       "source_file": "app/(dashboard)/kundli/[id]/upagrahas/page.tsx",
       "source_location": "L6",
-      "community": 71,
+      "community": 69,
       "norm_label": "upagrahaspage()",
       "id": "upagrahas_page_upagrahaspage"
     },
@@ -4899,7 +4899,7 @@
       "file_type": "code",
       "source_file": "app/(dashboard)/kundli/[id]/dasha/page.tsx",
       "source_location": "L1",
-      "community": 72,
+      "community": 70,
       "norm_label": "page.tsx",
       "id": "app_dashboard_kundli_id_dasha_page_tsx"
     },
@@ -4908,7 +4908,7 @@
       "file_type": "code",
       "source_file": "app/(dashboard)/kundli/[id]/dasha/page.tsx",
       "source_location": "L6",
-      "community": 72,
+      "community": 70,
       "norm_label": "dashapage()",
       "id": "dasha_page_dashapage"
     },
@@ -4917,7 +4917,7 @@
       "file_type": "code",
       "source_file": "app/(dashboard)/kundli/[id]/shadbala/page.tsx",
       "source_location": "L1",
-      "community": 73,
+      "community": 71,
       "norm_label": "page.tsx",
       "id": "app_dashboard_kundli_id_shadbala_page_tsx"
     },
@@ -4926,7 +4926,7 @@
       "file_type": "code",
       "source_file": "app/(dashboard)/kundli/[id]/shadbala/page.tsx",
       "source_location": "L6",
-      "community": 73,
+      "community": 71,
       "norm_label": "shadbalapage()",
       "id": "shadbala_page_shadbalapage"
     },
@@ -4935,7 +4935,7 @@
       "file_type": "code",
       "source_file": "app/(dashboard)/kundli/[id]/varga/page.tsx",
       "source_location": "L1",
-      "community": 74,
+      "community": 72,
       "norm_label": "page.tsx",
       "id": "app_dashboard_kundli_id_varga_page_tsx"
     },
@@ -4944,7 +4944,7 @@
       "file_type": "code",
       "source_file": "app/(dashboard)/kundli/[id]/varga/page.tsx",
       "source_location": "L26",
-      "community": 74,
+      "community": 72,
       "norm_label": "vargapage()",
       "id": "varga_page_vargapage"
     },
@@ -4953,7 +4953,7 @@
       "file_type": "code",
       "source_file": "app/(dashboard)/compatibility/page.tsx",
       "source_location": "L1",
-      "community": 20,
+      "community": 21,
       "norm_label": "page.tsx",
       "id": "app_dashboard_compatibility_page_tsx"
     },
@@ -4962,7 +4962,7 @@
       "file_type": "code",
       "source_file": "app/(dashboard)/sky/muhurta/page.tsx",
       "source_location": "L1",
-      "community": 34,
+      "community": 35,
       "norm_label": "page.tsx",
       "id": "app_dashboard_sky_muhurta_page_tsx"
     },
@@ -4971,7 +4971,7 @@
       "file_type": "code",
       "source_file": "app/(dashboard)/sky/transits/page.tsx",
       "source_location": "L1",
-      "community": 75,
+      "community": 73,
       "norm_label": "page.tsx",
       "id": "app_dashboard_sky_transits_page_tsx"
     },
@@ -4980,7 +4980,7 @@
       "file_type": "code",
       "source_file": "app/(dashboard)/sky/transits/page.tsx",
       "source_location": "L4",
-      "community": 75,
+      "community": 73,
       "norm_label": "transitspage()",
       "id": "transits_page_transitspage"
     },
@@ -4989,7 +4989,7 @@
       "file_type": "code",
       "source_file": "app/(dashboard)/sky/panchang/page.tsx",
       "source_location": "L1",
-      "community": 76,
+      "community": 74,
       "norm_label": "page.tsx",
       "id": "app_dashboard_sky_panchang_page_tsx"
     },
@@ -4998,7 +4998,7 @@
       "file_type": "code",
       "source_file": "app/(dashboard)/sky/panchang/page.tsx",
       "source_location": "L4",
-      "community": 76,
+      "community": 74,
       "norm_label": "panchangpage()",
       "id": "panchang_page_panchangpage"
     },
@@ -5007,7 +5007,7 @@
       "file_type": "code",
       "source_file": "app/(dashboard)/charts/page.tsx",
       "source_location": "L1",
-      "community": 118,
+      "community": 116,
       "norm_label": "page.tsx",
       "id": "app_dashboard_charts_page_tsx"
     },
@@ -5016,7 +5016,7 @@
       "file_type": "code",
       "source_file": "app/(dashboard)/charts/new/page.tsx",
       "source_location": "L1",
-      "community": 119,
+      "community": 117,
       "norm_label": "page.tsx",
       "id": "app_dashboard_charts_new_page_tsx"
     },
@@ -5025,7 +5025,7 @@
       "file_type": "code",
       "source_file": "app/(dashboard)/tools/calibration/events/page.tsx",
       "source_location": "L1",
-      "community": 77,
+      "community": 75,
       "norm_label": "page.tsx",
       "id": "app_dashboard_tools_calibration_events_page_tsx"
     },
@@ -5034,7 +5034,7 @@
       "file_type": "code",
       "source_file": "app/(dashboard)/tools/calibration/events/page.tsx",
       "source_location": "L4",
-      "community": 77,
+      "community": 75,
       "norm_label": "importantdatespage()",
       "id": "events_page_importantdatespage"
     },
@@ -5043,7 +5043,7 @@
       "file_type": "code",
       "source_file": "app/(dashboard)/tools/calibration/zodiac/page.tsx",
       "source_location": "L1",
-      "community": 78,
+      "community": 76,
       "norm_label": "page.tsx",
       "id": "app_dashboard_tools_calibration_zodiac_page_tsx"
     },
@@ -5052,7 +5052,7 @@
       "file_type": "code",
       "source_file": "app/(dashboard)/tools/calibration/zodiac/page.tsx",
       "source_location": "L4",
-      "community": 78,
+      "community": 76,
       "norm_label": "zodiaccheckpage()",
       "id": "zodiac_page_zodiaccheckpage"
     },
@@ -5061,7 +5061,7 @@
       "file_type": "code",
       "source_file": "app/(dashboard)/tools/calibration/biodata/page.tsx",
       "source_location": "L1",
-      "community": 79,
+      "community": 77,
       "norm_label": "page.tsx",
       "id": "app_dashboard_tools_calibration_biodata_page_tsx"
     },
@@ -5070,7 +5070,7 @@
       "file_type": "code",
       "source_file": "app/(dashboard)/tools/calibration/biodata/page.tsx",
       "source_location": "L4",
-      "community": 79,
+      "community": 77,
       "norm_label": "personaldetailspage()",
       "id": "biodata_page_personaldetailspage"
     },
@@ -5079,7 +5079,7 @@
       "file_type": "code",
       "source_file": "app/(dashboard)/tools/rectification/page.tsx",
       "source_location": "L1",
-      "community": 80,
+      "community": 78,
       "norm_label": "page.tsx",
       "id": "app_dashboard_tools_rectification_page_tsx"
     },
@@ -5088,7 +5088,7 @@
       "file_type": "code",
       "source_file": "app/(dashboard)/tools/rectification/page.tsx",
       "source_location": "L4",
-      "community": 80,
+      "community": 78,
       "norm_label": "rectificationpage()",
       "id": "rectification_page_rectificationpage"
     },
@@ -5097,7 +5097,7 @@
       "file_type": "code",
       "source_file": "app/(dashboard)/settings/account/page.tsx",
       "source_location": "L1",
-      "community": 40,
+      "community": 7,
       "norm_label": "page.tsx",
       "id": "app_dashboard_settings_account_page_tsx"
     },
@@ -5106,7 +5106,7 @@
       "file_type": "code",
       "source_file": "app/(dashboard)/ask/page.tsx",
       "source_location": "L1",
-      "community": 120,
+      "community": 118,
       "norm_label": "page.tsx",
       "id": "app_dashboard_ask_page_tsx"
     },
@@ -5115,7 +5115,7 @@
       "file_type": "code",
       "source_file": "app/(dashboard)/predictions/samhita/page.tsx",
       "source_location": "L1",
-      "community": 35,
+      "community": 36,
       "norm_label": "page.tsx",
       "id": "app_dashboard_predictions_samhita_page_tsx"
     },
@@ -5124,7 +5124,7 @@
       "file_type": "code",
       "source_file": "app/(dashboard)/predictions/monthly/page.tsx",
       "source_location": "L1",
-      "community": 81,
+      "community": 79,
       "norm_label": "page.tsx",
       "id": "app_dashboard_predictions_monthly_page_tsx"
     },
@@ -5133,7 +5133,7 @@
       "file_type": "code",
       "source_file": "app/(dashboard)/predictions/monthly/page.tsx",
       "source_location": "L4",
-      "community": 81,
+      "community": 79,
       "norm_label": "monthlyforecastpage()",
       "id": "monthly_page_monthlyforecastpage"
     }
@@ -13930,5 +13930,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "b3795e180ecc75129549cc7d0452877fe41a8da9"
+  "built_at_commit": "bccab46919d471c495fa48d7eb17fdac8f5179ad"
 }
