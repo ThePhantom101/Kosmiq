@@ -16,6 +16,8 @@ if (typeof window !== 'undefined') {
       person_profiles: 'identified_only',
       capture_pageview: false, // We track this manually in PostHogPageView
     })
+    // @ts-ignore - for debugging
+    if (typeof window !== 'undefined') window.posthog = posthog
   }
 }
 
