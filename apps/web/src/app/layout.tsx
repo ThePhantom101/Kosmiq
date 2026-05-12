@@ -4,6 +4,7 @@ import "./globals.css";
 import BackgroundSystem from "@/components/BackgroundSystem";
 import NavHUD from "@/components/NavHUD";
 import { AstroProvider } from "@/context/AstroContext";
+import { PostHogProvider } from "@/providers/posthog-provider";
 // Triggering fresh Vercel deployment after root directory update
 
 const cinzel = Cinzel({
@@ -39,9 +40,11 @@ export default function RootLayout({
     >
       <body className="min-h-full flex flex-col bg-black text-foreground relative antigravity-scroll-lock" suppressHydrationWarning>
         <BackgroundSystem />
-        <AstroProvider>
-          {children}
-        </AstroProvider>
+        <PostHogProvider>
+          <AstroProvider>
+            {children}
+          </AstroProvider>
+        </PostHogProvider>
       </body>
     </html>
   );
