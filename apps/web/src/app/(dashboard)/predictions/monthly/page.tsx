@@ -21,6 +21,7 @@ import {
   ShieldCheck,
   AlertCircle
 } from "lucide-react";
+import Link from "next/link";
 import { useAstro } from "@/context/AstroContext";
 import { 
   MonthlyForecastResponse 
@@ -139,6 +140,33 @@ function MonthlyForecastContent() {
 
   if (loading && !forecast) {
     return <MonthlyForecastSkeleton />;
+  }
+
+  if (!natalData?.chart && id === "me") {
+    return (
+      <div className="h-[70vh] flex flex-col items-center justify-center text-center space-y-8 max-w-md mx-auto">
+        <div className="relative">
+          <div className="absolute inset-0 bg-gold/20 blur-2xl rounded-full animate-pulse" />
+          <Calendar className="w-16 h-16 text-gold/40 relative z-10" />
+        </div>
+        
+        <div className="space-y-3">
+          <h2 className="text-2xl font-serif text-gold uppercase tracking-tight">
+            Fate Awaits Initialization
+          </h2>
+          <p className="text-sm text-gray-500 leading-relaxed">
+            Monthly forecasts require your birth blueprint to calculate transit influences. Initialize your chart to unlock your cosmic roadmap.
+          </p>
+        </div>
+
+        <Link
+          href="/new-chart"
+          className="px-8 py-3 bg-gold text-black text-[10px] font-bold uppercase tracking-[0.2em] hover:bg-white transition-all rounded-sm shadow-lg shadow-gold/10"
+        >
+          Generate Your Chart
+        </Link>
+      </div>
+    );
   }
 
   const monthName = format(parseISO(`${currentMonth}-01`), "MMMM yyyy");

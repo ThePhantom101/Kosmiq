@@ -30,10 +30,10 @@ export default function BirthForm({ onResult, isLoading, setIsLoading }: BirthFo
   const router = useRouter();
   const [formData, setFormData] = useState({
     name: "",
-    date: "",
-    time: "",
-    lat: 12.9716,
-    long: 77.5946,
+    date: "1990-05-12",
+    time: "14:30",
+    lat: 28.6139, // New Delhi
+    long: 77.2090,
     tz: 5.5,
   });
 

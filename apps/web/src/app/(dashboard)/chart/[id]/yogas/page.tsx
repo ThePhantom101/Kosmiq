@@ -93,20 +93,39 @@ export default function YogasPage() {
             <div key={i} className="h-64 bg-white/5 border border-gold/10 rounded-sm animate-pulse" />
           ))}
         </div>
-      ) : error ? (
-        <div className="h-[50vh] flex flex-col items-center justify-center text-center space-y-6">
-          <AlertCircle className="w-12 h-12 text-red-500/50" />
-          <div className="space-y-2">
-            <h2 className="text-xl font-serif uppercase">Detection Failed</h2>
-            <p className="text-sm text-gray-500">The complex algorithms of the yogas engine are currently recalibrating.</p>
+      ) : (error || (yogas.length === 0 && id === "me" && !loading)) ? (
+        <div className="h-[60vh] flex flex-col items-center justify-center text-center space-y-8 max-w-md mx-auto">
+          <div className="relative">
+            <div className="absolute inset-0 bg-gold/20 blur-2xl rounded-full animate-pulse" />
+            <AlertCircle className="w-16 h-16 text-gold/40 relative z-10" />
           </div>
-          <button
-            onClick={fetchYogas}
-            className="flex items-center gap-2 px-6 py-3 bg-gold/10 border border-gold/20 text-gold text-xs uppercase tracking-widest hover:bg-gold/20 transition-all"
+          
+          <div className="space-y-3">
+            <h2 className="text-2xl font-serif text-gold uppercase tracking-tight">
+              {error ? "Algorithm Recalibrating" : "Yogas Undetected"}
+            </h2>
+            <p className="text-sm text-gray-500 leading-relaxed">
+              {error 
+                ? "The yoga detection engine is currently processing cosmic configurations."
+                : "Planetary combinations (Yogas) are calculated from your birth blueprint. Initialize your chart to reveal your celestial gifts."}
+            </p>
+          </div>
+
+          <Link
+            href="/new-chart"
+            className="px-8 py-3 bg-gold text-black text-[10px] font-bold uppercase tracking-[0.2em] hover:bg-white transition-all rounded-sm shadow-lg shadow-gold/10"
           >
-            <RefreshCcw className="w-4 h-4" />
-            Retry Connection
-          </button>
+            Generate Your Chart
+          </Link>
+          
+          {error && (
+            <button 
+              onClick={() => window.location.reload()}
+              className="text-[9px] uppercase tracking-widest text-gray-600 hover:text-gold transition-colors"
+            >
+              Retry Connection →
+            </button>
+          )}
         </div>
       ) : (
         <div className="space-y-12">

@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect, useCallback } from "react";
 import { useParams } from "next/navigation";
+import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import { useAstro } from "@/context/AstroContext";
 import NorthIndianChart from "@/components/NorthIndianChart";
@@ -55,45 +56,47 @@ export default function DivisionalChartsPage() {
   const { data: astroData } = useAstro();
   const [activeVarga, setActiveVarga] = useState<VargaInfo>(VARGAS[0]);
   const [chartData, setChartData] = useState<ShodashvargaChart | null>(null);
+  const [vargaData, setVargaData] = useState<Record<string, ShodashvargaChart> | null>(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(false);
 
   const fetchVargaData = useCallback(async () => {
-    if (id === "me") {
-      if (astroData?.chart?.shodashvarga) {
-        const vargaKey = activeVarga.id;
-        const vargaData = astroData.chart.shodashvarga[vargaKey];
-        if (vargaData) {
-          setChartData(vargaData);
-          setError(false);
-          setLoading(false);
-          return;
-        }
-      }
-      // If we are on 'me' but have no data, it's an error
-      setError(true);
-      setLoading(false);
-      return;
-    }
-
     setLoading(true);
     setError(false);
     try {
-      const response = await fetch(`/api/chart/${id}/varga?division=${activeVarga.division}`);
-      if (!response.ok) throw new Error("Failed to fetch");
-      const data = await response.json();
-      setChartData(data);
+      if (id === "me") {
+        if (astroData?.chart?.shodashvarga) {
+          setVargaData(astroData.chart.shodashvarga);
+        } else {
+          setVargaData(null);
+        }
+        return;
+      }
+
+      // Fetch by ID
+      const res = await fetch(`/api/chart/${id}/varga`);
+      if (!res.ok) throw new Error("Failed to fetch");
+      const data = await res.json();
+      setVargaData(data);
     } catch (err) {
-      console.error(err);
+      console.error("Error fetching varga data:", err);
       setError(true);
     } finally {
       setLoading(false);
     }
-  }, [id, activeVarga, astroData]);
+  }, [id, astroData]);
 
   useEffect(() => {
     fetchVargaData();
   }, [fetchVargaData]);
+
+  useEffect(() => {
+    if (vargaData && vargaData[activeVarga.id]) {
+      setChartData(vargaData[activeVarga.id]);
+    } else {
+      setChartData(null);
+    }
+  }, [vargaData, activeVarga]);
 
   const getPlanetInfo = (data: ShodashvargaChart) => {
     const lagnaSign = Math.floor(data.Lagna / 30) + 1;
@@ -141,20 +144,39 @@ export default function DivisionalChartsPage() {
             <div className="h-32 bg-white/5" />
           </div>
         </div>
-      ) : error ? (
-        <div className="h-[50vh] flex flex-col items-center justify-center text-center space-y-6">
-          <AlertCircle className="w-12 h-12 text-red-500/50" />
-          <div className="space-y-2">
-            <h2 className="text-xl font-serif">Chart data unavailable</h2>
-            <p className="text-sm text-gray-500">The celestial engine encountered an alignment error.</p>
+      ) : (error || (!vargaData && id === "me")) ? (
+        <div className="h-[60vh] flex flex-col items-center justify-center text-center space-y-8 max-w-md mx-auto">
+          <div className="relative">
+            <div className="absolute inset-0 bg-gold/20 blur-2xl rounded-full animate-pulse" />
+            <AlertCircle className="w-16 h-16 text-gold/40 relative z-10" />
           </div>
-          <button
-            onClick={fetchVargaData}
-            className="flex items-center gap-2 px-6 py-3 bg-gold/10 border border-gold/20 text-gold text-xs uppercase tracking-widest hover:bg-gold/20 transition-all"
+          
+          <div className="space-y-3">
+            <h2 className="text-2xl font-serif text-gold">
+              {error ? "Celestial Disconnect" : "No Natal Data Found"}
+            </h2>
+            <p className="text-sm text-gray-500 leading-relaxed">
+              {error 
+                ? "The cosmic engine encountered an alignment error while fetching these charts."
+                : "To unlock the 16 divisional charts (Shodashvarga), you first need to initialize your birth blueprint."}
+            </p>
+          </div>
+
+          <Link
+            href="/new-chart"
+            className="px-8 py-3 bg-gold text-black text-[10px] font-bold uppercase tracking-[0.2em] hover:bg-white transition-all rounded-sm shadow-lg shadow-gold/10"
           >
-            <RefreshCcw className="w-4 h-4" />
-            Retry Connection
-          </button>
+            Generate Your Chart
+          </Link>
+          
+          {error && (
+            <button 
+              onClick={() => window.location.reload()}
+              className="text-[9px] uppercase tracking-widest text-gray-600 hover:text-gold transition-colors"
+            >
+              Try Reconnecting →
+            </button>
+          )}
         </div>
       ) : chartData ? (
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
