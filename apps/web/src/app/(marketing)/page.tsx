@@ -5,10 +5,17 @@ import { motion, AnimatePresence } from "framer-motion";
 import BirthForm from "@/components/BirthForm";
 import { CombinedChartResponse } from "@/types/astro";
 import { ArrowRight, ShieldCheck, Database, Zap } from "lucide-react";
+import { useAstro } from "@/context/AstroContext";
 
 export default function Home() {
+  const { setData } = useAstro();
   const [result, setResult] = useState<CombinedChartResponse | null>(null);
   const [isLoading, setIsLoading] = useState(false);
+
+  const handleResult = (newResult: CombinedChartResponse) => {
+    setResult(newResult);
+    setData(newResult);
+  };
 
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -101,7 +108,7 @@ export default function Home() {
 
             {/* Input HUD Module */}
             <motion.div variants={itemVariants}>
-              <BirthForm onResult={setResult} isLoading={isLoading} setIsLoading={setIsLoading} />
+              <BirthForm onResult={handleResult} isLoading={isLoading} setIsLoading={setIsLoading} />
             </motion.div>
           </motion.div>
         ) : (

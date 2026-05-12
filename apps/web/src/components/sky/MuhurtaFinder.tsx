@@ -54,6 +54,17 @@ export default function MuhurtaFinder() {
       const windows: MuhurtaWindow[] = [];
       const rule = MUHURTA_RULES[activity];
       
+      const userLat = natalData?.birth_data?.latitude;
+      const userLng = natalData?.birth_data?.longitude;
+      
+      if (!userLat || !userLng) {
+        setError("Birth location not found. Please generate a chart first to get personalized Muhurta results.");
+        setLoading(false);
+        return;
+      }
+
+      const locationName = natalData?.birth_data?.location || "Your Location";
+
       // Fetching Panchang for each day
       // In a real app, this would be a single bulk endpoint
       const days = Array.from({ length: diffDays + 1 }, (_, i) => {
@@ -68,9 +79,7 @@ export default function MuhurtaFinder() {
         const batch = days.slice(i, i + batchSize);
         const batchResults = await Promise.all(
           batch.map(async (date) => {
-            const lat = natalData?.chart?.metadata?.jd ? 12.9716 : 0.0; // Use actual from profile if available
-            const lng = 77.5946;
-            const res = await fetch(`/api/sky/panchang?date=${date}&lat=${lat}&lng=${lng}`);
+            const res = await fetch(`/api/sky/panchang?date=${date}&lat=${userLat}&lng=${userLng}`);
             if (!res.ok) return null;
             return { date, panchang: await res.json() as PanchangResponse };
           })
@@ -200,7 +209,7 @@ export default function MuhurtaFinder() {
             <MapPin className="w-4 h-4 text-gold/60" />
             <div className="text-xs">
               <span className="block uppercase tracking-widest text-[9px] font-bold text-gold/40">Calculation Location</span>
-              Bangalore, India (Pre-filled from Profile)
+              {natalData?.birth_data?.location ?? "Bangalore, India"} (from Profile)
             </div>
           </div>
 

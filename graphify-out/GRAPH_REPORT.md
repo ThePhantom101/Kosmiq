@@ -1,7 +1,7 @@
 # Graph Report - kosmiq  (2026-05-12)
 
 ## Corpus Check
-- 133 files · ~55,987 words
+- 133 files · ~56,296 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
@@ -10,7 +10,7 @@
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `a5bac97a`
+- Built from commit: `3fa12856`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 

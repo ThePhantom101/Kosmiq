@@ -90,6 +90,36 @@ export function MetricCards({ metrics }: MetricCardsProps) {
   );
 }
 
+// ─── Skeletons ─────────────────────────────────────────────────────────────
+
+export function MetricCardSkeleton() {
+  return (
+    <div className="hud-module animate-pulse flex flex-col gap-4 p-5">
+      <div className="flex items-start justify-between gap-2">
+        <div className="h-4 w-4 rounded-full bg-white/5" />
+        <div className="h-4 w-12 bg-white/5" />
+      </div>
+      <div className="space-y-2">
+        <div className="h-2 w-24 bg-white/5" />
+        <div className="h-8 w-32 bg-white/5" />
+        <div className="h-2 w-20 bg-white/5" />
+      </div>
+      <div className="h-[2px] w-full bg-white/5" />
+      <div className="h-2 w-40 bg-white/5" />
+    </div>
+  );
+}
+
+export function MetricCardsSkeleton() {
+  return (
+    <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 xl:grid-cols-3">
+      {[...Array(6)].map((_, i) => (
+        <MetricCardSkeleton key={i} />
+      ))}
+    </div>
+  );
+}
+
 // ─── Metric Card ─────────────────────────────────────────────────────────────
 
 interface MetricCardProps {

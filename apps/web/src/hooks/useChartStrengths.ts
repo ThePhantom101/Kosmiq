@@ -3,7 +3,6 @@
 import { useMemo } from "react";
 import { useAstro } from "@/context/AstroContext";
 import { derivePlanetMetrics, deriveBestHouse } from "@/utils/chart-strength-deriver";
-import { mockOverviewData } from "@/utils/overview-mock";
 import type { PlanetStrengthMetric, HouseStrength } from "@/types/overview";
 
 interface LivePlanetData {
@@ -12,17 +11,12 @@ interface LivePlanetData {
   bestHouse: HouseStrength;
   isLive: boolean;
   isLoading: boolean;
+  error: string | null;
   hasChartData: boolean;
 }
 
-/**
- * Derives live metric card data from the active chart in AstroContext.
- * Falls back to mock data on each field individually:
- * - strongestPlanet / weakestPlanet: live when chart is available
- * - bestHouse: mock until backend implements ashtakavarga bindhu scores
- */
 export function useChartStrengths(): LivePlanetData {
-  const { data, isLoading } = useAstro();
+  const { data, isLoading, error } = useAstro();
 
   const derived = useMemo(() => {
     if (!data?.chart) return null;
@@ -32,18 +26,37 @@ export function useChartStrengths(): LivePlanetData {
 
     return {
       ...planetMetrics,
-      bestHouse: bestHouseFromApi ?? mockOverviewData.metrics.bestHouse,
+      bestHouse: bestHouseFromApi ?? {
+        house: 0,
+        label: "Finding...",
+        score: 0,
+        planets: []
+      },
     };
   }, [data]);
 
   const hasChartData = Boolean(data?.chart);
 
+  const defaultMetric: PlanetStrengthMetric = {
+    planet: "...",
+    sanskritName: "...",
+    score: 0,
+    dignity: "Neutral",
+    house: 1
+  };
+
   return {
-    strongestPlanet: derived?.strongestPlanet ?? mockOverviewData.metrics.strongestPlanet,
-    weakestPlanet: derived?.weakestPlanet ?? mockOverviewData.metrics.weakestPlanet,
-    bestHouse: derived?.bestHouse ?? mockOverviewData.metrics.bestHouse,
+    strongestPlanet: derived?.strongestPlanet ?? defaultMetric,
+    weakestPlanet: derived?.weakestPlanet ?? defaultMetric,
+    bestHouse: derived?.bestHouse ?? {
+      house: 0,
+      label: "...",
+      score: 0,
+      planets: []
+    },
     isLive: hasChartData,
     isLoading,
+    error,
     hasChartData,
   };
 }

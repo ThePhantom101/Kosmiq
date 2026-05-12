@@ -73,7 +73,7 @@ const predictionItems: NavItem[] = [
 const skyItems: NavItem[] = [
   { name: "Current Transits", icon: Globe, href: "/sky/transits" },
   { name: "Panchang", icon: Sun, href: "/sky/panchang" },
-  { name: "Auspicious Times (coming soon)", icon: Clock, href: "/sky/muhurta" },
+  { name: "Auspicious Times", icon: Clock, href: "/sky/muhurta" },
   { name: "Learning Center", icon: BookOpen, href: "/tools/learning" },
 ];
 

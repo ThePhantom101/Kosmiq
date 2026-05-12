@@ -1,47 +1,88 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useState, useMemo } from "react";
 import { motion } from "framer-motion";
 import { Check, AlertTriangle, Compass, Search, ChevronRight, Info } from "lucide-react";
+import { useAstro } from "@/context/AstroContext";
+import { useDasha } from "@/hooks/useDasha";
+import { useYogas } from "@/hooks/useYogas";
 
-const QUESTIONS = [
-  {
-    id: 1,
-    text: "Does the [Lagna sign] personality description match you well?",
-    description: "Your Rising sign (Lagna) represents your physical self and outlook."
-  },
-  {
-    id: 2,
-    text: "Has your [current Dasha lord] period brought [Dasha themes]?",
-    description: "Vimshottari Dasha timing depends heavily on the precise Moon nakshatra."
-  },
-  {
-    id: 3,
-    text: "Do significant events align with your Dasha timeline?",
-    description: "Check if marriage, job changes, or travel occurred during relevant periods."
-  },
-  {
-    id: 4,
-    text: "Do you identify more with your Moon sign or Sun sign?",
-    description: "In Vedic astrology, the Moon is usually the more dominant personality driver."
-  },
-  {
-    id: 5,
-    text: "Has your [Yoga name] yoga manifested in your life?",
-    description: "Specific planetary combinations should produce observable life results."
-  }
+const SIGNS = [
+  "Aries", "Taurus", "Gemini", "Cancer", 
+  "Leo", "Virgo", "Libra", "Scorpio", 
+  "Sagittarius", "Capricorn", "Aquarius", "Pisces"
 ];
 
+function getSign(lon: number) {
+  return SIGNS[Math.floor(lon / 30) % 12];
+}
+
 export default function ZodiacCheckPage() {
+  const { data: astroData } = useAstro();
+  const { data: dashaData } = useDasha();
+  const { data: yogasData } = useYogas();
+  
   const [step, setStep] = useState(1);
   const [answers, setAnswers] = useState<Record<number, string>>({});
+
+  const lagna = astroData?.chart ? getSign(astroData.chart.ascendant) : "Your Lagna";
+  const dashaLord = dashaData?.current_mahadasha?.lord || "Your Dasha Lord";
+  const yogaName = yogasData?.yogas.find(y => y.present)?.name || "Your Dominant Yoga";
+
+  const dynamicQuestions = useMemo(() => [
+    {
+      id: 1,
+      text: `Does the ${lagna} personality description match you well?`,
+      description: "Your Rising sign (Lagna) represents your physical self and outlook."
+    },
+    {
+      id: 2,
+      text: `Has your ${dashaLord} period brought relevant life themes?`,
+      description: "Vimshottari Dasha timing depends heavily on the precise Moon nakshatra."
+    },
+    {
+      id: 3,
+      text: "Do significant events align with your Dasha timeline?",
+      description: "Check if marriage, job changes, or travel occurred during relevant periods."
+    },
+    {
+      id: 4,
+      text: "Do you identify more with your Moon sign or Sun sign?",
+      description: "In Vedic astrology, the Moon is usually the more dominant personality driver."
+    },
+    {
+      id: 5,
+      text: `Has the ${yogaName} energy manifested in your life?`,
+      description: "Specific planetary combinations should produce observable life results."
+    }
+  ], [lagna, dashaLord, yogaName]);
   
-  // Mock comparison data
-  const comparison = {
-    lahiri: { lagna: "Leo", moon: "Taurus" },
-    kp: { lagna: "Leo", moon: "Taurus" },
-    raman: { lagna: "Cancer", moon: "Aries" }
-  };
+  // Comparison data
+  const comparison = useMemo(() => {
+    if (!astroData?.chart) return {
+      lahiri: { lagna: "N/A", moon: "N/A" },
+      kp: { lagna: "N/A", moon: "N/A" },
+      raman: { lagna: "N/A", moon: "N/A" }
+    };
+
+    const moonLon = astroData.chart.planets.Moon?.longitude || 0;
+    const ascLon = astroData.chart.ascendant;
+
+    return {
+      lahiri: { 
+        lagna: getSign(ascLon), 
+        moon: getSign(moonLon) 
+      },
+      kp: { 
+        lagna: getSign(ascLon - 0.1), // Approx shift
+        moon: getSign(moonLon - 0.1) 
+      },
+      raman: { 
+        lagna: getSign(ascLon + 1.4), // Approx shift
+        moon: getSign(moonLon + 1.4) 
+      }
+    };
+  }, [astroData]);
 
   const handleAnswer = (questionId: number, value: string) => {
     setAnswers({ ...answers, [questionId]: value });
@@ -114,7 +155,7 @@ export default function ZodiacCheckPage() {
               </div>
 
               <div className="space-y-10">
-                {QUESTIONS.map((q) => (
+                {dynamicQuestions.map((q) => (
                   <div key={q.id} className="space-y-4">
                     <div className="space-y-1">
                       <h4 className="text-white font-medium flex items-center gap-3">

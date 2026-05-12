@@ -12,16 +12,28 @@ export default function PersonalDetailsPage() {
   
   // Form State
   const [formData, setFormData] = useState({
-    full_name: "Raj Kumar", // Pre-filled mock
+    full_name: "",
     gender: "Male",
-    dob: "1995-03-14",
-    tob: "14:30:00",
-    location: "New Delhi, India",
-    current_city: "Mumbai, India",
+    dob: "",
+    tob: "",
+    location: "",
+    current_city: "",
     marital_status: "Single",
     occupation: "Technology",
     knows_exact_time: true
   });
+
+  useEffect(() => {
+    if (astroData?.birth_data) {
+      setFormData(prev => ({
+        ...prev,
+        full_name: astroData.birth_data?.name || "",
+        dob: astroData.birth_data?.date || "",
+        tob: astroData.birth_data?.time || "",
+        location: astroData.birth_data?.location || "",
+      }));
+    }
+  }, [astroData]);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();

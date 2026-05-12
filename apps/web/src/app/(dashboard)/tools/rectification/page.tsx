@@ -30,11 +30,14 @@ export default function RectificationPage() {
   const [events, setEvents] = useState<any[]>([]);
 
   useEffect(() => {
-    // Mock fetching events
-    setEvents([
-      { type: "Job Change", date: "2020-02", impact: "Positive" },
-      { type: "Degree Completion", date: "2018-06", impact: "Positive" }
-    ]);
+    const saved = localStorage.getItem("kosmiq_life_events");
+    if (saved) {
+      try {
+        setEvents(JSON.parse(saved));
+      } catch (e) {
+        console.error("Failed to parse life events", e);
+      }
+    }
   }, []);
 
   const handleNext = () => {
@@ -56,7 +59,11 @@ export default function RectificationPage() {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          current_birth_data: { time_of_birth: "14:30:00" },
+          current_birth_data: { 
+            time_of_birth: astroData?.birth_data?.time || "12:00:00",
+            date_of_birth: astroData?.birth_data?.date || "2000-01-01",
+            location: astroData?.birth_data?.location || "Delhi, India"
+          },
           uncertainty_minutes: uncertainty,
           life_events: events,
           profile_id: astroData?.profile?.id || "me"

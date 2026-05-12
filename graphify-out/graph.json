@@ -4300,7 +4300,7 @@
       "label": "getPlanetInfo()",
       "file_type": "code",
       "source_file": "apps/web/src/app/(dashboard)/chart/[id]/divisional/page.tsx",
-      "source_location": "L98",
+      "source_location": "L101",
       "id": "divisional_page_getplanetinfo",
       "community": 1,
       "norm_label": "getplanetinfo()"
@@ -4525,7 +4525,7 @@
       "label": "MonthlyForecastSkeleton()",
       "file_type": "code",
       "source_file": "apps/web/src/app/(dashboard)/predictions/monthly/page.tsx",
-      "source_location": "L40",
+      "source_location": "L41",
       "id": "monthly_page_monthlyforecastskeleton",
       "community": 1,
       "norm_label": "monthlyforecastskeleton()"
@@ -4534,7 +4534,7 @@
       "label": "handleMonthChange()",
       "file_type": "code",
       "source_file": "apps/web/src/app/(dashboard)/predictions/monthly/page.tsx",
-      "source_location": "L126",
+      "source_location": "L127",
       "id": "monthly_page_handlemonthchange",
       "community": 1,
       "norm_label": "handlemonthchange()"
@@ -11818,9 +11818,9 @@
       "source_file": "apps/web/src/components/Sidebar.tsx",
       "source_location": "L35",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "apps_web_src_components_sidebar_tsx",
-      "target": "hooks_usesession_usesession",
-      "confidence_score": 1.0
+      "target": "hooks_usesession_usesession"
     },
     {
       "relation": "contains",
@@ -11828,9 +11828,9 @@
       "source_file": "apps/web/src/components/Sidebar.tsx",
       "source_location": "L233",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "apps_web_src_components_sidebar_tsx",
-      "target": "components_sidebar_handleauthaction",
-      "confidence_score": 1.0
+      "target": "components_sidebar_handleauthaction"
     },
     {
       "relation": "contains",
@@ -11935,9 +11935,9 @@
       "source_file": "apps/web/src/components/auth/AuthGate.tsx",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "apps_web_src_components_auth_authgate_tsx",
-      "target": "hooks_usesession_usesession",
-      "confidence_score": 1.0
+      "target": "hooks_usesession_usesession"
     },
     {
       "relation": "contains",
@@ -11945,9 +11945,9 @@
       "source_file": "apps/web/src/components/auth/AuthGate.tsx",
       "source_location": "L13",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "apps_web_src_components_auth_authgate_tsx",
-      "target": "auth_authgate_authgate",
-      "confidence_score": 1.0
+      "target": "auth_authgate_authgate"
     },
     {
       "relation": "imports",
@@ -11956,9 +11956,9 @@
       "source_file": "apps/web/src/app/(dashboard)/charts/page.tsx",
       "source_location": "L9",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "apps_web_src_app_dashboard_charts_page_tsx",
-      "target": "auth_authgate_authgate",
-      "confidence_score": 1.0
+      "target": "auth_authgate_authgate"
     },
     {
       "relation": "imports",
@@ -11967,9 +11967,9 @@
       "source_file": "apps/web/src/app/(dashboard)/tools/rectification/page.tsx",
       "source_location": "L19",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "apps_web_src_app_dashboard_tools_rectification_page_tsx",
-      "target": "auth_authgate_authgate",
-      "confidence_score": 1.0
+      "target": "auth_authgate_authgate"
     },
     {
       "relation": "imports",
@@ -11978,9 +11978,9 @@
       "source_file": "apps/web/src/app/(dashboard)/settings/account/page.tsx",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "apps_web_src_app_dashboard_settings_account_page_tsx",
-      "target": "auth_authgate_authgate",
-      "confidence_score": 1.0
+      "target": "auth_authgate_authgate"
     },
     {
       "relation": "calls",
@@ -12488,9 +12488,9 @@
       "source_file": "apps/web/src/hooks/useSession.ts",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "apps_web_src_hooks_usesession_ts",
-      "target": "supabase_client_createclient",
-      "confidence_score": 1.0
+      "target": "supabase_client_createclient"
     },
     {
       "relation": "imports",
@@ -12723,9 +12723,9 @@
       "source_file": "apps/web/src/hooks/useSession.ts",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "apps_web_src_hooks_usesession_ts",
-      "target": "hooks_usesession_usesession",
-      "confidence_score": 1.0
+      "target": "hooks_usesession_usesession"
     },
     {
       "relation": "imports",
@@ -12734,9 +12734,9 @@
       "source_file": "apps/web/src/app/(dashboard)/dashboard/page.tsx",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "apps_web_src_app_dashboard_dashboard_page_tsx",
-      "target": "hooks_usesession_usesession",
-      "confidence_score": 1.0
+      "target": "hooks_usesession_usesession"
     },
     {
       "relation": "imports",
@@ -12745,9 +12745,9 @@
       "source_file": "apps/web/src/app/(dashboard)/ask/page.tsx",
       "source_location": "L9",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "apps_web_src_app_dashboard_ask_page_tsx",
-      "target": "hooks_usesession_usesession",
-      "confidence_score": 1.0
+      "target": "hooks_usesession_usesession"
     },
     {
       "relation": "calls",
@@ -14144,5 +14144,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "a5bac97a558153c95f5c40ecb7dfd27e7365e2b3"
+  "built_at_commit": "3fa128565fcbe151829facea4f6d6cb19dad9d8e"
 }

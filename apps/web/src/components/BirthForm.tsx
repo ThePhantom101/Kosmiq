@@ -127,8 +127,21 @@ export default function BirthForm({ onResult, isLoading, setIsLoading }: BirthFo
         timezone_offset: formData.tz,
       });
       
+      const enrichedResult: CombinedChartResponse = {
+        ...result,
+        birth_data: {
+          name: formData.name,
+          date: formData.date,
+          time: formData.time,
+          location: locationSearch,
+          latitude: formData.lat,
+          longitude: formData.long,
+          timezone_offset: formData.tz,
+        }
+      };
+      
       if (onResult) {
-        onResult(result);
+        onResult(enrichedResult);
       }
       // Auto-redirect to astrolabe
       router.push("/chart/me/divisional");

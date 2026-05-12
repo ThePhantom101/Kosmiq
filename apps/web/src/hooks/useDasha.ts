@@ -88,17 +88,8 @@ export function useDasha() {
       if (!response.ok) throw new Error("Failed to fetch dasha data");
       const json = await response.json();
       setData(json);
-    } catch (err) {
-      console.error("Dasha fetch failed, using fallback:", err);
-      // Mock data fallback for demonstration/connectivity issues
-      setData({
-        current_mahadasha: { lord: "Jupiter", start: "2010-05-15", end: "2026-05-15", duration_years: 16, percent_complete: 88 },
-        current_antardasha: { lord: "Rahu", start: "2023-11-20", end: "2026-05-15", percent_complete: 72 },
-        sequence: [
-          { lord: "Jupiter", start: "2010-05-15", end: "2026-05-15", duration_years: 16 },
-          { lord: "Saturn", start: "2026-05-15", end: "2045-05-15", duration_years: 19 }
-        ]
-      });
+    } catch (err: any) {
+      setError(err.message || "Failed to fetch dasha data");
     } finally {
       setIsLoading(false);
     }

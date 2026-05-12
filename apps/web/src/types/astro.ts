@@ -59,12 +59,23 @@ export interface SynthesisResponse {
   reading: string;
 }
 
+export interface BirthData {
+  name: string;
+  date: string;
+  time: string;
+  location: string;
+  latitude: number;
+  longitude: number;
+  timezone_offset: number;
+}
+
 export interface CombinedChartResponse {
   chart: ChartResponse;
   reading: string;
   profile?: {
     id: string;
   };
+  birth_data?: BirthData;
 }
 
 export interface TransitPlanetDetail {

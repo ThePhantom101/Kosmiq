@@ -44,10 +44,23 @@ const EVENT_TYPES: Record<string, string[]> = {
 
 export default function ImportantDatesPage() {
   const { data: astroData } = useAstro();
-  const [events, setEvents] = useState<any[]>([
-    { id: 1, category: "Education", type: "Degree Completion", date: "2018-06", note: "Graduated with honors", impact: "Positive" },
-    { id: 2, category: "Career", type: "Job Change", date: "2020-02", note: "Joined GlobalTech", impact: "Positive" },
-  ]);
+  const [events, setEvents] = useState<any[]>([]);
+  
+  React.useEffect(() => {
+    const saved = localStorage.getItem("kosmiq_life_events");
+    if (saved) {
+      try {
+        setEvents(JSON.parse(saved));
+      } catch (e) {
+        console.error("Failed to parse life events", e);
+      }
+    }
+  }, []);
+
+  const saveEvents = (newEvents: any[]) => {
+    setEvents(newEvents);
+    localStorage.setItem("kosmiq_life_events", JSON.stringify(newEvents));
+  };
   
   const [isAdding, setIsAdding] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
@@ -78,7 +91,7 @@ export default function ImportantDatesPage() {
       
       if (res.ok) {
         const result = await res.json();
-        setEvents([...events, { ...result.data, id: Date.now() }]);
+        saveEvents([...events, { ...result.data, id: Date.now() }]);
         setIsAdding(false);
         setNewEvent({
           category: "Career",
@@ -96,7 +109,7 @@ export default function ImportantDatesPage() {
   };
 
   const removeEvent = (id: number) => {
-    setEvents(events.filter(e => e.id !== id));
+    saveEvents(events.filter(e => e.id !== id));
   };
 
   return (

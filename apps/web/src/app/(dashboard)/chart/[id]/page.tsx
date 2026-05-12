@@ -4,7 +4,7 @@ import React, { useMemo } from "react";
 import { useParams } from "next/navigation";
 import Link from "next/link";
 import { ChartHeroBanner } from "@/components/overview/ChartHeroBanner";
-import { MetricCards } from "@/components/overview/MetricCards";
+import { MetricCards, MetricCardsSkeleton } from "@/components/overview/MetricCards";
 import { LifeAtAGlance } from "@/components/overview/LifeAtAGlance";
 import { CurrentAlerts } from "@/components/overview/CurrentAlerts";
 import { QuickLinks } from "@/components/overview/QuickLinks";
@@ -17,7 +17,6 @@ import { PlanetPlacements } from "@/components/overview/PlanetPlacements";
 import ReactMarkdown from "react-markdown";
 import { Sparkles, LayoutGrid } from "lucide-react";
 import { motion } from "framer-motion";
-import { mockOverviewData } from "@/utils/overview-mock";
 import type { OverviewMetrics, LifeGlance, TransitAlert, ChartHero } from "@/types/overview";
 
 const SIGNS = [
@@ -45,13 +44,15 @@ export default function OverviewPage() {
   const params = useParams<{ id: string }>();
   const chartId = params?.id ?? "me";
 
-  const { data: astroData, isLoading: isAstroLoading } = useAstro();
-  const { data: dashaData, isLoading: isDashaLoading } = useDasha();
-  const { data: yogasData, isLoading: isYogasLoading } = useYogas();
-  const { strongestPlanet, weakestPlanet, bestHouse, isLive, isLoading: isStrengthsLoading } = useChartStrengths();
-
+  const { data: astroData, isLoading: isAstroLoading, error: astroError } = useAstro();
+  const { data: dashaData, isLoading: isDashaLoading, error: dashaError } = useDasha();
+  const { data: yogasData, isLoading: isYogasLoading, error: yogasError } = useYogas();
+  const { strongestPlanet, weakestPlanet, bestHouse, isLive, isLoading: isStrengthsLoading, error: strengthsError } = useChartStrengths();
+  
   const isLoading = isAstroLoading || isDashaLoading || isYogasLoading || isStrengthsLoading;
+  const error = astroError || dashaError || yogasError || strengthsError;
 
+  // 1. DATA DERIVATION
   const derivedData = useMemo(() => {
     if (!astroData?.chart) return null;
     const chart = astroData.chart;
@@ -78,11 +79,12 @@ export default function OverviewPage() {
     const astroScore = Math.round(Math.max(0, Math.min(100, normalizedBindhu + dignityBonus + yogaBonus)));
 
     // 2. HERO DATA
+    const birthData = astroData.birth_data;
     const hero: ChartHero = {
-      name: chart.metadata.name || "Seeker",
-      dateOfBirth: new Date(chart.metadata.jd ? (chart.metadata.jd - 2440587.5) * 86400000 : Date.now()).toISOString().split('T')[0], // Simplified
-      timeOfBirth: "Birth Time", 
-      placeOfBirth: "Celestial Coordinates",
+      name: birthData?.name || chart.metadata.name || "Seeker",
+      dateOfBirth: birthData?.date || new Date(chart.metadata.jd ? (chart.metadata.jd - 2440587.5) * 86400000 : Date.now()).toISOString().split('T')[0],
+      timeOfBirth: birthData?.time || "Birth Time", 
+      placeOfBirth: birthData?.location || "Celestial Coordinates",
       lagna: getSign(chart.ascendant),
       lagnaLord: PLANET_LORDS[getSign(chart.ascendant)],
       moonSign: getSign(chart.planets.Moon?.longitude || 0),
@@ -164,7 +166,44 @@ export default function OverviewPage() {
     return { hero, metrics, lifeGlance, alerts };
   }, [astroData, dashaData, yogasData, strongestPlanet, weakestPlanet, bestHouse]);
 
-  const { hero, metrics, lifeGlance, alerts } = derivedData || mockOverviewData;
+  // LOADING STATE
+  if (isLoading) {
+    return (
+      <div className="space-y-10 pb-20">
+        <div className="h-64 bg-white/5 animate-pulse rounded-sm" />
+        <MetricCardsSkeleton />
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+          <div className="lg:col-span-2 h-[400px] bg-white/5 animate-pulse rounded-sm" />
+          <div className="h-[400px] bg-white/5 animate-pulse rounded-sm" />
+        </div>
+      </div>
+    );
+  }
+
+  // EMPTY STATE
+  if (!astroData?.chart) {
+    return (
+      <div className="min-h-[60vh] flex flex-col items-center justify-center text-center space-y-6">
+        <div className="p-6 bg-gold/5 border border-gold/10 rounded-full">
+          <LayoutGrid className="w-12 h-12 text-gold/40" />
+        </div>
+        <div className="space-y-2">
+          <h2 className="text-2xl font-serif text-white">No Celestial Data Found</h2>
+          <p className="text-gray-400 max-w-sm mx-auto text-sm">
+            We couldn't locate your birth chart coordinates. Please generate a new chart to unlock the dashboard.
+          </p>
+        </div>
+        <Link 
+          href="/"
+          className="bg-gold text-black font-bold uppercase tracking-widest text-xs px-8 py-4 rounded-sm hover:bg-gold/90 transition-all"
+        >
+          Generate New Chart
+        </Link>
+      </div>
+    );
+  }
+
+  const { hero, metrics, lifeGlance, alerts } = derivedData!;
 
   return (
     <div className="space-y-10 pb-20">
