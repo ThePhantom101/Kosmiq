@@ -61,11 +61,11 @@ export default function AshtakavargaPage() {
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-8 pt-8 border-b border-white/5 pb-8">
           <div className="space-y-3">
             <div className="flex items-center space-x-2">
-              <span className="overline-label text-gold/60">Ashtakavarga Resonance</span>
-              <div className="h-[1px] w-8 bg-gold/20" />
+               <span className="overline-label text-gold/60">Ashtakavarga Resonance</span>
+               <div className="h-[1px] w-8 bg-gold/20" />
             </div>
             <h1 className="text-5xl font-serif text-white tracking-tight uppercase">
-              Sectoral <span className="text-gold">Potency</span>
+              House <span className="text-gold">Resonance</span>
             </h1>
             <p className="text-zinc-500 max-w-xl text-xs font-medium leading-relaxed uppercase tracking-widest">
               A collective numerical evaluation of planetary support across the twelve domains of life.

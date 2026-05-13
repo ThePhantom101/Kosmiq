@@ -29,6 +29,8 @@ import {
   ChevronDown,
   Lock,
   LogIn,
+  Compass,
+  Award,
 } from "lucide-react";
 import { createClient } from "@/utils/supabase/client";
 import { useAstro } from "@/context/AstroContext";
@@ -51,35 +53,36 @@ const PLACEHOLDER_CHART_ID = "me";
 
 const mainItems: NavItem[] = [
   { name: "Dashboard", icon: LayoutDashboard, href: "/dashboard" },
-  { name: "My Library", icon: BookOpen, href: "/charts" },
-  { name: "Ask AI", icon: Sparkles, href: "/ask" },
+  { name: "Chart Library", icon: BookOpen, href: "/charts" },
+  { name: "Ask Oracle AI", icon: Sparkles, href: "/ask" },
 ];
 
 const activeChartItems: NavItem[] = [
-  { name: "Chart Overview", icon: LayoutDashboard, href: `/chart/${PLACEHOLDER_CHART_ID}` },
-  { name: "16 Divisional Charts", icon: Grid3x3, href: `/chart/${PLACEHOLDER_CHART_ID}/divisional` },
-  { name: "Vimshottari Dasha", icon: GitBranch, href: `/chart/${PLACEHOLDER_CHART_ID}/timeline` },
-  { name: "Shadbala Energy", icon: Zap, href: `/chart/${PLACEHOLDER_CHART_ID}/strengths` },
-  { name: "Ashtakvarga Strength", icon: BarChart3, href: `/chart/${PLACEHOLDER_CHART_ID}/ashtakvarga` },
+  { name: "Birth Chart", icon: Compass, href: `/chart/${PLACEHOLDER_CHART_ID}` },
+  { name: "Harmonic Charts", icon: Grid3x3, href: `/chart/${PLACEHOLDER_CHART_ID}/divisional` },
+  { name: "Life Timelines", icon: GitBranch, href: `/chart/${PLACEHOLDER_CHART_ID}/timeline` },
+  { name: "Planetary Strengths", icon: Zap, href: `/chart/${PLACEHOLDER_CHART_ID}/strengths` },
+  { name: "House Resonance", icon: BarChart3, href: `/chart/${PLACEHOLDER_CHART_ID}/ashtakvarga` },
+  { name: "Cosmic Combinations", icon: Award, href: `/chart/${PLACEHOLDER_CHART_ID}/yogas` },
   { name: "Shadow Planets", icon: Moon, href: `/chart/${PLACEHOLDER_CHART_ID}/shadows` },
 ];
 
 const predictionItems: NavItem[] = [
-  { name: "Monthly Predictions", icon: CalendarDays, href: "/predictions/monthly" },
-  { name: "Relationship Matching", icon: HeartPulse, href: "/compatibility" },
-  { name: "Historical Comparisons", icon: History, href: "/predictions/samhita" },
+  { name: "Monthly Forecast", icon: CalendarDays, href: "/predictions/monthly" },
+  { name: "Relationship Compatibility", icon: HeartPulse, href: "/compatibility" },
+  { name: "Historical Patterns", icon: History, href: "/predictions/samhita" },
 ];
 
 const skyItems: NavItem[] = [
-  { name: "Current Transits", icon: Globe, href: "/sky/transits" },
+  { name: "Live Transits", icon: Globe, href: "/sky/transits" },
   { name: "Daily Almanac", icon: Sun, href: "/sky/panchang" },
   { name: "Auspicious Windows", icon: Clock, href: "/sky/muhurta" },
 ];
 
 const refineItems: NavItem[] = [
-  { name: "Time Correction", icon: Crosshair, href: "/tools/rectification" },
-  { name: "Event Sync", icon: CalendarCheck, href: "/tools/calibration/events" },
-  { name: "Identity Check", icon: CircleDot, href: "/tools/calibration/zodiac" },
+  { name: "Birth Time Correction", icon: Crosshair, href: "/tools/rectification" },
+  { name: "Life Event Sync", icon: CalendarCheck, href: "/tools/calibration/events" },
+  { name: "Identity Verification", icon: CircleDot, href: "/tools/calibration/zodiac" },
   { name: "Profile Settings", icon: User, href: "/tools/calibration/biodata" },
 ];
 
@@ -88,8 +91,9 @@ const sections: NavSection[] = [
   { title: "Active Chart", items: activeChartItems },
   { title: "Predictions", items: predictionItems },
   { title: "Today's Sky", items: skyItems },
-  { title: "Refine", items: refineItems, isLockedForGuest: true },
+  { title: "Refine Chart", items: refineItems, isLockedForGuest: true },
 ];
+
 
 function NavLink({
   item,

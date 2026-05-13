@@ -134,6 +134,7 @@ def calculate_horoscope(
         "planets": planetary_positions,
         "shodashvarga": vargas,
         "ascendant": asc_lon,
+        "houses": list(houses),
         "ascendant_nakshatra": get_nakshatra(asc_lon),
         "astro_score": 78,
         "planetary_strengths": strengths,

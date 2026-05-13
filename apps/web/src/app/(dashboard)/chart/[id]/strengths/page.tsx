@@ -106,7 +106,7 @@ export default function StrengthsPage() {
               <div className="h-[1px] w-8 bg-gold/20" />
             </div>
             <h1 className="text-5xl font-serif text-white tracking-tight uppercase">
-              Shadbala <span className="text-gold">Energy</span>
+              Planetary <span className="text-gold">Strengths</span>
             </h1>
             <p className="text-zinc-500 max-w-xl text-xs font-medium leading-relaxed uppercase tracking-widest">
               Mapping the weighted strength of every cosmic influence in your field.

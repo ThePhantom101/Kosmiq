@@ -99,7 +99,7 @@ export default function CompatibilityPage() {
              Karmic <br /> <span className="text-gold">Intersection</span>
            </h1>
            <p className="text-zinc-500 max-w-2xl mx-auto text-xs font-bold leading-relaxed uppercase tracking-[0.2em] opacity-80 pt-4">
-             Synthesizing the Ashta Koota variables and Guna distribution to map the resonance between two unique natal signatures.
+             Synthesizing the Eight Factor variables and energy distribution to map the resonance between two unique natal signatures.
            </p>
         </div>
       </section>

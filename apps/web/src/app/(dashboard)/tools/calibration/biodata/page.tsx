@@ -61,7 +61,7 @@ export default function BiodataCalibrationPage() {
             <div className="h-[1px] w-12 bg-gold/20" />
           </div>
           <h1 className="text-6xl md:text-8xl font-serif text-white tracking-tighter uppercase leading-[0.8]">
-            Biodata <br /> <span className="text-gold">Calibration</span>
+            Profile <br /> <span className="text-gold">Settings</span>
           </h1>
           <div className="flex items-center justify-center md:justify-start gap-3 pt-4">
             <div className="text-[10px] text-zinc-500 font-mono uppercase tracking-widest">Somatic: Body Integrity</div>
@@ -189,7 +189,7 @@ export default function BiodataCalibrationPage() {
                </div>
                <div>
                  <h3 className="text-3xl font-serif text-white uppercase tracking-tight">Archetypal Resonance</h3>
-                 <p className="text-xs text-zinc-500 uppercase font-black tracking-widest mt-1">Somatic Dosha Distribution</p>
+                 <p className="text-xs text-zinc-500 uppercase font-black tracking-widest mt-1">Somatic Archetype Distribution</p>
                </div>
             </div>
 
@@ -248,7 +248,7 @@ export default function BiodataCalibrationPage() {
                   <div className="w-4 h-4 border-2 border-black/20 border-t-black animate-spin rounded-full" />
                 ) : (
                   <>
-                    <Save className="w-4 h-4" /> Finalize Biodata
+                    <Save className="w-4 h-4" /> Finalize Settings
                   </>
                 )}
               </button>

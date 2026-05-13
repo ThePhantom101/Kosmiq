@@ -86,7 +86,7 @@ export default function ZodiacCheckPage() {
             <div className="h-[1px] w-12 bg-gold/20" />
           </div>
           <h1 className="text-6xl md:text-8xl font-serif text-white tracking-tighter uppercase leading-[0.8]">
-            Zodiac <br /> <span className="text-gold">Alignment</span>
+            Identity <br /> <span className="text-gold">Verification</span>
           </h1>
           <div className="flex items-center justify-center md:justify-start gap-3 pt-4">
             <div className="text-[10px] text-zinc-500 font-mono uppercase tracking-widest">Calibration: Sidereal Integrity</div>

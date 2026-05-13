@@ -39,7 +39,7 @@ export function useChartStrengths(): LivePlanetData {
 
   const defaultMetric: PlanetStrengthMetric = {
     planet: "...",
-    sanskritName: "...",
+    signification: "...",
     score: 0,
     dignity: "Neutral",
     house: 1

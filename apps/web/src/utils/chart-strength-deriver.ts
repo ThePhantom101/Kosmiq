@@ -1,20 +1,20 @@
 import type { ChartResponse } from "@/types/astro";
 import type { PlanetStrengthMetric, HouseStrength } from "@/types/overview";
 
-const PLANET_SANSKRIT: Record<string, string> = {
-  Sun: "Surya",
-  Moon: "Chandra",
-  Mars: "Mangala",
-  Mercury: "Budha",
-  Jupiter: "Guru",
-  Venus: "Shukra",
-  Saturn: "Shani",
-  Rahu: "Rahu",
-  Ketu: "Ketu",
+const PLANET_SIGNIFICATIONS: Record<string, string> = {
+  Sun: "Soul & Vitality",
+  Moon: "Mind & Emotions",
+  Mars: "Energy & Drive",
+  Mercury: "Logic & Intellect",
+  Jupiter: "Wisdom & Expansion",
+  Venus: "Values & Attraction",
+  Saturn: "Structure & Karma",
+  Rahu: "Ambition & Desire",
+  Ketu: "Detachment & Insight",
 };
 
 // Exclude Lagna — it's the ascendant point, not a graha
-const GRAHAS = Object.keys(PLANET_SANSKRIT);
+const GRAHAS = Object.keys(PLANET_SIGNIFICATIONS);
 
 /**
  * Derives planet house placement from longitude.
@@ -74,7 +74,7 @@ export function derivePlanetMetrics(chart: ChartResponse): DerivedPlanetMetrics 
 
     return {
       planet: name,
-      sanskritName: PLANET_SANSKRIT[name] ?? name,
+      signification: PLANET_SIGNIFICATIONS[name] ?? name,
       score,
       dignity: scoreToDignity(score),
       house,

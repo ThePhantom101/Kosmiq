@@ -72,10 +72,10 @@ export default function YogasPage() {
       <div className="flex flex-col md:flex-row md:items-end justify-between gap-6">
         <div className="space-y-1">
           <h1 className="text-4xl font-serif uppercase tracking-tight text-white">
-            Yogas
+            Cosmic Combinations
           </h1>
           <p className="text-gold/60 text-sm italic font-medium uppercase tracking-widest">
-            Planetary Combinations
+            Planetary Yogas
           </p>
         </div>
         {!loading && !error && (

@@ -15,7 +15,7 @@ export function KootaBreakdown({ scores }: KootaBreakdownProps) {
         <div className="space-y-2">
           <div className="flex items-center gap-3">
              <div className="w-1.5 h-1.5 bg-gold" />
-             <span className="overline-label text-gold/60">Ashta Koota Analysis</span>
+             <span className="overline-label text-gold/60">Compatibility Factors</span>
           </div>
           <h3 className="text-4xl md:text-5xl font-serif text-white uppercase tracking-tight">The Eight Pillars</h3>
         </div>

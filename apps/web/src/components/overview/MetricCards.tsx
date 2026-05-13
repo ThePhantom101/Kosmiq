@@ -35,9 +35,9 @@ export function MetricCards({ metrics }: MetricCardsProps) {
       {/* Strongest Planet */}
       <MetricCard
         icon={<Star className="h-4 w-4" />}
-        overline="Strongest Planet (Bala)"
+        overline="Strongest Planet"
         title={strongestPlanet.planet}
-        subtitle={strongestPlanet.sanskritName}
+        subtitle={strongestPlanet.signification}
         badge={strongestPlanet.dignity}
         badgeColor="gold"
         footer={`House ${strongestPlanet.house} · Score ${strongestPlanet.score}/100`}
@@ -48,9 +48,9 @@ export function MetricCards({ metrics }: MetricCardsProps) {
       {/* Weakest Planet */}
       <MetricCard
         icon={<AlertCircle className="h-4 w-4" />}
-        overline="Weakest Planet (Pāpa)"
+        overline="Weakest Planet"
         title={weakestPlanet.planet}
-        subtitle={weakestPlanet.sanskritName}
+        subtitle={weakestPlanet.signification}
         badge={weakestPlanet.dignity}
         badgeColor="red"
         footer={`House ${weakestPlanet.house} · Score ${weakestPlanet.score}/100`}
@@ -61,7 +61,7 @@ export function MetricCards({ metrics }: MetricCardsProps) {
       {/* Best House */}
       <MetricCard
         icon={<Home className="h-4 w-4" />}
-        overline="Best Supported House (Bhāva)"
+        overline="Best Supported House"
         title={`House ${bestHouse.house}`}
         subtitle={bestHouse.label}
         badge={`Score ${bestHouse.score}`}
@@ -77,7 +77,7 @@ export function MetricCards({ metrics }: MetricCardsProps) {
       {/* Yoga Count */}
       <MetricCard
         icon={<Sparkles className="h-4 w-4" />}
-        overline="Yoga Count (Yoga Sankhyā)"
+        overline="Yoga Count"
         title={`${yogaSummary.count} Yogas`}
         subtitle={`${yogaSummary.active.length} active · ${yogaSummary.dormant.length} dormant`}
         badge={`${yogaSummary.active.length} Active`}
@@ -251,7 +251,7 @@ function AstroScoreCard({ score }: AstroScoreCardProps) {
 
       <div className="min-w-0 flex-1">
         <p className="font-mono text-[9px] uppercase tracking-[0.25em] text-gray-500">
-          Astro Score (Sāra)
+          Astro Score
         </p>
         <p className={`mt-1 font-serif text-xl font-bold uppercase tracking-tight ${status.color}`}>
           {status.label}
@@ -292,16 +292,16 @@ function DashaCard({ dasha }: DashaCardProps) {
 
       <div>
         <p className="font-mono text-[9px] uppercase tracking-[0.25em] text-gray-500">
-          Current Dasha (Daśā)
+          Current Timeline
         </p>
         <p className="mt-1 font-serif text-2xl font-bold text-white">{dasha.mahadasha}</p>
         <p className="mt-0.5 font-mono text-[10px] uppercase tracking-[0.2em] text-gold/60">
-          {dasha.mahadashaSanskrit}
+          {dasha.mahadashaLabel}
         </p>
         <p className="mt-2 font-mono text-[9px] uppercase tracking-[0.2em] text-gray-500">
           Sub-period:{" "}
           <span className="text-white/70">
-            {dasha.antardasha} ({dasha.antardashaSanskrit})
+            {dasha.antardasha} ({dasha.antardashaLabel})
           </span>
         </p>
       </div>

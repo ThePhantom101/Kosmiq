@@ -118,7 +118,7 @@ export default function PanchangPage() {
       <section className="space-y-12">
         <div className="flex items-center gap-3">
            <Zap className="w-4 h-4 text-gold/60" />
-           <span className="overline-label text-gold/60">The Five Elements (Panchang)</span>
+           <span className="overline-label text-gold/60">The Five Elements</span>
         </div>
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -246,7 +246,7 @@ export default function PanchangPage() {
             <div className="space-y-4 group">
                <div className="flex items-center gap-3">
                   <div className="w-1.5 h-1.5 bg-gold rounded-full group-hover:scale-150 transition-transform shadow-[0_0_10px_rgba(201,168,76,0.8)]" />
-                  <h3 className="text-lg font-serif text-white uppercase tracking-tight">Abhijit Muhurta</h3>
+                  <h3 className="text-lg font-serif text-white uppercase tracking-tight">Zenith Window</h3>
                </div>
                <div className="text-xl font-serif text-gold/60 tracking-widest">{panchang.abhijit.start} — {panchang.abhijit.end}</div>
                <p className="text-xs text-zinc-500 leading-relaxed italic uppercase tracking-wider opacity-60">
@@ -257,7 +257,7 @@ export default function PanchangPage() {
             <div className="space-y-4 group">
                <div className="flex items-center gap-3">
                   <div className="w-1.5 h-1.5 bg-red-500 rounded-full group-hover:scale-150 transition-transform shadow-[0_0_10px_rgba(239,68,68,0.8)]" />
-                  <h3 className="text-lg font-serif text-white uppercase tracking-tight">Rahukalam</h3>
+                  <h3 className="text-lg font-serif text-white uppercase tracking-tight">Shadow Window</h3>
                </div>
                <div className="text-xl font-serif text-red-500/60 tracking-widest">{panchang.rahukalam.start} — {panchang.rahukalam.end}</div>
                <p className="text-xs text-zinc-500 leading-relaxed italic uppercase tracking-wider opacity-60">

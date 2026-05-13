@@ -90,7 +90,7 @@ export default function RectificationPage() {
               <div className="h-[1px] w-12 bg-gold/20" />
             </div>
             <h1 className="text-6xl md:text-8xl font-serif text-white tracking-tighter uppercase leading-[0.8]">
-              Chart <br /> <span className="text-gold">Rectification</span>
+              Birth Time <br /> <span className="text-gold">Correction</span>
             </h1>
             <div className="flex items-center justify-center md:justify-start gap-3 pt-4">
               <div className="text-[10px] text-zinc-500 font-mono uppercase tracking-widest">System: Sudarshana-AI</div>
@@ -106,7 +106,7 @@ export default function RectificationPage() {
                 <span className="text-[10px] font-black uppercase tracking-widest text-zinc-500">Objective</span>
               </div>
               <p className="text-[10px] text-zinc-400 leading-relaxed uppercase tracking-widest italic">
-                Validating natal alignment by cross-referencing significant life-events against planetary dasha transitions.
+                Validating natal alignment by cross-referencing significant life-events against planetary timeline transitions.
               </p>
             </div>
           </div>

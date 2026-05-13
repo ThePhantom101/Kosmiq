@@ -73,7 +73,7 @@ export default function TransitsPage() {
            <div className="absolute inset-0 blur-xl bg-red-500/10" />
         </div>
         <div className="space-y-2">
-           <h2 className="text-2xl font-serif uppercase tracking-tight text-white">Gochar Desync</h2>
+           <h2 className="text-2xl font-serif uppercase tracking-tight text-white">Transit Desync</h2>
            <p className="text-xs text-zinc-500 uppercase font-black tracking-widest max-w-md mx-auto">We couldn't align with the current sky coordinates. Verify your natal profile context.</p>
         </div>
       </div>
@@ -93,18 +93,18 @@ export default function TransitsPage() {
       <section className="flex flex-col md:flex-row items-center justify-between gap-8 pb-12 border-b border-white/5">
         <div className="space-y-4 text-center md:text-left">
            <div className="flex items-center justify-center md:justify-start gap-4">
-              <span className="overline-label text-gold/60 tracking-[0.4em]">Gochar Analysis</span>
+              <span className="overline-label text-gold/60 tracking-[0.4em]">Transit Analysis</span>
               <div className="h-[1px] w-12 bg-gold/20" />
            </div>
            <h1 className="text-6xl md:text-8xl font-serif text-white tracking-tighter uppercase leading-[0.8]">
-             Celestial <br /> <span className="text-gold">Mechanics</span>
+             Live <br /> <span className="text-gold">Transits</span>
            </h1>
         </div>
 
         <div className="flex flex-col items-center md:items-end gap-3 bg-white/[0.02] border border-white/5 p-6 rounded-sm backdrop-blur-sm">
            <div className="flex items-center gap-3">
               <div className="w-2 h-2 bg-green-500 rounded-full animate-pulse shadow-[0_0_10px_rgba(34,197,94,0.5)]" />
-              <span className="text-[10px] font-black uppercase tracking-[0.2em] text-zinc-500">Live Gochar Stream</span>
+              <span className="text-[10px] font-black uppercase tracking-[0.2em] text-zinc-500">Live Transit Stream</span>
            </div>
            <div className="text-xl font-serif text-gold uppercase tracking-tight">{today}</div>
            <div className="text-[9px] text-zinc-700 font-mono uppercase">UTC Offset: +00:00 (Simulated)</div>
@@ -157,10 +157,10 @@ export default function TransitsPage() {
           <div className="p-8 bg-zinc-900/20 border border-white/5 rounded-sm space-y-6">
             <div className="flex items-center gap-3">
               <Info className="w-4 h-4 text-gold/40" />
-              <h3 className="text-[10px] font-black uppercase tracking-[0.2em] text-zinc-500">Gochar Mechanics</h3>
+              <h3 className="text-[10px] font-black uppercase tracking-[0.2em] text-zinc-500">Transit Mechanics</h3>
             </div>
             <p className="text-xs leading-relaxed text-zinc-400 italic">
-              Gochar tracks the movement of planets across your natal houses. These cycles trigger specific themes and opportunities in your life. Fast-moving planets like Moon and Mercury affect daily moods, while slow-moving Saturn and Jupiter define major chapters.
+              Transits track the movement of planets across your natal houses. These cycles trigger specific themes and opportunities in your life. Fast-moving planets like Moon and Mercury affect daily moods, while slow-moving Saturn and Jupiter define major chapters.
             </p>
           </div>
         </div>

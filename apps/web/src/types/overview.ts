@@ -13,7 +13,7 @@ export interface ChartHero {
 
 export interface PlanetStrengthMetric {
   planet: string;
-  sanskritName: string;
+  signification: string;
   score: number;
   dignity: "Exalted" | "Own Sign" | "Friendly" | "Neutral" | "Enemy" | "Debilitated";
   house: number;
@@ -28,15 +28,15 @@ export interface HouseStrength {
 
 export interface DashaInfo {
   mahadasha: string;
-  mahadashaSanskrit: string;
+  mahadashaLabel: string;
   antardasha: string;
-  antardashaSanskrit: string;
+  antardashaLabel: string;
   endsAt: string;
   percentComplete: number;
 }
 
 export interface TransitAlert {
-  type: "Sade Sati" | "Mangal Dosha" | "Period Change" | "Favorable Transit";
+  type: "Saturn Cycle" | "Mars Sensitivity" | "Period Change" | "Favorable Transit";
   severity: "warning" | "info" | "success" | "critical";
   title: string;
   description: string;

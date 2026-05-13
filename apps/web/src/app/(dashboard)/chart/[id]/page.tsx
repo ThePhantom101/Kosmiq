@@ -101,9 +101,9 @@ export default function OverviewPage() {
       astroScore,
       currentDasha: {
         mahadasha: dashaData?.current_mahadasha?.lord || "Unknown",
-        mahadashaSanskrit: `${PLANET_SANSKRIT[dashaData?.current_mahadasha?.lord || "Sun"]} Mahadasha`,
+        mahadashaLabel: `Major Timeline Phase`,
         antardasha: dashaData?.current_antardasha?.lord || "Unknown",
-        antardashaSanskrit: `${PLANET_SANSKRIT[dashaData?.current_antardasha?.lord || "Sun"]} Antardasha`,
+        antardashaLabel: `Sub-Timeline Phase`,
         endsAt: dashaData?.current_mahadasha?.end || "",
         percentComplete: dashaData?.current_mahadasha?.percent_complete || 0,
       },
@@ -136,9 +136,9 @@ export default function OverviewPage() {
     
     if (diffSaturnMoon === 11 || diffSaturnMoon === 0 || diffSaturnMoon === 1) {
       alerts.push({
-        type: "Sade Sati",
+        type: "Saturn Cycle",
         severity: "warning",
-        title: "Sade Sati Active",
+        title: "Saturn Cycle Active",
         description: "Saturn is transiting your lunar domain. Focus on discipline and internal growth.",
       });
     }
@@ -147,9 +147,9 @@ export default function OverviewPage() {
     const marsHouse = Math.floor((chart.planets.Mars?.longitude - chart.ascendant + 360) % 360 / 30) + 1;
     if ([1, 4, 7, 8, 12].includes(marsHouse)) {
       alerts.push({
-        type: "Mangal Dosha",
+        type: "Mars Sensitivity",
         severity: "info",
-        title: "Mangal Dosha Detected",
+        title: "Mars Sensitivity Detected",
         description: "Mars is in a sensitive house. High energy in personal spheres needs conscious channeling.",
       });
     }
@@ -238,7 +238,7 @@ export default function OverviewPage() {
 
       {/* Summary Metric Cards */}
       <section className="space-y-5">
-        <span className="overline-label">Intelligence Summary (Buddhi Sāra)</span>
+        <span className="overline-label">Intelligence Summary</span>
         <MetricCards metrics={metrics} />
       </section>
 
@@ -257,7 +257,7 @@ export default function OverviewPage() {
         <div className="lg:col-span-5 space-y-5">
           <div className="flex items-center gap-3">
             <LayoutGrid className="w-4 h-4 text-gold" />
-            <span className="overline-label">Natal Blueprint (Rāshi Chakra)</span>
+            <span className="overline-label">Natal Blueprint</span>
           </div>
           <div className="backdrop-blur-2xl bg-black/40 border border-gold/10 rounded-sm p-6 shadow-2xl relative overflow-hidden group">
              {/* Subtle glow behind chart */}
@@ -287,7 +287,7 @@ export default function OverviewPage() {
             >
               <div className="flex items-center gap-3 mb-5">
                 <LayoutGrid className="w-4 h-4 text-gold" />
-                <span className="overline-label">Planetary Council (Graha Sabhā)</span>
+                <span className="overline-label">Planetary Placements</span>
               </div>
               <PlanetPlacements planets={astroData.chart.planets} />
             </motion.div>
@@ -298,7 +298,7 @@ export default function OverviewPage() {
         <div className="lg:col-span-7 space-y-5">
           <div className="flex items-center gap-3">
             <Sparkles className="w-4 h-4 text-gold" />
-            <span className="overline-label">The Oracle's Revelation (Daiva Vāni)</span>
+            <span className="overline-label">The Oracle's Revelation</span>
           </div>
           
           <div className="relative group h-full">
@@ -313,7 +313,7 @@ export default function OverviewPage() {
                     <div className="h-4 w-full bg-gold/5 animate-pulse rounded-full" />
                     <div className="h-4 w-5/6 bg-gold/5 animate-pulse rounded-full" />
                     <p className="mt-6 text-[10px] uppercase tracking-[0.2em] text-gray-600 font-bold">
-                      The Raj Jyotishi is contemplating your destiny…
+                      The Intelligence Engine is contemplating your destiny…
                     </p>
                   </div>
                 )}

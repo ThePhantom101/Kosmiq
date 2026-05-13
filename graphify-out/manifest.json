@@ -76,8 +76,8 @@
     "hash": "cfbd9283f5a9a63b9e8b0f42f1340794"
   },
   "/home/shan/projects/kosmiq/apps/web/next-env.d.ts": {
-    "mtime": 1778580594.8248508,
-    "hash": "d0f8375ae1199dc7acd3977fc33b78b8"
+    "mtime": 1778603380.7260704,
+    "hash": "2a74d3909800ca5467fa83b0ab4a4890"
   },
   "/home/shan/projects/kosmiq/apps/web/eslint.config.mjs": {
     "mtime": 1777826125.452262,
@@ -108,8 +108,8 @@
     "hash": "a5a9b1dbb5e8d242e5f69cf08ec6416d"
   },
   "/home/shan/projects/kosmiq/apps/web/src/components/NorthIndianChart.tsx": {
-    "mtime": 1778160406.0399516,
-    "hash": "5e4dd1e9a47c1fde79199f41e4a33d63"
+    "mtime": 1778601424.3641822,
+    "hash": "8ebeff04e82ff9abcec7096cfb7ddecf"
   },
   "/home/shan/projects/kosmiq/apps/web/src/components/AstrolabeLoader.tsx": {
     "mtime": 1777834104.152519,
@@ -144,8 +144,8 @@
     "hash": "aebd0b9afc66993b776b4fcd27a1a25e"
   },
   "/home/shan/projects/kosmiq/apps/web/src/components/Sidebar.tsx": {
-    "mtime": 1778575023.5000856,
-    "hash": "001976615c198d8a07099c2ae53d4f0b"
+    "mtime": 1778600285.0312626,
+    "hash": "a7f96a19010841441fecde4473d6588d"
   },
   "/home/shan/projects/kosmiq/apps/web/src/components/BirthForm.tsx": {
     "mtime": 1778574534.584162,
@@ -160,8 +160,8 @@
     "hash": "156faf87b2aafee965b9dbdf366c4f56"
   },
   "/home/shan/projects/kosmiq/apps/web/src/components/compatibility/ScoreHero.tsx": {
-    "mtime": 1778094053.4664934,
-    "hash": "3154fb0f267e0e1ba0b0f3d4df07481c"
+    "mtime": 1778602040.5233543,
+    "hash": "46110bdb72ef1e5038d6afe62ed23a6c"
   },
   "/home/shan/projects/kosmiq/apps/web/src/components/compatibility/ChartPicker.tsx": {
     "mtime": 1778094041.542797,
@@ -176,16 +176,16 @@
     "hash": "65102f21f7ba9fe616cccef2395042b7"
   },
   "/home/shan/projects/kosmiq/apps/web/src/components/compatibility/KootaBreakdown.tsx": {
-    "mtime": 1778094063.48749,
-    "hash": "a63a21d8c8bc0388d12745add45bec4f"
+    "mtime": 1778603590.2196057,
+    "hash": "0f851856889a164c9cd1401d7b69d85a"
   },
   "/home/shan/projects/kosmiq/apps/web/src/components/compatibility/SaveShare.tsx": {
     "mtime": 1778094089.2796257,
     "hash": "4c6206fdc7466bf781580dec1461ba69"
   },
   "/home/shan/projects/kosmiq/apps/web/src/components/compatibility/DoshaAnalysis.tsx": {
-    "mtime": 1778094071.4074874,
-    "hash": "3e61f0c691c2d58b938645ca506ec273"
+    "mtime": 1778602073.4498446,
+    "hash": "ba494ba1e49b7ee3f19b354c14761fe2"
   },
   "/home/shan/projects/kosmiq/apps/web/src/components/sky/PanchangCard.tsx": {
     "mtime": 1778134217.3359046,
@@ -198,6 +198,26 @@
   "/home/shan/projects/kosmiq/apps/web/src/components/sky/MuhurtaFinder.tsx": {
     "mtime": 1778575602.7866209,
     "hash": "60fe2d5148d6e4520446872e0d70910a"
+  },
+  "/home/shan/projects/kosmiq/apps/web/src/components/dashboard/AstroScoreGauge.tsx": {
+    "mtime": 1778601041.7797081,
+    "hash": "d1e358f727a76f6be09142293e5ee353"
+  },
+  "/home/shan/projects/kosmiq/apps/web/src/components/dashboard/VimshottariTimeline.tsx": {
+    "mtime": 1778601313.7287636,
+    "hash": "7e37df62a6f7ed2624274cd3e4b86276"
+  },
+  "/home/shan/projects/kosmiq/apps/web/src/components/dashboard/VargaCard.tsx": {
+    "mtime": 1778601370.8208246,
+    "hash": "aa2d39ad9a571099ea05df5047688617"
+  },
+  "/home/shan/projects/kosmiq/apps/web/src/components/dashboard/IntelligenceCard.tsx": {
+    "mtime": 1778601099.4679818,
+    "hash": "f25e3ae4b8a0ae5c061046ac321118f6"
+  },
+  "/home/shan/projects/kosmiq/apps/web/src/components/dashboard/RadarStrengthChart.tsx": {
+    "mtime": 1778601453.280844,
+    "hash": "b652d5276907b889c6da3ab201cd58dd"
   },
   "/home/shan/projects/kosmiq/apps/web/src/components/ask/chat-messages.tsx": {
     "mtime": 1778053408.565713,
@@ -416,32 +436,32 @@
     "hash": "aa371f5a49f66ebd5e0f616ffa30ac77"
   },
   "/home/shan/projects/kosmiq/apps/web/src/app/(dashboard)/compatibility/page.tsx": {
-    "mtime": 1778094148.8079174,
-    "hash": "a2aebfdf32ee51a14d895dc2d8e020a7"
+    "mtime": 1778602094.4030652,
+    "hash": "91130dfbb17bfb35f542a0d009f6fb10"
   },
   "/home/shan/projects/kosmiq/apps/web/src/app/(dashboard)/sky/muhurta/page.tsx": {
     "mtime": 1778155921.3660827,
     "hash": "52e1d2bb9726f73af6a301766f7602f6"
   },
   "/home/shan/projects/kosmiq/apps/web/src/app/(dashboard)/sky/transits/page.tsx": {
-    "mtime": 1778055869.641778,
-    "hash": "7bed0b6032bdb7fdc05e31265b5abedc"
+    "mtime": 1778603480.653549,
+    "hash": "db19538e6f77b5708d68f24fb4b49287"
   },
   "/home/shan/projects/kosmiq/apps/web/src/app/(dashboard)/sky/panchang/page.tsx": {
-    "mtime": 1778160250.7166314,
-    "hash": "aafae101be02b8cdc06f7bdfbe47c4c3"
+    "mtime": 1778603423.6366296,
+    "hash": "507d573189811990a587950a09702924"
   },
   "/home/shan/projects/kosmiq/apps/web/src/app/(dashboard)/new-chart/page.tsx": {
     "mtime": 1778134558.6484103,
     "hash": "4c4fa79b6905839d6cb8737898dc8bd7"
   },
   "/home/shan/projects/kosmiq/apps/web/src/app/(dashboard)/dashboard/page.tsx": {
-    "mtime": 1778572485.7026067,
-    "hash": "fb14ac658ec7dea68d6a7c1f36fa8c20"
+    "mtime": 1778601088.7937148,
+    "hash": "25ea77ced444e6ecdd9785fc496107be"
   },
   "/home/shan/projects/kosmiq/apps/web/src/app/(dashboard)/charts/page.tsx": {
-    "mtime": 1778572460.4082246,
-    "hash": "a1fcd1290fd2d4eef1fcf2839fdc7d6e"
+    "mtime": 1778600340.712573,
+    "hash": "9fa9a70279064e07fa30c27dada8116b"
   },
   "/home/shan/projects/kosmiq/apps/web/src/app/(dashboard)/charts/new/page.tsx": {
     "mtime": 1778049188.546428,
@@ -456,48 +476,52 @@
     "hash": "3382f8ef2f3f95361203c189fb8ef4d0"
   },
   "/home/shan/projects/kosmiq/apps/web/src/app/(dashboard)/chart/[id]/shadows/page.tsx": {
-    "mtime": 1778055119.8373942,
-    "hash": "5b4bc55608056d38ddd453d3399ee66a"
+    "mtime": 1778603126.2658443,
+    "hash": "b422e2128931111907b5770b05d5fc41"
   },
   "/home/shan/projects/kosmiq/apps/web/src/app/(dashboard)/chart/[id]/divisional/page.tsx": {
-    "mtime": 1778573730.7790627,
-    "hash": "cef821bfab70add92410b7134485be68"
+    "mtime": 1778601398.7111151,
+    "hash": "598c270b6cd0924bc31b7747c3ffe014"
   },
   "/home/shan/projects/kosmiq/apps/web/src/app/(dashboard)/chart/[id]/timeline/page.tsx": {
-    "mtime": 1778134768.0563297,
-    "hash": "becaf11bb95fce235737f29f35a549aa"
+    "mtime": 1778601355.5051613,
+    "hash": "d4f4324cbfabfc91be7de0c1d1a7fefe"
+  },
+  "/home/shan/projects/kosmiq/apps/web/src/app/(dashboard)/chart/[id]/ashtakavarga/page.tsx": {
+    "mtime": 1778601602.1644268,
+    "hash": "b1fd4bec7570cf283e56b802e2b8e5b2"
   },
   "/home/shan/projects/kosmiq/apps/web/src/app/(dashboard)/chart/[id]/strengths/page.tsx": {
-    "mtime": 1778134890.3203058,
-    "hash": "cbb683a7cc61d60f65a3fd7482236d0c"
+    "mtime": 1778601575.2870004,
+    "hash": "af05b479ea9941cd538136c7f9a8151b"
   },
   "/home/shan/projects/kosmiq/apps/web/src/app/(dashboard)/chart/[id]/yogas/page.tsx": {
     "mtime": 1778573792.9026096,
     "hash": "dad0a5d1d159110a9f592b976b4003a6"
   },
   "/home/shan/projects/kosmiq/apps/web/src/app/(dashboard)/tools/calibration/events/page.tsx": {
-    "mtime": 1778574882.1405122,
-    "hash": "6eae466e83a9b1c75ea3cac71d9db4ee"
+    "mtime": 1778604391.837376,
+    "hash": "b7211e2de1d91a206003813de1236a06"
   },
   "/home/shan/projects/kosmiq/apps/web/src/app/(dashboard)/tools/calibration/zodiac/page.tsx": {
-    "mtime": 1778575009.9651434,
-    "hash": "d9e219d1ca172cb57f1ee6969743502b"
+    "mtime": 1778604382.4947102,
+    "hash": "75276fa1a9634e2e0cc7f02d7922fd18"
   },
   "/home/shan/projects/kosmiq/apps/web/src/app/(dashboard)/tools/calibration/biodata/page.tsx": {
-    "mtime": 1778574983.583669,
-    "hash": "103c0a9629b6748cced898aad43e25fb"
+    "mtime": 1778604350.9055448,
+    "hash": "d7efcd00e72517ac25d92c645717a10d"
   },
   "/home/shan/projects/kosmiq/apps/web/src/app/(dashboard)/tools/learning/page.tsx": {
-    "mtime": 1778160418.935612,
-    "hash": "225b38fbb5b36cd0845b840d16ab3109"
+    "mtime": 1778603076.404018,
+    "hash": "b268029cc04b6242ff5d97a5b3a0786b"
   },
   "/home/shan/projects/kosmiq/apps/web/src/app/(dashboard)/tools/rectification/page.tsx": {
-    "mtime": 1778574937.166503,
-    "hash": "a52f71a1d4920c540336147c23d66bda"
+    "mtime": 1778602688.0357654,
+    "hash": "42ea45830d2d7059c2bd0f755cd82ad6"
   },
   "/home/shan/projects/kosmiq/apps/web/src/app/(dashboard)/tools/personalities/page.tsx": {
-    "mtime": 1778160318.4630847,
-    "hash": "6f925b3a1014a272c19762da749cea10"
+    "mtime": 1778603056.4657803,
+    "hash": "c38876758e1eb2d8e00c7f617c1ce487"
   },
   "/home/shan/projects/kosmiq/apps/web/src/app/(dashboard)/settings/account/page.tsx": {
     "mtime": 1778572471.417343,
@@ -512,8 +536,8 @@
     "hash": "e5104634e3905c7e6e834a9ae56b57e3"
   },
   "/home/shan/projects/kosmiq/apps/web/src/app/(dashboard)/predictions/monthly/page.tsx": {
-    "mtime": 1778573809.637473,
-    "hash": "af3eea11bb9947a3c95e3b7e51f5011e"
+    "mtime": 1778603131.9896514,
+    "hash": "81a4d53cd339b81f60f9eebd8c63f021"
   },
   "/home/shan/projects/kosmiq/scratch/test_bridge.py": {
     "mtime": 1778259736.7770648,

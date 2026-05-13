@@ -4,7 +4,7 @@ import React from "react";
 import Link from "next/link";
 import { usePathname, useParams } from "next/navigation";
 import { motion } from "framer-motion";
-import { Grid3x3, GitBranch, BarChart3, Zap, Moon, LayoutDashboard } from "lucide-react";
+import { Grid3x3, GitBranch, BarChart3, Zap, Moon, LayoutDashboard, Compass, Award } from "lucide-react";
 
 interface ChartTab {
   name: string;
@@ -18,11 +18,12 @@ export function ChartShell({ children }: { children: React.ReactNode }) {
   const id = params?.id ?? "me";
 
   const tabs: ChartTab[] = [
-    { name: "Overview", icon: LayoutDashboard, href: `/chart/${id}` },
-    { name: "Divisional Charts", icon: Grid3x3, href: `/chart/${id}/divisional` },
-    { name: "Dasha Timeline", icon: GitBranch, href: `/chart/${id}/timeline` },
-    { name: "Strengths", icon: BarChart3, href: `/chart/${id}/strengths` },
-    { name: "Yogas", icon: Zap, href: `/chart/${id}/yogas` },
+    { name: "Birth Chart", icon: Compass, href: `/chart/${id}` },
+    { name: "Harmonic Charts", icon: Grid3x3, href: `/chart/${id}/divisional` },
+    { name: "Life Timelines", icon: GitBranch, href: `/chart/${id}/timeline` },
+    { name: "Planetary Strengths", icon: Zap, href: `/chart/${id}/strengths` },
+    { name: "House Resonance", icon: BarChart3, href: `/chart/${id}/ashtakvarga` },
+    { name: "Cosmic Combinations", icon: Award, href: `/chart/${id}/yogas` },
     { name: "Shadow Planets", icon: Moon, href: `/chart/${id}/shadows` },
   ];
 

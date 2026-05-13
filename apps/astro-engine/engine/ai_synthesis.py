@@ -8,9 +8,10 @@ load_dotenv()
 
 class GraphState(TypedDict):
     chart_data: Dict[str, Any]
+    calculation_results: Dict[str, Any]
     reading: str
 
-def format_prompt(chart_data: Dict[str, Any]) -> str:
+def format_prompt(chart_data: Dict[str, Any], calculation_results: Dict[str, Any]) -> str:
     # Extract key astrological info
     planets = chart_data.get("planets", {})
     vargas = chart_data.get("shodashvarga", {})
@@ -47,14 +48,21 @@ def format_prompt(chart_data: Dict[str, Any]) -> str:
     d9_details = [f"{p}: {get_sign(l)}" for p, l in d9.items() if isinstance(l, (int, float))]
     d10_details = [f"{p}: {get_sign(l)}" for p, l in d10.items() if isinstance(l, (int, float))]
 
+    # Shadbala Highlights (from calculation_results)
+    shadbala = calculation_results.get("shadbala", {})
+    shad_details = [f"- {p}: {data.get('total', 0)} Virūpas" for p, data in shadbala.items() if p in ["Sun", "Moon", "Mars", "Mercury", "Jupiter", "Venus", "Saturn"]]
+
     prompt = f"""
     You are the 'Kosmiq Oracle', an Elite Vedic Astrologer with profound knowledge of the Shastras, Tantra, and modern psychological archetypes. 
-    Your mission is to provide a God-Tier astrological synthesis based on the provided chart data.
+    Your mission is to provide a God-Tier astrological synthesis based on the provided DETERMINISTIC calculation data.
     
     SYSTEM DIRECTIVE: 
     Act as a high-end spiritual advisor. Your tone is authoritative, mystical, and profoundly insightful. 
-    Avoid generic horoscope clichés. Use evocative, premium copywriting. 
+    Gemini, do NOT hallucinate planetary positions. Use the strict mathematical output provided below.
     Focus on the "Why" behind the "What"—reveal the karmic blueprint.
+
+    NATAL STRENGTHS (Shadbala - Virūpas):
+    {chr(10).join(shad_details)}
 
     BIRTH CHART DATA (D1 - Rashi):
     - Lagna (Ascendant): {lagna_sign}
@@ -126,13 +134,38 @@ def generate_monthly_narrative_ai(month: str, transit_summary: str, current_dash
         print(f"Gemini Error: {last_error}")
         return "The celestial currents are turbulent. Please try again later."
 
+def calculation_node(state: GraphState):
+    """
+    Computes strict, deterministic astrological metrics before AI synthesis.
+    """
+    from engine.shadbala import calculate_shadbala_for_chart
+    chart = state["chart_data"]
+    planets = chart.get("planets", {})
+    metadata = chart.get("metadata", {})
+    vargas = chart.get("shodashvarga", {})
+    
+    # Deriving Day/Night and JD
+    jd_ut = metadata.get("jd", 0)
+    # Simplified Day/Night for node
+    is_day_birth = True 
+    
+    shadbala = calculate_shadbala_for_chart(
+        planets=planets,
+        houses=[],
+        is_day_birth=is_day_birth,
+        jd_ut=jd_ut,
+        vargas=vargas
+    )
+    
+    return {"calculation_results": {"shadbala": shadbala}}
+
 def gemini_node(state: GraphState):
     api_key = os.environ.get("GEMINI_API_KEY")
     if not api_key:
         return {"reading": "Error: GEMINI_API_KEY not found in environment."}
     
     client = genai.Client(api_key=api_key)
-    prompt = format_prompt(state["chart_data"])
+    prompt = format_prompt(state["chart_data"], state.get("calculation_results", {}))
     
     # Use a list of models to try in case one is not available
     models_to_try = ["gemini-1.5-flash", "gemini-1.5-pro"]
@@ -148,7 +181,6 @@ def gemini_node(state: GraphState):
         except Exception as e:
             last_error = e
             if "404" not in str(e):
-                # If it's not a 404, it might be an auth or quota issue, so don't bother trying other models
                 break
     
     return {"reading": f"Error during AI synthesis: {str(last_error)}"}
@@ -156,8 +188,11 @@ def gemini_node(state: GraphState):
 def create_workflow():
     workflow = StateGraph(GraphState)
     
+    workflow.add_node("calculate_metrics", calculation_node)
     workflow.add_node("generate_reading", gemini_node)
-    workflow.set_entry_point("generate_reading")
+    
+    workflow.set_entry_point("calculate_metrics")
+    workflow.add_edge("calculate_metrics", "generate_reading")
     workflow.add_edge("generate_reading", END)
     
     return workflow.compile()
@@ -168,25 +203,27 @@ def format_compatibility_prompt(c1_sum: str, c2_sum: str, koota: List[Dict[str, 
     
     prompt = f"""
     You are the 'Raj Jyotishi', the Royal Vedic Astrologer. 
-    Analyze the compatibility between two individuals based on their Ashta Koota (Gun Milan) scores and Dosha analysis.
+    Analyze the compatibility between two individuals based on their ASHTA KOOTA (Gun Milan) scores and strict DOSHA analysis.
+    
+    SYSTEM DIRECTIVE:
+    This is a deterministic mathematical report. Your job is to interpret these specific numbers into deep psychological and spiritual insights.
     
     PERSON 1 SUMMARY: {c1_sum}
     PERSON 2 SUMMARY: {c2_sum}
     
-    GUN MILAN SCORES:
+    DETERMINISTIC GUN MILAN SCORES (36-Point Scale):
     {koota_str}
     
-    DOSHA ANALYSIS:
+    DOSHA ANALYSIS & MANGLIK STATUS:
     {dosha_str}
 
-    STRUCTURE YOUR RESPONSE IN EXACTLY 3 PARAGRAPHS:
-    Para 1: Overall relationship dynamic and soul-level resonance. Tone: Authoritative, mystical, and deep.
-    Para 2: The primary strengths of this match—where do they naturally align?
-    Para 3: The key challenges and karmic hurdles, with specific advice on how to navigate them using Vedic wisdom.
-
+    INSTRUCTIONS:
+    1. THE SOUL BOND: Analyze the overall score. Is this a union of convenience, karma, or divine purpose?
+    2. THE FRICTION POINTS: Address any Doshas (especially Nadi or Manglik) with the gravity they deserve, but offer Vedic remedies.
+    3. PROGENY & PROSPERITY: Specifically interpret the Nadi and Bhakoot scores regarding the long-term legacy of the couple.
+    
     TONE & STYLE:
-    - Avoid cliches. Use profound, high-end copywriting.
-    - Focus on the spiritual and psychological interplay.
+    - Authoritative, premium, and profoundly deep.
     - 300-350 words total.
     """
     return prompt
